@@ -1,0 +1,102 @@
+import { images } from "@/lib/siteConfig";
+import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
+
+
+export const aboutPageContent = {
+  "our-mission": {
+    title: "Our Mission",
+    eyebrow: "Purpose in every visit",
+    hero: "Professional HVAC care built around people, progress, and a team that feels like family.",
+    image: spoorsImageLibrary.sacramentoBridge,
+    storyImage: spoorsImageLibrary.acDiagnosticTesting,
+    storyTitle: "Three priorities. One standard of care.",
+    body: [
+      "At Spoor’s Heating & Air Conditioning, our mission has three parts: provide highly professional HVAC service throughout the greater Auburn area, give our employees the best available training, and build a positive workplace where every team member feels supported.",
+      "Although we work in the HVAC business, our first priority is taking care of people. That can mean cost-effective planned maintenance, expert advice that prevents future repairs, or practical ways to reduce energy costs.",
+      "Honesty and integrity are cornerstones of our company. We provide fair estimates, deliver what we promise, and are always the first to point out an opportunity to save a customer money.",
+    ],
+    pillars: [
+      ["Professional service", "Skilled, dependable heating and cooling work for homes across the Auburn area."],
+      ["Continuous training", "Ongoing education in current HVAC products, systems, diagnostics, and tools."],
+      ["A family culture", "A supportive workplace that helps good people deliver genuinely caring service."],
+    ],
+    statement: "Better-trained people, honest recommendations, and comfort solutions designed around your home.",
+    statementBg: spoorsImageLibrary.heatPumpMaintenance,
+    relatedLabel: "Our Purpose",
+    seoDescription: "Learn how Spoor's Heating & Air combines professional HVAC service, advanced technician training, and a supportive family culture in Auburn, CA.",
+  },
+  "our-commitment": {
+    title: "Our Commitment",
+    eyebrow: "Comfort without surprises",
+    hero: "Proactive care, fair pricing, and dependable support that protects your comfort year-round.",
+    image: spoorsImageLibrary.heatPumpService,
+    storyImage: spoorsImageLibrary.heatingSystemRepair,
+    storyTitle: "We help your system perform at its best.",
+    body: [
+      "HVAC maintenance is essential to your equipment’s life and your comfort at home. We recommend two tune-ups each year—one in spring and one in fall—to keep your system operating at peak performance.",
+      "Regular care can reduce the chance of expensive emergency repairs or premature replacement. We also believe a breakdown should never cost more simply because it happened at an inconvenient time, which is why we do not charge overtime rates.",
+      "Our Home Comfort Club makes planned maintenance easier with seasonal tune-ups, member discounts, six-month service reminders, and other benefits. Our work is also supported by a 12-month parts and labor warranty.",
+    ],
+    pillars: [
+      ["Seasonal prevention", "Spring and fall tune-ups catch small concerns before they become larger repairs."],
+      ["Fair, clear pricing", "No overtime rates and no surprises—just straightforward recommendations."],
+      ["Ongoing protection", "Home Comfort Club reminders, member benefits, and a 12-month parts and labor warranty."],
+    ],
+    statement: "Your equipment may not always be top of mind. Keeping it reliable is always top of ours.",
+    relatedLabel: "Our Promise",
+    seoDescription: "See Spoor's commitment to seasonal HVAC maintenance, fair pricing, no overtime rates, warranties, and Home Comfort Club care in Auburn, CA.",
+  },
+  "customer-service": {
+    title: "Customer Service",
+    eyebrow: "People first, every time",
+    hero: "Knowledge, commitment, and respect—before, during, and after every service call.",
+    image: spoorsImageLibrary.acUnitTroubleshooting,
+    storyImage: images.heatingTuneup,
+    storyTitle: "Customer care is how we do business.",
+    body: [
+      "We’re available 24/7/365 for heating and air conditioning service needs. Customer service is not simply one part of our work—it is the central philosophy behind how we operate.",
+      "Our technicians bring the expertise to do the job correctly and the commitment to take care of the people who invited us into their home. The family-like atmosphere inside our company is reflected in the respect we show every customer.",
+      "We take time to answer questions, share practical ways to reduce heating and cooling costs, and explain every recommendation clearly. If we can save you money on a repair, we will do it every time.",
+    ],
+    pillars: [
+      ["Always available", "Around-the-clock support for urgent heating and cooling needs, every day of the year."],
+      ["Clear communication", "Patient answers, plain-language findings, and useful guidance for your home."],
+      ["Respectful service", "Professional work delivered with the same care we would expect in our own homes."],
+    ],
+    statement: "You should feel as confident in the way you are treated as you do in the work we complete.",
+    relatedLabel: "Our People",
+    darkMobileOverlay: true,
+    seoDescription: "Discover Spoor's people-first HVAC customer service, 24/7 availability, honest recommendations, and respectful care for Auburn-area homes.",
+  },
+  "community-involvement": {
+    title: "Community Involvement",
+    eyebrow: "Rooted in the foothills",
+    hero: "Serving the Auburn area means investing in the neighbors and communities we call home.",
+    image: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b75ead64_spoorsteam-about-about-secondary-image.png",
+    storyImage: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f1c764be9_spoors-rooftop-ac-installation-auburn-ca.webp",
+    storyTitle: "Local Service Is a Long-Term Relationship.",
+    body: [
+      "As a family-owned business with deep roots in Auburn and the surrounding foothill communities, Spoor’s is part of the fabric of the region. Our responsibility extends beyond the equipment we install and repair.",
+      "We support our neighbors through dependable service, local relationships, and a team culture built around showing up when people need us. Every home we visit is another opportunity to strengthen the community we share.",
+      "We are grateful for the trust local families have placed in us. Our goal is to keep earning that trust through honest work, respectful care, and a lasting commitment to the places we serve.",
+    ],
+    pillars: [
+      ["Locally Rooted", "A team that lives, works, and builds relationships throughout the Auburn area."],
+      ["Neighbor-Minded", "Service decisions guided by what is genuinely right for local homeowners."],
+      ["Here for the Long Run", "A commitment to earning community trust one honest visit at a time."],
+    ],
+    statement: "We do not simply serve this community. We are proud to be part of it.",
+    statementHighlight: "We are proud to be part of it.",
+    relatedLabel: "Our Community",
+    darkMobileOverlay: true,
+    communityEvent: {
+      label: "Community Tradition",
+      title: "Spoor’s Charity Golf Tournament",
+      summary:
+        "Each year, Spoor’s Heating & Air hosts a charity golf tournament that brings together neighbors, partners, and local families to support causes close to home. It’s one of the ways we give back to the community that has supported us for decades.",
+      cta: "Notify Me About the Next Tournament",
+      image: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a855a062f_golf-community.png",
+    },
+    seoDescription: "Learn how Spoor's Heating & Air supports Auburn and neighboring foothill communities through dependable service and local relationships.",
+  },
+};
