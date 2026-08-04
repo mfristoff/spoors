@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/SiteButton";
 import { services } from "@/lib/siteConfig";
 import { Image } from "@/components/ui/image";
 import { ArrowRight, Wrench } from "lucide-react";
