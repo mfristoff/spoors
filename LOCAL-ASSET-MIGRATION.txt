@@ -1,0 +1,20 @@
+SPOOR'S BASE44 ASSET MIGRATION
+
+This patch adds a one-time GitHub Action that:
+1. Downloads every Base44-hosted image, SVG, and video.
+2. Stores them in public/assets/base44.
+3. Rewrites the site to use local /assets/base44/... paths.
+4. Removes Base44 media-host transform logic from runtime code.
+5. Verifies that no media.base44.com references remain.
+6. Builds the site and commits the localized files to main.
+
+After adding this patch to the repository and pushing it:
+1. Open the repository on GitHub.
+2. Click Actions.
+3. Click Localize Base44 Assets.
+4. Click Run workflow.
+5. Wait for the green check.
+6. Cloudflare should rebuild from the new commit. If it does not, retry the latest Cloudflare deployment.
+
+The current project contains 265 unique Base44 asset files, including one MP4 hero video.
+This migration only removes Base44 asset hosting. Base44 SDK/auth code is separate and is not removed by this action.
