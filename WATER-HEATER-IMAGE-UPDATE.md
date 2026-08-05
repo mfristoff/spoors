@@ -12,9 +12,9 @@ This update replaces the Water Heater Services page imagery with locally hosted 
 ## Selected page image mapping
 
 - Hero desktop:
-  - `/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-hero.webp`
+  - `/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp`
 - Hero mobile:
-  - `/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-mobile-hero.webp`
+  - `/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-mobile-hero.webp`
 - Traditional Tank Water Heaters:
   - `/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp`
 - Tankless Water Heaters:
@@ -46,4 +46,4 @@ Additional cleaned assets were also prepared in the same folder for future use o
 
 ## Latest hero replacement
 
-The desktop and mobile hero assets now use the supplied Adobe Stock technician photograph. The source image was cropped and re-encoded only. No content was generated or reconstructed.
+The desktop and mobile hero assets now use the latest supplied technician photograph. The desktop version preserves the full image. The mobile version is a portrait crop from the same source. Both were re-encoded and stripped of the original embedded metadata. No content was generated or reconstructed.

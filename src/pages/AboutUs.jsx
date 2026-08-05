@@ -19,6 +19,7 @@ import { useSeo } from "@/lib/useSeo";
 import OverviewHero from "@/components/about/OverviewHero";
 import OverviewStory from "@/components/about/OverviewStory";
 import OverviewCommitment from "@/components/about/OverviewCommitment";
+import OverviewValues from "@/components/about/OverviewValues";
 import OverviewWhyChoose from "@/components/about/OverviewWhyChoose";
 import OverviewTeam from "@/components/about/OverviewTeam";
 
@@ -34,6 +35,7 @@ export default function AboutUs() {
       <OverviewHero />
       <OverviewStory />
       <OverviewCommitment />
+      <OverviewValues />
       <OverviewWhyChoose />
       <OverviewTeam />
     </div>
