@@ -98,11 +98,8 @@ function ValueStatement({ value }) {
       <div className="grid min-h-[270px] grid-cols-[74px_minmax(0,1fr)] gap-5 py-9 sm:grid-cols-[96px_minmax(0,1fr)] sm:gap-8 sm:py-12 lg:min-h-[320px] lg:grid-cols-[124px_minmax(0,1fr)] lg:gap-12 lg:py-16">
         <motion.div
           style={{ y: letterY }}
-          className="flex flex-col items-center justify-between border-r border-[#171717]/15 pr-5 sm:pr-8"
+          className="flex items-center justify-center border-r border-[#171717]/15 pr-5 sm:pr-8"
         >
-          <span className="font-mono text-[11px] font-semibold tracking-[0.18em] text-[#171717]/48">
-            {value.number}
-          </span>
           <span
             aria-hidden="true"
             className="select-none text-[clamp(74px,9vw,150px)] font-bold leading-[0.72] tracking-[-0.09em] text-[#c84d4b]"

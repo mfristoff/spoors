@@ -24,6 +24,7 @@ const stats = [
   },
   {
     value: "Zero Hidden Fees",
+    valueLines: ["Zero Hidden", "Fees"],
     description: "No surprise costs. Upfront pricing on every visit.",
     cardClass: "border-[#ded8cf] bg-[#fffdf9] shadow-[0_18px_45px_rgba(74,45,41,0.06)]",
     ghostTone: "opacity-[0.06]",
@@ -45,7 +46,7 @@ export default function OverviewStory() {
   };
 
   return (
-    <section className="relative w-full bg-figma-color-16-3 grid grid-cols-1 lg:grid-cols-[1322fr_598fr]">
+    <section className="about-story-grid relative w-full bg-figma-color-16-3 grid grid-cols-1">
       <div className="header-aligned-left flex flex-col justify-center px-6 py-10 md:py-16 lg:pr-[clamp(16px,4.7vw,90px)] lg:py-[clamp(26px,5.5vw,106px)] gap-8 md:gap-12 lg:gap-9 z-10">
         <motion.div
           initial="hidden"
@@ -75,11 +76,8 @@ export default function OverviewStory() {
             <motion.div
               key={stat.value}
               variants={fadeUpVariant}
-              whileHover={{ y: -6 }}
-              transition={{ type: "spring", stiffness: 260, damping: 24 }}
-              className={`group relative flex w-full min-h-[320px] flex-col overflow-hidden rounded-[22px] border px-6 py-7 md:px-7 md:py-8 ${stat.cardClass}`}
+              className={`relative flex w-full min-h-[320px] flex-col overflow-hidden rounded-[22px] border px-6 py-7 md:px-7 md:py-8 ${stat.cardClass}`}
             >
-              <span className="absolute inset-x-0 top-0 h-[3px] origin-left bg-[#c84d4b] transition-transform duration-500 ease-out group-hover:scale-x-[0.72]" />
               <img
                 src={BOLT_MARK}
                 alt=""
@@ -87,14 +85,18 @@ export default function OverviewStory() {
                 className={`pointer-events-none absolute -right-12 -top-12 h-[168px] w-[168px] select-none ${stat.ghostTone}`}
               />
 
-              <div className="relative z-10 flex h-10 items-center gap-2 pt-1" aria-hidden="true">
-                <span className="h-2 w-2 rounded-full bg-[#c84d4b]" />
-                <span className="h-px w-10 bg-[#c84d4b]/30" />
+              <div className="relative z-10 flex h-10 items-center pt-1" aria-hidden="true">
+                <span className="h-2.5 w-2.5 rounded-full bg-[#c84d4b]" />
               </div>
 
-              <div className="relative z-10 mt-8 flex min-h-[120px] items-start">
-                <p className="max-w-[285px] text-[clamp(42px,2.8vw,54px)] font-bold leading-[0.92] tracking-[-0.045em] text-[#24201f]">
-                  {stat.value}
+              <div className="relative z-10 mt-8 flex min-h-[112px] items-start">
+                <p className="max-w-[285px] text-[clamp(40px,2.45vw,48px)] font-bold leading-[0.96] tracking-[-0.04em] text-[#24201f]">
+                  {stat.valueLines ? (
+                    <>
+                      <span className="block whitespace-nowrap">{stat.valueLines[0]}</span>
+                      <span className="block">{stat.valueLines[1]}</span>
+                    </>
+                  ) : stat.value}
                 </p>
               </div>
 
