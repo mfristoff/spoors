@@ -54,7 +54,6 @@ export default function ServiceDetailLayout({
   sectionHeading,
   sectionSubheading,
   services,
-  featureSection,
   breakImage,
   breakAlt = "Spoor's Heating & Air technician working on an HVAC system",
   faqs,
@@ -201,79 +200,6 @@ export default function ServiceDetailLayout({
           </div>
         </div>
       </section>
-
-      {featureSection && (
-        <section className="relative w-full overflow-hidden bg-[#0b1131] py-[clamp(64px,8vw,128px)]">
-          <div className="pointer-events-none absolute -left-24 -top-24 h-80 w-80 rounded-full border border-white/10" />
-          <div className="pointer-events-none absolute -bottom-32 -right-24 h-[28rem] w-[28rem] rounded-full border border-white/10" />
-          <div className="relative z-10 max-w-[1400px] mx-auto px-[5%] xl:px-[clamp(18px,4vw,80px)]">
-            <div className="grid items-stretch gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
-              <motion.div
-                initial={{ opacity: 0, x: -28 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.65, ease: "easeOut" }}
-                className="relative min-h-[360px] overflow-hidden rounded-[18px] border border-white/10 lg:min-h-[620px]"
-              >
-                <img
-                  src={cdnImage(featureSection.image, 1400, 1600, featureSection.imageFocal)}
-                  alt={featureSection.imageAlt}
-                  loading="lazy"
-                  decoding="async"
-                  className="absolute inset-0 h-full w-full object-cover"
-                  style={{ objectPosition: featureSection.imageObjectPosition || "center center" }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0b1131]/55 via-transparent to-transparent" />
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 28 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.65, ease: "easeOut" }}
-                className="flex flex-col justify-center"
-              >
-                <div className="mb-5 flex items-center gap-[11px]">
-                  <LightningPair variant="white" />
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.08em] text-white/75 md:text-[13px]">
-                    {featureSection.eyebrow}
-                  </span>
-                </div>
-                <h2 className="max-w-[760px] text-[clamp(32px,3.2vw,58px)] font-bold leading-[1.08] tracking-[-0.02em] text-white">
-                  {featureSection.heading}
-                </h2>
-                <p className="mt-6 max-w-[760px] text-[16px] font-[440] leading-[1.75] text-white/75 md:text-[18px]">
-                  {featureSection.description}
-                </p>
-
-                <div className="mt-8 grid gap-4">
-                  {featureSection.benefits.map((benefit, idx) => (
-                    <motion.div
-                      key={benefit.title}
-                      initial={{ opacity: 0, y: 16 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.45, delay: idx * 0.08 }}
-                      className="rounded-[14px] border border-white/15 bg-white/[0.055] p-5 backdrop-blur-sm"
-                    >
-                      <h3 className="text-[18px] font-bold text-white">{benefit.title}</h3>
-                      <p className="mt-2 text-[15px] leading-[1.65] text-white/70">{benefit.text}</p>
-                    </motion.div>
-                  ))}
-                </div>
-
-                <button
-                  type="button"
-                  onClick={() => setActiveCard({ title: featureSection.formService || featureSection.heading })}
-                  className="mt-8 inline-flex h-[52px] w-fit items-center justify-center gap-2 rounded-[9px] bg-red-600 px-7 text-[15px] font-semibold text-white transition-colors hover:bg-red-700"
-                >
-                  {featureSection.ctaLabel} <ArrowRight size={17} />
-                </button>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* ── FULL WIDTH IMAGE BREAK ── */}
       <section className="w-full h-[260px] lg:h-[400px] relative overflow-hidden">

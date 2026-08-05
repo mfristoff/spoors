@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useSeo } from "@/lib/useSeo";
-import Button from "@/components/ui/SiteButton";
+import Button from "@/components/ui/Button";
 import { business } from "@/lib/siteConfig";
 import { Home, Phone } from "lucide-react";
 

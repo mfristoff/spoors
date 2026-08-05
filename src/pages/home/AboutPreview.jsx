@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Container from "@/components/ui/Container";
-import Button from "@/components/ui/SiteButton";
+import Button from "@/components/ui/Button";
 import { Image } from "@/components/ui/image";
 import { images, business } from "@/lib/siteConfig";
 import { ArrowRight } from "lucide-react";

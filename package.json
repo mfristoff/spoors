@@ -9,9 +9,7 @@
     "lint": "eslint . --quiet",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
-    "preview": "vite preview",
-    "assets:audit": "node scripts/audit-remote-assets.mjs",
-    "assets:localize": "node scripts/localize-base44-assets.mjs"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@base44/sdk": "^0.8.41",

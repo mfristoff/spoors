@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { business, services } from "@/lib/siteConfig";
-import Button from "@/components/ui/SiteButton";
+import Button from "@/components/ui/Button";
 import { CheckCircle2, Loader2 } from "lucide-react";
 import { submitFormspreeJson } from "@/lib/formspree";
 

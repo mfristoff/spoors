@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { navigation, business } from "@/lib/siteConfig";
 import Logo from "@/components/ui/Logo";
-import Button from "@/components/ui/SiteButton";
+import Button from "@/components/ui/Button";
 import { ChevronDown, Phone, X } from "lucide-react";
 
 export default function MobileMenu({ open, onClose }) {
