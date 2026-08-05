@@ -1,21 +1,20 @@
 import React from "react";
 import ServiceDetailLayout from "./ServiceDetailLayout";
-import { images } from "@/lib/siteConfig";
 import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { reviewsFor } from "@/lib/serviceReviews";
 
 const ductlessContent = {
-  heroImage: images.ductlessImage,
+  heroImage: spoorsImageLibrary.miniSplitInstallation,
   heroAlt: "Ductless mini-split installation by Spoor's Heating & Air in Auburn, CA",
-  heroFocal: { x: 0.5, y: 0.1 },
-  heroObjectPosition: "center top",
+  heroObjectPosition: "center center",
+  heroImagePlacement: "right",
   badge: "DUCTLESS MINI-SPLITS",
   headline: "Zoned Comfort and Lower Energy Bills with Ductless Mini-Splits in Auburn.",
   intro:
     "Room-by-room comfort from efficient mini-splits, installed across Placer County.",
   sectionLabel: "DUCTLESS MINI-SPLIT HEATING & COOLING",
   sectionHeading: "Efficient, Room-by-Room Comfort Without the Ductwork.",
-  breakImage: spoorsImageLibrary.miniSplitInstallation,
+  breakImage: spoorsImageLibrary.ductlessMiniSplitRepair,
   breakAlt: "Spoor's Heating & Air technician installing a ductless mini-split system",
   reviews: reviewsFor("ductless-mini-splits"),
   reviewsServiceLabel: "Ductless Mini-Splits",
@@ -29,7 +28,7 @@ const ductlessContent = {
     {
       title: "Cleaner Air Without Leaky Ducts",
       desc: "Air ducts are notoriously leaky, with up to one-third of total energy loss coming from the ductwork. Leaking ducts force your HVAC system to work overtime and disperse allergens like dust and pollen throughout your home. Ductless mini-split systems improve indoor air quality by reducing the chance of exposure to allergens and airborne pollutants.",
-      image: images.auburn,
+      image: spoorsImageLibrary.miniSplitInstallation,
     },
     {
       title: "Custom Comfort, Room by Room",
@@ -39,32 +38,32 @@ const ductlessContent = {
     {
       title: "Lower Bills With Zoned Efficiency",
       desc: "A major benefit of mini-split systems is a reduction in energy consumption—and lower utility bills. Each indoor unit can use a separate thermostat programmed to a temperature suitable for the specific room, so you only condition the spaces you use. High-efficiency components save you even more over the long run.",
-      image: images.acHero,
+      image: spoorsImageLibrary.ductlessMiniSplitRepair,
     },
     {
       title: "Sleek Wall-Mount Comfort",
       desc: "The most common type of mini-split. Wall-mount systems are installed high on a wall and work in any type of room. Because they're visible, this type comes in several style options that make the indoor unit as inconspicuous as possible—an easy fit for Auburn homes and businesses.",
-      image: images.hero,
+      image: spoorsImageLibrary.ductlessAcCleaning,
     },
     {
       title: "Hidden Ceiling Cassette Comfort",
       desc: "The indoor unit of a ceiling cassette system inserts into the ceiling, similar to a cassette tape into a tape deck. The surface sits flush with the ceiling, making it a great choice for home and business owners who want to keep the unit out of sight. Air flow from the ceiling also provides a wider range of distribution.",
-      image: images.aboutTeam,
+      image: spoorsImageLibrary.miniSplitInstallation,
     },
     {
       title: "Floor-Mounted Flexibility",
       desc: "Also called floor-mounted, these indoor units install along the baseboard in rooms. Because the unit is always visible, most floor-standing systems are designed with contemporary styling to help the unit blend into the surrounding room—an option for spaces where wall or ceiling mounting isn't ideal.",
-      image: images.acService,
+      image: spoorsImageLibrary.miniSplitMaintenance,
     },
     {
       title: "Ceiling-Suspended Discretion",
       desc: "This type closely resembles a wall-mount mini-split but is mounted on the ceiling instead of the wall. Ceiling-suspended systems are an option for anyone with limited wall space or those who want a discreet appearance while still delivering efficient, zoned heating and cooling.",
-      image: images.heatingFurnace,
+      image: spoorsImageLibrary.ductlessMiniSplitRepair,
     },
     {
       title: "When Ductless Makes the Most Sense",
       desc: "Ductless mini-splits shine in converted spaces (attics, garages, porches) where adding or rerouting ductwork isn't practical; when replacing an outdated HVAC system that needs constant repairs or that you want to upgrade for energy savings; and in older buildings where installing ductwork would require a major renovation. They let you create custom zoning to meet each space's needs.",
-      image: spoorsImageLibrary.ductlessMiniSplitRepair,
+      image: spoorsImageLibrary.ductlessAcCleaning,
     },
   ],
   faqs: [

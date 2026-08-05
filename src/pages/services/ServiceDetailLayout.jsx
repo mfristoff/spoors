@@ -46,6 +46,7 @@ export default function ServiceDetailLayout({
   heroAlt = "Spoor's Heating & Air technician at work",
   heroFocal,
   heroObjectPosition = "center center",
+  heroImagePlacement = "full",
   heroDimRight = false,
   badge,
   headline,
@@ -75,7 +76,13 @@ export default function ServiceDetailLayout({
 
       {/* ── HERO ── */}
       <section className="relative w-full h-[calc(100svh-112px)] min-h-[440px] lg:min-h-[600px] lg:h-[calc(100vh-220px)] lg:max-h-[860px] overflow-hidden flex flex-col bg-[#0a1228]">
-        <div className="absolute inset-0 bg-[#0a1228]">
+        <div
+          className={
+            heroImagePlacement === "right"
+              ? "absolute inset-y-0 right-0 w-full bg-[#0a1228] lg:w-[62%]"
+              : "absolute inset-0 bg-[#0a1228]"
+          }
+        >
           {heroImageMobile && (
             <img
               src={cdnImage(heroImageMobile, 900, 1200, heroFocal)}

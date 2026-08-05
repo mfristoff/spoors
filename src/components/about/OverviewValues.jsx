@@ -285,7 +285,7 @@ export default function OverviewValues() {
               <span className="block text-[#c84d4b]">One name.</span>
             </h2>
             <p className="mt-7 max-w-[520px] text-[17px] leading-[1.7] text-[#55524c] sm:text-[18px]">
-              These are not wall art. They are the standard for how we care for customers, work with our teammates, and carry the Spoor’s name into every home.
+              These values guide how we serve customers, support our team, and make decisions on every job.
             </p>
 
             <div className="mt-10 flex max-w-[420px] items-center border-y border-[#171717]/15 py-5">

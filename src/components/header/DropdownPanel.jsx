@@ -109,11 +109,11 @@ export default function DropdownPanel({ item }) {
             <div
               className={`rounded-2xl p-3 ${panelWidth}`}
               style={{
-                background: "rgba(255, 255, 255, 0.92)",
-                backdropFilter: "blur(16px)",
-                WebkitBackdropFilter: "blur(16px)",
-                border: "1px solid rgba(255, 255, 255, 0.7)",
-                boxShadow: "0 20px 60px rgba(10, 18, 38, 0.14), 0 4px 12px rgba(10, 18, 38, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.9)",
+                background: "#ffffff",
+                backdropFilter: "none",
+                WebkitBackdropFilter: "none",
+                border: "1px solid rgba(10, 18, 38, 0.16)",
+                boxShadow: "0 24px 70px rgba(10, 18, 38, 0.22), 0 4px 14px rgba(10, 18, 38, 0.08)",
               }}
             >
               <motion.div

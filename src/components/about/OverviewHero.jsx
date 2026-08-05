@@ -42,7 +42,7 @@ export default function OverviewHero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="w-full bg-black/35"
+          className="w-full border-t border-white/10 bg-black/70"
         >
           <div className="site-shell flex flex-col gap-4 py-5 lg:flex-row lg:items-center lg:justify-between">
             <p className="max-w-[760px] text-[clamp(14px,1.2vw,18px)] font-medium leading-relaxed text-white">

@@ -63,21 +63,51 @@ export default function OverviewStory() {
           className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 w-full max-w-[1112px]"
         >
           {/* Card 1 */}
-          <motion.div variants={fadeUpVariant} className="bg-[#0b1131] rounded-[17px] w-full aspect-[640/330] md:aspect-auto md:h-[377px] overflow-clip relative flex flex-col justify-between md:justify-end md:gap-3 py-7 px-6">
-            <p className="text-[36px] md:text-[28px] font-bold leading-[1.1] text-white relative z-10">100%</p>
-            <p className="text-[16px] leading-[1.5] text-white/70 w-full max-w-[256px] relative z-10">Family-owned and locally operated since day one.</p>
+          <motion.div
+            variants={fadeUpVariant}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 260, damping: 24 }}
+            className="group relative flex w-full aspect-[640/330] flex-col justify-between overflow-hidden rounded-[22px] border border-[#dfd0c9] bg-[#f2e5e1] px-6 py-7 shadow-[0_18px_45px_rgba(74,45,41,0.08)] md:aspect-auto md:h-[320px] md:px-7 md:py-8"
+          >
+            <span className="absolute inset-x-0 top-0 h-[3px] origin-left bg-[#c84d4b] transition-transform duration-500 ease-out group-hover:scale-x-[0.72]" />
+            <span aria-hidden="true" className="pointer-events-none absolute -right-2 top-2 text-[112px] font-bold leading-none tracking-[-0.08em] text-[#5f4640]/[0.055]">01</span>
+            <span className="relative z-10 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#9d514f]">01</span>
+            <div className="relative z-10">
+              <p className="text-[clamp(38px,3vw,54px)] font-bold leading-[0.95] tracking-[-0.045em] text-[#24201f]">100%</p>
+              <p className="mt-4 w-full max-w-[270px] text-[16px] leading-[1.55] text-[#625a57]">Family-owned and locally operated since day one.</p>
+            </div>
           </motion.div>
 
           {/* Card 2 */}
-          <motion.div variants={fadeUpVariant} className="bg-[#0b1131] rounded-[17px] w-full aspect-[640/330] md:aspect-auto md:h-[377px] overflow-clip relative flex flex-col justify-between md:justify-end md:gap-3 py-7 px-6 md:px-[25px]">
-            <p className="text-[36px] md:text-[28px] font-bold leading-[1.1] text-white relative z-10">5K+</p>
-            <p className="text-[16px] leading-[1.5] text-white/70 w-full max-w-[305px] relative z-10">Successful comfort tune-ups completed and counting across the region.</p>
+          <motion.div
+            variants={fadeUpVariant}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 260, damping: 24 }}
+            className="group relative flex w-full aspect-[640/330] flex-col justify-between overflow-hidden rounded-[22px] border border-[#ded8cf] bg-[#f6f2ec] px-6 py-7 shadow-[0_18px_45px_rgba(74,45,41,0.07)] md:aspect-auto md:h-[320px] md:px-7 md:py-8"
+          >
+            <span className="absolute inset-x-0 top-0 h-[3px] origin-left bg-[#c84d4b] transition-transform duration-500 ease-out group-hover:scale-x-[0.72]" />
+            <span aria-hidden="true" className="pointer-events-none absolute -right-2 top-2 text-[112px] font-bold leading-none tracking-[-0.08em] text-[#5f4640]/[0.05]">02</span>
+            <span className="relative z-10 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#9d514f]">02</span>
+            <div className="relative z-10">
+              <p className="text-[clamp(38px,3vw,54px)] font-bold leading-[0.95] tracking-[-0.045em] text-[#24201f]">5K+</p>
+              <p className="mt-4 w-full max-w-[305px] text-[16px] leading-[1.55] text-[#625a57]">Successful comfort tune-ups completed and counting across the region.</p>
+            </div>
           </motion.div>
 
           {/* Card 3 */}
-          <motion.div variants={fadeUpVariant} className="bg-white border border-[#e0e0e0] rounded-[17px] w-full aspect-[640/330] md:aspect-auto md:h-[377px] overflow-clip relative flex flex-col justify-between md:justify-end md:gap-3 py-7 px-6">
-            <p className="text-[30px] md:text-[24px] font-bold leading-[1.1] text-[#333333] relative z-10">Zero Hidden Fees</p>
-            <p className="text-[16px] leading-[1.5] text-[#666666] w-full max-w-[305px] relative z-10">No surprise costs. We provide upfront pricing on every single visit.</p>
+          <motion.div
+            variants={fadeUpVariant}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 260, damping: 24 }}
+            className="group relative flex w-full aspect-[640/330] flex-col justify-between overflow-hidden rounded-[22px] border border-[#ded8cf] bg-[#fffdf9] px-6 py-7 shadow-[0_18px_45px_rgba(74,45,41,0.06)] md:aspect-auto md:h-[320px] md:px-7 md:py-8"
+          >
+            <span className="absolute inset-x-0 top-0 h-[3px] origin-left bg-[#c84d4b] transition-transform duration-500 ease-out group-hover:scale-x-[0.72]" />
+            <span aria-hidden="true" className="pointer-events-none absolute -right-2 top-2 text-[112px] font-bold leading-none tracking-[-0.08em] text-[#5f4640]/[0.045]">03</span>
+            <span className="relative z-10 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#9d514f]">03</span>
+            <div className="relative z-10">
+              <p className="max-w-[280px] text-[clamp(29px,2.2vw,40px)] font-bold leading-[1.02] tracking-[-0.035em] text-[#24201f]">Zero Hidden Fees</p>
+              <p className="mt-4 w-full max-w-[305px] text-[16px] leading-[1.55] text-[#625a57]">No surprise costs. We provide upfront pricing on every single visit.</p>
+            </div>
           </motion.div>
         </motion.div>
       </div>
