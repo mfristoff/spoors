@@ -1,0 +1,28 @@
+{
+  "jsx_syntax_check": "passed for modified components",
+  "local_imports_checked": 453,
+  "missing_local_imports": [],
+  "case_conflicting_paths": [],
+  "local_asset_references_checked": 11,
+  "missing_local_assets": [],
+  "preservation_checks": {
+    "latest desktop hero is referenced": true,
+    "latest mobile hero is referenced": true,
+    "traditional tank card remains": true,
+    "tankless card remains": true,
+    "hybrid card remains": true,
+    "hybrid feature section remains": true,
+    "water heater image break remains": true,
+    "About page mounts Spoor Values": true,
+    "Serve People First remains": true,
+    "Practice Integrity remains": true,
+    "Own the Outcome remains": true,
+    "Operate With Excellence remains": true,
+    "Respect Like Family remains": true,
+    "Spoor name promise remains": true,
+    "Since 1925 remains": true,
+    "Cloudflare SPA redirect is valid": true,
+    "desktop hero asset exists": true,
+    "mobile hero asset exists": true
+  }
+}
