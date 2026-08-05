@@ -1,5 +1,5 @@
 import { business } from "@/lib/siteConfig";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/SiteButton";
 import Container from "@/components/ui/Container";
 import { Phone, CalendarClock } from "lucide-react";
 
