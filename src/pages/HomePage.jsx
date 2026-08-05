@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from "react";
+import { lazy, useState } from "react";
 import { useSeo } from "@/lib/useSeo";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -10,6 +10,7 @@ import { getSubServiceCta } from "@/lib/serviceQuoteCopy";
 import Hero from "@/pages/home/Hero";
 import NewHeader from "@/pages/home/new/NewHeader";
 import LazySection from "@/components/ui/LazySection";
+import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
 
 // Everything below the fold loads on approach, keeping the first paint's
 // JavaScript to just the header and hero.
@@ -18,7 +19,6 @@ const TestimonialsNew = lazy(() => import("@/pages/home/new/TestimonialsNew"));
 const LargeQuote = lazy(() => import("@/pages/home/new/LargeQuote"));
 const FooterCTANew = lazy(() => import("@/pages/home/new/FooterCTANew"));
 const NewFooter = lazy(() => import("@/pages/home/new/NewFooter"));
-const ServiceQuoteModal = lazy(() => import("@/components/ui/ServiceQuoteModal"));
 
 // --- Animation Variants ---
 import { cardEntrance, cardStagger, EASE_SMOOTH } from "@/lib/motionVariants";
@@ -98,6 +98,16 @@ const servicePillStagger = {
 const servicePillEntrance = {
   hidden: { opacity: 0, y: 16, scale: 0.99 },
   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: EASE_SMOOTH } },
+};
+
+const proofCardStagger = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.03 } },
+};
+
+const proofCardEntrance = {
+  hidden: { opacity: 0, y: 12, scale: 0.995 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.48, ease: EASE_SMOOTH } },
 };
 
 
@@ -289,7 +299,7 @@ export default function HomePage() {
                             ...getSubServiceCta(item.quoteTitle, item.service),
                           })
                         }
-                        className="group flex min-h-[60px] w-full items-center gap-4 rounded-[15px] bg-figma-primary px-4 py-3 text-left shadow-[inset_0_0_0_1px_#eaeaea] transition-shadow duration-300 hover:shadow-[inset_0_0_0_1px_#e2bcbc,0_8px_20px_rgba(12,18,40,0.07)]"
+                        className="group flex min-h-[60px] w-full items-center gap-4 rounded-[15px] bg-figma-primary px-4 py-3 text-left shadow-[inset_0_0_0_1px_#eaeaea] transition-shadow duration-300 hover:shadow-[inset_0_0_0_1px_#e2bcbc,0_4px_10px_rgba(12,18,40,0.045)]"
                         aria-label={`Request a quote for ${item.title}`}
                       >
                         <img className="h-6 w-6 object-contain transition-transform duration-300 group-hover:scale-110" src={item.icon} alt="" aria-hidden="true" />
@@ -383,45 +393,53 @@ export default function HomePage() {
                 src={spoorsImageLibrary.heatPumpService}
                 alt="Spoor's technician servicing a residential heat pump in Auburn, California"
                 fittingType="fill"
-                quality={95}
+                quality={82}
+                loading="eager"
+                decoding="async"
                 className="absolute inset-0 w-full h-full" />
               
             </div>
           </div>
 
           {/* Bottom Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full mt-4">
-            <div className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
+          <motion.div
+            variants={proofCardStagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "0px 0px -8% 0px" }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full mt-4"
+          >
+            <motion.div variants={proofCardEntrance} className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
-                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8bec328f4_Frame124.svg" alt="Reduced energy costs" />
+                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8bec328f4_Frame124.svg" alt="Reduced energy costs" loading="eager" decoding="async" />
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">15% Lower Bills</span>
               </div>
               <div className="flex flex-col gap-2">
                 <p className="text-[22px] leading-[1.15] font-bold tracking-[-0.02em] text-figma-text-2 md:text-figma-20 md:leading-figma-22 md:tracking-normal">Reduced Energy Costs</p>
-                <p className="text-[15px] leading-[1.6] font-[440] tracking-[-0.2px] text-figma-text-3 md:text-figma-18 md:leading-figma-29">Our Home Comfort Club members save more on average every month.</p>
+                <p className="text-[15px] leading-[1.6] font-[440] tracking-[-0.2px] text-figma-text-3 md:text-figma-18 md:leading-figma-29">Our Home Comfort Club members save more on average every month.</p>
               </div>
-            </div>
-            <div className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
+            </motion.div>
+            <motion.div variants={proofCardEntrance} className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
-                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c88460282_Frame122.svg" alt="No hidden fees" />
-                <span className="text-[clamp(18px,1.4vw,26px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">No Hidden Fees</span>
+                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c88460282_Frame122.svg" alt="No hidden fees" loading="eager" decoding="async" />
+                <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">No Hidden Fees</span>
               </div>
               <div className="flex flex-col gap-2">
                 <p className="text-[22px] leading-[1.15] font-bold tracking-[-0.02em] text-figma-text-2 md:text-figma-20 md:leading-figma-22 md:tracking-normal">Upfront, Honest Estimates</p>
-                <p className="text-[15px] leading-[1.6] font-[440] tracking-[-0.2px] text-figma-text-3 md:text-figma-18 md:leading-figma-29">Flat-rate quotes with no surprises. We agree on the price before any work begins. </p>
+                <p className="text-[15px] leading-[1.6] font-[440] tracking-[-0.2px] text-figma-text-3 md:text-figma-18 md:leading-figma-29">Flat-rate quotes with no surprises. We agree on the price before any work begins.</p>
               </div>
-            </div>
-            <div className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
+            </motion.div>
+            <motion.div variants={proofCardEntrance} className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
-                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3246ca2c_Frame121.svg" alt="5-star reputation" />
+                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3246ca2c_Frame121.svg" alt="5-star reputation" loading="eager" decoding="async" />
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">5-Star Reputation</span>
               </div>
               <div className="flex flex-col gap-2">
                 <p className="text-[22px] leading-[1.15] font-bold tracking-[-0.02em] text-figma-text-2 md:text-figma-20 md:leading-figma-22 md:tracking-normal">Trusted for a Reason</p>
                 <p className="text-[15px] leading-[1.6] font-[440] tracking-[-0.2px] text-figma-text-3 md:text-figma-18 md:leading-figma-29">We're the top-rated HVAC service across Auburn & Meadow Vista.</p>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </motion.div>
 
       </section>
@@ -442,18 +460,14 @@ export default function HomePage() {
         <NewFooter />
       </LazySection>
 
-      {quote.open && (
-        <Suspense fallback={null}>
-          <ServiceQuoteModal
-            open={quote.open}
-            onClose={() => setQuote({ open: false })}
-            service={quote.service || "HVAC"}
-            eyebrow={quote.eyebrow || "FREE HVAC QUOTE"}
-            headline={quote.headline || "Let’s Restore Your Comfort"}
-            support={quote.support || "Tell us what's going on with your heating or cooling and choose a time that works for you. Spoor's will review your request and follow up with clear next steps."}
-          />
-        </Suspense>
-      )}
+      <ServiceQuoteModal
+        open={quote.open}
+        onClose={() => setQuote({ open: false })}
+        service={quote.service || "HVAC"}
+        eyebrow={quote.eyebrow || "FREE HVAC QUOTE"}
+        headline={quote.headline || "Let’s Restore Your Comfort"}
+        support={quote.support || "Tell us what's going on with your heating or cooling and choose a time that works for you. Spoor's will review your request and follow up with clear next steps."}
+      />
     </div>);
 
 }

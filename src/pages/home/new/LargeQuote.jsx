@@ -26,7 +26,7 @@ export default function LargeQuote() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   // Drive a 0 → word-count progress across the scroll range so words reveal
   // one at a time in reading order (left-to-right, top-to-bottom).
-  const progress = useTransform(scrollYProgress, [0.03, 0.48], [0, WORDS.length]);
+  const progress = useTransform(scrollYProgress, [0.03, 0.53], [0, WORDS.length]);
 
   return (
     <section

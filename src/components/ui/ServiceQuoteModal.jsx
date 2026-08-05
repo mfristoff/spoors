@@ -102,9 +102,9 @@ export default function ServiceQuoteModal({ open, onClose, service, eyebrow, hea
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.2, ease: "easeOut" }}
+      transition={{ duration: 0.12, ease: "easeOut" }}
       className="fixed inset-0 z-[1000] flex items-start justify-center md:items-center"
-      style={{ background: "rgba(5,13,56,0.72)", backdropFilter: "blur(4px)", WebkitBackdropFilter: "blur(4px)" }}
+      style={{ background: "rgba(5,13,56,0.72)", backdropFilter: "blur(2px)", WebkitBackdropFilter: "blur(2px)" }}
       onMouseDown={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -115,9 +115,9 @@ export default function ServiceQuoteModal({ open, onClose, service, eyebrow, hea
         aria-modal="true"
         aria-label={`${copy.eyebrow} — ${copy.headline}`}
         tabIndex={-1}
-        initial={{ opacity: 0, scale: 0.96, y: 18 }}
+        initial={{ opacity: 0, scale: 0.985, y: 8 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
         className="relative my-2 w-full overflow-hidden bg-[#F7F7F8] focus:outline-none md:my-4"
         style={{
           width: "min(1840px, calc(100vw - 16px))",

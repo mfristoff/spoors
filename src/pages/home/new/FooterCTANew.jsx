@@ -23,8 +23,8 @@ const copyEntrance = {
 };
 
 const barEntrance = {
-  hidden: { opacity: 0, y: 48, scale: 0.985 },
-  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.72, ease } },
+  hidden: { opacity: 0, y: 18, scale: 0.997 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.88, ease } },
 };
 
 export default function FooterCTANew() {

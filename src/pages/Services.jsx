@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useSeo } from "@/lib/useSeo";
 import { services } from "@/lib/siteConfig";
 import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
@@ -129,6 +129,7 @@ function ServiceShowcaseCard({ service, index, openQuoteFor }) {
   const initialValue = `svc-${service.slug}-0`;
   const [activeValue, setActiveValue] = useState(initialValue);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [imagesReady, setImagesReady] = useState(false);
   const panelImages = SERVICE_PANEL_IMAGES[service.slug] || [service.image];
   const activeImage = panelImages[activeIndex] || service.image;
   const activeTitle = service.subServices[activeIndex]?.title || service.title;
@@ -145,6 +146,7 @@ function ServiceShowcaseCard({ service, index, openQuoteFor }) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-80px" }}
+      onViewportEnter={() => setImagesReady(true)}
       variants={fadeUp}
       className="grid w-full overflow-hidden rounded-[20px] border border-border-light bg-white lg:grid-cols-2"
     >
@@ -214,18 +216,31 @@ function ServiceShowcaseCard({ service, index, openQuoteFor }) {
       </div>
 
       <div className={cn("relative order-1 min-h-[300px] overflow-hidden bg-[#e9e9e9] lg:min-h-full", !flip && "lg:order-2")}>
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.div
-            key={`${service.slug}-${activeIndex}`}
-            initial={{ opacity: 0, scale: 1.025 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute inset-0"
-          >
-            <Image src={activeImage} alt={`${activeTitle} from Spoor's Heating & Air`} fittingType="fill" className="h-full w-full object-cover" />
-          </motion.div>
-        </AnimatePresence>
+        {(imagesReady ? panelImages : [activeImage]).map((image, imageIndex) => {
+          const resolvedIndex = imagesReady ? imageIndex : activeIndex;
+          const isActive = resolvedIndex === activeIndex;
+          const title = service.subServices[resolvedIndex]?.title || activeTitle;
+          return (
+            <motion.div
+              key={`${service.slug}-${resolvedIndex}-${image}`}
+              initial={false}
+              animate={{ opacity: isActive ? 1 : 0, scale: isActive ? 1 : 1.012 }}
+              transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute inset-0"
+              aria-hidden={!isActive}
+            >
+              <Image
+                src={image}
+                alt={`${title} from Spoor's Heating & Air`}
+                fittingType="fill"
+                quality={82}
+                loading="eager"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
+            </motion.div>
+          );
+        })}
         <div className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%), rgba(0,0,0,0.2)" }} />
         <div className="absolute inset-x-5 bottom-5 flex max-w-[726px] flex-col gap-4 rounded-[14px] border border-white/30 bg-black/45 p-6 backdrop-blur-md sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-[420px] text-[clamp(18px,1.3vw,24px)] font-bold leading-tight text-white">
