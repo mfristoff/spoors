@@ -4,17 +4,23 @@ import { images } from "@/lib/siteConfig";
 import { reviewsFor } from "@/lib/serviceReviews";
 
 const WATER_HEATER_IMAGES = {
-  tank: "/assets/images/water-heaters/traditional-tank-water-heater.webp",
-  tankless: "/assets/images/water-heaters/tankless-water-heater.webp",
-  repair: "/assets/images/water-heaters/water-heater-repair.webp",
-  service: "/assets/images/water-heaters/water-heater-service-closeup.webp",
-  break: "/assets/images/water-heaters/water-heater-system-break.webp",
+  hero: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-installation-hero.webp",
+  heroMobile: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-mobile-hero.webp",
+  tank: "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp",
+  tankless: "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation.webp",
+  hybrid: "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-inspection.webp",
+  repair: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
+  replacement: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-replacement-mechanical-room.webp",
+  maintenance: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-piping-and-gauge-service.webp",
+  feature: "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-service-technician.webp",
+  break: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-burner-break.webp",
 };
 
 const waterHeaterContent = {
-  heroImage: images.waterHeaterImage,
-  heroAlt: "Residential water heater installed by Spoor's Heating & Air in Auburn, California",
-  heroObjectPosition: "center 58%",
+  heroImage: WATER_HEATER_IMAGES.hero,
+  heroImageMobile: WATER_HEATER_IMAGES.heroMobile,
+  heroAlt: "Spoor's technician installing a residential water heater in Auburn, California",
+  heroObjectPosition: "center center",
   badge: "WATER HEATER SERVICES",
   headline: "Water Heater Repair and Installation in Auburn, CA.",
   intro:
@@ -24,7 +30,7 @@ const waterHeaterContent = {
   sectionSubheading:
     "We compare the equipment, installation requirements, and long-term upkeep before recommending a system.",
   breakImage: WATER_HEATER_IMAGES.break,
-  breakAlt: "Traditional and tankless residential water heater systems",
+  breakAlt: "Blue gas burner flames inside a residential water heater",
   reviews: reviewsFor("water-heater"),
   reviewsServiceLabel: "Water Heater Services",
   faqHeading: "Frequently Asked Questions About Water Heaters",
@@ -42,7 +48,7 @@ const waterHeaterContent = {
     {
       title: "Hybrid and Heat Pump Water Heaters",
       desc: "Hybrid units move heat from the surrounding air into a storage tank and use electric elements for backup. We check the available space, airflow, drainage, electrical service, and hot-water demand before recommending this option.",
-      image: images.waterHeaterImage,
+      image: WATER_HEATER_IMAGES.hybrid,
     },
     {
       title: "Water Heater Repair",
@@ -52,12 +58,12 @@ const waterHeaterContent = {
     {
       title: "Replacement and Right-Sizing",
       desc: "A replacement should fit the home, not just the opening left by the old unit. We compare capacity, recovery rate, fuel source, available utilities, and installation requirements before the work begins.",
-      image: WATER_HEATER_IMAGES.tank,
+      image: WATER_HEATER_IMAGES.replacement,
     },
     {
       title: "Maintenance and System Care",
       desc: "Tank flushing, anode checks, tankless descaling, and a full visual inspection help control sediment and catch developing problems. Service needs depend on the equipment and local water conditions.",
-      image: WATER_HEATER_IMAGES.service,
+      image: WATER_HEATER_IMAGES.maintenance,
     },
   ],
   featureSection: {
@@ -65,9 +71,9 @@ const waterHeaterContent = {
     heading: "Move heat instead of making it from scratch.",
     description:
       "Hybrid water heaters use heat pump technology to pull warmth from the surrounding air and transfer it into the tank. Built-in electric elements provide backup during periods of heavy demand. For the right home, that can reduce energy use while maintaining dependable hot water.",
-    image: images.waterHeaterImage,
-    imageAlt: "High-efficiency hybrid heat pump water heater",
-    imageObjectPosition: "center 58%",
+    image: WATER_HEATER_IMAGES.feature,
+    imageAlt: "Spoor's technician servicing a high-efficiency water heating system",
+    imageObjectPosition: "center center",
     benefits: [
       {
         title: "Efficient everyday operation",

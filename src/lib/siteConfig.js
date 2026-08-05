@@ -52,7 +52,7 @@ export const images = {
   auburn: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/99d8f9440_AdobeStock_117354486.jpeg",
   aboutTeam: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/25c356f1d_AdobeStock_319218928.jpeg",
   ductlessImage: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/439d96621_AdobeStock_499333613.jpeg",
-  waterHeaterImage: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/aa90a5fc5_AdobeStock_515255157.jpeg",
+  waterHeaterImage: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-installation-hero.webp",
   swampCoolerImage: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9e0f4a6c8_swamp-cooler-image-2.png",
   fanBg: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a62fa6031_CTASection.png",
   heatingHero: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f62049928_heating-heat-pump-maintenance-hero.jpg",
