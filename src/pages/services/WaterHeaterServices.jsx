@@ -4,8 +4,8 @@ import { images } from "@/lib/siteConfig";
 import { reviewsFor } from "@/lib/serviceReviews";
 
 const WATER_HEATER_IMAGES = {
-  hero: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-installation-hero.webp",
-  heroMobile: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-mobile-hero.webp",
+  hero: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-hero.webp",
+  heroMobile: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-mobile-hero.webp",
   tank: "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp",
   tankless: "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation.webp",
   hybrid: "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-inspection.webp",
@@ -19,7 +19,7 @@ const WATER_HEATER_IMAGES = {
 const waterHeaterContent = {
   heroImage: WATER_HEATER_IMAGES.hero,
   heroImageMobile: WATER_HEATER_IMAGES.heroMobile,
-  heroAlt: "Spoor's technician installing a residential water heater in Auburn, California",
+  heroAlt: "Technician testing water heater system controls and piping for Spoor's Heating & Air",
   heroObjectPosition: "center center",
   badge: "WATER HEATER SERVICES",
   headline: "Water Heater Repair and Installation in Auburn, CA.",
