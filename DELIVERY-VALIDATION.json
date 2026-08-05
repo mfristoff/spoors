@@ -1,5 +1,5 @@
 {
-  "jsx_syntax_check": "passed for modified components",
+  "jsx_syntax_check": "passed for all JS, JSX, TS, and TSX source files",
   "local_imports_checked": 453,
   "missing_local_imports": [],
   "case_conflicting_paths": [],
@@ -24,5 +24,13 @@
     "Cloudflare SPA redirect is valid": true,
     "desktop hero asset exists": true,
     "mobile hero asset exists": true
+  },
+  "about_values_redesign": {
+    "icon_components_removed": true,
+    "sticky_editorial_layout_added": true,
+    "scroll_linked_spring_motion_added": true,
+    "reduced_motion_supported": true,
+    "generic_navy_promise_panel_removed": true,
+    "red_brand_promise_panel_added": true
   }
 }

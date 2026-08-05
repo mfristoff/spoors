@@ -1,11 +1,18 @@
-import { motion } from "framer-motion";
-import { Handshake, HeartHandshake, ShieldCheck, Star, Target } from "lucide-react";
+import { useRef } from "react";
+import {
+  motion,
+  useReducedMotion,
+  useScroll,
+  useSpring,
+  useTransform,
+} from "framer-motion";
 
 const values = [
   {
     letter: "S",
+    number: "01",
     title: "Serve People First",
-    icon: HeartHandshake,
+    kicker: "Caring for people is the work.",
     lines: [
       "We’re in the business of caring for people.",
       "Put customers and teammates first.",
@@ -14,8 +21,9 @@ const values = [
   },
   {
     letter: "P",
+    number: "02",
     title: "Practice Integrity",
-    icon: ShieldCheck,
+    kicker: "Do what is right. Every time.",
     lines: [
       "Do what is right, even when no one is watching.",
       "Be honest, transparent, and fair.",
@@ -24,133 +32,286 @@ const values = [
   },
   {
     letter: "O",
+    number: "03",
     title: "Own the Outcome",
-    icon: Target,
+    kicker: "Take responsibility from start to finish.",
     lines: [
-      "Take responsibility from start to finish.",
       "Communicate clearly, keep your promises, and help make things right when something goes wrong.",
       "Never say, “That’s not my job.”",
     ],
   },
   {
     letter: "O",
+    number: "04",
     title: "Operate With Excellence",
-    icon: Star,
+    kicker: "Take pride in your craft.",
     lines: [
-      "Take pride in your craft. Do it right, not just good enough.",
+      "Do it right, not just good enough.",
       "Keep learning, improving, and raising the standard for professional HVAC service.",
     ],
   },
   {
     letter: "R",
+    number: "05",
     title: "Respect Like Family",
-    icon: Handshake,
+    kicker: "Care for the home and the people in it.",
     lines: [
       "Treat our customers, their homes, and each other with care and respect.",
       "Leave things better than you found them.",
-      "Remember that every interaction represents the Spoor's name.",
+      "Remember that every interaction represents the Spoor’s name.",
     ],
   },
 ];
 
-export default function OverviewValues() {
-  return (
-    <section className="relative overflow-hidden bg-[#f7f7f8] py-[clamp(64px,8vw,128px)]">
-      <div className="pointer-events-none absolute -left-32 top-16 h-96 w-96 rounded-full border border-red-600/10" />
-      <div className="pointer-events-none absolute -right-40 bottom-20 h-[30rem] w-[30rem] rounded-full border border-[#0b1131]/10" />
+const ease = [0.22, 1, 0.36, 1];
 
-      <div className="site-shell relative z-10">
+function ValueStatement({ value }) {
+  const rowRef = useRef(null);
+  const reduceMotion = useReducedMotion();
+  const { scrollYProgress } = useScroll({
+    target: rowRef,
+    offset: ["start 88%", "end 28%"],
+  });
+  const progress = useSpring(scrollYProgress, {
+    stiffness: 105,
+    damping: 26,
+    mass: 0.65,
+  });
+  const letterY = useTransform(progress, [0, 1], reduceMotion ? [0, 0] : [30, -10]);
+  const copyY = useTransform(progress, [0, 1], reduceMotion ? [0, 0] : [20, 0]);
+  const opacity = useTransform(progress, [0, 0.28, 1], [0.2, 1, 1]);
+  const lineScale = useTransform(progress, [0, 0.7], [0, 1]);
+
+  return (
+    <motion.article
+      ref={rowRef}
+      style={{ opacity }}
+      className="group relative isolate overflow-hidden border-t border-[#171717]/15 last:border-b"
+    >
+      <motion.div
+        aria-hidden="true"
+        style={{ scaleX: lineScale }}
+        className="absolute left-0 top-0 h-[2px] w-full origin-left bg-[#e31e24]"
+      />
+      <div className="pointer-events-none absolute inset-0 -z-10 origin-left scale-x-0 bg-white/75 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-x-100" />
+
+      <div className="grid min-h-[270px] grid-cols-[74px_minmax(0,1fr)] gap-5 py-9 sm:grid-cols-[96px_minmax(0,1fr)] sm:gap-8 sm:py-12 lg:min-h-[320px] lg:grid-cols-[124px_minmax(0,1fr)] lg:gap-12 lg:py-16">
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.65, ease: "easeOut" }}
-          className="mx-auto mb-10 max-w-[920px] text-center md:mb-14"
+          style={{ y: letterY }}
+          className="flex flex-col items-center justify-between border-r border-[#171717]/15 pr-5 sm:pr-8"
         >
-          <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-red-600 md:text-[14px]">
-            Our Core. Our Culture. Our Commitment.
-          </p>
-          <h2 className="mt-4 text-[clamp(38px,5vw,72px)] font-bold leading-[1] tracking-[-0.03em] text-[#0b1131]">
-            The Spoor Values
-          </h2>
-          <p className="mx-auto mt-5 max-w-[760px] text-[16px] leading-[1.7] text-[#5f6470] md:text-[18px]">
-            These values guide how we care for customers, work with our teammates, and carry the Spoor's name into every home.
-          </p>
+          <span className="font-mono text-[11px] font-semibold tracking-[0.18em] text-[#171717]/48">
+            {value.number}
+          </span>
+          <span
+            aria-hidden="true"
+            className="select-none text-[clamp(74px,9vw,150px)] font-bold leading-[0.72] tracking-[-0.09em] text-[#e31e24]"
+          >
+            {value.letter}
+          </span>
         </motion.div>
 
-        <div className="overflow-hidden rounded-[20px] border border-[#dfe1e6] bg-white shadow-[0_18px_50px_rgba(11,17,49,0.08)]">
-          {values.map((value, index) => {
-            const Icon = value.icon;
-            const red = index % 2 === 0;
-
-            return (
-              <motion.article
-                key={value.title}
-                initial={{ opacity: 0, y: 18 }}
+        <motion.div style={{ y: copyY }} className="flex flex-col justify-center pr-1 sm:pr-6">
+          <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-[#e31e24] sm:text-[13px]">
+            {value.kicker}
+          </p>
+          <h3 className="max-w-[820px] text-[clamp(31px,4.25vw,68px)] font-bold leading-[0.98] tracking-[-0.045em] text-[#171717]">
+            {value.title}
+          </h3>
+          <div className="mt-6 grid max-w-[900px] gap-2.5 text-[15px] leading-[1.62] text-[#4e4e4e] sm:mt-8 sm:text-[17px] lg:grid-cols-2 lg:gap-x-12">
+            {value.lines.map((line, lineIndex) => (
+              <motion.p
+                key={line}
+                initial={reduceMotion ? false : { opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className={`grid grid-cols-[86px_1fr] border-b border-[#e5e7eb] last:border-b-0 md:grid-cols-[132px_150px_1fr] ${red ? "bg-white" : "bg-[#fbfbfc]"}`}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.55, delay: 0.08 * lineIndex, ease }}
+                className={lineIndex === 0 && value.lines.length === 3 ? "lg:row-span-2" : ""}
               >
-                <div className={`flex min-h-[132px] items-center justify-center text-[64px] font-bold leading-none text-white md:min-h-[154px] md:text-[82px] ${red ? "bg-red-600" : "bg-[#0b1131]"}`}>
-                  {value.letter}
-                </div>
-
-                <div className="hidden items-center justify-center md:flex">
-                  <div className={`flex h-[92px] w-[92px] items-center justify-center rounded-full border-[3px] ${red ? "border-red-600 text-red-600" : "border-[#0b1131] text-[#0b1131]"}`}>
-                    <Icon className="h-11 w-11" strokeWidth={1.8} />
-                  </div>
-                </div>
-
-                <div className="flex flex-col justify-center px-5 py-6 md:px-8 md:py-7 lg:px-10">
-                  <div className="flex items-center gap-3 md:block">
-                    <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 md:hidden ${red ? "border-red-600 text-red-600" : "border-[#0b1131] text-[#0b1131]"}`}>
-                      <Icon className="h-5 w-5" strokeWidth={2} />
-                    </div>
-                    <h3 className={`text-[22px] font-bold uppercase leading-[1.1] tracking-[-0.015em] md:text-[28px] ${red ? "text-red-600" : "text-[#0b1131]"}`}>
-                      {value.title}
-                    </h3>
-                  </div>
-                  <div className="mt-3 space-y-1 text-[15px] leading-[1.55] text-[#363b46] md:text-[16px]">
-                    {value.lines.map((line) => (
-                      <p key={line}>{line}</p>
-                    ))}
-                  </div>
-                </div>
-              </motion.article>
-            );
-          })}
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.65 }}
-          className="relative mt-8 overflow-hidden rounded-[20px] bg-[#0b1131] px-6 py-10 text-center md:px-12 md:py-12"
-        >
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-red-600" />
-          <p className="text-[clamp(26px,3.2vw,48px)] font-bold uppercase leading-[1.08] tracking-[-0.02em] text-white">
-            The <span className="text-red-500">Spoor</span> Name Is Our Promise.
-          </p>
-          <p className="mx-auto mt-5 max-w-[900px] text-[16px] leading-[1.7] text-white/80 md:text-[18px]">
-            For four generations, our family name has stood behind the work we do. Every employee who wears the Spoor's name carries that reputation forward.
-          </p>
-
-          <div className="mx-auto mt-8 grid max-w-[980px] gap-4 border-t border-white/15 pt-8 text-white md:grid-cols-3">
-            <div className="flex min-h-[96px] items-center justify-center rounded-[12px] border border-white/15 bg-white/[0.04] px-5 text-[17px] font-semibold leading-[1.35]">
-              We're in the Business of Caring for People!
-            </div>
-            <div className="flex min-h-[96px] items-center justify-center rounded-[12px] border border-white/15 bg-white/[0.04] px-5 text-[17px] font-semibold leading-[1.35]">
-              Serving Families Like Yours
-            </div>
-            <div className="flex min-h-[96px] flex-col items-center justify-center rounded-[12px] border border-white/15 bg-white/[0.04] px-5">
-              <span className="text-[12px] font-semibold uppercase tracking-[0.16em] text-white/65">Since</span>
-              <span className="text-[34px] font-bold leading-none text-red-500">1925</span>
-              <span className="mt-1 text-[12px] font-semibold uppercase tracking-[0.1em] text-white/80">Four Generations Strong</span>
-            </div>
+                {line}
+              </motion.p>
+            ))}
           </div>
         </motion.div>
+      </div>
+    </motion.article>
+  );
+}
+
+function PromisePanel() {
+  const panelRef = useRef(null);
+  const reduceMotion = useReducedMotion();
+  const { scrollYProgress } = useScroll({
+    target: panelRef,
+    offset: ["start end", "end start"],
+  });
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 85,
+    damping: 28,
+    mass: 0.8,
+  });
+  const ghostY = useTransform(smoothProgress, [0, 1], reduceMotion ? [0, 0] : [70, -80]);
+  const titleX = useTransform(smoothProgress, [0, 1], reduceMotion ? [0, 0] : [-30, 30]);
+
+  return (
+    <motion.div
+      ref={panelRef}
+      initial={reduceMotion ? false : { opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.85, ease }}
+      className="relative mt-[clamp(70px,10vw,150px)] overflow-hidden rounded-[26px] bg-[#e31e24] text-white shadow-[0_30px_80px_rgba(107,13,17,0.22)]"
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-[0.13]"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 18% 20%, rgba(255,255,255,.8) 0 1px, transparent 1.2px), radial-gradient(circle at 78% 70%, rgba(255,255,255,.55) 0 1px, transparent 1.2px)",
+          backgroundSize: "19px 19px, 27px 27px",
+        }}
+      />
+      <motion.span
+        aria-hidden="true"
+        style={{ y: ghostY }}
+        className="pointer-events-none absolute -right-[0.06em] -top-[0.2em] select-none text-[clamp(160px,28vw,520px)] font-bold leading-none tracking-[-0.1em] text-white/[0.075]"
+      >
+        1925
+      </motion.span>
+
+      <div className="relative z-10 grid gap-12 px-6 py-12 sm:px-10 sm:py-16 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20 lg:px-[clamp(48px,6vw,100px)] lg:py-[clamp(70px,8vw,126px)]">
+        <div>
+          <p className="text-[12px] font-semibold uppercase tracking-[0.19em] text-white/70 sm:text-[13px]">
+            Four generations strong
+          </p>
+          <motion.h3
+            style={{ x: titleX }}
+            className="mt-5 max-w-[880px] text-[clamp(48px,7vw,112px)] font-bold leading-[0.88] tracking-[-0.06em]"
+          >
+            The Spoor name is our promise.
+          </motion.h3>
+        </div>
+
+        <div className="flex flex-col justify-end">
+          <p className="max-w-[580px] text-[17px] leading-[1.7] text-white/88 sm:text-[19px]">
+            For four generations, our family name has stood behind the work we do. Every employee who wears the Spoor’s name carries that reputation forward.
+          </p>
+        </div>
+      </div>
+
+      <div className="relative z-10 grid border-t border-white/25 md:grid-cols-3">
+        {[
+          ["Our business", "Caring for people"],
+          ["Our community", "Serving families like yours"],
+          ["Our history", "Since 1925"],
+        ].map(([label, statement], index) => (
+          <motion.div
+            key={label}
+            initial={reduceMotion ? false : { opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.55, delay: index * 0.08, ease }}
+            className="border-b border-white/25 px-6 py-7 last:border-b-0 md:border-b-0 md:border-r md:px-9 md:py-9 md:last:border-r-0 lg:px-12"
+          >
+            <p className="text-[11px] font-semibold uppercase tracking-[0.17em] text-white/60">
+              {label}
+            </p>
+            <p className="mt-2 text-[20px] font-semibold leading-[1.18] tracking-[-0.02em] sm:text-[24px]">
+              {statement}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  );
+}
+
+export default function OverviewValues() {
+  const sectionRef = useRef(null);
+  const reduceMotion = useReducedMotion();
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 75,
+    damping: 26,
+    mass: 0.85,
+  });
+  const wordX = useTransform(smoothProgress, [0, 1], reduceMotion ? [0, 0] : [80, -120]);
+
+  return (
+    <section
+      ref={sectionRef}
+      className="relative overflow-hidden bg-[#f1eee7] py-[clamp(78px,10vw,160px)] text-[#171717]"
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-[0.42]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(23,23,23,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(23,23,23,.025) 1px, transparent 1px)",
+          backgroundSize: "42px 42px",
+          maskImage: "linear-gradient(to bottom, transparent, black 12%, black 88%, transparent)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent, black 12%, black 88%, transparent)",
+        }}
+      />
+
+      <motion.div
+        aria-hidden="true"
+        style={{ x: wordX }}
+        className="pointer-events-none absolute left-[-0.08em] top-[0.04em] whitespace-nowrap text-[clamp(120px,21vw,390px)] font-bold leading-none tracking-[-0.085em] text-[#171717]/[0.035]"
+      >
+        THE SPOOR STANDARD
+      </motion.div>
+
+      <div className="site-shell relative z-10">
+        <div className="grid items-start gap-12 lg:grid-cols-[minmax(280px,0.72fr)_minmax(0,1.55fr)] lg:gap-[clamp(60px,7vw,120px)]">
+          <motion.aside
+            initial={reduceMotion ? false : { opacity: 0, y: 26 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.75, ease }}
+            className="lg:sticky lg:top-[150px]"
+          >
+            <div className="flex items-center gap-3">
+              <span className="h-2.5 w-2.5 rounded-full bg-[#e31e24]" />
+              <p className="text-[12px] font-semibold uppercase tracking-[0.19em] text-[#171717]/58 sm:text-[13px]">
+                Our core. Our culture. Our commitment.
+              </p>
+            </div>
+            <h2 className="mt-6 max-w-[620px] text-[clamp(50px,7vw,104px)] font-bold leading-[0.9] tracking-[-0.065em]">
+              Five values.
+              <span className="block text-[#e31e24]">One name.</span>
+            </h2>
+            <p className="mt-7 max-w-[520px] text-[17px] leading-[1.7] text-[#55524c] sm:text-[18px]">
+              These are not wall art. They are the standard for how we care for customers, work with our teammates, and carry the Spoor’s name into every home.
+            </p>
+
+            <div className="mt-10 flex max-w-[420px] items-center border-y border-[#171717]/15 py-5">
+              {values.map((value, index) => (
+                <motion.span
+                  key={`${value.letter}-${index}`}
+                  initial={reduceMotion ? false : { opacity: 0, y: 12 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.45, delay: index * 0.06, ease }}
+                  className="flex-1 text-center text-[28px] font-bold tracking-[-0.06em] text-[#171717] first:text-[#e31e24]"
+                >
+                  {value.letter}
+                </motion.span>
+              ))}
+            </div>
+          </motion.aside>
+
+          <div>
+            {values.map((value) => (
+              <ValueStatement key={value.title} value={value} />
+            ))}
+          </div>
+        </div>
+
+        <PromisePanel />
       </div>
     </section>
   );

@@ -12,9 +12,11 @@
 
 ### Primary About page
 
-- Added a responsive HTML section that carries all five SPOOR values from the supplied infographic.
-- Added the culture line, promise statement, four-generation message, family-service message, caring-for-people message, and 1925 statement.
-- Kept secondary About routes unchanged.
+- Rebuilt the SPOOR values section as a 2026 editorial, type-led experience with no stock interface icons.
+- Added a sticky values introduction, oversized letter system, numbered statements, refined hover states, and spring-smoothed scroll motion.
+- Replaced the generic navy promise card with a full-width red brand statement and animated 1925 detail.
+- Preserved all five SPOOR values, the culture line, promise statement, four-generation message, family-service message, caring-for-people message, and 1925 statement.
+- Added reduced-motion handling and kept secondary About routes unchanged.
 
 ### Cloudflare Pages preparation
 
