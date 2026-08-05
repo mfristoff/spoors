@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { images } from "@/lib/siteConfig";
 import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
+import { getSubServiceCta } from "@/lib/serviceQuoteCopy";
 import Hero from "@/pages/home/Hero";
 import NewHeader from "@/pages/home/new/NewHeader";
 import LazySection from "@/components/ui/LazySection";
@@ -55,6 +56,49 @@ const residentialServices = [
   activeColor: "bg-figma-accent",
   inactiveColor: "bg-figma-color-11"
 }];
+
+const homeServiceItems = [
+  {
+    title: "Furnace & Heating Repair",
+    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ca254f5b4_Bolt.svg",
+    quoteTitle: "Heating Repairs",
+    service: "Heating",
+  },
+  {
+    title: "AC Repair & Emergency Service",
+    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/06fc054f4_Bolt-Blue.svg",
+    quoteTitle: "Urgent AC Repairs",
+    service: "Air Conditioning",
+  },
+  {
+    title: "Planned Maintenance (Home Comfort Club)",
+    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c68e38fec_Green-Bolt.svg",
+    quoteTitle: "Enrollment & Plan Review",
+    service: "Home Comfort Club",
+  },
+  {
+    title: "Air Quality Testing",
+    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b8b5f621_Bolt-Light-Green.svg",
+    quoteTitle: "HVAC Indoor Air Quality Services",
+    service: "Indoor Air Quality",
+  },
+  {
+    title: "Smart Thermostat Installation",
+    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a112d3954_OJ-Bolt.svg",
+    quoteTitle: "Smart Thermostat Installation",
+    service: "Smart Thermostat Installation",
+  },
+];
+
+const servicePillStagger = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.06 } },
+};
+
+const servicePillEntrance = {
+  hidden: { opacity: 0, y: 16, scale: 0.99 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: EASE_SMOOTH } },
+};
 
 
 export default function HomePage() {
@@ -225,32 +269,37 @@ export default function HomePage() {
 
               <div className="flex flex-col gap-10 mt-10 lg:mt-0">
                 <div className="flex flex-col gap-5">
-                  <div className="flex flex-col gap-4">
-                    <div className="flex flex-col md:flex-row md:flex-wrap gap-3">
-                      <div className="flex items-center gap-4 py-3 px-4 min-h-[60px] bg-figma-primary rounded-[15px] shadow-[inset_0_0_0_1px_#eaeaea] w-full">
-                        <img className="w-6 h-6 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ca254f5b4_Bolt.svg" alt="Icon" />
-                        <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-text-1">Furnace & Heating Repair</span>
-                      </div>
-                      <div className="flex items-center gap-4 py-3 px-4 min-h-[60px] bg-figma-primary rounded-[15px] shadow-[inset_0_0_0_1px_#eaeaea] w-full">
-                        <img className="w-6 h-6 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/06fc054f4_Bolt-Blue.svg" alt="Icon" />
-                        <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-text-1">AC Repair & Emergency Service</span>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-4 py-3 px-4 min-h-[60px] bg-figma-primary rounded-[15px] shadow-[inset_0_0_0_1px_#eaeaea] w-full">
-                      <img className="w-6 h-6 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c68e38fec_Green-Bolt.svg" alt="Icon" />
-                      <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-text-1">Planned Maintenance (Home Comfort Club)</span>
-                    </div>
-                    <div className="flex flex-col md:flex-row md:flex-wrap gap-3">
-                      <div className="flex items-center gap-4 py-3 px-4 min-h-[60px] bg-figma-primary rounded-[15px] shadow-[inset_0_0_0_1px_#eaeaea] w-full">
-                        <img className="w-6 h-6 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b8b5f621_Bolt-Light-Green.svg" alt="Icon" />
-                        <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-text-1">Air Quality Testing</span>
-                      </div>
-                      <div className="flex items-center gap-4 py-3 px-4 min-h-[60px] bg-figma-primary rounded-[15px] shadow-[inset_0_0_0_1px_#eaeaea] w-full">
-                        <img className="w-6 h-6 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a112d3954_OJ-Bolt.svg" alt="Icon" />
-                        <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-text-1">Smart Thermostat Installation</span>
-                      </div>
-                    </div>
-                  </div>
+                  <motion.div
+                    variants={servicePillStagger}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-60px" }}
+                    className="flex flex-col gap-4"
+                  >
+                    {homeServiceItems.map((item) => (
+                      <motion.button
+                        key={item.title}
+                        type="button"
+                        variants={servicePillEntrance}
+                        whileHover={{ y: -2, scale: 1.005 }}
+                        whileTap={{ scale: 0.992 }}
+                        onClick={() =>
+                          setQuote({
+                            open: true,
+                            ...getSubServiceCta(item.quoteTitle, item.service),
+                          })
+                        }
+                        className="group flex min-h-[60px] w-full items-center gap-4 rounded-[15px] bg-figma-primary px-4 py-3 text-left shadow-[inset_0_0_0_1px_#eaeaea] transition-shadow duration-300 hover:shadow-[inset_0_0_0_1px_#e2bcbc,0_8px_20px_rgba(12,18,40,0.07)]"
+                        aria-label={`Request a quote for ${item.title}`}
+                      >
+                        <img className="h-6 w-6 object-contain transition-transform duration-300 group-hover:scale-110" src={item.icon} alt="" aria-hidden="true" />
+                        <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-text-1 transition-colors duration-300 group-hover:text-[#c81e1e]">
+                          {item.title}
+                        </span>
+                        <ArrowRight className="ml-auto h-4 w-4 text-[#b6b6b6] opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#c81e1e] group-hover:opacity-100" />
+                      </motion.button>
+                    ))}
+                  </motion.div>
                 </div>
 
                 <Link to="/services/" className="flex items-center gap-2.5 w-fit transition-colors group">
@@ -398,10 +447,10 @@ export default function HomePage() {
           <ServiceQuoteModal
             open={quote.open}
             onClose={() => setQuote({ open: false })}
-            service="HVAC"
-            eyebrow="FREE HVAC QUOTE"
-            headline="Let’s Restore Your Comfort"
-            support="Tell us what's going on with your heating or cooling and choose a time that works for you. Spoor's will review your request and follow up with clear next steps."
+            service={quote.service || "HVAC"}
+            eyebrow={quote.eyebrow || "FREE HVAC QUOTE"}
+            headline={quote.headline || "Let’s Restore Your Comfort"}
+            support={quote.support || "Tell us what's going on with your heating or cooling and choose a time that works for you. Spoor's will review your request and follow up with clear next steps."}
           />
         </Suspense>
       )}

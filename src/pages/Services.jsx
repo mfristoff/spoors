@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useSeo } from "@/lib/useSeo";
 import { services } from "@/lib/siteConfig";
+import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { Image } from "@/components/ui/image";
 import {
   Accordion,
@@ -45,6 +46,73 @@ const SLUG_CATEGORY = {
   "planned-maintenance": "clean",
 };
 
+const SERVICE_PANEL_IMAGES = {
+  "air-conditioning": [
+    spoorsImageLibrary.acRepairTechnician,
+    spoorsImageLibrary.acMaintenance,
+    spoorsImageLibrary.rooftopAcInstallation,
+    spoorsImageLibrary.acServiceAppointment,
+    spoorsImageLibrary.airFilterReplacement,
+  ],
+  heating: [
+    spoorsImageLibrary.furnaceRepair,
+    spoorsImageLibrary.heatPumpMaintenance,
+    spoorsImageLibrary.heatPumpService,
+    spoorsImageLibrary.heatingSystemRepair,
+    spoorsImageLibrary.hvacFilterService,
+  ],
+  "indoor-air-quality": [
+    spoorsImageLibrary.airFilterReplacement,
+    spoorsImageLibrary.hvacFilterService,
+    spoorsImageLibrary.centralAirConditioningUnits,
+    spoorsImageLibrary.airConditionerFilterMaintenance,
+    spoorsImageLibrary.ductlessAcCleaning,
+  ],
+  "emergency-repairs": [
+    spoorsImageLibrary.acRepairTechnician,
+    spoorsImageLibrary.furnaceRepair,
+    spoorsImageLibrary.acDiagnosticTesting,
+    spoorsImageLibrary.hvacTechnician,
+    spoorsImageLibrary.hvacSystemRepair,
+  ],
+  "maintenance-tune-ups": [
+    spoorsImageLibrary.acMaintenance,
+    spoorsImageLibrary.heatPumpMaintenance,
+    spoorsImageLibrary.acDiagnosticTesting,
+    spoorsImageLibrary.airFilterReplacement,
+    spoorsImageLibrary.hvacFilterService,
+  ],
+  "ductless-mini-splits": [
+    spoorsImageLibrary.miniSplitInstallation,
+    spoorsImageLibrary.ductlessMiniSplitRepair,
+    spoorsImageLibrary.ductlessAcCleaning,
+    spoorsImageLibrary.miniSplitMaintenance,
+    spoorsImageLibrary.miniSplitInstallation,
+  ],
+  "swamp-coolers": [
+    spoorsImageLibrary.swampCoolerHero,
+    spoorsImageLibrary.swampCoolerRooftop,
+    spoorsImageLibrary.swampCoolerPatio,
+    spoorsImageLibrary.swampCoolerCloseupStucco,
+    spoorsImageLibrary.swampCoolerIndustrialBay,
+  ],
+  "water-heater-services": [
+    "/assets/images/water-heaters/water-heater-repair.webp",
+    "/assets/images/water-heaters/spoors-auburn-ca-water-heater-installation-hero.webp",
+    "/assets/images/water-heaters/tankless-water-heater.webp",
+    "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-service-technician.webp",
+    "/assets/images/water-heaters/water-heater-service-closeup.webp",
+    "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp",
+  ],
+  "planned-maintenance": [
+    spoorsImageLibrary.acMaintenance,
+    spoorsImageLibrary.heatPumpMaintenance,
+    spoorsImageLibrary.hvacFilterService,
+    spoorsImageLibrary.acDiagnosticTesting,
+    spoorsImageLibrary.acServiceAppointment,
+  ],
+};
+
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
@@ -54,6 +122,123 @@ const fadeDown = {
   hidden: { opacity: 0, y: -40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
 };
+
+function ServiceShowcaseCard({ service, index, openQuoteFor }) {
+  const flip = index % 2 === 1;
+  const cat = CATEGORY[SLUG_CATEGORY[service.slug] || "heat"];
+  const initialValue = `svc-${service.slug}-0`;
+  const [activeValue, setActiveValue] = useState(initialValue);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const panelImages = SERVICE_PANEL_IMAGES[service.slug] || [service.image];
+  const activeImage = panelImages[activeIndex] || service.image;
+  const activeTitle = service.subServices[activeIndex]?.title || service.title;
+
+  const handleValueChange = (value) => {
+    setActiveValue(value);
+    if (!value) return;
+    const nextIndex = Number(value.split("-").pop());
+    if (Number.isInteger(nextIndex)) setActiveIndex(nextIndex);
+  };
+
+  return (
+    <motion.article
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-80px" }}
+      variants={fadeUp}
+      className="grid w-full overflow-hidden rounded-[20px] border border-border-light bg-white lg:grid-cols-2"
+    >
+      <div className={cn("order-2 flex flex-col gap-7 px-3 pt-8 pb-5 lg:p-12", !flip && "lg:order-1")}>
+        <div className="flex items-center gap-3">
+          <span className="grid h-10 w-10 place-items-center rounded-full" style={{ backgroundColor: `${cat.color}1a` }}>
+            <img src={cat.bolt} alt="" aria-hidden="true" className="h-5 w-5" style={{ transform: `rotate(${cat.rotate}deg)` }} />
+          </span>
+          <span className="text-sm font-semibold uppercase tracking-wide" style={{ color: cat.color }}>
+            {service.title}
+          </span>
+        </div>
+        <h3 className="font-heading text-[clamp(26px,2.5vw,44px)] font-bold leading-[1.05] tracking-[-0.01em] text-ink-950">
+          {service.headline}
+        </h3>
+        <p className="text-[17px] leading-[1.6] text-ink-600">{service.overview}</p>
+
+        <Accordion
+          type="single"
+          collapsible
+          value={activeValue}
+          onValueChange={handleValueChange}
+          className="flex flex-col gap-3"
+        >
+          {service.subServices.map((sub, subIndex) => (
+            <AccordionItem
+              key={sub.title}
+              value={`svc-${service.slug}-${subIndex}`}
+              className="group overflow-hidden rounded-[14px] border transition-all duration-300 data-[state=closed]:border-[#f2dcdc] data-[state=closed]:bg-soft-red data-[state=open]:border-[#e8e8e8] data-[state=open]:bg-white data-[state=open]:shadow-[0_2px_14px_rgba(5,13,56,0.06)] data-[state=closed]:hover:border-[#e9c4c4] data-[state=closed]:hover:bg-[#fbe4e4]"
+            >
+              <AccordionTrigger className="gap-4 px-5 py-4 hover:no-underline [&>svg]:hidden">
+                <span className="w-full text-left text-[17px] font-bold leading-[1.35] tracking-[-0.01em] text-ink-950 md:text-[19px]">
+                  {sub.title}
+                </span>
+                <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-black/5 bg-white/70 text-ink-600 transition-transform duration-300 group-data-[state=open]:rotate-180 group-data-[state=open]:bg-soft-red">
+                  <ChevronDown className="h-4 w-4" />
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="px-5 pb-5 pt-0">
+                <p className="text-[15px] leading-[1.6] text-ink-600">{sub.description}</p>
+                {(() => {
+                  const cta = getSubServiceCta(sub.title, service.title);
+                  return (
+                    <button
+                      type="button"
+                      onClick={() => openQuoteFor(cta)}
+                      className="group relative mt-4 mb-2 inline-flex items-center gap-2 whitespace-nowrap text-[15px] font-semibold text-[#858893] transition-colors duration-300 group-hover:text-[#e31e24]"
+                    >
+                      <span className="relative inline-block">
+                        {cta.cta}
+                        <motion.span
+                          initial={{ scaleX: 0 }}
+                          animate={{ scaleX: 1 }}
+                          transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
+                          className="absolute -bottom-1 left-0 h-0.5 w-full origin-left bg-[#858893] transition-colors duration-300 group-hover:bg-[#e31e24]"
+                          aria-hidden="true"
+                        />
+                      </span>
+                      <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+                    </button>
+                  );
+                })()}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+
+      <div className={cn("relative order-1 min-h-[300px] overflow-hidden bg-[#e9e9e9] lg:min-h-full", !flip && "lg:order-2")}>
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={`${service.slug}-${activeIndex}`}
+            initial={{ opacity: 0, scale: 1.025 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute inset-0"
+          >
+            <Image src={activeImage} alt={`${activeTitle} from Spoor's Heating & Air`} fittingType="fill" className="h-full w-full object-cover" />
+          </motion.div>
+        </AnimatePresence>
+        <div className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%), rgba(0,0,0,0.2)" }} />
+        <div className="absolute inset-x-5 bottom-5 flex max-w-[726px] flex-col gap-4 rounded-[14px] border border-white/30 bg-black/45 p-6 backdrop-blur-md sm:flex-row sm:items-center sm:justify-between">
+          <p className="max-w-[420px] text-[clamp(18px,1.3vw,24px)] font-bold leading-tight text-white">
+            {service.short}
+          </p>
+          <Link to={`/services/${service.slug}/`} className="shrink-0 w-full rounded-[9px] bg-red-600 px-6 py-3.5 text-center text-[17px] font-semibold text-white hover:bg-red-700 sm:w-auto">
+            Learn More
+          </Link>
+        </div>
+      </div>
+    </motion.article>
+  );
+}
 
 export default function Services() {
   const [quote, setQuote] = useState(null);
@@ -197,122 +382,14 @@ export default function Services() {
           </motion.div>
 
           <div className="flex w-full flex-col gap-8 md:gap-12 lg:gap-16">
-            {services.map((s, i) => {
-              const flip = i % 2 === 1;
-              const cat = CATEGORY[SLUG_CATEGORY[s.slug] || "heat"];
-              return (
-                <motion.article
-                  key={s.slug}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-80px" }}
-                  variants={fadeUp}
-                  className="grid w-full overflow-hidden rounded-[20px] border border-border-light bg-white lg:grid-cols-2"
-                >
-                  {/* Text side */}
-                  <div className={cn("order-2 flex flex-col gap-7 px-3 pt-8 pb-5 lg:p-12", !flip && "lg:order-1")}>
-                    <div className="flex items-center gap-3">
-                      <span
-                        className="grid h-10 w-10 place-items-center rounded-full"
-                        style={{ backgroundColor: `${cat.color}1a` }}
-                      >
-                        <img
-                          src={cat.bolt}
-                          alt=""
-                          aria-hidden="true"
-                          className="h-5 w-5"
-                          style={{ transform: `rotate(${cat.rotate}deg)` }}
-                        />
-                      </span>
-                      <span
-                        className="text-sm font-semibold uppercase tracking-wide"
-                        style={{ color: cat.color }}
-                      >
-                        {s.title}
-                      </span>
-                    </div>
-                    <h3 className="font-heading text-[clamp(26px,2.5vw,44px)] font-bold leading-[1.05] tracking-[-0.01em] text-ink-950">
-                      {s.headline}
-                    </h3>
-                    <p className="text-[17px] leading-[1.6] text-ink-600">{s.overview}</p>
-
-                    <Accordion
-                      type="single"
-                      collapsible
-                      defaultValue={`svc-${s.slug}-0`}
-                      className="flex flex-col gap-3"
-                    >
-                      {s.subServices.map((sub, j) => (
-                        <AccordionItem
-                          key={j}
-                          value={`svc-${s.slug}-${j}`}
-                          className="group overflow-hidden rounded-[14px] border transition-all duration-300 data-[state=closed]:border-[#f2dcdc] data-[state=closed]:bg-soft-red data-[state=open]:border-[#e8e8e8] data-[state=open]:bg-white data-[state=open]:shadow-[0_2px_14px_rgba(5,13,56,0.06)] data-[state=closed]:hover:border-[#e9c4c4] data-[state=closed]:hover:bg-[#fbe4e4]"
-                        >
-                          <AccordionTrigger className="gap-4 px-5 py-4 hover:no-underline [&>svg]:hidden">
-                            <span className="w-full text-left text-[17px] font-bold leading-[1.35] tracking-[-0.01em] text-ink-950 md:text-[19px]">
-                              {sub.title}
-                            </span>
-                            <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-black/5 bg-white/70 text-ink-600 transition-transform duration-300 group-data-[state=open]:rotate-180 group-data-[state=open]:bg-soft-red">
-                              <ChevronDown className="h-4 w-4" />
-                            </span>
-                          </AccordionTrigger>
-                          <AccordionContent className="px-5 pb-5 pt-0">
-                            <p className="text-[15px] leading-[1.6] text-ink-600">{sub.description}</p>
-                            {(() => {
-                              const cta = getSubServiceCta(sub.title, s.title);
-                              return (
-                                <button
-                                  type="button"
-                                  onClick={() => openQuoteFor(cta)}
-                                  className="group relative mt-4 mb-2 inline-flex items-center gap-2 whitespace-nowrap text-[15px] font-semibold text-[#858893] transition-colors duration-300 group-hover:text-[#e31e24]"
-                                >
-                                  <span className="relative inline-block">
-                                    {cta.cta}
-                                    <motion.span
-                                      initial={{ scaleX: 0 }}
-                                      animate={{ scaleX: 1 }}
-                                      transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
-                                      className="absolute -bottom-1 left-0 h-0.5 w-full origin-left bg-[#858893] transition-colors duration-300 group-hover:bg-[#e31e24]"
-                                      aria-hidden="true"
-                                    />
-                                  </span>
-                                  <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
-                                </button>
-                              );
-                            })()}
-                            </AccordionContent>
-                        </AccordionItem>
-                      ))}
-                    </Accordion>
-                  </div>
-
-                  {/* Image side */}
-                  <div className={cn("relative order-1 min-h-[300px] lg:min-h-full", !flip && "lg:order-2")}>
-                    <Image
-                      src={s.image}
-                      alt={s.title}
-                      fittingType="fill"
-                      className="h-full w-full object-cover"
-                    />
-                    <div
-                      className="pointer-events-none absolute inset-0"
-                      style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 100%), rgba(0,0,0,0.2)" }}
-                    />
-                    <div className="absolute inset-x-5 bottom-5 flex max-w-[726px] flex-col gap-4 rounded-[14px] border border-white/30 bg-black/45 p-6 backdrop-blur-md sm:flex-row sm:items-center sm:justify-between">
-                      <p className="max-w-[420px] text-[clamp(18px,1.3vw,24px)] font-bold leading-tight text-white">
-                        {s.short}
-                      </p>
-                      <Link
-                        to={`/services/${s.slug}/`}
-                        className="shrink-0 w-full rounded-[9px] bg-red-600 px-6 py-3.5 text-center text-[17px] font-semibold text-white hover:bg-red-700 sm:w-auto"
-                      >
-                        Learn More
-                      </Link>
-                    </div>
-                  </div>
-                </motion.article>
-              );
-            })}
+            {services.map((service, index) => (
+              <ServiceShowcaseCard
+                key={service.slug}
+                service={service}
+                index={index}
+                openQuoteFor={openQuoteFor}
+              />
+            ))}
           </div>
         </div>
       </section>

@@ -160,7 +160,7 @@ function PromisePanel() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.85, ease }}
-      className="relative mt-[clamp(70px,10vw,150px)] overflow-hidden rounded-[26px] bg-[#ead8d3] text-[#221f1e] shadow-[0_30px_80px_rgba(74,45,41,0.14)]"
+      className="relative mt-[clamp(70px,10vw,150px)] overflow-hidden rounded-[26px] bg-[#efe7e3] text-[#221f1e] shadow-[0_30px_80px_rgba(74,45,41,0.14)]"
     >
       <div
         aria-hidden="true"
@@ -174,7 +174,7 @@ function PromisePanel() {
       <motion.span
         aria-hidden="true"
         style={{ y: ghostY }}
-        className="pointer-events-none absolute -right-[0.06em] -top-[0.2em] select-none text-[clamp(160px,28vw,520px)] font-bold leading-none tracking-[-0.1em] text-[#a55d56]/[0.08]"
+        className="pointer-events-none absolute -right-[0.06em] -top-[0.2em] select-none text-[clamp(160px,28vw,520px)] font-bold leading-none tracking-[-0.1em] text-[#a55d56]/[0.06]"
       >
         1925
       </motion.span>
@@ -186,9 +186,9 @@ function PromisePanel() {
           </p>
           <motion.h3
             style={{ x: titleX }}
-            className="mt-5 max-w-[880px] text-[clamp(48px,7vw,112px)] font-bold leading-[0.88] tracking-[-0.06em]"
+            className="mt-5 max-w-[880px] text-[clamp(48px,7vw,112px)] font-bold leading-[0.88] tracking-[-0.05em]"
           >
-            The Spoor name is our promise.
+            <span>The Spoor na</span><span className="tracking-[-0.035em]">me</span><span> is our promise.</span>
           </motion.h3>
         </div>
 
@@ -280,9 +280,13 @@ export default function OverviewValues() {
                 Our core. Our culture. Our commitment.
               </p>
             </div>
-            <h2 className="mt-6 max-w-[620px] text-[clamp(50px,7vw,104px)] font-bold leading-[0.9] tracking-[-0.065em]">
-              Five values.
-              <span className="block text-[#c84d4b]">One name.</span>
+            <h2 className="mt-6 max-w-[620px] text-[clamp(50px,7vw,104px)] font-bold leading-[0.9] tracking-[-0.055em]">
+              <span aria-label="Five values.">
+                <span>Fi</span><span className="tracking-[-0.032em]">ve</span><span> val</span><span className="tracking-[-0.032em]">ues.</span>
+              </span>
+              <span className="block text-[#c84d4b]" aria-label="One name.">
+                <span>O</span><span className="tracking-[-0.03em]">ne</span><span> na</span><span className="tracking-[-0.03em]">me.</span>
+              </span>
             </h2>
             <p className="mt-7 max-w-[520px] text-[17px] leading-[1.7] text-[#55524c] sm:text-[18px]">
               These values guide how we serve customers, support our team, and make decisions on every job.
