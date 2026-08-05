@@ -7,7 +7,7 @@ const BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04
 export default function OverviewHero() {
   return (
     <section className="relative min-h-[560px] overflow-hidden bg-[#0a1226]">
-      <img src={spoorsImageLibrary.hvacTechnician} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" style={{ objectPosition: "center 65%" }} loading="eager" />
+      <img src={spoorsImageLibrary.hvacTechnician} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover object-[62%_42%] lg:object-[72%_42%]" loading="eager" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/65 to-black/85" />
 
       <div className="relative z-10 flex min-h-[560px] flex-col">

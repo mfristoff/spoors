@@ -260,7 +260,7 @@ export default function OverviewValues() {
       <motion.div
         aria-hidden="true"
         style={{ x: wordX }}
-        className="pointer-events-none absolute left-[-0.08em] top-[0.04em] whitespace-nowrap text-[clamp(120px,21vw,390px)] font-bold leading-none tracking-[-0.085em] text-[#171717]/[0.035]"
+        className="pointer-events-none absolute left-[-0.08em] top-[0.04em] whitespace-nowrap text-[clamp(120px,21vw,390px)] font-bold leading-none tracking-[-0.085em] text-[#171717]/[0.028]"
       >
         THE SPOOR STANDARD
       </motion.div>

@@ -14,23 +14,19 @@ const stats = [
     value: "100%",
     description: "Family-owned and locally operated since day one.",
     cardClass: "border-[#dfd0c9] bg-[#f2e5e1] shadow-[0_18px_45px_rgba(74,45,41,0.08)]",
-    ghostTone: "opacity-[0.08]",
-    chipTone: "bg-[#fff3f2]",
+    ghostTone: "opacity-[0.075]",
   },
   {
     value: "5K+",
     description: "Successful comfort tune-ups completed across the region.",
     cardClass: "border-[#ded8cf] bg-[#f6f2ec] shadow-[0_18px_45px_rgba(74,45,41,0.07)]",
-    ghostTone: "opacity-[0.07]",
-    chipTone: "bg-[#fff8f1]",
+    ghostTone: "opacity-[0.068]",
   },
   {
     value: "Zero Hidden Fees",
     description: "No surprise costs. Upfront pricing on every visit.",
     cardClass: "border-[#ded8cf] bg-[#fffdf9] shadow-[0_18px_45px_rgba(74,45,41,0.06)]",
     ghostTone: "opacity-[0.06]",
-    chipTone: "bg-[#fff6f5]",
-    isWordMark: true,
   },
 ];
 
@@ -88,25 +84,18 @@ export default function OverviewStory() {
                 src={BOLT_MARK}
                 alt=""
                 aria-hidden="true"
-                className={`pointer-events-none absolute -right-5 top-0 h-[112px] w-[112px] select-none ${stat.ghostTone}`}
+                className={`pointer-events-none absolute -right-12 -top-12 h-[168px] w-[168px] select-none ${stat.ghostTone}`}
               />
 
-              <div className="relative z-10 flex items-center justify-between">
-                <span className={`inline-flex h-10 w-10 items-center justify-center rounded-full ${stat.chipTone}`}>
-                  <img src={BOLT_MARK} alt="" aria-hidden="true" className="h-[18px] w-[18px]" />
-                </span>
+              <div className="relative z-10 flex h-10 items-center gap-2 pt-1" aria-hidden="true">
+                <span className="h-2 w-2 rounded-full bg-[#c84d4b]" />
+                <span className="h-px w-10 bg-[#c84d4b]/30" />
               </div>
 
               <div className="relative z-10 mt-8 flex min-h-[120px] items-start">
-                {stat.isWordMark ? (
-                  <p className="max-w-[250px] text-[clamp(31px,2.25vw,40px)] font-bold leading-[1.02] tracking-[-0.032em] text-[#24201f]">
-                    {stat.value}
-                  </p>
-                ) : (
-                  <p className="text-[clamp(44px,3.25vw,58px)] font-bold leading-[0.92] tracking-[-0.045em] text-[#24201f]">
-                    {stat.value}
-                  </p>
-                )}
+                <p className="max-w-[285px] text-[clamp(42px,2.8vw,54px)] font-bold leading-[0.92] tracking-[-0.045em] text-[#24201f]">
+                  {stat.value}
+                </p>
               </div>
 
               <p className="relative z-10 mt-auto max-w-[250px] text-[15px] leading-[1.55] text-[#625a57] md:text-[16px]">
@@ -117,8 +106,8 @@ export default function OverviewStory() {
         </motion.div>
       </div>
 
-      <div className="relative w-full lg:h-auto">
-        <img className="absolute inset-0 w-full h-full object-cover object-center lg:object-[72%_center] z-[3]" src={spoorsImageLibrary.acRepairTechnician} alt="Spoor's HVAC technician working on equipment" />
+      <div className="relative min-h-[420px] w-full overflow-hidden lg:my-4 lg:min-h-0 lg:rounded-l-[18px]">
+        <img className="absolute inset-0 z-[3] h-full w-full object-cover object-center lg:object-[72%_center]" src={spoorsImageLibrary.acRepairTechnician} alt="Spoor's HVAC technician working on equipment" />
       </div>
     </section>
   );
