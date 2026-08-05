@@ -98,8 +98,11 @@ function ValueStatement({ value }) {
       <div className="grid min-h-[270px] grid-cols-[74px_minmax(0,1fr)] gap-5 py-9 sm:grid-cols-[96px_minmax(0,1fr)] sm:gap-8 sm:py-12 lg:min-h-[320px] lg:grid-cols-[124px_minmax(0,1fr)] lg:gap-12 lg:py-16">
         <motion.div
           style={{ y: letterY }}
-          className="flex items-center justify-center border-r border-[#171717]/15 pr-5 sm:pr-8"
+          className="relative flex min-h-[190px] items-center justify-center border-r border-[#171717]/15 pr-5 sm:min-h-[220px] sm:pr-8 lg:min-h-[248px]"
         >
+          <span className="absolute left-1/2 top-1 -translate-x-1/2 font-mono text-[10px] font-semibold tracking-[0.2em] text-[#171717]/32 sm:top-2 sm:text-[11px]">
+            {value.number}
+          </span>
           <span
             aria-hidden="true"
             className="select-none text-[clamp(74px,9vw,150px)] font-bold leading-[0.72] tracking-[-0.09em] text-[#c84d4b]"
@@ -115,7 +118,11 @@ function ValueStatement({ value }) {
           <h3 className="max-w-[820px] text-[clamp(31px,4.25vw,68px)] font-bold leading-[0.98] tracking-[-0.045em] text-[#171717]">
             {value.title}
           </h3>
-          <div className="mt-6 grid max-w-[900px] gap-2.5 text-[15px] leading-[1.62] text-[#4e4e4e] sm:mt-8 sm:text-[17px] lg:grid-cols-2 lg:gap-x-12">
+          <div
+            className={`mt-6 grid max-w-[980px] gap-4 text-[15px] leading-[1.62] text-[#4e4e4e] sm:mt-8 sm:text-[17px] lg:items-start lg:gap-x-9 ${
+              value.lines.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-2"
+            }`}
+          >
             {value.lines.map((line, lineIndex) => (
               <motion.p
                 key={line}
@@ -123,7 +130,7 @@ function ValueStatement({ value }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.55, delay: 0.08 * lineIndex, ease }}
-                className={lineIndex === 0 && value.lines.length === 3 ? "lg:row-span-2" : ""}
+                className="max-w-[310px] text-balance"
               >
                 {line}
               </motion.p>
