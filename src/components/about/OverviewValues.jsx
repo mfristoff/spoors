@@ -100,15 +100,17 @@ function ValueStatement({ value }) {
           style={{ y: letterY }}
           className="relative flex min-h-[190px] items-center justify-center border-r border-[#171717]/15 pr-5 sm:min-h-[220px] sm:pr-8 lg:min-h-[248px]"
         >
-          <span className="absolute left-1/2 top-1 -translate-x-1/2 font-mono text-[10px] font-semibold tracking-[0.2em] text-[#171717]/32 sm:top-2 sm:text-[11px]">
-            {value.number}
-          </span>
-          <span
-            aria-hidden="true"
-            className="select-none text-[clamp(74px,9vw,150px)] font-bold leading-[0.72] tracking-[-0.09em] text-[#c84d4b]"
-          >
-            {value.letter}
-          </span>
+          <div className="relative inline-flex items-center justify-center">
+            <span className="absolute -top-7 left-0 font-mono text-[10px] font-semibold tracking-[0.2em] text-[#171717]/16 sm:-top-8 sm:text-[11px]">
+              {value.number}
+            </span>
+            <span
+              aria-hidden="true"
+              className="select-none text-[clamp(74px,9vw,150px)] font-bold leading-[0.72] tracking-[-0.09em] text-[#c84d4b]"
+            >
+              {value.letter}
+            </span>
+          </div>
         </motion.div>
 
         <motion.div style={{ y: copyY }} className="flex flex-col justify-center pr-1 sm:pr-6">
@@ -286,7 +288,7 @@ export default function OverviewValues() {
             </div>
             <h2 className="mt-6 max-w-[620px] text-[clamp(50px,7vw,104px)] font-bold leading-[0.9] tracking-[-0.055em]">
               <span aria-label="Five values.">
-                <span>Fi</span><span className="tracking-[-0.032em]">ve</span><span> val</span><span className="tracking-[-0.032em]">ues.</span>
+                <span className="inline-block">F</span><span className="ml-[0.018em] inline-block">i</span><span className="ml-[0.018em] inline-block">v</span><span>e val</span><span className="tracking-[-0.032em]">ues.</span>
               </span>
               <span className="block text-[#c84d4b]" aria-label="One name.">
                 <span>O</span><span className="tracking-[-0.03em]">ne</span><span> na</span><span className="tracking-[-0.03em]">me.</span>

@@ -30,14 +30,15 @@ export default function MobileSelectSheet({ open, title, options, value, onSelec
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.12, ease: "easeOut" }}
             onClick={onClose}
             className="absolute inset-0 bg-black/45"
           />
           <motion.div
-            initial={{ y: "100%" }}
-            animate={{ y: 0 }}
-            exit={{ y: "100%" }}
-            transition={{ type: "tween", duration: 0.28, ease: [0.32, 0.72, 0, 1] }}
+            initial={{ y: 22, opacity: 0.985 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 16, opacity: 0.985 }}
+            transition={{ type: "tween", duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
             role="listbox"
             aria-label={title}
             className="relative z-10 w-full max-h-[80vh] overflow-hidden rounded-t-[20px] bg-white pb-[env(safe-area-inset-bottom,0px)] shadow-[0_-8px_40px_rgba(5,13,56,0.25)]"

@@ -300,6 +300,28 @@
   .safe-bottom { padding-bottom: env(safe-area-inset-bottom, 0px); }
 }
 
+/* Restrained modal motion shared by Radix dialogs and alerts. */
+@keyframes modal-overlay-in-subtle {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes modal-overlay-out-subtle {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes modal-content-in-subtle {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.994); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+@keyframes modal-content-out-subtle {
+  from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  to { opacity: 0; transform: translate(-50%, -50%) scale(0.996); }
+}
+.modal-overlay-subtle[data-state="open"] { animation: modal-overlay-in-subtle 120ms ease-out both; }
+.modal-overlay-subtle[data-state="closed"] { animation: modal-overlay-out-subtle 100ms ease-in both; }
+.modal-content-subtle[data-state="open"] { animation: modal-content-in-subtle 150ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.modal-content-subtle[data-state="closed"] { animation: modal-content-out-subtle 100ms ease-in both; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;
