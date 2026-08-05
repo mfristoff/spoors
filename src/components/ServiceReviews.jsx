@@ -147,7 +147,7 @@ export default function ServiceReviews({
             <span className="inline-flex items-center gap-2 text-[13px] font-semibold tracking-[0.02em] text-[#616161] opacity-70">
               Reviews on Google · Yelp · Angi
             </span>
-            <button
+            <button type="button"
               onClick={() => scrollByCards(1)}
               aria-label="Next reviews"
               className="w-11 h-11 rounded-full border border-[#e0e0e0] bg-white hover:bg-[#f3f3f3] flex items-center justify-center transition-colors"
@@ -192,7 +192,7 @@ export default function ServiceReviews({
         </div>
 
         <div className="mt-4">
-          <button
+          <button type="button"
             onClick={() => setOpen(true)}
             className="inline-flex items-center gap-1 text-[13px] font-semibold text-[#616161] hover:text-[#e31e24] transition-colors"
           >

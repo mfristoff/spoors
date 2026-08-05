@@ -29,7 +29,7 @@ export default function Button({
   ...props
 }) {
   const classes = cn(
-    "inline-flex items-center justify-center font-semibold rounded-md transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed",
+    "inline-flex cursor-pointer items-center justify-center rounded-md font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200 disabled:cursor-not-allowed disabled:opacity-60",
     variants[variant],
     sizes[size],
     className

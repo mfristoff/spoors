@@ -243,6 +243,16 @@
   a, button, input, select, textarea {
     transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
   }
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+
+  :where(a[href], button, input, select, textarea):focus-visible {
+    outline: 3px solid rgba(227, 30, 36, 0.48);
+    outline-offset: 3px;
+  }
 }
 
 @layer utilities {
@@ -257,11 +267,13 @@
     .container-narrow { padding-left: 2rem; padding-right: 2rem; }
   }
   .site-shell { max-width: calc(var(--site-max-width) + 2 * var(--site-gutter)); margin-left: auto; margin-right: auto; padding-left: var(--site-gutter); padding-right: var(--site-gutter); }
+  .service-row-aligned { padding-left: 5%; padding-right: 5%; }
   @media (min-width: 768px) {
     .announcement-row-aligned { padding-left: max(var(--site-gutter, 115px), calc((100vw - 1440px) / 2)); }
   }
   @media (min-width: 1024px) {
-    .nav-row-aligned { padding-left: max(var(--site-gutter, 115px), calc((100vw - 1440px) / 2)); padding-right: max(var(--site-gutter, 115px), calc((100vw - 1440px) / 2)); }
+    .nav-row-aligned,
+    .service-row-aligned { padding-left: max(var(--site-gutter, 115px), calc((100vw - 1440px) / 2)); padding-right: max(var(--site-gutter, 115px), calc((100vw - 1440px) / 2)); }
   }
   .section-pad { padding-top: 48px; padding-bottom: 48px; }
   @media (min-width: 1024px) {

@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/accordion";
 import { Image } from "@/components/ui/image";
 import { cdnImage } from "@/lib/cdnImage";
+import { business } from "@/lib/siteConfig";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -131,8 +132,8 @@ export default function ServiceDetailLayout({
           <div className="w-full max-w-[1680px] mx-auto px-[5%] xl:px-[clamp(18px,6.2vw,120px)] py-5 lg:py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="w-full text-[14px] font-[440] leading-[1.6] text-white/85 max-w-[640px] text-center sm:text-left">{intro}</p>
             <Link
-              to="/contact-us"
-              className="inline-flex items-center justify-center rounded-[9px] bg-white text-red-600 border border-red-600 hover:bg-red-50 transition-colors h-[48px] px-8 text-[15px] font-semibold shrink-0"
+              to={business.schedulingUrl}
+              className="inline-flex h-[50px] shrink-0 items-center justify-center rounded-[9px] border border-red-700 bg-red-600 px-8 text-[15px] font-semibold text-white shadow-[0_10px_24px_rgba(0,0,0,0.24)] transition-all hover:-translate-y-0.5 hover:bg-red-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/35"
             >
               {scheduleLabel}
             </Link>
@@ -142,12 +143,15 @@ export default function ServiceDetailLayout({
 
       {/* ── SERVICES — PDF LAYOUT: sticky left col + single-column card list right ── */}
       <section className="w-full bg-white py-[clamp(60px,8vw,140px)]">
-        <div className="max-w-[1400px] mx-auto px-[5%] xl:px-[clamp(18px,4vw,80px)]">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-24">
+        <div className="service-row-aligned mx-auto w-full max-w-[1920px]">
+          <div className="flex flex-col gap-8 lg:flex-row lg:gap-16 xl:gap-24">
 
             {/* LEFT — sticky heading column */}
-            <div className="lg:w-[320px] xl:w-[380px] shrink-0">
-              <div className="lg:sticky lg:top-[140px] flex flex-col gap-5">
+            <div className="shrink-0 lg:w-[320px] xl:w-[380px]">
+              <div
+                className="flex flex-col gap-5 lg:sticky"
+                style={{ top: "calc(var(--sticky-header-height, 220px) + 48px)" }}
+              >
                 <div className="flex flex-row items-center gap-[11px]">
                   <LightningPair variant="gold" />
                   <span className="text-[11px] md:text-[13px] font-semibold tracking-[0.06em] text-[#3d3d3d] uppercase">{sectionLabel}</span>
@@ -213,7 +217,7 @@ export default function ServiceDetailLayout({
         <section className="relative w-full overflow-hidden bg-[#0b1131] py-[clamp(64px,8vw,128px)]">
           <div className="pointer-events-none absolute -left-24 -top-24 h-80 w-80 rounded-full border border-white/10" />
           <div className="pointer-events-none absolute -bottom-32 -right-24 h-[28rem] w-[28rem] rounded-full border border-white/10" />
-          <div className="relative z-10 max-w-[1400px] mx-auto px-[5%] xl:px-[clamp(18px,4vw,80px)]">
+          <div className="service-row-aligned relative z-10 mx-auto w-full max-w-[1920px]">
             <div className="grid items-stretch gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
               <motion.div
                 initial={{ opacity: 0, x: -28 }}

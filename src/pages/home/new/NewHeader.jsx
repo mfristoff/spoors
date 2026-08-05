@@ -26,15 +26,29 @@ export default function NewHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
+    const wrap = document.querySelector("[data-new-nav-wrap]");
+    const header = wrap?.closest("header");
+
     const measure = () => {
-      const wrap = document.querySelector("[data-new-nav-wrap]");
       const h = wrap ? Math.round(wrap.getBoundingClientRect().height) : 154;
+      const fullHeaderHeight = header ? Math.round(header.getBoundingClientRect().height) : h + 66;
       document.documentElement.style.setProperty("--collapsed-header-height", `${h}px`);
       document.documentElement.style.setProperty("--expanded-header-height", `${h + 66}px`);
+      document.documentElement.style.setProperty("--sticky-header-height", `${fullHeaderHeight}px`);
     };
+
     measure();
     window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
+
+    const observer = typeof ResizeObserver !== "undefined" && header
+      ? new ResizeObserver(measure)
+      : null;
+    if (observer && header) observer.observe(header);
+
+    return () => {
+      window.removeEventListener("resize", measure);
+      observer?.disconnect();
+    };
   }, []);
 
   useEffect(() => {

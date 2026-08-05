@@ -381,11 +381,12 @@ export default function RebatesPage() {
             <span className="text-[clamp(16px,1.4vw,22px)] font-bold leading-[1.3] tracking-[-0.01em] text-figma-text-2 text-center whitespace-nowrap">
               Didn&rsquo;t find what you were looking for?
             </span>
-            <button className="flex justify-center items-center whitespace-nowrap border-[2.5px] border-ink-100 py-3 px-6 bg-figma-accent rounded-[9px] hover:bg-red-700 transition-colors w-full max-w-[250px]">
-              <span className="whitespace-nowrap text-figma-18 font-semibold leading-figma-29 text-figma-primary">
-                Contact Our Experts
-              </span>
-            </button>
+            <Link
+              to="/contact-us/"
+              className="flex w-full max-w-[250px] items-center justify-center whitespace-nowrap rounded-[9px] border-[2.5px] border-ink-100 bg-figma-accent px-6 py-3 text-figma-18 font-semibold leading-figma-29 text-white transition-colors hover:bg-red-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-red-200"
+            >
+              Contact Our Experts
+            </Link>
           </motion.div>
         </motion.div>
       </section>

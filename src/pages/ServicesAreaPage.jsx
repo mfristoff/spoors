@@ -200,7 +200,7 @@ export default function ServicesAreaPage() {
               <div className="absolute bottom-0 left-0 w-full h-[clamp(210px,28vw,360px)] z-20 pointer-events-none flex items-end justify-center pb-6 lg:pb-8" style={{ background: "linear-gradient(to top, #FAFAFA 0%, #FAFAFA 42%, rgba(250,250,250,0.85) 60%, rgba(250,250,250,0) 100%)" }}>
                 <div className="flex flex-col sm:flex-row items-center gap-6 pointer-events-auto">
                   <p className="text-[clamp(14px,1.35vw,26px)] font-bold leading-[1.1154] tracking-[-0.0115em] text-figma-text-1-2 text-center">Looking for a different area?</p>
-                  <button onClick={handleSeeMore} className="py-3 px-7 bg-figma-accent rounded-[9px] border-2 border-gray-300 hover:bg-red-600 transition-colors">
+                  <button type="button" onClick={handleSeeMore} className="py-3 px-7 bg-figma-accent rounded-[9px] border-2 border-gray-300 hover:bg-red-600 transition-colors">
                     <span className="text-figma-18 font-semibold leading-figma-29 text-figma-primary">See More</span>
                   </button>
                 </div>

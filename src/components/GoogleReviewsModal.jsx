@@ -107,7 +107,7 @@ export default function GoogleReviewsModal({ open, onOpenChange, reviews, onBook
           </div>
           <div className="flex items-center gap-6 mt-3 -mb-px">
             {["Overview", "Reviews", "About"].map((t) => (
-              <button
+              <button type="button"
                 key={t}
                 onClick={() => setTab(t.toLowerCase())}
                 className={`relative pb-2 text-[14px] ${tab === t.toLowerCase() ? "text-[#1a73e8] font-medium" : "text-[#5f6368] hover:text-[#202124]"}`}
@@ -156,7 +156,7 @@ export default function GoogleReviewsModal({ open, onOpenChange, reviews, onBook
               </div>
               <div className="flex flex-wrap gap-2">
                 {CHIPS.map((c) => (
-                  <button
+                  <button type="button"
                     key={c}
                     onClick={() => setChip(c)}
                     className={`px-3 py-1.5 rounded-full text-[12px] border ${chip === c ? "bg-[#1a73e8] text-white border-[#1a73e8]" : "bg-white text-[#3c4043] border-[#dadce0] hover:bg-[#f8f9fa]"}`}
@@ -230,7 +230,7 @@ export default function GoogleReviewsModal({ open, onOpenChange, reviews, onBook
         </div>
 
         <div className="px-5 py-3 border-t border-[#e8eaed] bg-[#f8f9fa] flex items-center justify-center">
-          <button
+          <button type="button"
             onClick={onBook}
             className="inline-flex items-center gap-1.5 text-[13px] font-medium text-[#1a73e8] hover:underline"
           >

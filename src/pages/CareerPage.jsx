@@ -312,7 +312,7 @@ export default function CareerPage() {
                   <h3 className="relative z-10 max-w-[486px] text-[clamp(22px,2vw,38px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-text-2">
                     Don&rsquo;t see your role? Send us your open application anyway.
                   </h3>
-                  <button
+                  <button type="button"
                     onClick={() => openApply("Open Application")}
                     className="relative z-10 mt-8 flex items-center gap-2 self-start rounded-[8px] border-2 border-[#9a9a9a] bg-figma-accent p-3.5 transition-colors hover:bg-red-700 lg:mt-0 lg:absolute lg:bottom-6 lg:right-6 lg:self-end"
                   >
@@ -359,7 +359,7 @@ export default function CareerPage() {
                         </span>
                       </div>
                     </div>
-                    <button
+                    <button type="button"
                       onClick={() => openApply(job.title)}
                       className="flex items-center gap-3.5 text-left"
                     >

@@ -48,7 +48,7 @@ export default function OverviewHero() {
             <p className="max-w-[760px] text-[clamp(14px,1.2vw,18px)] font-medium leading-relaxed text-white">
               Built on a foundation of professional expertise and a customer-first philosophy, we take pride in delivering honest HVAC solutions.
             </p>
-            <button
+            <button type="button"
               onClick={() => window.scrollBy({ top: window.innerHeight * 0.85, behavior: 'smooth' })}
               className="group inline-flex h-[52px] shrink-0 items-stretch overflow-hidden rounded-[9px] shadow-lg"
             >

@@ -306,7 +306,7 @@ export default function SpoorHVAC() {
               <p className="text-figma-18 font-[440] leading-figma-29 tracking-[-0.2px] text-figma-text-4 max-w-[620px] text-center lg:text-left">
                 Join the Comfort Club today and enjoy priority service, exclusive member savings, and year-round peace of mind for your home's heating and cooling.
               </p>
-              <button onClick={() => setClubModalOpen(true)} className="bg-figma-accent rounded-[5px] w-full max-w-[217px] h-[58px] flex flex-row items-center justify-between p-1 pl-4 group hover:bg-red-700 transition-colors shrink-0">
+              <button type="button" onClick={() => setClubModalOpen(true)} className="bg-figma-accent rounded-[5px] w-full max-w-[217px] h-[58px] flex flex-row items-center justify-between p-1 pl-4 group hover:bg-red-700 transition-colors shrink-0">
                 <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-primary mx-auto">
                   Request Details
                 </span>
@@ -348,7 +348,7 @@ export default function SpoorHVAC() {
               <p className="text-figma-20 font-[440] leading-figma-32 text-figma-text-4-2">
                 As a Club member, your technicians perform a comprehensive seasonal tune-up using state-of-the-art digital diagnostics, going beyond quick fixes to prioritize long-term system efficiency and proactive care.
               </p>
-              <button onClick={() => setClubModalOpen(true)} className="bg-figma-accent rounded-[5px] w-full max-w-[217px] h-[58px] flex flex-row items-center justify-between p-1 pl-4 group hover:bg-red-700 transition-colors mt-4">
+              <button type="button" onClick={() => setClubModalOpen(true)} className="bg-figma-accent rounded-[5px] w-full max-w-[217px] h-[58px] flex flex-row items-center justify-between p-1 pl-4 group hover:bg-red-700 transition-colors mt-4">
                 <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-primary mx-auto">
                   Join Now
                 </span>
