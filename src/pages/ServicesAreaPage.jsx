@@ -104,7 +104,7 @@ export default function ServicesAreaPage() {
       <NewHeader />
 
       {/* --- HERO SECTION --- */}
-      <section className="relative w-full bg-[linear-gradient(0deg,_#FFFFFF_0%,_#FFF4F3_100%)] pt-10 md:pt-[120px] pb-8 lg:pb-12 px-4 md:px-[clamp(18px,6.2vw,120px)] flex flex-col items-center overflow-clip">
+      <section className="header-aligned-section relative w-full bg-[linear-gradient(0deg,_#FFFFFF_0%,_#FFF4F3_100%)] pt-10 md:pt-[120px] pb-8 lg:pb-12 flex flex-col items-center overflow-clip">
         <div className="max-w-[1920px] mx-auto w-full flex flex-col items-center relative z-10">
 
           <motion.div
@@ -132,7 +132,7 @@ export default function ServicesAreaPage() {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-10 lg:mt-14 w-full max-w-[1396px] bg-figma-color-14 rounded-[17px] shadow-[inset_0_0_0_1px_#dfdfdf] p-6 lg:p-8 relative overflow-clip"
+            className="mt-10 lg:mt-14 w-full max-w-[1440px] bg-figma-color-14 rounded-[17px] shadow-[inset_0_0_0_1px_#dfdfdf] p-6 lg:p-8 relative overflow-clip"
           >
             {/* Header */}
             <form onSubmit={handleSearch} className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-[clamp(17px,4.5vw,87px)] mb-12 relative z-10">
@@ -217,7 +217,7 @@ export default function ServicesAreaPage() {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={staggerContainer}
-        className="w-full bg-figma-primary pt-8 lg:pt-12 pb-16 lg:pb-[clamp(40px,8.3vw,160px)] px-4 md:px-[clamp(18px,6.2vw,120px)] overflow-clip"
+        className="header-aligned-section w-full bg-figma-primary pt-8 lg:pt-12 pb-16 lg:pb-[clamp(40px,8.3vw,160px)] overflow-clip"
       >
         <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-[clamp(34px,8.9vw,170px)]">
 
@@ -274,7 +274,7 @@ export default function ServicesAreaPage() {
       </motion.section>
 
       {/* --- PROCESS SECTION (triple overlay) --- */}
-      <section className="relative w-full overflow-hidden bg-black py-20 lg:py-[clamp(22px,4.6vw,88px)] px-4 md:px-[clamp(18px,6.2vw,120px)] min-h-[820px] flex flex-col justify-between">
+      <section className="header-aligned-section relative w-full overflow-hidden bg-black py-20 lg:py-[clamp(22px,4.6vw,88px)] min-h-[820px] flex flex-col justify-between">
         <img className="absolute inset-0 w-full h-full object-cover object-left scale-110 z-0" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/fc462779e_53daeb7c3_db34ea7aae804a5a67fcf8501c7ac48b93f3e078.png" alt="HVAC Unit Background" />
 
         {/* Triple overlay — solid base + directional gradient (dark LEFT, clear right) + radial vignette */}

@@ -132,7 +132,7 @@ export default function ServiceReviews({
 
   return (
     <section className="w-full bg-[#f7f7f7] py-[clamp(40px,7vw,110px)]">
-      <div className="max-w-[1440px] mx-auto px-[5%]">
+      <div className="site-shell">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-6 mb-6 sm:mb-9">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">

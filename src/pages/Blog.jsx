@@ -94,7 +94,7 @@ export default function Blog() {
         </AnimatePresence>
 
         {/* Content */}
-        <div className="absolute inset-0 z-10 mx-auto flex max-w-[1680px] flex-col justify-end gap-6 px-4 pb-[clamp(20px,4vw,56px)] pt-[120px] lg:flex-row lg:items-end lg:justify-between lg:gap-10 md:px-[clamp(18px,6.2vw,120px)] lg:pt-0">
+        <div className="header-aligned-shell absolute inset-0 z-10 flex flex-col justify-end gap-6 pb-[clamp(20px,4vw,56px)] pt-[120px] lg:flex-row lg:items-end lg:justify-between lg:gap-10 lg:pt-0">
           {/* Left: title + description + dots */}
           <motion.div
             initial="hidden"
@@ -183,7 +183,7 @@ export default function Blog() {
 
       {/* ── BLOG GRID ── */}
       <section className="w-full bg-white py-16 lg:py-[clamp(30px,6.2vw,120px)]">
-        <div className="mx-auto max-w-[1680px] px-4 md:px-[clamp(18px,6.2vw,120px)]">
+        <div className="header-aligned-shell">
           {/* Section header */}
           <motion.div
             initial="hidden"
@@ -337,7 +337,7 @@ export default function Blog() {
 
       {/* ── CTA SECTION ── */}
       <section className="relative w-full overflow-clip bg-[#050d38] py-16 lg:py-[clamp(25px,5.2vw,100px)]">
-        <div className="relative z-10 mx-auto flex max-w-[1680px] flex-col gap-16 px-4 md:px-[clamp(18px,6.2vw,120px)] lg:gap-[clamp(60px,15.6vw,300px)]">
+        <div className="header-aligned-shell relative z-10 flex flex-col gap-16 lg:gap-[clamp(60px,15.6vw,300px)]">
           <motion.div
             initial="hidden"
             whileInView="visible"

@@ -106,7 +106,7 @@ export default function CareerPage() {
 
       {/* Hero Section — navy band keeps 2 rows: content + full-width images */}
       <section className="w-full bg-figma-highlight-4">
-        <div className="mx-auto max-w-[1440px] px-5 pb-12 pt-12 md:px-8 lg:pb-14 lg:pt-16">
+        <div className="site-shell pb-12 pt-12 lg:pb-14 lg:pt-16">
           <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:gap-12">
             {/* Hero Text */}
             <motion.div
@@ -240,7 +240,7 @@ export default function CareerPage() {
 
       {/* Value Props & Open Positions */}
       <section className="relative w-full bg-figma-color-14 pb-16 pt-16 lg:pb-20 lg:pt-20">
-        <div className="mx-auto max-w-[1440px] px-5 md:px-8">
+        <div className="site-shell">
           <motion.h2
             initial="hidden"
             whileInView="visible"

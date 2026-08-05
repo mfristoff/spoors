@@ -130,7 +130,7 @@ export default function HomePage() {
       <Hero onSchedule={() => setQuote({ open: true })} />
 
       {/* --- VALUE PROP SECTION --- */}
-      <section className="w-full bg-[linear-gradient(180deg,#FFFFFF_0%,#FFF6F6_40%,#FFF6F6_86%,#F9F6F6_100%)] relative py-[clamp(25px,5.2vw,100px)] overflow-clip px-4 md:px-[clamp(18px,6.2vw,120px)] lg:px-[max(115px,calc((100vw_-_1440px)/2))]">
+      <section className="header-aligned-section w-full bg-[linear-gradient(180deg,#FFFFFF_0%,#FFF6F6_40%,#FFF6F6_86%,#F9F6F6_100%)] relative py-[clamp(25px,5.2vw,100px)] overflow-clip">
         <div className="w-full max-w-[1440px] mx-auto relative z-10 flex flex-col md:block">
 
           {/* Header */}
@@ -227,7 +227,7 @@ export default function HomePage() {
       </section>
 
       {/* --- TOTAL COMFORT MANAGEMENT (Bento Blocks) --- */}
-      <section className="w-full bg-figma-primary py-[clamp(25px,5.2vw,100px)] px-4 md:px-[clamp(18px,6.2vw,120px)] flex flex-col gap-12 lg:gap-[clamp(16px,4.2vw,80px)]">
+      <section className="header-aligned-section w-full bg-figma-primary py-[clamp(25px,5.2vw,100px)] flex flex-col gap-12 lg:gap-[clamp(16px,4.2vw,80px)]">
 
         {/* Block 1 */}
         <motion.div

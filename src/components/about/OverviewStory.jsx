@@ -50,7 +50,7 @@ export default function OverviewStory() {
 
   return (
     <section className="relative w-full bg-figma-color-16-3 grid grid-cols-1 lg:grid-cols-[1322fr_598fr]">
-      <div className="flex flex-col justify-center px-6 py-10 md:py-16 lg:pl-[clamp(18px,6.2vw,120px)] lg:pr-[clamp(16px,4.7vw,90px)] lg:py-[clamp(26px,5.5vw,106px)] gap-8 md:gap-12 lg:gap-9 z-10">
+      <div className="header-aligned-left flex flex-col justify-center px-6 py-10 md:py-16 lg:pr-[clamp(16px,4.7vw,90px)] lg:py-[clamp(26px,5.5vw,106px)] gap-8 md:gap-12 lg:gap-9 z-10">
         <motion.div
           initial="hidden"
           whileInView="visible"

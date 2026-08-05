@@ -56,7 +56,7 @@ export default function Testimonial() {
       </section>
 
       {/* REVIEWS — real, multi-source, masonry, subtle highlights */}
-      <section className="w-full bg-[#f7f7f7] px-5 pt-2 pb-14 md:px-8 md:pt-6 lg:px-[clamp(18px,6.2vw,120px)] lg:pt-10 lg:pb-20">
+      <section className="header-aligned-section w-full bg-[#f7f7f7] pt-2 pb-14 md:pt-6 lg:pt-10 lg:pb-20">
         <div className="mx-auto flex max-w-[1440px] flex-col md:block md:columns-2 md:gap-6 lg:columns-3">
           {(() => {
             // Keep only one 4-star review and place it in the middle of the list.

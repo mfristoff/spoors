@@ -3,7 +3,7 @@ import { business } from "@/lib/siteConfig";
 
 export default function NewFooter() {
   return (
-    <footer className="relative w-full overflow-clip bg-[#0c1228] px-4 pt-[220px] pb-[160px] md:pt-[clamp(220px,18vw,280px)] md:pb-[clamp(300px,26vw,460px)] text-white md:px-[clamp(18px,6.2vw,120px)]">
+    <footer className="header-aligned-section relative w-full overflow-clip bg-[#0c1228] pt-[220px] pb-[160px] md:pt-[clamp(220px,18vw,280px)] md:pb-[clamp(300px,26vw,460px)] text-white">
       {/* Bottom-anchored logo watermark — top aligns with the copyright line */}
       <img
         src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/3d0100751_Usethisinthefooter.png"

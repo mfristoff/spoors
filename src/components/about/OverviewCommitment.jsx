@@ -26,7 +26,7 @@ export default function OverviewCommitment() {
   };
 
   return (
-    <section className="relative w-full bg-figma-primary py-10 md:py-16 lg:pt-[clamp(30px,6.2vw,120px)] lg:pb-[clamp(40px,8.3vw,160px)] px-6 lg:px-[clamp(18px,6.2vw,120px)]">
+    <section className="header-aligned-section relative w-full bg-figma-primary py-10 md:py-16 lg:pt-[clamp(30px,6.2vw,120px)] lg:pb-[clamp(40px,8.3vw,160px)]">
       {/* Background Decorative Shapes — soft blush diagonal framing */}
       <div className="pointer-events-none absolute top-[-25%] left-[-18%] z-0 h-[90%] w-[44%] rotate-[14deg] rounded-[120px]" style={{ background: "#FDF5F5" }} />
       <div className="pointer-events-none absolute bottom-[-25%] right-[-18%] z-0 h-[90%] w-[44%] rotate-[-14deg] rounded-[120px]" style={{ background: "#FDF5F5" }} />
@@ -38,7 +38,7 @@ export default function OverviewCommitment() {
       </div>
 
       {/* Main Content Grid */}
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[402fr_1278fr] gap-y-12 lg:gap-y-0 w-full max-w-[1680px] mx-auto">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[402fr_1278fr] gap-y-12 lg:gap-y-0 w-full max-w-[1440px] mx-auto">
 
         {/* Left Column: Section Header */}
         <div className="flex flex-row justify-start items-start gap-[11px] pt-2">

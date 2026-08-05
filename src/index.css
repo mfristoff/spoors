@@ -63,6 +63,7 @@
     /* Shared homepage shell + brand tokens */
     --site-max-width: 1440px;
     --site-gutter: clamp(24px, 6vw, 115px);
+    --header-align-edge: 20px;
     --navy: #050d38;
     --red: #ff2929;
     --burgundy: #570000;
@@ -266,14 +267,19 @@
   @media (min-width: 768px) {
     .container-narrow { padding-left: 2rem; padding-right: 2rem; }
   }
-  .site-shell { max-width: calc(var(--site-max-width) + 2 * var(--site-gutter)); margin-left: auto; margin-right: auto; padding-left: var(--site-gutter); padding-right: var(--site-gutter); }
+  .site-shell { max-width: calc(var(--site-max-width) + 2 * var(--header-align-edge)); margin-left: auto; margin-right: auto; padding-left: var(--header-align-edge); padding-right: var(--header-align-edge); }
+  .header-aligned-section { padding-left: var(--header-align-edge); padding-right: var(--header-align-edge); }
+  .header-aligned-left { padding-left: var(--header-align-edge); }
+  .header-aligned-right { padding-right: var(--header-align-edge); }
+  .header-aligned-shell { max-width: calc(var(--site-max-width) + 2 * var(--header-align-edge)); margin-left: auto; margin-right: auto; padding-left: var(--header-align-edge); padding-right: var(--header-align-edge); }
   .service-row-aligned { padding-left: 5%; padding-right: 5%; }
   @media (min-width: 768px) {
-    .announcement-row-aligned { padding-left: max(var(--site-gutter, 115px), calc((100vw - 1440px) / 2)); }
+    .announcement-row-aligned { padding-left: var(--header-align-edge); padding-right: var(--header-align-edge); }
   }
   @media (min-width: 1024px) {
+    :root { --header-align-edge: max(115px, calc((100vw - var(--site-max-width)) / 2)); }
     .nav-row-aligned,
-    .service-row-aligned { padding-left: max(var(--site-gutter, 115px), calc((100vw - 1440px) / 2)); padding-right: max(var(--site-gutter, 115px), calc((100vw - 1440px) / 2)); }
+    .service-row-aligned { padding-left: var(--header-align-edge); padding-right: var(--header-align-edge); }
   }
   .section-pad { padding-top: 48px; padding-bottom: 48px; }
   @media (min-width: 1024px) {

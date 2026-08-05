@@ -63,7 +63,7 @@ export default function RebatesPage() {
 
         {/* Hero Content — wrapper mirrors the header padding so the right column
              right edge aligns with the header's dark-red CTA column right edge */}
-        <div className="relative z-10 flex-1 flex items-end w-full max-w-[1920px] mx-auto px-4 pt-24 lg:pt-10 pb-12 lg:px-0 lg:pl-[max(115px,calc((100vw-1440px)/2))] lg:pr-[max(115px,calc((100vw-1440px)/2))]">
+        <div className="site-shell relative z-10 flex-1 flex items-end w-full pt-24 lg:pt-10 pb-12">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -97,7 +97,7 @@ export default function RebatesPage() {
       </section>
 
       {/* VALUE PROP GRID */}
-      <section id="why-invest" className="w-full bg-figma-color-11-2 py-20 lg:py-[clamp(32px,6.8vw,130px)] px-4 lg:px-[clamp(18px,6.2vw,120px)]">
+      <section id="why-invest" className="header-aligned-section w-full bg-figma-color-11-2 py-20 lg:py-[clamp(32px,6.8vw,130px)]">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -180,7 +180,7 @@ export default function RebatesPage() {
 
       {/* INCENTIVES SECTION */}
       <section className="w-full bg-figma-primary py-16 lg:py-[clamp(40px,8vw,160px)] relative overflow-clip">
-        <div className="max-w-[1680px] mx-auto px-4 lg:pl-[clamp(18px,6.2vw,120px)] lg:pr-0 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[clamp(40px,7vw,140px)] items-center">
+        <div className="header-aligned-left w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[clamp(40px,7vw,140px)] items-center">
 
           <motion.div
             initial="hidden"
@@ -244,7 +244,7 @@ export default function RebatesPage() {
       </section>
 
       {/* FUNDING TIERS */}
-      <section className="w-full bg-figma-surface py-20 lg:py-[clamp(25px,5.2vw,100px)] px-4 lg:px-[clamp(18px,6.2vw,120px)] flex flex-col items-center relative overflow-clip">
+      <section className="header-aligned-section w-full bg-figma-surface py-20 lg:py-[clamp(25px,5.2vw,100px)] flex flex-col items-center relative overflow-clip">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -271,7 +271,7 @@ export default function RebatesPage() {
       </section>
 
       {/* FAQ SECTION */}
-      <section className="w-full bg-figma-primary py-20 lg:py-[clamp(33px,6.9vw,133px)] px-6 lg:px-[clamp(24px,6.2vw,120px)] relative overflow-clip">
+      <section className="header-aligned-section w-full bg-figma-primary py-20 lg:py-[clamp(33px,6.9vw,133px)] relative overflow-clip">
         {/* Decorative Gears Background */}
         <div className="absolute top-[375px] right-[-100px] lg:right-[calc(50%-960px)] w-full max-w-[257px] min-h-[257px] z-0 pointer-events-none">
           <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/22c12150e_6d225b941_331_191.svg" alt="Gear shadow" className="absolute top-[11px] left-[69px] w-[159px] h-[168px] opacity-50" />

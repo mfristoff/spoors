@@ -221,7 +221,7 @@ export default function Financing2() {
       </section>
 
       {/* --- FEATURES GRID SECTION --- */}
-      <section className="w-full max-w-[1440px] mx-auto bg-figma-primary py-20 lg:py-[clamp(30px,6.2vw,120px)] px-6 lg:px-[clamp(24px,6vw,115px)] flex flex-col items-center gap-16 lg:gap-[clamp(24px,6.2vw,120px)]">
+      <section className="site-shell w-full bg-figma-primary py-20 lg:py-[clamp(30px,6.2vw,120px)] flex flex-col items-center gap-16 lg:gap-[clamp(24px,6.2vw,120px)]">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

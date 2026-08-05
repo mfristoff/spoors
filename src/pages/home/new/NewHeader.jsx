@@ -64,7 +64,7 @@ export default function NewHeader() {
 
       {/* Main nav */}
       <div data-new-nav-wrap className="w-full border-b border-[#e0e0e0] bg-white">
-        <div className="nav-row-aligned mx-auto flex max-w-[1920px] flex-col items-stretch lg:flex-row">
+        <div className="nav-row-aligned mx-auto flex flex-col items-stretch lg:flex-row">
           {/* Logo */}
           <div className="flex h-[72px] w-full items-center justify-between border-b border-[#e0e0e0] px-5 lg:h-auto lg:max-w-[260px] lg:min-h-[154px] lg:flex-col lg:items-center lg:justify-center lg:border-b-0 lg:border-l lg:border-r lg:border-[#e0e0e0] lg:px-[40.5px] lg:py-[32.77px]">
             <Link to="/">

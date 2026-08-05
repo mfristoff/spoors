@@ -143,7 +143,7 @@ export default function Article() {
       <NewHeader />
 
       {/* HERO */}
-      <section className="bg-[#fbf8f8] w-full px-4 md:px-10 lg:px-[clamp(18px,6.2vw,120px)] py-12 lg:py-[clamp(20px,4.1vw,79px)]">
+      <section className="header-aligned-section bg-[#fbf8f8] w-full py-12 lg:py-[clamp(20px,4.1vw,79px)]">
         <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-[clamp(69px,17.9vw,344px)]">
           <motion.div
             className="flex flex-col justify-start items-start gap-8 lg:gap-[clamp(16px,2.7vw,51px)] w-full lg:max-w-[653px]"
@@ -192,7 +192,7 @@ export default function Article() {
       </section>
 
       {/* ARTICLE BODY */}
-      <section className="w-full px-4 md:px-10 lg:px-[clamp(18px,6.2vw,120px)] py-12 lg:py-20 bg-white">
+      <section className="header-aligned-section w-full py-12 lg:py-20 bg-white">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-[402fr_1112fr] gap-12 lg:gap-[clamp(33px,8.6vw,166px)] items-start">
           {/* Mobile TOC — body starts immediately after "In This Article" */}
           {tocSections.length > 0 && (

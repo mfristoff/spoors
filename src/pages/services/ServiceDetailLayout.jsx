@@ -113,7 +113,7 @@ export default function ServiceDetailLayout({
         )}
 
         {/* eyebrow + headline — top-left */}
-        <div className="relative z-10 w-full max-w-[1680px] mx-auto px-[5%] xl:px-[clamp(18px,6.2vw,120px)] pt-[clamp(48px,9vw,140px)]">
+        <div className="site-shell relative z-10 w-full pt-[clamp(48px,9vw,140px)]">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="flex flex-col items-start gap-5 max-w-[820px]">
             <div className="flex flex-row items-center gap-[11px] bg-black/30 backdrop-blur-sm py-2 px-4 rounded-[8px] border border-white/20">
               <LightningPair variant="white" />
@@ -129,7 +129,7 @@ export default function ServiceDetailLayout({
 
         {/* bottom bar — liquid glass, top stroke #515151, intro + Frame37 pill button */}
         <div className="relative z-10 w-full bg-white/5 backdrop-blur-2xl border-t border-[#515151]">
-          <div className="w-full max-w-[1680px] mx-auto px-[5%] xl:px-[clamp(18px,6.2vw,120px)] py-5 lg:py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="site-shell w-full py-5 lg:py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="w-full text-[14px] font-[440] leading-[1.6] text-white/85 max-w-[640px] text-center sm:text-left">{intro}</p>
             <Link
               to={business.schedulingUrl}
@@ -143,7 +143,7 @@ export default function ServiceDetailLayout({
 
       {/* ── SERVICES — PDF LAYOUT: sticky left col + single-column card list right ── */}
       <section className="w-full bg-white py-[clamp(60px,8vw,140px)]">
-        <div className="service-row-aligned mx-auto w-full max-w-[1920px]">
+        <div className="service-row-aligned mx-auto w-full ">
           <div className="flex flex-col gap-8 lg:flex-row lg:gap-16 xl:gap-24">
 
             {/* LEFT — sticky heading column */}
@@ -217,7 +217,7 @@ export default function ServiceDetailLayout({
         <section className="relative w-full overflow-hidden bg-[#0b1131] py-[clamp(64px,8vw,128px)]">
           <div className="pointer-events-none absolute -left-24 -top-24 h-80 w-80 rounded-full border border-white/10" />
           <div className="pointer-events-none absolute -bottom-32 -right-24 h-[28rem] w-[28rem] rounded-full border border-white/10" />
-          <div className="service-row-aligned relative z-10 mx-auto w-full max-w-[1920px]">
+          <div className="service-row-aligned relative z-10 mx-auto w-full ">
             <div className="grid items-stretch gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
               <motion.div
                 initial={{ opacity: 0, x: -28 }}

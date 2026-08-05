@@ -159,7 +159,7 @@ export default function SpoorHVAC() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050404]" />
         </div>
 
-        <div className="nav-row-aligned mx-auto w-full max-w-[1920px] px-5 relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-8 lg:gap-12 pt-20 pb-8 lg:pt-6 lg:pb-6">
+        <div className="nav-row-aligned mx-auto w-full relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-8 lg:gap-12 pt-20 pb-8 lg:pt-6 lg:pb-6">
           {/* Hero Text */}
           <motion.div
             initial="hidden"
@@ -257,7 +257,7 @@ export default function SpoorHVAC() {
       {/* OUR BENEFIT SECTION */}
       <section className="w-full bg-figma-color-17-5 text-figma-primary pt-20 pb-20 lg:pt-[100px] lg:pb-[clamp(32px,6.6vw,127px)]">
         <div className="w-full border-t border-[#515151]" aria-hidden="true" />
-        <div className="container mx-auto px-4 md:px-8 lg:px-[clamp(18px,6.2vw,120px)] max-w-[1636px]">
+        <div className="site-shell">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -266,14 +266,14 @@ export default function SpoorHVAC() {
             className="flex flex-col w-full">
             
             {/* Heading Row */}
-            <div className="flex items-end pt-0 pr-[10px] pb-[clamp(16px,2.1vw,40px)] pl-[24px] min-h-[150px] lg:h-[241px] border-x border-b border-[#515151] w-full lg:max-w-[1396px] mx-auto">
+            <div className="flex items-end pt-0 pr-[10px] pb-[clamp(16px,2.1vw,40px)] pl-[24px] min-h-[150px] lg:h-[241px] border-x border-b border-[#515151] w-full mx-auto">
               <h2 className="text-[clamp(34px,3.23vw,62px)] font-bold leading-[1.0968] tracking-[-0.0194em] text-white">Club Benefits
 
               </h2>
             </div>
 
             {/* Benefit Rows */}
-            <div className="flex flex-col w-full lg:max-w-[1396px] mx-auto">
+            <div className="flex flex-col w-full mx-auto">
               {benefits.map((item, idx) =>
               <motion.div
                 key={idx}
@@ -302,7 +302,7 @@ export default function SpoorHVAC() {
             </div>
 
             {/* Bottom CTA Row */}
-            <div className="flex flex-col lg:flex-row justify-between items-center gap-8 py-10 px-4 border-t border-[#515151] w-full lg:max-w-[1396px] mx-auto mt-20">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-8 py-10 px-4 border-t border-[#515151] w-full mx-auto mt-20">
               <p className="text-figma-18 font-[440] leading-figma-29 tracking-[-0.2px] text-figma-text-4 max-w-[620px] text-center lg:text-left">
                 Join the Comfort Club today and enjoy priority service, exclusive member savings, and year-round peace of mind for your home's heating and cooling.
               </p>
@@ -321,7 +321,7 @@ export default function SpoorHVAC() {
 
       {/* TECHNICIAN SERVICES SECTION */}
       <section className="w-full bg-figma-surface py-20 lg:py-[clamp(28px,5.8vw,112px)]">
-        <div className="container mx-auto px-4 md:px-8 lg:px-[clamp(18px,6.2vw,120px)]">
+        <div className="site-shell">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 lg:gap-[clamp(24px,6.2vw,120px)]">
             {/* Left Content */}
             <motion.div
@@ -406,7 +406,7 @@ export default function SpoorHVAC() {
 
       {/* TESTIMONIALS SECTION — full-width slow marquee */}
       <section className="w-full bg-figma-primary pt-20 lg:pt-[clamp(25px,5.2vw,100px)] pb-16 overflow-clip">
-        <div className="container mx-auto px-4 md:px-8 lg:px-[clamp(18px,6.2vw,120px)] flex flex-col items-center gap-6 text-center">
+        <div className="site-shell flex flex-col items-center gap-6 text-center">
           <img
             src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg"
             alt=""

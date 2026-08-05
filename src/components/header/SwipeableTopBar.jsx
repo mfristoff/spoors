@@ -34,7 +34,7 @@ export default function SwipeableTopBar() {
       </div>
 
       {/* Desktop: carousel controls beside the CTA */}
-      <div className="announcement-row-aligned mx-auto hidden min-h-[66px] max-w-[1920px] items-center justify-between gap-6 py-3 pr-[195.5px] md:flex">
+      <div className="announcement-row-aligned mx-auto hidden min-h-[66px] items-center justify-between gap-6 py-3 md:flex">
         <p className="whitespace-nowrap text-[15px] text-white/90">{SLIDES[index].text}</p>
         <div className="flex items-center gap-3">
           <Link

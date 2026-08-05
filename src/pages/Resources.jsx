@@ -26,7 +26,7 @@ export default function Resources() {
         crumbs={crumbs}
       />
       <section className="section-pad bg-white">
-        <div className="mx-auto w-full max-w-[1440px] px-5 md:px-8">
+        <div className="site-shell">
           <div className="grid gap-6 md:grid-cols-2">
             <Link
               to="/resources/blog/"

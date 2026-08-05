@@ -152,7 +152,7 @@ export default function Hero({ onSchedule }) {
       </div>
 
       {/* History card — floating bottom-right on desktop, left edge aligned with header CTA block */}
-      <div className="pointer-events-none absolute z-10 hidden md:block" style={{ bottom: 187, right: 'calc(195.5px + max(0px, (100vw - 1920px) / 2))' }}>
+      <div className="pointer-events-none absolute z-10 hidden md:block" style={{ bottom: 187, right: 'var(--header-align-edge)' }}>
         <div className="pointer-events-auto">
           <HistoryCard />
         </div>

@@ -78,7 +78,7 @@ export default function ResidentialServicesNew() {
   const theme = s.cold ? COLD : HOT;
 
   return (
-    <section className="relative w-full px-4 py-[clamp(16px,2.6vw,50px)] md:px-[clamp(16px,3.7vw,71px)] lg:py-[clamp(25px,5.2vw,100px)]">
+    <section className="header-aligned-section relative w-full py-[clamp(16px,2.6vw,50px)] lg:py-[clamp(25px,5.2vw,100px)]">
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -94,7 +94,7 @@ export default function ResidentialServicesNew() {
         }}
       />
 
-      <div className="relative z-10 mx-auto w-full max-w-[1778px] rounded-[16px] bg-white shadow-xl">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] rounded-[16px] bg-white shadow-xl">
         <div className="flex flex-col gap-12 p-6 lg:gap-20 lg:p-[clamp(16px,3.9vw,75px)]">
           <div className="flex justify-center">
           <h2 className="text-center text-[clamp(28px,2.8vw,48px)] font-bold leading-[1.1] text-[#4A4A4A]">
