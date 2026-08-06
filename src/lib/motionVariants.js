@@ -20,3 +20,28 @@ export const cardStagger = {
 // Fires while the element is still ~15% below the fold — the animation lands
 // as it arrives rather than after it has already been sitting on screen.
 export const entranceViewport = { once: true, margin: "0px 0px -12% 0px" };
+
+export const HERO_EASE = [0.22, 1, 0.36, 1];
+
+export const heroStagger = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.04 } },
+};
+
+export const heroFadeUp = {
+  hidden: { opacity: 0, y: 16 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.72, ease: HERO_EASE },
+  },
+};
+
+export const heroFadeDown = {
+  hidden: { opacity: 0, y: -14 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.72, ease: HERO_EASE },
+  },
+};

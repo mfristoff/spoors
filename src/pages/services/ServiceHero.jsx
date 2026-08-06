@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { Zap, ArrowUpRight } from "lucide-react";
 import { withServiceGap } from "@/components/ui/ServiceGap";
 import { cdnImage } from "@/lib/cdnImage";
+import { heroFadeDown, heroFadeUp, heroStagger } from "@/lib/motionVariants";
 
 const STRIP_COPY =
   "Built on a foundation of professional expertise and a customer-first philosophy, we take pride in delivering honest HVAC solutions.";
@@ -17,7 +19,6 @@ function Eyebrow({ label }) {
   );
 }
 
-// Force the intended two-line break (split after the first sentence).
 function Headline({ text, className = "", style }) {
   const parts = text.split(". ");
   const first = parts[0] + ".";
@@ -73,7 +74,6 @@ export default function ServiceHero({ image, eyebrow, headline }) {
       className="relative grid w-full"
       style={{ gridTemplateRows: "minmax(0,1fr) auto", minHeight: "calc(100svh - var(--expanded-header-height, 220px))" }}
     >
-      {/* ── Image + headline ── */}
       <div className="relative overflow-hidden" style={{ background: "#000000" }}>
         <img
           src={cdnImage(image, 1920, 1280)}
@@ -93,17 +93,25 @@ export default function ServiceHero({ image, eyebrow, headline }) {
           }}
         />
         <div className="relative z-10 site-shell flex h-full flex-col justify-center" style={{ paddingTop: "7vh", paddingBottom: "7vh" }}>
-          <Eyebrow label={eyebrow} />
-          <Headline
-            text={headline}
-            className="mt-5 max-w-[880px] text-left text-white"
-            style={{ fontSize: "clamp(34px, 4vw, 64px)", lineHeight: 1.08, fontWeight: 700, letterSpacing: "-0.025em" }}
-          />
+          <motion.div initial="hidden" animate="visible" variants={heroStagger} className="max-w-[880px]">
+            <motion.div variants={heroFadeDown}>
+              <Eyebrow label={eyebrow} />
+            </motion.div>
+            <motion.div variants={heroFadeUp}>
+              <Headline
+                text={headline}
+                className="mt-5 max-w-[880px] text-left text-white"
+                style={{ fontSize: "clamp(34px, 4vw, 64px)", lineHeight: 1.08, fontWeight: 700, letterSpacing: "-0.025em" }}
+              />
+            </motion.div>
+          </motion.div>
         </div>
       </div>
 
-      {/* ── Black lower information bar ── */}
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.72, ease: [0.22, 1, 0.36, 1], delay: 0.08 }}
         className="relative z-10"
         style={{ background: "#000000", borderTop: "1px solid rgba(255,255,255,0.16)" }}
       >
@@ -119,7 +127,7 @@ export default function ServiceHero({ image, eyebrow, headline }) {
           </div>
           <ScheduleButton />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

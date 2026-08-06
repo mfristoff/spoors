@@ -15,6 +15,7 @@ const acContent = {
   sectionHeading: "Take definitive control of your indoor microclimate.",
   breakImage: images.heatingRepair,
   breakAlt: "Spoor's Heating & Air technician performing a detailed HVAC system inspection",
+  breakObjectPosition: "center 30%",
   reviews: reviewsFor("air-conditioning"),
   reviewsServiceLabel: "Air Conditioning",
   faqHeading: "Frequently Asked Questions About Air Conditioning",

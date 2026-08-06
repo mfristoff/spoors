@@ -6,9 +6,9 @@ import { reviewsFor } from "@/lib/serviceReviews";
 const WATER_HEATER_IMAGES = {
   hero: "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp",
   heroMobile: "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-mobile-hero.webp",
-  tank: "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp",
-  tankless: "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation.webp",
-  hybrid: "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-inspection.webp",
+  tank: "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-service-technician.webp",
+  tankless: "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation-technician.webp",
+  hybrid: "/assets/images/water-heaters/spoors-auburn-ca-hybrid-heat-pump-water-heater-service-technician.webp",
   repair: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
   replacement: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-replacement-mechanical-room.webp",
   maintenance: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-piping-and-gauge-service.webp",

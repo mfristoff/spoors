@@ -16,10 +16,11 @@ import {
 import { Image } from "@/components/ui/image";
 import { cdnImage } from "@/lib/cdnImage";
 import { business } from "@/lib/siteConfig";
+import { heroFadeDown, heroFadeUp, heroStagger } from "@/lib/motionVariants";
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.72, ease: "easeOut" } },
 };
 
 const LIGHTNING = {
@@ -47,6 +48,7 @@ export default function ServiceDetailLayout({
   heroAlt = "Spoor's Heating & Air technician at work",
   heroFocal,
   heroObjectPosition = "center center",
+  heroMobileObjectPosition,
   heroImagePlacement = "full",
   heroDimRight = false,
   badge,
@@ -59,6 +61,7 @@ export default function ServiceDetailLayout({
   featureSection,
   breakImage,
   breakAlt = "Spoor's Heating & Air technician working on an HVAC system",
+  breakObjectPosition = "center center",
   faqs,
   reviews = [],
   reviewsServiceLabel = "HVAC Services",
@@ -92,7 +95,7 @@ export default function ServiceDetailLayout({
               fetchPriority="high"
               decoding="sync"
               className="absolute inset-0 h-full w-full object-cover lg:hidden"
-              style={{ objectPosition: heroObjectPosition }}
+              style={{ objectPosition: heroMobileObjectPosition || heroObjectPosition }}
             />
           )}
           <img
@@ -114,21 +117,26 @@ export default function ServiceDetailLayout({
 
         {/* eyebrow + headline — top-left */}
         <div className="site-shell relative z-10 w-full pt-[clamp(48px,9vw,140px)]">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="flex flex-col items-start gap-5 max-w-[820px]">
-            <div className="flex flex-row items-center gap-[11px] bg-black/30 backdrop-blur-sm py-2 px-4 rounded-[8px] border border-white/20">
+          <motion.div initial="hidden" animate="visible" variants={heroStagger} className="flex max-w-[820px] flex-col items-start gap-5">
+            <motion.div variants={heroFadeDown} className="flex flex-row items-center gap-[11px] bg-black/30 backdrop-blur-sm py-2 px-4 rounded-[8px] border border-white/20">
               <LightningPair variant="white" />
               <span className="text-[11px] md:text-[13px] font-semibold tracking-[0.08em] text-white uppercase">{badge}</span>
-            </div>
-            <h1 className="text-[clamp(38px,3.8vw,72px)] font-bold leading-[1.0] tracking-[-0.018em] text-white">
+            </motion.div>
+            <motion.h1 variants={heroFadeUp} className="text-[clamp(38px,3.8vw,72px)] font-bold leading-[1.0] tracking-[-0.018em] text-white">
               {headline}
-            </h1>
+            </motion.h1>
           </motion.div>
         </div>
 
         <div className="relative z-10 flex-1" />
 
         {/* bottom bar — liquid glass, top stroke #515151, intro + Frame37 pill button */}
-        <div className="relative z-10 w-full bg-white/5 backdrop-blur-2xl border-t border-[#515151]">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.72, ease: [0.22, 1, 0.36, 1], delay: 0.08 }}
+          className="relative z-10 w-full bg-white/5 backdrop-blur-2xl border-t border-[#515151]"
+        >
           <div className="site-shell w-full py-5 lg:py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="w-full text-[14px] font-[440] leading-[1.6] text-white/85 max-w-[640px] text-center sm:text-left">{intro}</p>
             <Link
@@ -138,7 +146,7 @@ export default function ServiceDetailLayout({
               {scheduleLabel}
             </Link>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* ── SERVICES — PDF LAYOUT: sticky left col + single-column card list right ── */}
@@ -295,6 +303,7 @@ export default function ServiceDetailLayout({
             loading="lazy"
             decoding="async"
             className="h-full w-full object-cover"
+            style={{ objectPosition: breakObjectPosition }}
           />
         </div>
 

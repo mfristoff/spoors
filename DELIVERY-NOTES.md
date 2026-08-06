@@ -40,3 +40,20 @@ A full `npm ci` and `npm run build` could not be completed because this environm
 ## Deployment status
 
 The project is configured for Cloudflare Pages but has not been pushed to a Cloudflare account. Deployment requires a connected Cloudflare account or API credentials.
+
+### Mobile homepage hero video
+
+- Added a dedicated 720 × 1280 mobile cut of the existing homepage hero footage.
+- Added a matching local first-frame WebP poster to preserve fast mobile LCP.
+- Deferred mobile video loading until after page load and browser idle time.
+- Added Reduced Motion, Data Saver, 2G, and slow-2G fallbacks.
+- Localized both homepage hero videos to Cloudflare-served project assets.
+- Added immutable caching rules for local image and video assets.
+
+## Mobile hero validation
+
+- Changed JSX files passed TypeScript transpile syntax validation.
+- Mobile MP4 verified at 720 × 1280, 24 fps, 10.5 seconds, H.264, yuv420p, with no audio stream.
+- Mobile MP4 verified at approximately 1.2 MB with fast-start metadata before media data.
+- Desktop MP4 verified with fast-start metadata and localized project path.
+- Poster WebP verified at 720 × 1280 and approximately 37 KB.
