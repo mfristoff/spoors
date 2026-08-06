@@ -8,7 +8,7 @@ import HeroBackdrop from "@/pages/home/HeroBackdrop";
 
 const BOLT_ICON = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg";
 
-const HERO_DESKTOP_VIDEO = "/assets/video/spoors-home-hero-desktop.mp4";
+const HERO_DESKTOP_VIDEO = "https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4";
 const HERO_MOBILE_VIDEO = "/assets/video/spoors-home-hero-mobile.mp4";
 const HERO_MOBILE_POSTER = "/assets/images/home/spoors-home-hero-mobile-poster.webp";
 
