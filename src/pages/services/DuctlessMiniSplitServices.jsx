@@ -5,10 +5,15 @@ import { reviewsFor } from "@/lib/serviceReviews";
 
 const LOCAL_DUCTLESS_IMAGES = {
   atticInstallation: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-attic-installation.webp",
+  ceilingCassette: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-ceiling-cassette.webp",
+  floorMountedConsole: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-floor-mounted-console.webp",
+  homeComfortCouple: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-couple.webp",
   homeComfortRemote: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-remote.webp",
   indoorHeadCloseup: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-indoor-head-closeup.webp",
   outdoorCondenser: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-condenser.webp",
+  outdoorMultiZoneCondensers: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-multi-zone-condensers.webp",
   outdoorWallMount: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-wall-mount.webp",
+  rooftopTechnician: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-rooftop-technician.webp",
   wallUnitByWindow: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-wall-unit-by-window.webp",
 };
 
@@ -32,7 +37,7 @@ const ductlessContent = {
     {
       title: "Whisper-Quiet Comfort",
       desc: "Traditional HVAC systems rely on a network of ducts to deliver conditioned air. With mini-splits, each indoor unit operates individually, reducing noise pollution—common banging, squeaking, and whistling noises associated with ductwork are eliminated entirely. Even with multiple indoor units, ductless mini-splits are designed for quiet function.",
-      image: LOCAL_DUCTLESS_IMAGES.homeComfortRemote,
+      image: LOCAL_DUCTLESS_IMAGES.homeComfortCouple,
     },
     {
       title: "Cleaner Air Without Leaky Ducts",
@@ -42,12 +47,12 @@ const ductlessContent = {
     {
       title: "Custom Comfort, Room by Room",
       desc: "Since ductless systems can be set up for single or multiple zones, home and business owners have more control over indoor temperature. Thermostat wars become a thing of the past—the living room can be set to a milder temperature than the kitchen. You'll enjoy increased comfort and overall lower energy costs, with each indoor unit using its own thermostat.",
-      image: LOCAL_DUCTLESS_IMAGES.indoorHeadCloseup,
+      image: LOCAL_DUCTLESS_IMAGES.homeComfortRemote,
     },
     {
       title: "Lower Bills With Zoned Efficiency",
       desc: "A major benefit of mini-split systems is a reduction in energy consumption—and lower utility bills. Each indoor unit can use a separate thermostat programmed to a temperature suitable for the specific room, so you only condition the spaces you use. High-efficiency components save you even more over the long run.",
-      image: LOCAL_DUCTLESS_IMAGES.outdoorCondenser,
+      image: LOCAL_DUCTLESS_IMAGES.outdoorMultiZoneCondensers,
     },
     {
       title: "Sleek Wall-Mount Comfort",
@@ -57,12 +62,12 @@ const ductlessContent = {
     {
       title: "Hidden Ceiling Cassette Comfort",
       desc: "The indoor unit of a ceiling cassette system inserts into the ceiling, similar to a cassette tape into a tape deck. The surface sits flush with the ceiling, making it a great choice for home and business owners who want to keep the unit out of sight. Air flow from the ceiling also provides a wider range of distribution.",
-      image: spoorsImageLibrary.ductlessMiniSplitRepair,
+      image: LOCAL_DUCTLESS_IMAGES.ceilingCassette,
     },
     {
       title: "Floor-Mounted Flexibility",
       desc: "Also called floor-mounted, these indoor units install along the baseboard in rooms. Because the unit is always visible, most floor-standing systems are designed with contemporary styling to help the unit blend into the surrounding room—an option for spaces where wall or ceiling mounting isn't ideal.",
-      image: spoorsImageLibrary.miniSplitMaintenance,
+      image: LOCAL_DUCTLESS_IMAGES.floorMountedConsole,
     },
     {
       title: "Ceiling-Suspended Discretion",
@@ -72,7 +77,7 @@ const ductlessContent = {
     {
       title: "When Ductless Makes the Most Sense",
       desc: "Ductless mini-splits shine in converted spaces (attics, garages, porches) where adding or rerouting ductwork isn't practical; when replacing an outdated HVAC system that needs constant repairs or that you want to upgrade for energy savings; and in older buildings where installing ductwork would require a major renovation. They let you create custom zoning to meet each space's needs.",
-      image: LOCAL_DUCTLESS_IMAGES.outdoorWallMount,
+      image: LOCAL_DUCTLESS_IMAGES.rooftopTechnician,
     },
   ],
   faqs: [
