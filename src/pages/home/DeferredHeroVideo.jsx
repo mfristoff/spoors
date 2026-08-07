@@ -13,10 +13,9 @@ function connectionShouldSkipVideo() {
   );
 }
 
-// Desktop keeps the original eager behavior. Mobile waits until the page has
-// finished loading, then mounts during idle time so the poster remains the LCP
-// element and the video does not compete with critical page resources.
-export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster }) {
+// Desktop keeps the original eager behavior. Mobile normally mounts after load,
+// but callers can opt into immediate mobile playback with no static fallback.
+export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobileEager = false, mobileObjectPosition }) {
   const [viewport, setViewport] = useState(null);
   const [mobilePlaying, setMobilePlaying] = useState(false);
   const videoRef = useRef(null);
@@ -29,8 +28,18 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster }) {
       return undefined;
     }
 
+    if (!mobileSrc) {
+      return undefined;
+    }
+
+    // The home hero opts into immediate mobile video loading with no static
+    // image fallback. Other uses retain the conservative deferred behavior.
+    if (mobileEager) {
+      setViewport("mobile");
+      return undefined;
+    }
+
     if (
-      !mobileSrc ||
       window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
       connectionShouldSkipVideo()
     ) {
@@ -71,7 +80,7 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster }) {
         window.cancelIdleCallback(idleHandle);
       }
     };
-  }, [mobileSrc]);
+  }, [mobileSrc, mobileEager]);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -104,15 +113,16 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster }) {
       muted
       playsInline
       webkit-playsinline="true"
-      preload={isMobile ? "metadata" : "auto"}
+      preload={isMobile && !mobileEager ? "metadata" : "auto"}
       controls={false}
       disablePictureInPicture
       controlsList="noplaybackrate nodownload nofullscreen noremoteplayback"
       aria-hidden="true"
       tabIndex={-1}
       onPlaying={() => setMobilePlaying(true)}
+      style={isMobile && mobileObjectPosition ? { objectPosition: mobileObjectPosition } : undefined}
       className={`pointer-events-none absolute inset-0 h-full w-full object-cover transition-opacity duration-500 md:object-[center_20%] ${
-        isMobile && !mobilePlaying ? "opacity-0" : "opacity-100"
+        isMobile && !mobileEager && !mobilePlaying ? "opacity-0" : "opacity-100"
       }`}
     />
   );

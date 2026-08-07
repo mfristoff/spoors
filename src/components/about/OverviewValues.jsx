@@ -101,7 +101,7 @@ function ValueStatement({ value }) {
           className="relative flex min-h-[190px] items-start justify-start border-r border-[#171717]/15 pr-5 pt-6 sm:min-h-[220px] sm:pr-8 sm:pt-8 lg:min-h-[248px] lg:pr-10 lg:pt-10"
         >
           <div className="relative inline-flex flex-col items-start">
-            <span className="mb-3 ml-[0.08em] font-mono text-[10px] font-semibold tracking-[0.2em] text-[#171717]/18 sm:mb-4 sm:text-[11px]">
+            <span className="mb-3 font-mono text-[10px] font-semibold tracking-[0.2em] text-[rgba(23,23,23,0.09)] sm:mb-4 sm:text-[11px]">
               {value.number}
             </span>
             <span

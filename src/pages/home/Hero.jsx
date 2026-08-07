@@ -4,7 +4,6 @@ import { images } from "@/lib/siteConfig";
 import { SOCIAL_PROOF_LOGOS } from "@/lib/socialProofLogos";
 import { Image } from "@/components/ui/image";
 import DeferredHeroVideo from "@/pages/home/DeferredHeroVideo";
-import HeroBackdrop from "@/pages/home/HeroBackdrop";
 
 const BOLT_ICON = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg";
 
@@ -56,10 +55,11 @@ export default function Hero({ onSchedule }) {
       className="relative overflow-hidden"
       style={{ minHeight: "calc(100svh - var(--expanded-header-height, 220px))" }}>
       
-      <HeroBackdrop />
       <DeferredHeroVideo
         src={HERO_VIDEO}
         mobileSrc={HERO_VIDEO}
+        mobileEager
+        mobileObjectPosition="72% 28%"
       />
 
       {/* Layered black gradient: strongest behind the left headline, softer center, black bottom */}

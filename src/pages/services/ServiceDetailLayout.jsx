@@ -192,6 +192,8 @@ export default function ServiceDetailLayout({
                       src={service.image}
                       alt={`${service.title} — Spoor's Heating & Air`}
                       fittingType="fill"
+                      focalPointX={service.focalPointX}
+                      focalPointY={service.focalPointY}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
 
