@@ -7,6 +7,7 @@ import { AuthProvider } from '@/lib/AuthContext';
 import ScrollToTop from './components/ScrollToTop';
 import SeoSchema from '@/components/SeoSchema';
 import SiteLayout from '@/components/layout/SiteLayout';
+import RouteLoadingFallback from '@/components/RouteLoadingFallback';
 
 
 // Keep the homepage eager for the fastest first paint; split every other route.
@@ -52,7 +53,7 @@ function App() {
         <Router>
           <ScrollToTop />
           <SeoSchema />
-          <Suspense fallback={<div className="min-h-screen bg-background" />}>
+          <Suspense fallback={<RouteLoadingFallback />}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<Login />} />

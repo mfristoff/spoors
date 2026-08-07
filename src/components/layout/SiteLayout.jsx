@@ -1,7 +1,9 @@
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import NewHeader from "@/pages/home/new/NewHeader";
 import NewFooter from "@/pages/home/new/NewFooter";
 import FooterCTANew from "@/pages/home/new/FooterCTANew";
+import RouteLoadingFallback from "@/components/RouteLoadingFallback";
 
 // Shared layout wrapping every public page: header + main + footer.
 export default function SiteLayout() {
@@ -15,7 +17,9 @@ export default function SiteLayout() {
       </a>
       <NewHeader />
       <main id="main" className="flex-1">
-        <Outlet />
+        <Suspense fallback={<RouteLoadingFallback />}>
+          <Outlet />
+        </Suspense>
       </main>
       <FooterCTANew />
       <NewFooter />

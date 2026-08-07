@@ -4,7 +4,7 @@ The homepage now uses separate local hero assets for desktop and mobile.
 
 ## Added assets
 
-- Desktop video: original source preserved at `https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4`
+- Desktop video: `/assets/video/spoors-home-hero-desktop.mp4`
 - Mobile video: `/assets/video/spoors-home-hero-mobile.mp4`
 - Mobile poster: `/assets/images/home/spoors-home-hero-mobile-poster.webp`
 
@@ -15,7 +15,7 @@ The homepage now uses separate local hero assets for desktop and mobile.
 - The video waits until the page load event and an idle window before it mounts.
 - The poster stays visible until the video is actively playing, then fades out beneath it.
 - Video is skipped when Reduced Motion, Data Saver, 2G, or slow-2G is detected.
-- The optimized mobile video is served from Cloudflare. The desktop hero continues using the original video source so its footage and treatment remain unchanged.
+- Both video files are now served from the deployed Cloudflare project rather than the WordPress server.
 - Cloudflare immutable cache headers were added for image and video assets.
 
 ## Mobile video specification

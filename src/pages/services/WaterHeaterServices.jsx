@@ -1,12 +1,12 @@
 import React from "react";
 import ServiceDetailLayout from "./ServiceDetailLayout";
-import { images } from "@/lib/siteConfig";
 import { reviewsFor } from "@/lib/serviceReviews";
 
 const WATER_HEATER_IMAGES = {
   hero: "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp",
   heroMobile: "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-mobile-hero.webp",
   tank: "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-service-technician.webp",
+  tankRoom: "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp",
   tankless: "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation-technician.webp",
   hybrid: "/assets/images/water-heaters/spoors-auburn-ca-hybrid-heat-pump-water-heater-service-technician.webp",
   repair: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
@@ -38,7 +38,7 @@ const waterHeaterContent = {
     {
       title: "Traditional Tank Water Heaters",
       desc: "We repair and install gas and electric tank water heaters, then size the storage capacity around your household's normal demand. Clean installation, safe connections, and straightforward guidance come standard.",
-      image: WATER_HEATER_IMAGES.tank,
+      image: WATER_HEATER_IMAGES.tankRoom,
     },
     {
       title: "Tankless Water Heaters",
@@ -63,7 +63,7 @@ const waterHeaterContent = {
     {
       title: "Maintenance and System Care",
       desc: "Tank flushing, anode checks, tankless descaling, and a full visual inspection help control sediment and catch developing problems. Service needs depend on the equipment and local water conditions.",
-      image: WATER_HEATER_IMAGES.maintenance,
+      image: WATER_HEATER_IMAGES.tank,
     },
   ],
   featureSection: {

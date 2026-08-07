@@ -95,13 +95,13 @@ function ValueStatement({ value }) {
       />
       <div className="pointer-events-none absolute inset-0 -z-10 origin-left scale-x-0 bg-white/75 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-x-100" />
 
-      <div className="grid min-h-[270px] grid-cols-[74px_minmax(0,1fr)] gap-5 py-9 sm:grid-cols-[96px_minmax(0,1fr)] sm:gap-8 sm:py-12 lg:min-h-[320px] lg:grid-cols-[124px_minmax(0,1fr)] lg:gap-12 lg:py-16">
+      <div className="grid min-h-[270px] grid-cols-[82px_minmax(0,1fr)] gap-5 py-9 sm:grid-cols-[104px_minmax(0,1fr)] sm:gap-8 sm:py-12 lg:min-h-[320px] lg:grid-cols-[136px_minmax(0,1fr)] lg:gap-12 lg:py-16">
         <motion.div
           style={{ y: letterY }}
-          className="relative flex min-h-[190px] items-center justify-center border-r border-[#171717]/15 pr-5 sm:min-h-[220px] sm:pr-8 lg:min-h-[248px]"
+          className="relative flex min-h-[190px] items-start justify-start border-r border-[#171717]/15 pr-5 pt-6 sm:min-h-[220px] sm:pr-8 sm:pt-8 lg:min-h-[248px] lg:pr-10 lg:pt-10"
         >
-          <div className="relative inline-flex items-center justify-center">
-            <span className="absolute -top-7 left-0 font-mono text-[10px] font-semibold tracking-[0.2em] text-[#171717]/16 sm:-top-8 sm:text-[11px]">
+          <div className="relative inline-flex flex-col items-start">
+            <span className="mb-3 ml-[0.08em] font-mono text-[10px] font-semibold tracking-[0.2em] text-[#171717]/18 sm:mb-4 sm:text-[11px]">
               {value.number}
             </span>
             <span
@@ -112,7 +112,6 @@ function ValueStatement({ value }) {
             </span>
           </div>
         </motion.div>
-
         <motion.div style={{ y: copyY }} className="flex flex-col justify-center pr-1 sm:pr-6">
           <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.16em] text-[#c84d4b] sm:text-[13px]">
             {value.kicker}
