@@ -13,6 +13,8 @@ const LOCAL_DUCTLESS_IMAGES = {
   outdoorCondenser: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-condenser.webp",
   outdoorMultiZoneCondensers: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-multi-zone-condensers.webp",
   outdoorWallMount: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-wall-mount.webp",
+  outdoorSideyardUnit: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-sideyard-unit.webp",
+  pageBreakCondensers: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-page-break-condensers.webp",
   rooftopTechnician: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-rooftop-technician.webp",
   wallUnitByWindow: "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-wall-unit-by-window.webp",
 };
@@ -28,8 +30,8 @@ const ductlessContent = {
     "Room-by-room comfort from efficient mini-splits, installed across Placer County.",
   sectionLabel: "DUCTLESS MINI-SPLIT HEATING & COOLING",
   sectionHeading: "Efficient, Room-by-Room Comfort Without the Ductwork.",
-  breakImage: spoorsImageLibrary.ductlessMiniSplitRepair,
-  breakAlt: "Spoor's Heating & Air technician installing a ductless mini-split system",
+  breakImage: LOCAL_DUCTLESS_IMAGES.pageBreakCondensers,
+  breakAlt: "Row of outdoor ductless mini-split condensers",
   reviews: reviewsFor("ductless-mini-splits"),
   reviewsServiceLabel: "Ductless Mini-Splits",
   faqHeading: "Frequently Asked Questions About Ductless Mini-Splits",
@@ -42,7 +44,7 @@ const ductlessContent = {
     {
       title: "Cleaner Air Without Leaky Ducts",
       desc: "Air ducts are notoriously leaky, with up to one-third of total energy loss coming from the ductwork. Leaking ducts force your HVAC system to work overtime and disperse allergens like dust and pollen throughout your home. Ductless mini-split systems improve indoor air quality by reducing the chance of exposure to allergens and airborne pollutants.",
-      image: spoorsImageLibrary.ductlessAcCleaning,
+      image: LOCAL_DUCTLESS_IMAGES.outdoorSideyardUnit,
     },
     {
       title: "Custom Comfort, Room by Room",
