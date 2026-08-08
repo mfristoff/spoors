@@ -8,6 +8,7 @@ const IAQ_IMAGES = {
   heroMobile: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",
   inYourAir: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",
   cleanerFilter: images.introAir,
+  wholeHomeDehumidifier: "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-system.webp",
 };
 
 const iaqContent = {
@@ -50,7 +51,7 @@ const iaqContent = {
     {
       title: "Whole-Home Dehumidifiers",
       desc: "High indoor humidity can leave a home feeling sticky, stress the cooling system, and create conditions that allow mold and mildew to thrive. A whole-home dehumidifier works with the HVAC system to remove excess moisture more consistently than portable units. We review indoor humidity levels, comfort concerns, and system setup before recommending equipment.",
-      image: images.technician1,
+      image: IAQ_IMAGES.wholeHomeDehumidifier,
     },
     {
       title: "Whole-Home Humidifiers",
