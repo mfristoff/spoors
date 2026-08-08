@@ -8,6 +8,7 @@ const IAQ_IMAGES = {
   heroMobile: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",
   inYourAir: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",
   cleanerFilter: images.introAir,
+  pageBreak: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-ceiling-vent-plant.webp",
   wholeHomeDehumidifier: "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-system.webp",
 };
 
@@ -26,9 +27,10 @@ const iaqContent = {
   sectionHeading: "Purify your indoor air and protect your family's health.",
   sectionSubheading:
     "From air scrubbers to whole-home humidifiers, our comfort experts help you create a safe, healthy indoor environment for your home or office.",
-  breakImage: IAQ_IMAGES.cleanerFilter,
-  breakAlt: "Technician replacing an HVAC air filter to improve indoor air quality",
-  breakObjectPosition: "center 38%",
+  breakImage: IAQ_IMAGES.pageBreak,
+  breakAlt: "Green plant leaves below a clean ceiling air vent in an Auburn home",
+  breakObjectPosition: "center 42%",
+  breakHeightClass: "h-[500px]",
   reviews: reviewsFor("indoor-air-quality"),
   reviewsServiceLabel: "Indoor Air Quality Services",
   faqHeading: "Frequently Asked Questions About Indoor Air Quality",

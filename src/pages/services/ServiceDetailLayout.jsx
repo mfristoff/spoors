@@ -62,6 +62,7 @@ export default function ServiceDetailLayout({
   breakImage,
   breakAlt = "Spoor's Heating & Air technician working on an HVAC system",
   breakObjectPosition = "center center",
+  breakHeightClass = "h-[260px] lg:h-[400px]",
   faqs,
   reviews = [],
   reviewsServiceLabel = "HVAC Services",
@@ -297,7 +298,8 @@ export default function ServiceDetailLayout({
       )}
 
       {/* ── FULL WIDTH IMAGE BREAK ── */}
-      <section className="w-full h-[260px] lg:h-[400px] relative overflow-hidden">
+      <section className={`w-full relative overflow-hidden ${breakHeightClass}`}>
+
         <div className="absolute inset-0">
           <img
             src={cdnImage(breakImage, 2048, 800)}
