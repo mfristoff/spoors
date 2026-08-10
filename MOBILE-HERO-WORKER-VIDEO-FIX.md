@@ -1,16 +1,16 @@
-# Mobile Homepage Hero Worker Video Fix
+# Mobile Homepage Hero Video
 
-Desktop keeps the existing homepage hero source unchanged.
+Desktop keeps the existing homepage hero video unchanged.
 
-Mobile now uses:
-`/assets/video/spoors-home-hero-mobile-worker.mp4`
+Mobile uses the approved dedicated mobile MP4:
 
-Behavior:
-- no poster image
-- no static fallback image
-- immediate mobile video mount
-- muted, looped, inline autoplay
-- iPhone/Safari playback retry
-- H.264 MP4 with fast-start metadata
-- 720 × 1280, 24 fps, 10.5 seconds, no audio
-- worker-focused framing
+`/assets/video/spoors-home-hero-mobile.mp4`
+
+Implementation:
+- exact approved mobile video asset, copied without re-encoding
+- no poster image passed by the homepage hero
+- no static mobile fallback image
+- eager muted inline autoplay
+- loop enabled
+- Safari/iPhone playback retry retained
+- 720 × 1280, H.264, 24 fps, 4 seconds

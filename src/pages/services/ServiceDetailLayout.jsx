@@ -191,7 +191,7 @@ export default function ServiceDetailLayout({
                   <div className="relative sm:w-[220px] xl:w-[260px] shrink-0 aspect-[4/3] sm:aspect-auto overflow-hidden">
                     <Image
                       src={service.image}
-                      alt={`${service.title} — Spoor's Heating & Air`}
+                      alt={service.imageAlt || `${service.title} — Spoor's Heating & Air`}
                       fittingType="fill"
                       focalPointX={service.focalPointX}
                       focalPointY={service.focalPointY}
