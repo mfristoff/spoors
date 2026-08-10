@@ -7,7 +7,8 @@ import DeferredHeroVideo from "@/pages/home/DeferredHeroVideo";
 
 const BOLT_ICON = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg";
 
-const HERO_VIDEO = "https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4";
+const HERO_DESKTOP_VIDEO = "https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4";
+const HERO_MOBILE_VIDEO = "/assets/video/spoors-home-hero-mobile-worker.mp4";
 
 // Per-mark sizing for the hero logo strip. BBB is width-driven (matching the
 // supplied mark); Meadow Vista and Auburn Chamber are slightly shorter for
@@ -56,11 +57,10 @@ export default function Hero({ onSchedule }) {
       style={{ minHeight: "calc(100svh - var(--expanded-header-height, 220px))" }}>
       
       <DeferredHeroVideo
-        src={HERO_VIDEO}
-        mobileSrc={HERO_VIDEO}
+        src={HERO_DESKTOP_VIDEO}
+        mobileSrc={HERO_MOBILE_VIDEO}
         mobileEager
-        mobileObjectPosition="96% 28%"
-        mobileScale={1.1}
+        mobileObjectPosition="center 46%"
       />
 
       {/* Layered black gradient: strongest behind the left headline, softer center, black bottom */}

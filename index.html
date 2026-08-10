@@ -42,7 +42,8 @@
     <!-- Performance hints + non-blocking font delivery -->
     <link rel="preconnect" href="https://media.base44.com" crossorigin />
 
-    <!-- Homepage hero uses video on mobile and desktop. No static hero fallback is preloaded. -->
+    <!-- LCP: start the hero backdrop download during HTML parse, before JS boots -->
+    <link rel="preload" as="image" fetchpriority="high" media="(max-width: 767px)" href="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fed95821e_AdobeStock_66338212.jpeg/v1/fill/w_900,h_1125,al_c,q_82,enc_webp,quality_auto/fed95821e_AdobeStock_66338212.webp" />
     <link rel="preconnect" href="https://spoors.olivemedia.agency" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
