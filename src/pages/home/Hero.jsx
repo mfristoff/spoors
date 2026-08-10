@@ -59,7 +59,8 @@ export default function Hero({ onSchedule }) {
         src={HERO_VIDEO}
         mobileSrc={HERO_VIDEO}
         mobileEager
-        mobileObjectPosition="88% 28%"
+        mobileObjectPosition="96% 28%"
+        mobileScale={1.1}
       />
 
       {/* Layered black gradient: strongest behind the left headline, softer center, black bottom */}

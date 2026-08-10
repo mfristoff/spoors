@@ -1,29 +1,20 @@
 # Mobile Homepage Hero Video Update
 
-The homepage now uses separate local hero assets for desktop and mobile.
+Final behavior for the homepage hero:
 
-## Added assets
+- Desktop continues to use the existing Spoor's hero video source.
+- Mobile uses that same exact video source, not a separate condenser/fan clip.
+- The mobile presentation uses a tighter right-side crop so the technician is the primary subject.
+- There is no mobile poster image and no static hero fallback image.
+- The old mobile fallback-image preload was removed from `index.html`.
+- The old `HeroBackdrop.jsx` fallback component was removed.
+- The mobile video mounts immediately and preloads automatically.
+- Mobile autoplay handling was strengthened for iOS Safari by setting muted/inline playback directly on the video DOM node and retrying playback on `loadeddata`, `canplay`, page restore, visibility restore, and the first user interaction if the browser initially blocks autoplay.
+- The media-fragment suffix (`#t=0.1`) was removed because it can make iOS behave like it is displaying a held first frame instead of starting the background video cleanly.
 
-- Desktop video: `/assets/video/spoors-home-hero-desktop.mp4`
-- Mobile video: `/assets/video/spoors-home-hero-mobile.mp4`
-- Mobile poster: `/assets/images/home/spoors-home-hero-mobile-poster.webp`
+Mobile crop:
 
-## Mobile delivery behavior
+- object-position: `96% 28%`
+- scale: `1.10`
 
-- The 720 × 1280 mobile video is a portrait crop of the existing Spoor's hero footage.
-- The poster is extracted from the same mobile cut and remains the high-priority LCP asset.
-- The video waits until the page load event and an idle window before it mounts.
-- The poster stays visible until the video is actively playing, then fades out beneath it.
-- Video is skipped when Reduced Motion, Data Saver, 2G, or slow-2G is detected.
-- Both video files are now served from the deployed Cloudflare project rather than the WordPress server.
-- Cloudflare immutable cache headers were added for image and video assets.
-
-## Mobile video specification
-
-- H.264 MP4
-- 720 × 1280
-- 24 fps
-- 10.5 seconds
-- No audio track
-- Fast-start metadata
-- Approximately 1.2 MB
+No desktop hero source or desktop framing was changed.

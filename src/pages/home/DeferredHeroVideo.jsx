@@ -1,113 +1,110 @@
 import { useEffect, useRef, useState } from "react";
 
-const MOBILE_IDLE_DELAY_MS = 350;
-
-function connectionShouldSkipVideo() {
-  const connection =
-    navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-
-  return Boolean(
-    connection?.saveData ||
-      connection?.effectiveType === "slow-2g" ||
-      connection?.effectiveType === "2g"
-  );
-}
-
-// Desktop keeps the original eager behavior. Mobile normally mounts after load,
-// but callers can opt into immediate mobile playback with no static fallback.
-export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobileEager = false, mobileObjectPosition }) {
+// Background hero video for desktop + mobile. Mobile mounts immediately for the
+// homepage so there is no static hero image underneath it.
+export default function DeferredHeroVideo({
+  src,
+  mobileSrc,
+  mobileEager = false,
+  mobileObjectPosition,
+  mobileScale = 1,
+}) {
   const [viewport, setViewport] = useState(null);
-  const [mobilePlaying, setMobilePlaying] = useState(false);
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+    const media = window.matchMedia("(min-width: 768px)");
 
-    if (isDesktop) {
-      setViewport("desktop");
-      return undefined;
-    }
-
-    if (!mobileSrc) {
-      return undefined;
-    }
-
-    // The home hero opts into immediate mobile video loading with no static
-    // image fallback. Other uses retain the conservative deferred behavior.
-    if (mobileEager) {
-      setViewport("mobile");
-      return undefined;
-    }
-
-    if (
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
-      connectionShouldSkipVideo()
-    ) {
-      return undefined;
-    }
-
-    let delayTimer;
-    let fallbackTimer;
-    let idleHandle;
-    let cancelled = false;
-
-    const mountVideo = () => {
-      if (!cancelled) setViewport("mobile");
-    };
-
-    const scheduleIdleMount = () => {
-      delayTimer = window.setTimeout(() => {
-        if ("requestIdleCallback" in window) {
-          idleHandle = window.requestIdleCallback(mountVideo, { timeout: 1400 });
-        } else {
-          fallbackTimer = window.setTimeout(mountVideo, 450);
-        }
-      }, MOBILE_IDLE_DELAY_MS);
-    };
-
-    if (document.readyState === "complete") {
-      scheduleIdleMount();
-    } else {
-      window.addEventListener("load", scheduleIdleMount, { once: true });
-    }
-
-    return () => {
-      cancelled = true;
-      window.removeEventListener("load", scheduleIdleMount);
-      window.clearTimeout(delayTimer);
-      window.clearTimeout(fallbackTimer);
-      if (idleHandle && "cancelIdleCallback" in window) {
-        window.cancelIdleCallback(idleHandle);
+    const setCurrentViewport = () => {
+      if (media.matches) {
+        setViewport("desktop");
+      } else if (mobileSrc) {
+        setViewport("mobile");
+      } else {
+        setViewport(null);
       }
     };
-  }, [mobileSrc, mobileEager]);
+
+    setCurrentViewport();
+    media.addEventListener?.("change", setCurrentViewport);
+
+    return () => media.removeEventListener?.("change", setCurrentViewport);
+  }, [mobileSrc]);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return undefined;
 
+    let retryTimer;
+
+    // iOS Safari is more reliable when these properties are also set directly
+    // on the DOM node before play() is requested.
+    video.muted = true;
+    video.defaultMuted = true;
+    video.autoplay = true;
+    video.playsInline = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "true");
+
     const tryPlay = () => {
-      video.play().catch(() => {
-        window.setTimeout(() => video.play().catch(() => {}), 200);
-      });
+      if (document.visibilityState === "hidden") return;
+
+      const playPromise = video.play();
+      if (playPromise?.catch) {
+        playPromise.catch(() => {
+          window.clearTimeout(retryTimer);
+          retryTimer = window.setTimeout(() => {
+            video.play().catch(() => {});
+          }, 180);
+        });
+      }
     };
 
-    if (video.readyState >= 1) tryPlay();
-    else video.addEventListener("loadedmetadata", tryPlay, { once: true });
+    const resumeWhenVisible = () => {
+      if (document.visibilityState === "visible") tryPlay();
+    };
 
-    return () => video.removeEventListener("loadedmetadata", tryPlay);
+    const resumeAfterInteraction = () => tryPlay();
+
+    if (video.readyState >= 2) tryPlay();
+    video.addEventListener("loadeddata", tryPlay);
+    video.addEventListener("canplay", tryPlay);
+    window.addEventListener("pageshow", tryPlay);
+    document.addEventListener("visibilitychange", resumeWhenVisible);
+
+    // If iOS blocks autoplay because of a device/browser state, the first user
+    // interaction resumes the muted background video without showing a poster.
+    window.addEventListener("touchstart", resumeAfterInteraction, { passive: true, once: true });
+    window.addEventListener("pointerdown", resumeAfterInteraction, { passive: true, once: true });
+
+    return () => {
+      window.clearTimeout(retryTimer);
+      video.removeEventListener("loadeddata", tryPlay);
+      video.removeEventListener("canplay", tryPlay);
+      window.removeEventListener("pageshow", tryPlay);
+      document.removeEventListener("visibilitychange", resumeWhenVisible);
+      window.removeEventListener("touchstart", resumeAfterInteraction);
+      window.removeEventListener("pointerdown", resumeAfterInteraction);
+    };
   }, [viewport]);
 
   const activeSrc = viewport === "mobile" ? mobileSrc : src;
   if (!viewport || !activeSrc) return null;
 
   const isMobile = viewport === "mobile";
+  const mobileStyle = isMobile
+    ? {
+        objectPosition: mobileObjectPosition || "center center",
+        transform: mobileScale !== 1 ? `scale(${mobileScale})` : undefined,
+      }
+    : undefined;
 
   return (
     <video
+      key={viewport}
       ref={videoRef}
-      src={`${activeSrc}#t=0.1`}
-      poster={isMobile ? mobilePoster : undefined}
+      src={activeSrc}
       autoPlay
       loop
       muted
@@ -119,11 +116,8 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobile
       controlsList="noplaybackrate nodownload nofullscreen noremoteplayback"
       aria-hidden="true"
       tabIndex={-1}
-      onPlaying={() => setMobilePlaying(true)}
-      style={isMobile && mobileObjectPosition ? { objectPosition: mobileObjectPosition } : undefined}
-      className={`pointer-events-none absolute inset-0 h-full w-full object-cover transition-opacity duration-500 md:object-[center_20%] ${
-        isMobile && !mobileEager && !mobilePlaying ? "opacity-0" : "opacity-100"
-      }`}
+      style={mobileStyle}
+      className="pointer-events-none absolute inset-0 h-full w-full object-cover md:object-[center_20%]"
     />
   );
 }
