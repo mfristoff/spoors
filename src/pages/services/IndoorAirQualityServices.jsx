@@ -8,8 +8,9 @@ const IAQ_IMAGES = {
   heroMobile: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",
   inYourAir: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",
   cleanerFilter: images.introAir,
-  pageBreak: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-ceiling-vent-plant.webp",
-  wholeHomeDehumidifier: "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-system.webp",
+  pageBreak: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-healthy-leaves-vent.webp",
+  wholeHomeDehumidifier: "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-ducted-system.webp",
+  wholeHomeHumidifier: "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-humidifier-hvac-system.webp",
 };
 
 const iaqContent = {
@@ -58,7 +59,7 @@ const iaqContent = {
     {
       title: "Whole-Home Humidifiers",
       desc: "Dry air can make a home less comfortable and affect wood furnishings, flooring, and indoor air balance during the heating season. A whole-home humidifier adds moisture through the HVAC system to help maintain steadier humidity levels throughout the home. We inspect the system, discuss comfort concerns, and recommend the right style of humidification equipment.",
-      image: images.introAir,
+      image: IAQ_IMAGES.wholeHomeHumidifier,
     },
   ],
   faqs: [
