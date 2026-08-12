@@ -17,9 +17,11 @@ const cardImages = [
 ];
 
 const swampCoolerContent = {
-  heroImage: `${B}/6d289587d_4K-Swamp-Cooler.png`,
-  heroImageMobile: `${B}/636db866b_Swamp-cooler-mobile-hero.png`,
-  heroAlt: "Swamp cooler maintenance, repair and installation by Spoor's Heating & Air in Auburn, CA",
+  heroImage: "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-fan.webp",
+  heroImageMobile: "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-fan.webp",
+  heroObjectPosition: "center center",
+  heroMobileObjectPosition: "62% center",
+  heroAlt: "Modern evaporative swamp cooler fan for Auburn, CA home cooling service",
   heroDimRight: true,
   badge: "SWAMP COOLERS",
   headline: "Swamp Cooler Maintenance, Repair & Installation in Auburn.",

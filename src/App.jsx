@@ -45,6 +45,7 @@ const Login = lazy(() => import('./pages/Login'));
 const Register = lazy(() => import('./pages/Register'));
 const ForgotPassword = lazy(() => import('./pages/ForgotPassword'));
 const ResetPassword = lazy(() => import('./pages/ResetPassword'));
+const MediaLibrary = lazy(() => import('./pages/MediaLibrary'));
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
           <Suspense fallback={<RouteLoadingFallback />}>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/media-library" element={<MediaLibrary />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />

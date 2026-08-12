@@ -5,7 +5,6 @@ import { aboutPageContent } from "@/lib/aboutPageContent";
 
 const SERVICES_HERO =
   "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/08b2af924_hero-bg.png";
-const SWAMP_BASE = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519";
 const PLANNED_MAINTENANCE_HERO =
   "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/4fdf840dc_15501be56_c3661b5ec2d388862a914240e8e219d8d549dee6.png";
 
@@ -41,8 +40,7 @@ const HERO_BY_PATH = {
   "/services/maintenance-tune-ups": [cdnImage(images.introTruck, 2560, 1600)],
   "/services/ductless-mini-splits": [cdnImage(spoorsImageLibrary.miniSplitInstallation, 2560, 1600)],
   "/services/swamp-coolers": [
-    cdnImage(`${SWAMP_BASE}/6d289587d_4K-Swamp-Cooler.png`, 2560, 1600),
-    cdnImage(`${SWAMP_BASE}/636db866b_Swamp-cooler-mobile-hero.png`, 900, 1200),
+    "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-fan.webp",
   ],
   "/services/water-heater-services": [
     "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp",

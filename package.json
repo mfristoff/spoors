@@ -4,12 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "npm run media:library",
     "dev": "vite",
+    "prebuild": "npm run media:library",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint . --quiet",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
-    "preview": "vite preview",
+    "media:library": "node scripts/generate-media-library.mjs",
+    "site:staging": "node scripts/set-site-mode.mjs staging",
+    "site:launch": "node scripts/set-site-mode.mjs launch",
     "assets:audit": "node scripts/audit-remote-assets.mjs",
     "assets:localize": "node scripts/localize-base44-assets.mjs"
   },

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { business, images as siteImages } from "@/lib/siteConfig";
+import { shouldIndexCurrentHost } from "@/lib/siteIndexing";
 
 // Lightweight SEO: sets document title, meta description, canonical, and OG tags.
 // In a Vite SPA, this updates head tags per page without a full SSR pipeline.
@@ -15,8 +16,7 @@ export function useSeo({ title, description, path = "/", image, type = "website"
 
     document.title = fullTitle;
     setMeta("description", desc);
-    const isStaging = window.location.hostname === "newspoors.olivemedia.agency";
-    setMeta("robots", isStaging ? "noindex, nofollow" : "index, follow");
+    setMeta("robots", shouldIndexCurrentHost() ? "index, follow" : "noindex, nofollow, noarchive");
     setLink("canonical", canonical);
     setOg("og:title", fullTitle);
     setOg("og:description", desc);

@@ -1,0 +1,2907 @@
+{
+  "generatedAt": "2026-08-12T18:27:30.752Z",
+  "count": 290,
+  "note": "IDs are persistent. New media receives the next available number; existing IDs are not renumbered.",
+  "items": [
+    {
+      "id": 1,
+      "key": "local:/assets/images/about/spoors-team-ribbon-cutting-auburn-ca.webp",
+      "src": "/assets/images/about/spoors-team-ribbon-cutting-auburn-ca.webp",
+      "path": "/assets/images/about/spoors-team-ribbon-cutting-auburn-ca.webp",
+      "name": "spoors-team-ribbon-cutting-auburn-ca.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "About / team"
+    },
+    {
+      "id": 2,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-attic-installation.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-attic-installation.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-attic-installation.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-attic-installation.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 3,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-ceiling-cassette.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-ceiling-cassette.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-ceiling-cassette.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-ceiling-cassette.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 4,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-floor-mounted-console.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-floor-mounted-console.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-floor-mounted-console.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-floor-mounted-console.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 5,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-couple.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-couple.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-couple.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-home-comfort-couple.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 6,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-remote.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-remote.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-remote.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-home-comfort-remote.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 7,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-indoor-head-closeup.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-indoor-head-closeup.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-indoor-head-closeup.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-indoor-head-closeup.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 8,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-condenser.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-condenser.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-condenser.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-outdoor-condenser.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 9,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-multi-zone-condensers.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-multi-zone-condensers.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-multi-zone-condensers.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-outdoor-multi-zone-condensers.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 10,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-sideyard-unit.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-sideyard-unit.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-sideyard-unit.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-outdoor-sideyard-unit.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 11,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-wall-mount.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-wall-mount.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-wall-mount.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-outdoor-wall-mount.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 12,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-page-break-condensers.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-page-break-condensers.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-page-break-condensers.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-page-break-condensers.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 13,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-rooftop-technician.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-rooftop-technician.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-rooftop-technician.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-rooftop-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 14,
+      "key": "local:/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-wall-unit-by-window.webp",
+      "src": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-wall-unit-by-window.webp",
+      "path": "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-wall-unit-by-window.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-wall-unit-by-window.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 15,
+      "key": "local:/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-ceiling-vent-plant.webp",
+      "src": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-ceiling-vent-plant.webp",
+      "path": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-ceiling-vent-plant.webp",
+      "name": "spoors-auburn-ca-clean-air-page-break-ceiling-vent-plant.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 16,
+      "key": "local:/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-healthy-leaves-vent.webp",
+      "src": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-healthy-leaves-vent.webp",
+      "path": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-healthy-leaves-vent.webp",
+      "name": "spoors-auburn-ca-clean-air-page-break-healthy-leaves-vent.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 17,
+      "key": "local:/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",
+      "src": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",
+      "path": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",
+      "name": "spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 18,
+      "key": "local:/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-hero.webp",
+      "src": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-hero.webp",
+      "path": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-hero.webp",
+      "name": "spoors-auburn-ca-clean-indoor-air-relaxing-home-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 19,
+      "key": "local:/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",
+      "src": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",
+      "path": "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",
+      "name": "spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 20,
+      "key": "local:/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-ducted-system.webp",
+      "src": "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-ducted-system.webp",
+      "path": "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-ducted-system.webp",
+      "name": "spoors-auburn-ca-whole-home-dehumidifier-ducted-system.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 21,
+      "key": "local:/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-system.webp",
+      "src": "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-system.webp",
+      "path": "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-system.webp",
+      "name": "spoors-auburn-ca-whole-home-dehumidifier-system.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 22,
+      "key": "local:/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-humidifier-hvac-system.webp",
+      "src": "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-humidifier-hvac-system.webp",
+      "path": "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-humidifier-hvac-system.webp",
+      "name": "spoors-auburn-ca-whole-home-humidifier-hvac-system.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 23,
+      "key": "local:/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-home-card.webp",
+      "src": "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-home-card.webp",
+      "path": "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-home-card.webp",
+      "name": "spoors-auburn-ca-swamp-cooler-home-card.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 24,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-gas-water-heater-burner-flames.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-gas-water-heater-burner-flames.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-gas-water-heater-burner-flames.webp",
+      "name": "spoors-auburn-ca-gas-water-heater-burner-flames.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 25,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-gas-water-heater-control-valve.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-gas-water-heater-control-valve.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-gas-water-heater-control-valve.webp",
+      "name": "spoors-auburn-ca-gas-water-heater-control-valve.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 26,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-inspection.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-inspection.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-inspection.webp",
+      "name": "spoors-auburn-ca-high-efficiency-water-heater-inspection.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 27,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-service-technician.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-service-technician.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-service-technician.webp",
+      "name": "spoors-auburn-ca-high-efficiency-water-heater-service-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 28,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp",
+      "name": "spoors-auburn-ca-hot-water-system-service-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 29,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-mobile-hero.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-mobile-hero.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-mobile-hero.webp",
+      "name": "spoors-auburn-ca-hot-water-system-service-mobile-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 30,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-hybrid-heat-pump-water-heater-service-technician.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-hybrid-heat-pump-water-heater-service-technician.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-hybrid-heat-pump-water-heater-service-technician.webp",
+      "name": "spoors-auburn-ca-hybrid-heat-pump-water-heater-service-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 31,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation-technician.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation-technician.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation-technician.webp",
+      "name": "spoors-auburn-ca-tankless-water-heater-installation-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 32,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation.webp",
+      "name": "spoors-auburn-ca-tankless-water-heater-installation.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 33,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-service-closeup.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-service-closeup.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-service-closeup.webp",
+      "name": "spoors-auburn-ca-tankless-water-heater-service-closeup.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 34,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp",
+      "name": "spoors-auburn-ca-traditional-tank-water-heater-room.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 35,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-service-technician.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-service-technician.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-service-technician.webp",
+      "name": "spoors-auburn-ca-traditional-tank-water-heater-service-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 36,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-burner-break.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-burner-break.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-burner-break.webp",
+      "name": "spoors-auburn-ca-water-heater-burner-break.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 37,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-electronics-service.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-electronics-service.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-electronics-service.webp",
+      "name": "spoors-auburn-ca-water-heater-electronics-service.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 38,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-installation-hero.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-installation-hero.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-installation-hero.webp",
+      "name": "spoors-auburn-ca-water-heater-installation-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 39,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-manifold-service.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-manifold-service.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-manifold-service.webp",
+      "name": "spoors-auburn-ca-water-heater-manifold-service.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 40,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-piping-and-gauge-service.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-piping-and-gauge-service.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-piping-and-gauge-service.webp",
+      "name": "spoors-auburn-ca-water-heater-piping-and-gauge-service.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 41,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
+      "name": "spoors-auburn-ca-water-heater-repair-heating-element.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 42,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-replacement-mechanical-room.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-replacement-mechanical-room.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-replacement-mechanical-room.webp",
+      "name": "spoors-auburn-ca-water-heater-replacement-mechanical-room.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 43,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-mobile-hero.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-mobile-hero.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-mobile-hero.webp",
+      "name": "spoors-auburn-ca-water-heater-service-mobile-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 44,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-hero.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-hero.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-hero.webp",
+      "name": "spoors-auburn-ca-water-heater-service-technician-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 45,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-mobile-hero.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-mobile-hero.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-service-technician-mobile-hero.webp",
+      "name": "spoors-auburn-ca-water-heater-service-technician-mobile-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 46,
+      "key": "local:/assets/images/water-heaters/spoors-auburn-ca-water-heater-shutoff-valve-service.webp",
+      "src": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-shutoff-valve-service.webp",
+      "path": "/assets/images/water-heaters/spoors-auburn-ca-water-heater-shutoff-valve-service.webp",
+      "name": "spoors-auburn-ca-water-heater-shutoff-valve-service.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 47,
+      "key": "local:/assets/images/water-heaters/tankless-water-heater.webp",
+      "src": "/assets/images/water-heaters/tankless-water-heater.webp",
+      "path": "/assets/images/water-heaters/tankless-water-heater.webp",
+      "name": "tankless-water-heater.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 48,
+      "key": "local:/assets/images/water-heaters/traditional-tank-water-heater.webp",
+      "src": "/assets/images/water-heaters/traditional-tank-water-heater.webp",
+      "path": "/assets/images/water-heaters/traditional-tank-water-heater.webp",
+      "name": "traditional-tank-water-heater.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 49,
+      "key": "local:/assets/images/water-heaters/water-heater-repair.webp",
+      "src": "/assets/images/water-heaters/water-heater-repair.webp",
+      "path": "/assets/images/water-heaters/water-heater-repair.webp",
+      "name": "water-heater-repair.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 50,
+      "key": "local:/assets/images/water-heaters/water-heater-service-closeup.webp",
+      "src": "/assets/images/water-heaters/water-heater-service-closeup.webp",
+      "path": "/assets/images/water-heaters/water-heater-service-closeup.webp",
+      "name": "water-heater-service-closeup.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 51,
+      "key": "local:/assets/images/water-heaters/water-heater-system-break.webp",
+      "src": "/assets/images/water-heaters/water-heater-system-break.webp",
+      "path": "/assets/images/water-heaters/water-heater-system-break.webp",
+      "name": "water-heater-system-break.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 52,
+      "key": "local:/assets/ui/spoors-bolt-mark.svg",
+      "src": "/assets/ui/spoors-bolt-mark.svg",
+      "path": "/assets/ui/spoors-bolt-mark.svg",
+      "name": "spoors-bolt-mark.svg",
+      "source": "local",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 53,
+      "key": "local:/assets/ui/story-pill-amber.svg",
+      "src": "/assets/ui/story-pill-amber.svg",
+      "path": "/assets/ui/story-pill-amber.svg",
+      "name": "story-pill-amber.svg",
+      "source": "local",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 54,
+      "key": "local:/assets/ui/story-pill-green.svg",
+      "src": "/assets/ui/story-pill-green.svg",
+      "path": "/assets/ui/story-pill-green.svg",
+      "name": "story-pill-green.svg",
+      "source": "local",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 55,
+      "key": "local:/assets/ui/story-pill-red.svg",
+      "src": "/assets/ui/story-pill-red.svg",
+      "path": "/assets/ui/story-pill-red.svg",
+      "name": "story-pill-red.svg",
+      "source": "local",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 56,
+      "key": "local:/favicon.svg",
+      "src": "/favicon.svg",
+      "path": "/favicon.svg",
+      "name": "favicon.svg",
+      "source": "local",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 57,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/07bc810cd_8cc68bec7_127_467.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/07bc810cd_8cc68bec7_127_467.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/07bc810cd_8cc68bec7_127_467.svg",
+      "name": "07bc810cd_8cc68bec7_127_467.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 58,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/091b7ecde_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/091b7ecde_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/091b7ecde_Bolt.svg",
+      "name": "091b7ecde_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 59,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/0b5814736_spoors-heating-air-logo.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/0b5814736_spoors-heating-air-logo.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/0b5814736_spoors-heating-air-logo.png",
+      "name": "0b5814736_spoors-heating-air-logo.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 60,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/0d247da0e_06910e57d_371_1408.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/0d247da0e_06910e57d_371_1408.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/0d247da0e_06910e57d_371_1408.svg",
+      "name": "0d247da0e_06910e57d_371_1408.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 61,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/100440ef0_CalendarMark.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/100440ef0_CalendarMark.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/100440ef0_CalendarMark.png",
+      "name": "100440ef0_CalendarMark.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 62,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/18b58645b_c0de74b00_371_1437.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/18b58645b_c0de74b00_371_1437.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/18b58645b_c0de74b00_371_1437.svg",
+      "name": "18b58645b_c0de74b00_371_1437.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 63,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/18f3ce20a_09b5f0c4c_1646_188.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/18f3ce20a_09b5f0c4c_1646_188.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/18f3ce20a_09b5f0c4c_1646_188.svg",
+      "name": "18f3ce20a_09b5f0c4c_1646_188.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 64,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/1ae957d15_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/1ae957d15_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/1ae957d15_Bolt.svg",
+      "name": "1ae957d15_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 65,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/1ff490bdf_Plain2.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/1ff490bdf_Plain2.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/1ff490bdf_Plain2.svg",
+      "name": "1ff490bdf_Plain2.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 66,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/23c2dfdf1_ArchiveMinimalistic.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/23c2dfdf1_ArchiveMinimalistic.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/23c2dfdf1_ArchiveMinimalistic.svg",
+      "name": "23c2dfdf1_ArchiveMinimalistic.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 67,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/25c356f1d_AdobeStock_319218928.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/25c356f1d_AdobeStock_319218928.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/25c356f1d_AdobeStock_319218928.jpeg",
+      "name": "25c356f1d_AdobeStock_319218928.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 68,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/2703648e9_e2a84a7e2_245_944.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/2703648e9_e2a84a7e2_245_944.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/2703648e9_e2a84a7e2_245_944.svg",
+      "name": "2703648e9_e2a84a7e2_245_944.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 69,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/309bfc2b7_TitleSection.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/309bfc2b7_TitleSection.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/309bfc2b7_TitleSection.png",
+      "name": "309bfc2b7_TitleSection.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 70,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/349410b5e_81e805bde_1512_363.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/349410b5e_81e805bde_1512_363.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/349410b5e_81e805bde_1512_363.svg",
+      "name": "349410b5e_81e805bde_1512_363.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 71,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/36a13156d_AdobeStock_150249395.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/36a13156d_AdobeStock_150249395.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/36a13156d_AdobeStock_150249395.jpeg",
+      "name": "36a13156d_AdobeStock_150249395.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 72,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/3cf9e7da3_file1.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/3cf9e7da3_file1.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/3cf9e7da3_file1.png",
+      "name": "3cf9e7da3_file1.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 73,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/3d0100751_Usethisinthefooter.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/3d0100751_Usethisinthefooter.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/3d0100751_Usethisinthefooter.png",
+      "name": "3d0100751_Usethisinthefooter.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 74,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/409b95b25_1710bb802_245_943.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/409b95b25_1710bb802_245_943.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/409b95b25_1710bb802_245_943.svg",
+      "name": "409b95b25_1710bb802_245_943.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 75,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/439d96621_AdobeStock_499333613.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/439d96621_AdobeStock_499333613.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/439d96621_AdobeStock_499333613.jpeg",
+      "name": "439d96621_AdobeStock_499333613.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 76,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/4f14fb0f8_AdobeStock_197213379.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/4f14fb0f8_AdobeStock_197213379.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/4f14fb0f8_AdobeStock_197213379.jpeg",
+      "name": "4f14fb0f8_AdobeStock_197213379.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 77,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/53d73aae5_Frame296.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/53d73aae5_Frame296.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/53d73aae5_Frame296.svg",
+      "name": "53d73aae5_Frame296.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 78,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6402f1d7b_f2252d069_202_340.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6402f1d7b_f2252d069_202_340.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6402f1d7b_f2252d069_202_340.svg",
+      "name": "6402f1d7b_f2252d069_202_340.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 79,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6df53003f_ShieldStar.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6df53003f_ShieldStar.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6df53003f_ShieldStar.svg",
+      "name": "6df53003f_ShieldStar.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 80,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6f3579a4f_AdobeStock_318148618.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6f3579a4f_AdobeStock_318148618.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6f3579a4f_AdobeStock_318148618.jpeg",
+      "name": "6f3579a4f_AdobeStock_318148618.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 81,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/700edc8f1_Crown.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/700edc8f1_Crown.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/700edc8f1_Crown.png",
+      "name": "700edc8f1_Crown.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 82,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/777a02c57_AdobeStock_596579616.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/777a02c57_AdobeStock_596579616.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/777a02c57_AdobeStock_596579616.jpeg",
+      "name": "777a02c57_AdobeStock_596579616.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 83,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7b8fe5bca_544039b8f_96_386.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7b8fe5bca_544039b8f_96_386.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7b8fe5bca_544039b8f_96_386.svg",
+      "name": "7b8fe5bca_544039b8f_96_386.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 84,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7dc8f7015_AdobeStock_482908998.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7dc8f7015_AdobeStock_482908998.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7dc8f7015_AdobeStock_482908998.jpeg",
+      "name": "7dc8f7015_AdobeStock_482908998.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 85,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7e66262be_History2.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7e66262be_History2.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7e66262be_History2.png",
+      "name": "7e66262be_History2.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 86,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7f4608f7d_GraphDown.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7f4608f7d_GraphDown.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7f4608f7d_GraphDown.svg",
+      "name": "7f4608f7d_GraphDown.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 87,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/84e66863b_68bd996d5_295_408.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/84e66863b_68bd996d5_295_408.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/84e66863b_68bd996d5_295_408.svg",
+      "name": "84e66863b_68bd996d5_295_408.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 88,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/864bc4072_unnamed.webp",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/864bc4072_unnamed.webp",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/864bc4072_unnamed.webp",
+      "name": "864bc4072_unnamed.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 89,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/8ecf7e092_AdobeStock_289084367.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/8ecf7e092_AdobeStock_289084367.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/8ecf7e092_AdobeStock_289084367.jpeg",
+      "name": "8ecf7e092_AdobeStock_289084367.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 90,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/99d8f9440_AdobeStock_117354486.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/99d8f9440_AdobeStock_117354486.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/99d8f9440_AdobeStock_117354486.jpeg",
+      "name": "99d8f9440_AdobeStock_117354486.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 91,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/9bb8bc109_closedtabbullet-2.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/9bb8bc109_closedtabbullet-2.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/9bb8bc109_closedtabbullet-2.png",
+      "name": "9bb8bc109_closedtabbullet-2.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 92,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a62fa6031_CTASection.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a62fa6031_CTASection.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a62fa6031_CTASection.png",
+      "name": "a62fa6031_CTASection.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 93,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a644f8a64_b1461a2cf_1646_187.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a644f8a64_b1461a2cf_1646_187.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a644f8a64_b1461a2cf_1646_187.svg",
+      "name": "a644f8a64_b1461a2cf_1646_187.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 94,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a6b447721_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a6b447721_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a6b447721_Bolt.svg",
+      "name": "a6b447721_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 95,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/b3ec9b18a_AdobeStock_65737788.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/b3ec9b18a_AdobeStock_65737788.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/b3ec9b18a_AdobeStock_65737788.jpeg",
+      "name": "b3ec9b18a_AdobeStock_65737788.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 96,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/bdcbc65ab_Opentabbullet-v2.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/bdcbc65ab_Opentabbullet-v2.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/bdcbc65ab_Opentabbullet-v2.png",
+      "name": "bdcbc65ab_Opentabbullet-v2.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 97,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/bfeb5fd07_HeroSection8.png",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/bfeb5fd07_HeroSection8.png",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/bfeb5fd07_HeroSection8.png",
+      "name": "bfeb5fd07_HeroSection8.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 98,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c3ab51f2f_d287cd844_96_349.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c3ab51f2f_d287cd844_96_349.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c3ab51f2f_d287cd844_96_349.svg",
+      "name": "c3ab51f2f_d287cd844_96_349.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 99,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c88460282_Frame122.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c88460282_Frame122.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c88460282_Frame122.svg",
+      "name": "c88460282_Frame122.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 100,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d1f6d9c44_ShieldMinimalistic.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d1f6d9c44_ShieldMinimalistic.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d1f6d9c44_ShieldMinimalistic.svg",
+      "name": "d1f6d9c44_ShieldMinimalistic.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 101,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d27309bfb_bf1f28494_96_350.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d27309bfb_bf1f28494_96_350.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d27309bfb_bf1f28494_96_350.svg",
+      "name": "d27309bfb_bf1f28494_96_350.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 102,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d612b1f6a_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d612b1f6a_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d612b1f6a_Bolt.svg",
+      "name": "d612b1f6a_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 103,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d877a2d9b_AdobeStock_419922957.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d877a2d9b_AdobeStock_419922957.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d877a2d9b_AdobeStock_419922957.jpeg",
+      "name": "d877a2d9b_AdobeStock_419922957.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 104,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3246ca2c_Frame121.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3246ca2c_Frame121.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3246ca2c_Frame121.svg",
+      "name": "e3246ca2c_Frame121.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 105,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3f4c7187_AdobeStock_450097271.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3f4c7187_AdobeStock_450097271.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3f4c7187_AdobeStock_450097271.jpeg",
+      "name": "e3f4c7187_AdobeStock_450097271.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 106,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e53a099e5_44ea90d25_96_368.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e53a099e5_44ea90d25_96_368.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e53a099e5_44ea90d25_96_368.svg",
+      "name": "e53a099e5_44ea90d25_96_368.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 107,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e895156ef_AdobeStock_541231422.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e895156ef_AdobeStock_541231422.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e895156ef_AdobeStock_541231422.jpeg",
+      "name": "e895156ef_AdobeStock_541231422.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 108,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/f9ee93635_9007c29f8_96_369.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/f9ee93635_9007c29f8_96_369.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/f9ee93635_9007c29f8_96_369.svg",
+      "name": "f9ee93635_9007c29f8_96_369.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 109,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fa10ac84d_Stopwatch.svg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fa10ac84d_Stopwatch.svg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fa10ac84d_Stopwatch.svg",
+      "name": "fa10ac84d_Stopwatch.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 110,
+      "key": "remote:https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fed95821e_AdobeStock_66338212.jpeg",
+      "src": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fed95821e_AdobeStock_66338212.jpeg",
+      "path": "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fed95821e_AdobeStock_66338212.jpeg",
+      "name": "fed95821e_AdobeStock_66338212.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 111,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg",
+      "name": "04dc9d564_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 112,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/08b2af924_hero-bg.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/08b2af924_hero-bg.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/08b2af924_hero-bg.png",
+      "name": "08b2af924_hero-bg.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 113,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/1f65ed898_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/1f65ed898_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/1f65ed898_Bolt.svg",
+      "name": "1f65ed898_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 114,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/225800095_2bd149670_25a79af4a509bf2a55797d9465b6b4be1d68e878.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/225800095_2bd149670_25a79af4a509bf2a55797d9465b6b4be1d68e878.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/225800095_2bd149670_25a79af4a509bf2a55797d9465b6b4be1d68e878.png",
+      "name": "225800095_2bd149670_25a79af4a509bf2a55797d9465b6b4be1d68e878.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 115,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/261990790_420fe99ad_472_286.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/261990790_420fe99ad_472_286.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/261990790_420fe99ad_472_286.svg",
+      "name": "261990790_420fe99ad_472_286.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 116,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2c1a06dc6_heating-furnace-installation.jpg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2c1a06dc6_heating-furnace-installation.jpg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2c1a06dc6_heating-furnace-installation.jpg",
+      "name": "2c1a06dc6_heating-furnace-installation.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 117,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2d637d123_df497f77a_467_230.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2d637d123_df497f77a_467_230.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2d637d123_df497f77a_467_230.svg",
+      "name": "2d637d123_df497f77a_467_230.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 118,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2fe39efcd_folsom-ca-neighborhood-aerial.webp",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2fe39efcd_folsom-ca-neighborhood-aerial.webp",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2fe39efcd_folsom-ca-neighborhood-aerial.webp",
+      "name": "2fe39efcd_folsom-ca-neighborhood-aerial.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 119,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/335f5162e_6f821a54c_472_298.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/335f5162e_6f821a54c_472_298.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/335f5162e_6f821a54c_472_298.svg",
+      "name": "335f5162e_6f821a54c_472_298.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 120,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/3592917f2_rocklin-ca-neighborhood-aerial.webp",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/3592917f2_rocklin-ca-neighborhood-aerial.webp",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/3592917f2_rocklin-ca-neighborhood-aerial.webp",
+      "name": "3592917f2_rocklin-ca-neighborhood-aerial.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 121,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/44aa664ae_a116f5e12_54beac8fa7344215202cbe7ed5062271693ebcb9.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/44aa664ae_a116f5e12_54beac8fa7344215202cbe7ed5062271693ebcb9.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/44aa664ae_a116f5e12_54beac8fa7344215202cbe7ed5062271693ebcb9.png",
+      "name": "44aa664ae_a116f5e12_54beac8fa7344215202cbe7ed5062271693ebcb9.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 122,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/4fdf840dc_15501be56_c3661b5ec2d388862a914240e8e219d8d549dee6.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/4fdf840dc_15501be56_c3661b5ec2d388862a914240e8e219d8d549dee6.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/4fdf840dc_15501be56_c3661b5ec2d388862a914240e8e219d8d549dee6.png",
+      "name": "4fdf840dc_15501be56_c3661b5ec2d388862a914240e8e219d8d549dee6.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 123,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5529f3f61_heating-heat-pump-wiring.jpg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5529f3f61_heating-heat-pump-wiring.jpg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5529f3f61_heating-heat-pump-wiring.jpg",
+      "name": "5529f3f61_heating-heat-pump-wiring.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 124,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5de0fcfa1_1f1360926_341_121.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5de0fcfa1_1f1360926_341_121.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5de0fcfa1_1f1360926_341_121.svg",
+      "name": "5de0fcfa1_1f1360926_341_121.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 125,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5ef7df194_bbb-accredited-business-seeklogo.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5ef7df194_bbb-accredited-business-seeklogo.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5ef7df194_bbb-accredited-business-seeklogo.png",
+      "name": "5ef7df194_bbb-accredited-business-seeklogo.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 126,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/6ac8a4c49_bryant-logo-png_seeklogo-23007.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/6ac8a4c49_bryant-logo-png_seeklogo-23007.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/6ac8a4c49_bryant-logo-png_seeklogo-23007.png",
+      "name": "6ac8a4c49_bryant-logo-png_seeklogo-23007.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 127,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/73c3b4414_granite-bay-ca-neighborhood-aerial.webp",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/73c3b4414_granite-bay-ca-neighborhood-aerial.webp",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/73c3b4414_granite-bay-ca-neighborhood-aerial.webp",
+      "name": "73c3b4414_granite-bay-ca-neighborhood-aerial.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 128,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/7b4c5f613_Auburn-Chamber-of-Commerce-transparent-4096.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/7b4c5f613_Auburn-Chamber-of-Commerce-transparent-4096.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/7b4c5f613_Auburn-Chamber-of-Commerce-transparent-4096.png",
+      "name": "7b4c5f613_Auburn-Chamber-of-Commerce-transparent-4096.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 129,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/7c770fbd3_heating-system-maintenance.jpg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/7c770fbd3_heating-system-maintenance.jpg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/7c770fbd3_heating-system-maintenance.jpg",
+      "name": "7c770fbd3_heating-system-maintenance.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 130,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/8384ef21e_Neutral-Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/8384ef21e_Neutral-Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/8384ef21e_Neutral-Bolt.svg",
+      "name": "8384ef21e_Neutral-Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 131,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/83d08d6ec_sacramento-ca-neighborhood-aerial.webp",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/83d08d6ec_sacramento-ca-neighborhood-aerial.webp",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/83d08d6ec_sacramento-ca-neighborhood-aerial.webp",
+      "name": "83d08d6ec_sacramento-ca-neighborhood-aerial.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 132,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/8d4428aab_Green-Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/8d4428aab_Green-Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/8d4428aab_Green-Bolt.svg",
+      "name": "8d4428aab_Green-Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 133,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/936c19043_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/936c19043_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/936c19043_Bolt.svg",
+      "name": "936c19043_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 134,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/9e8ba233e_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/9e8ba233e_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/9e8ba233e_Bolt.svg",
+      "name": "9e8ba233e_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 135,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/a0fdbb467_meadowvista.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/a0fdbb467_meadowvista.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/a0fdbb467_meadowvista.png",
+      "name": "a0fdbb467_meadowvista.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 136,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/a6f03d3cf_8dc950f65_472_287.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/a6f03d3cf_8dc950f65_472_287.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/a6f03d3cf_8dc950f65_472_287.svg",
+      "name": "a6f03d3cf_8dc950f65_472_287.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 137,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ace35d5a5_citrus-heights-ca-neighborhood-aerial.webp",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ace35d5a5_citrus-heights-ca-neighborhood-aerial.webp",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ace35d5a5_citrus-heights-ca-neighborhood-aerial.webp",
+      "name": "ace35d5a5_citrus-heights-ca-neighborhood-aerial.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 138,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/aee42ad41_SpoorsFavicon.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/aee42ad41_SpoorsFavicon.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/aee42ad41_SpoorsFavicon.png",
+      "name": "aee42ad41_SpoorsFavicon.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 139,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/b0bbf4ef8_lincoln-ca-neighborhood-aerial.webp",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/b0bbf4ef8_lincoln-ca-neighborhood-aerial.webp",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/b0bbf4ef8_lincoln-ca-neighborhood-aerial.webp",
+      "name": "b0bbf4ef8_lincoln-ca-neighborhood-aerial.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 140,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ba0b14249_Bolt-Blue.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ba0b14249_Bolt-Blue.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ba0b14249_Bolt-Blue.svg",
+      "name": "ba0b14249_Bolt-Blue.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 141,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg",
+      "name": "bc3f76106_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 142,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c1da928d2_01_Penryn_CA_045_panoramio.jpg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c1da928d2_01_Penryn_CA_045_panoramio.jpg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c1da928d2_01_Penryn_CA_045_panoramio.jpg",
+      "name": "c1da928d2_01_Penryn_CA_045_panoramio.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 143,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c2a24918d_90adfacc6_254_112.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c2a24918d_90adfacc6_254_112.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c2a24918d_90adfacc6_254_112.svg",
+      "name": "c2a24918d_90adfacc6_254_112.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 144,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c3baf3b45_loomis-ca-neighborhood-aerial.webp",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c3baf3b45_loomis-ca-neighborhood-aerial.webp",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c3baf3b45_loomis-ca-neighborhood-aerial.webp",
+      "name": "c3baf3b45_loomis-ca-neighborhood-aerial.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 145,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c64cc766f_heating-heat-pump-control-panel.jpg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c64cc766f_heating-heat-pump-control-panel.jpg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c64cc766f_heating-heat-pump-control-panel.jpg",
+      "name": "c64cc766f_heating-heat-pump-control-panel.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 146,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ccd923d51_60a77b5a9_470_237.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ccd923d51_60a77b5a9_470_237.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ccd923d51_60a77b5a9_470_237.svg",
+      "name": "ccd923d51_60a77b5a9_470_237.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 147,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ce59416d0_CitrusHeights.jpg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ce59416d0_CitrusHeights.jpg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ce59416d0_CitrusHeights.jpg",
+      "name": "ce59416d0_CitrusHeights.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 148,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/d1ca0657c_heating-leak-detector.jpg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/d1ca0657c_heating-leak-detector.jpg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/d1ca0657c_heating-leak-detector.jpg",
+      "name": "d1ca0657c_heating-leak-detector.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 149,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/e3fe3ceb2_cf79b4572_472_318.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/e3fe3ceb2_cf79b4572_472_318.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/e3fe3ceb2_cf79b4572_472_318.svg",
+      "name": "e3fe3ceb2_cf79b4572_472_318.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 150,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/e6d23f11a_roseville-ca-neighborhood-aerial.webp",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/e6d23f11a_roseville-ca-neighborhood-aerial.webp",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/e6d23f11a_roseville-ca-neighborhood-aerial.webp",
+      "name": "e6d23f11a_roseville-ca-neighborhood-aerial.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 151,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/eb41d5106_auburn-ca-neighborhood-aerial.webp",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/eb41d5106_auburn-ca-neighborhood-aerial.webp",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/eb41d5106_auburn-ca-neighborhood-aerial.webp",
+      "name": "eb41d5106_auburn-ca-neighborhood-aerial.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 152,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f5acfecda_fujitsu-elite-contractor-logo-transparent.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f5acfecda_fujitsu-elite-contractor-logo-transparent.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f5acfecda_fujitsu-elite-contractor-logo-transparent.png",
+      "name": "f5acfecda_fujitsu-elite-contractor-logo-transparent.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 153,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f62049928_heating-heat-pump-maintenance-hero.jpg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f62049928_heating-heat-pump-maintenance-hero.jpg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f62049928_heating-heat-pump-maintenance-hero.jpg",
+      "name": "f62049928_heating-heat-pump-maintenance-hero.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 154,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f7888b00a_3f22f04bb_254_113.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f7888b00a_3f22f04bb_254_113.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f7888b00a_3f22f04bb_254_113.svg",
+      "name": "f7888b00a_3f22f04bb_254_113.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 155,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f898fcfd0_fd4eb8170_277_608.svg",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f898fcfd0_fd4eb8170_277_608.svg",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f898fcfd0_fd4eb8170_277_608.svg",
+      "name": "f898fcfd0_fd4eb8170_277_608.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 156,
+      "key": "remote:https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/fc462779e_53daeb7c3_db34ea7aae804a5a67fcf8501c7ac48b93f3e078.png",
+      "src": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/fc462779e_53daeb7c3_db34ea7aae804a5a67fcf8501c7ac48b93f3e078.png",
+      "path": "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/fc462779e_53daeb7c3_db34ea7aae804a5a67fcf8501c7ac48b93f3e078.png",
+      "name": "fc462779e_53daeb7c3_db34ea7aae804a5a67fcf8501c7ac48b93f3e078.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 157,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/014a3fa65_cdb4d4b50_157_116.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/014a3fa65_cdb4d4b50_157_116.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/014a3fa65_cdb4d4b50_157_116.svg",
+      "name": "014a3fa65_cdb4d4b50_157_116.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 158,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0604463a4_40dc07d21_d8efb5307ef6538d08f32b1c8225c80319b053ae.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0604463a4_40dc07d21_d8efb5307ef6538d08f32b1c8225c80319b053ae.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0604463a4_40dc07d21_d8efb5307ef6538d08f32b1c8225c80319b053ae.png",
+      "name": "0604463a4_40dc07d21_d8efb5307ef6538d08f32b1c8225c80319b053ae.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 159,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/06fc054f4_Bolt-Blue.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/06fc054f4_Bolt-Blue.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/06fc054f4_Bolt-Blue.svg",
+      "name": "06fc054f4_Bolt-Blue.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 160,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2.webp",
+      "name": "0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 161,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/130d2d80c_caa3f2440_561_2056.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/130d2d80c_caa3f2440_561_2056.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/130d2d80c_caa3f2440_561_2056.svg",
+      "name": "130d2d80c_caa3f2440_561_2056.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 162,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/17bba9e51_479ee2ba4_160_146.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/17bba9e51_479ee2ba4_160_146.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/17bba9e51_479ee2ba4_160_146.svg",
+      "name": "17bba9e51_479ee2ba4_160_146.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 163,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1882d27d7_41c0c70ef_157_46.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1882d27d7_41c0c70ef_157_46.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1882d27d7_41c0c70ef_157_46.svg",
+      "name": "1882d27d7_41c0c70ef_157_46.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 164,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1962578c4_spoors-hvac-filter-service-auburn-ca.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1962578c4_spoors-hvac-filter-service-auburn-ca.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1962578c4_spoors-hvac-filter-service-auburn-ca.jpg",
+      "name": "1962578c4_spoors-hvac-filter-service-auburn-ca.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 165,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1aca1c923_spoors-mini-split-installation-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1aca1c923_spoors-mini-split-installation-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1aca1c923_spoors-mini-split-installation-auburn-ca.webp",
+      "name": "1aca1c923_spoors-mini-split-installation-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 166,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b75ead64_spoorsteam-about-about-secondary-image.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b75ead64_spoorsteam-about-about-secondary-image.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b75ead64_spoorsteam-about-about-secondary-image.png",
+      "name": "1b75ead64_spoorsteam-about-about-secondary-image.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "About / team"
+    },
+    {
+      "id": 167,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b859fcef_swamp-cooler-card-3.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b859fcef_swamp-cooler-card-3.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b859fcef_swamp-cooler-card-3.png",
+      "name": "1b859fcef_swamp-cooler-card-3.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 168,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/22c12150e_6d225b941_331_191.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/22c12150e_6d225b941_331_191.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/22c12150e_6d225b941_331_191.svg",
+      "name": "22c12150e_6d225b941_331_191.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 169,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/23513ac23_spoors-ac-service-appointment-auburn-ca.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/23513ac23_spoors-ac-service-appointment-auburn-ca.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/23513ac23_spoors-ac-service-appointment-auburn-ca.png",
+      "name": "23513ac23_spoors-ac-service-appointment-auburn-ca.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 170,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/25a559bb6_f7a9a460c_331_197.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/25a559bb6_f7a9a460c_331_197.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/25a559bb6_f7a9a460c_331_197.svg",
+      "name": "25a559bb6_f7a9a460c_331_197.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 171,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2601f245e_7c189b63a_220_96.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2601f245e_7c189b63a_220_96.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2601f245e_7c189b63a_220_96.svg",
+      "name": "2601f245e_7c189b63a_220_96.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 172,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/279bf5026_swamp-cooler-image-2.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/279bf5026_swamp-cooler-image-2.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/279bf5026_swamp-cooler-image-2.png",
+      "name": "279bf5026_swamp-cooler-image-2.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 173,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/28c5af077_59fbd3766_331_172.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/28c5af077_59fbd3766_331_172.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/28c5af077_59fbd3766_331_172.svg",
+      "name": "28c5af077_59fbd3766_331_172.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 174,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a5bd5cd9_6a6ba95d9_220_97.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a5bd5cd9_6a6ba95d9_220_97.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a5bd5cd9_6a6ba95d9_220_97.svg",
+      "name": "2a5bd5cd9_6a6ba95d9_220_97.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 175,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg",
+      "name": "2a7194aa9_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 176,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a8db7e4e_SwampCoolers-Hero.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a8db7e4e_SwampCoolers-Hero.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a8db7e4e_SwampCoolers-Hero.png",
+      "name": "2a8db7e4e_SwampCoolers-Hero.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 177,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2ba7bbdbb_spoors-ductless-ac-cleaning-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2ba7bbdbb_spoors-ductless-ac-cleaning-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2ba7bbdbb_spoors-ductless-ac-cleaning-auburn-ca.webp",
+      "name": "2ba7bbdbb_spoors-ductless-ac-cleaning-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 178,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2c7e23e54_spoors-hvac-technician-auburn-ca.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2c7e23e54_spoors-hvac-technician-auburn-ca.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2c7e23e54_spoors-hvac-technician-auburn-ca.png",
+      "name": "2c7e23e54_spoors-hvac-technician-auburn-ca.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 179,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2cf88c7dd_9db80dd07_561_2048.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2cf88c7dd_9db80dd07_561_2048.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2cf88c7dd_9db80dd07_561_2048.svg",
+      "name": "2cf88c7dd_9db80dd07_561_2048.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 180,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2e322b52c_c1be60617_ffcef329a28372d3e0934b2b726b2b3c71c471ba.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2e322b52c_c1be60617_ffcef329a28372d3e0934b2b726b2b3c71c471ba.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2e322b52c_c1be60617_ffcef329a28372d3e0934b2b726b2b3c71c471ba.png",
+      "name": "2e322b52c_c1be60617_ffcef329a28372d3e0934b2b726b2b3c71c471ba.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 181,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2ebdbe8e3_5a69e1b1a_54beac8fa7344215202cbe7ed5062271693ebcb9.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2ebdbe8e3_5a69e1b1a_54beac8fa7344215202cbe7ed5062271693ebcb9.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2ebdbe8e3_5a69e1b1a_54beac8fa7344215202cbe7ed5062271693ebcb9.png",
+      "name": "2ebdbe8e3_5a69e1b1a_54beac8fa7344215202cbe7ed5062271693ebcb9.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 182,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2f9433937_11f1914a9_220_106.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2f9433937_11f1914a9_220_106.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2f9433937_11f1914a9_220_106.svg",
+      "name": "2f9433937_11f1914a9_220_106.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 183,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/353d41abd_49b880858_331_217.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/353d41abd_49b880858_331_217.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/353d41abd_49b880858_331_217.svg",
+      "name": "353d41abd_49b880858_331_217.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 184,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/37cb26a02_Swamp-Cooler-Card-1.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/37cb26a02_Swamp-Cooler-Card-1.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/37cb26a02_Swamp-Cooler-Card-1.png",
+      "name": "37cb26a02_Swamp-Cooler-Card-1.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 185,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3951cfe17_5a0a743fb_157_47.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3951cfe17_5a0a743fb_157_47.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3951cfe17_5a0a743fb_157_47.svg",
+      "name": "3951cfe17_5a0a743fb_157_47.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 186,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/39d9ceae6_Swamp-Cooler-Card-2.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/39d9ceae6_Swamp-Cooler-Card-2.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/39d9ceae6_Swamp-Cooler-Card-2.png",
+      "name": "39d9ceae6_Swamp-Cooler-Card-2.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 187,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3b8979620_spoors-rebates.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3b8979620_spoors-rebates.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3b8979620_spoors-rebates.png",
+      "name": "3b8979620_spoors-rebates.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 188,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3c668c872_.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3c668c872_.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3c668c872_.png",
+      "name": "3c668c872_.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 189,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/40cfdf6cc_Swamp-cooler-card-5.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/40cfdf6cc_Swamp-cooler-card-5.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/40cfdf6cc_Swamp-cooler-card-5.png",
+      "name": "40cfdf6cc_Swamp-cooler-card-5.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 190,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/42c9d273b_140d570a5_561_2043.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/42c9d273b_140d570a5_561_2043.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/42c9d273b_140d570a5_561_2043.svg",
+      "name": "42c9d273b_140d570a5_561_2043.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 191,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/439e43921_e7c8f74fd_331_212.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/439e43921_e7c8f74fd_331_212.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/439e43921_e7c8f74fd_331_212.svg",
+      "name": "439e43921_e7c8f74fd_331_212.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 192,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/43ac515bc_spoors-ac-refrigerant-service-auburn-ca.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/43ac515bc_spoors-ac-refrigerant-service-auburn-ca.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/43ac515bc_spoors-ac-refrigerant-service-auburn-ca.jpg",
+      "name": "43ac515bc_spoors-ac-refrigerant-service-auburn-ca.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 193,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4597d52bb_534abce25_220_107.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4597d52bb_534abce25_220_107.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4597d52bb_534abce25_220_107.svg",
+      "name": "4597d52bb_534abce25_220_107.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 194,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/45cdfec5a_spoors-heat-pump-technician-auburn-ca.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/45cdfec5a_spoors-heat-pump-technician-auburn-ca.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/45cdfec5a_spoors-heat-pump-technician-auburn-ca.png",
+      "name": "45cdfec5a_spoors-heat-pump-technician-auburn-ca.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 195,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/466713786_newimageforkeepyourcoolerrunningright.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/466713786_newimageforkeepyourcoolerrunningright.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/466713786_newimageforkeepyourcoolerrunningright.png",
+      "name": "466713786_newimageforkeepyourcoolerrunningright.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 196,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48c784c4b_Spoor_s-Home-AC-Service-4.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48c784c4b_Spoor_s-Home-AC-Service-4.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48c784c4b_Spoor_s-Home-AC-Service-4.webp",
+      "name": "48c784c4b_Spoor_s-Home-AC-Service-4.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 197,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48e0dbf36_rebates-suburban-neighborhood.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48e0dbf36_rebates-suburban-neighborhood.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48e0dbf36_rebates-suburban-neighborhood.jpg",
+      "name": "48e0dbf36_rebates-suburban-neighborhood.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 198,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4928134bb_generated_image.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4928134bb_generated_image.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4928134bb_generated_image.png",
+      "name": "4928134bb_generated_image.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 199,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4b0334f8a_swamp-cooler-card-4.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4b0334f8a_swamp-cooler-card-4.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4b0334f8a_swamp-cooler-card-4.png",
+      "name": "4b0334f8a_swamp-cooler-card-4.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 200,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4d521cb1d_fd5d3a4b4_134_704.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4d521cb1d_fd5d3a4b4_134_704.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4d521cb1d_fd5d3a4b4_134_704.svg",
+      "name": "4d521cb1d_fd5d3a4b4_134_704.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 201,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4dc363caf_spoors-ac-diagnostic-testing-auburn-ca.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4dc363caf_spoors-ac-diagnostic-testing-auburn-ca.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4dc363caf_spoors-ac-diagnostic-testing-auburn-ca.jpg",
+      "name": "4dc363caf_spoors-ac-diagnostic-testing-auburn-ca.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 202,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/50b492e02_2834674aa_220_114.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/50b492e02_2834674aa_220_114.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/50b492e02_2834674aa_220_114.svg",
+      "name": "50b492e02_2834674aa_220_114.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 203,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5407872db_54102c5eb_160_147.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5407872db_54102c5eb_160_147.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5407872db_54102c5eb_160_147.svg",
+      "name": "5407872db_54102c5eb_160_147.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 204,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/570d5085b_spoors-air-conditioner-repair-auburn-ca.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/570d5085b_spoors-air-conditioner-repair-auburn-ca.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/570d5085b_spoors-air-conditioner-repair-auburn-ca.jpg",
+      "name": "570d5085b_spoors-air-conditioner-repair-auburn-ca.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 205,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5761f5b5b_bad30aa69_160_160.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5761f5b5b_bad30aa69_160_160.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5761f5b5b_bad30aa69_160_160.svg",
+      "name": "5761f5b5b_bad30aa69_160_160.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 206,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/586893ddb_west-sacramento.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/586893ddb_west-sacramento.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/586893ddb_west-sacramento.png",
+      "name": "586893ddb_west-sacramento.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 207,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5a354e235_explorespoorssectionlocationiconstouse.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5a354e235_explorespoorssectionlocationiconstouse.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5a354e235_explorespoorssectionlocationiconstouse.svg",
+      "name": "5a354e235_explorespoorssectionlocationiconstouse.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 208,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5e066e0c3_2026-07-30_17-42-43.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5e066e0c3_2026-07-30_17-42-43.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5e066e0c3_2026-07-30_17-42-43.png",
+      "name": "5e066e0c3_2026-07-30_17-42-43.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 209,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5f8f1780d_.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5f8f1780d_.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5f8f1780d_.png",
+      "name": "5f8f1780d_.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 210,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/61d86d7aa_generated_image.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/61d86d7aa_generated_image.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/61d86d7aa_generated_image.png",
+      "name": "61d86d7aa_generated_image.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 211,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/62eff44e7_886d91cb1_551_1978.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/62eff44e7_886d91cb1_551_1978.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/62eff44e7_886d91cb1_551_1978.svg",
+      "name": "62eff44e7_886d91cb1_551_1978.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 212,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/63cda30fb_e2260d072_561_2061.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/63cda30fb_e2260d072_561_2061.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/63cda30fb_e2260d072_561_2061.svg",
+      "name": "63cda30fb_e2260d072_561_2061.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 213,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/657f6b7b2_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/657f6b7b2_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/657f6b7b2_Bolt.svg",
+      "name": "657f6b7b2_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 214,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/6e4a33d4e_0796176ea_edd887672ff22175c0a633325a42b6b8adfbe1c7.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/6e4a33d4e_0796176ea_edd887672ff22175c0a633325a42b6b8adfbe1c7.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/6e4a33d4e_0796176ea_edd887672ff22175c0a633325a42b6b8adfbe1c7.png",
+      "name": "6e4a33d4e_0796176ea_edd887672ff22175c0a633325a42b6b8adfbe1c7.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 215,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/6f345fb8f_swamp-cooler-2.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/6f345fb8f_swamp-cooler-2.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/6f345fb8f_swamp-cooler-2.png",
+      "name": "6f345fb8f_swamp-cooler-2.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 216,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/708a1865c_4a94b4783_322_822.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/708a1865c_4a94b4783_322_822.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/708a1865c_4a94b4783_322_822.svg",
+      "name": "708a1865c_4a94b4783_322_822.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 217,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/773f47b74_spoors-furnace-repair-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/773f47b74_spoors-furnace-repair-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/773f47b74_spoors-furnace-repair-auburn-ca.webp",
+      "name": "773f47b74_spoors-furnace-repair-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 218,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/77b824c40_spoors-residential-ac-systems-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/77b824c40_spoors-residential-ac-systems-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/77b824c40_spoors-residential-ac-systems-auburn-ca.webp",
+      "name": "77b824c40_spoors-residential-ac-systems-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 219,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/78a7f5966_6560c2b93_561_2030.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/78a7f5966_6560c2b93_561_2030.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/78a7f5966_6560c2b93_561_2030.svg",
+      "name": "78a7f5966_6560c2b93_561_2030.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 220,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7d0249ed4_swamp-cooler-card5.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7d0249ed4_swamp-cooler-card5.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7d0249ed4_swamp-cooler-card5.png",
+      "name": "7d0249ed4_swamp-cooler-card5.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 221,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7a07ace_Spoor_s-Home-AC-Service-21.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7a07ace_Spoor_s-Home-AC-Service-21.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7a07ace_Spoor_s-Home-AC-Service-21.webp",
+      "name": "7f7a07ace_Spoor_s-Home-AC-Service-21.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 222,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7d6eb35_spoors-ac-maintenance-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7d6eb35_spoors-ac-maintenance-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7d6eb35_spoors-ac-maintenance-auburn-ca.webp",
+      "name": "7f7d6eb35_spoors-ac-maintenance-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 223,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/80f8c024c_Spoor_s-Home-AC-Service-2.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/80f8c024c_Spoor_s-Home-AC-Service-2.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/80f8c024c_Spoor_s-Home-AC-Service-2.webp",
+      "name": "80f8c024c_Spoor_s-Home-AC-Service-2.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 224,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/81d2a95ff_63cc7ba14_551_1974.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/81d2a95ff_63cc7ba14_551_1974.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/81d2a95ff_63cc7ba14_551_1974.svg",
+      "name": "81d2a95ff_63cc7ba14_551_1974.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 225,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/822e7128a_.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/822e7128a_.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/822e7128a_.png",
+      "name": "822e7128a_.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 226,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b5e5c4e7_52bfba80c_314_684.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b5e5c4e7_52bfba80c_314_684.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b5e5c4e7_52bfba80c_314_684.svg",
+      "name": "8b5e5c4e7_52bfba80c_314_684.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 227,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b8b5f621_Bolt-Light-Green.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b8b5f621_Bolt-Light-Green.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b8b5f621_Bolt-Light-Green.svg",
+      "name": "8b8b5f621_Bolt-Light-Green.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 228,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8bec328f4_Frame124.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8bec328f4_Frame124.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8bec328f4_Frame124.svg",
+      "name": "8bec328f4_Frame124.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 229,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8ecda9ce8_91584c04e_ed8b98a6ae07195024cb010ee69433d2eb4f6278.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8ecda9ce8_91584c04e_ed8b98a6ae07195024cb010ee69433d2eb4f6278.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8ecda9ce8_91584c04e_ed8b98a6ae07195024cb010ee69433d2eb4f6278.png",
+      "name": "8ecda9ce8_91584c04e_ed8b98a6ae07195024cb010ee69433d2eb4f6278.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 230,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9245966ca_1df74ff8d_157_115.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9245966ca_1df74ff8d_157_115.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9245966ca_1df74ff8d_157_115.svg",
+      "name": "9245966ca_1df74ff8d_157_115.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 231,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/930db743a_c0c1229d8_561_2018.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/930db743a_c0c1229d8_561_2018.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/930db743a_c0c1229d8_561_2018.svg",
+      "name": "930db743a_c0c1229d8_561_2018.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 232,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/95a86ec13_8f566051b_331_206.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/95a86ec13_8f566051b_331_206.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/95a86ec13_8f566051b_331_206.svg",
+      "name": "95a86ec13_8f566051b_331_206.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 233,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/966f2ca1f_Swamp-Cooler-Card--1.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/966f2ca1f_Swamp-Cooler-Card--1.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/966f2ca1f_Swamp-Cooler-Card--1.png",
+      "name": "966f2ca1f_Swamp-Cooler-Card--1.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 234,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/976b154cd_spoors-air-filter-replacement-auburn-ca.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/976b154cd_spoors-air-filter-replacement-auburn-ca.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/976b154cd_spoors-air-filter-replacement-auburn-ca.jpg",
+      "name": "976b154cd_spoors-air-filter-replacement-auburn-ca.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 235,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9785d3dab_1b7095c06_220_113.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9785d3dab_1b7095c06_220_113.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9785d3dab_1b7095c06_220_113.svg",
+      "name": "9785d3dab_1b7095c06_220_113.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 236,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/97ce91aa5_spoors-ac-electrical-repair-auburn-ca.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/97ce91aa5_spoors-ac-electrical-repair-auburn-ca.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/97ce91aa5_spoors-ac-electrical-repair-auburn-ca.jpg",
+      "name": "97ce91aa5_spoors-ac-electrical-repair-auburn-ca.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 237,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/999c2b03e_spoors-rooftop-ac-installation-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/999c2b03e_spoors-rooftop-ac-installation-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/999c2b03e_spoors-rooftop-ac-installation-auburn-ca.webp",
+      "name": "999c2b03e_spoors-rooftop-ac-installation-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 238,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9ab5d0b64_spoors-mini-split-maintenance-auburn-ca.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9ab5d0b64_spoors-mini-split-maintenance-auburn-ca.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9ab5d0b64_spoors-mini-split-maintenance-auburn-ca.jpg",
+      "name": "9ab5d0b64_spoors-mini-split-maintenance-auburn-ca.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 239,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9e0f4a6c8_swamp-cooler-image-2.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9e0f4a6c8_swamp-cooler-image-2.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9e0f4a6c8_swamp-cooler-image-2.png",
+      "name": "9e0f4a6c8_swamp-cooler-image-2.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 240,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a08f34059_spoors-heating-system-repair-auburn-ca.jpeg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a08f34059_spoors-heating-system-repair-auburn-ca.jpeg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a08f34059_spoors-heating-system-repair-auburn-ca.jpeg",
+      "name": "a08f34059_spoors-heating-system-repair-auburn-ca.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 241,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a112d3954_OJ-Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a112d3954_OJ-Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a112d3954_OJ-Bolt.svg",
+      "name": "a112d3954_OJ-Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 242,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a5b705541_spoors-ac-unit-troubleshooting-auburn-ca.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a5b705541_spoors-ac-unit-troubleshooting-auburn-ca.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a5b705541_spoors-ac-unit-troubleshooting-auburn-ca.jpg",
+      "name": "a5b705541_spoors-ac-unit-troubleshooting-auburn-ca.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 243,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a7f97d280_efa140fd5_331_222.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a7f97d280_efa140fd5_331_222.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a7f97d280_efa140fd5_331_222.svg",
+      "name": "a7f97d280_efa140fd5_331_222.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 244,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a855a062f_golf-community.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a855a062f_golf-community.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a855a062f_golf-community.png",
+      "name": "a855a062f_golf-community.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 245,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a964df9d3_be78b6140_331_171.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a964df9d3_be78b6140_331_171.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a964df9d3_be78b6140_331_171.svg",
+      "name": "a964df9d3_be78b6140_331_171.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 246,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a9965888b_BGfor22sectionaboveFAQthisishowitshouldlook22.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a9965888b_BGfor22sectionaboveFAQthisishowitshouldlook22.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a9965888b_BGfor22sectionaboveFAQthisishowitshouldlook22.png",
+      "name": "a9965888b_BGfor22sectionaboveFAQthisishowitshouldlook22.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 247,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa142f6b9_1f3c91791_551_1977.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa142f6b9_1f3c91791_551_1977.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa142f6b9_1f3c91791_551_1977.svg",
+      "name": "aa142f6b9_1f3c91791_551_1977.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 248,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa834aad0_spoors-ac-repair-technician-auburn-ca.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa834aad0_spoors-ac-repair-technician-auburn-ca.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa834aad0_spoors-ac-repair-technician-auburn-ca.png",
+      "name": "aa834aad0_spoors-ac-repair-technician-auburn-ca.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 249,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa9126517_swamp-cooler-card-3.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa9126517_swamp-cooler-card-3.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa9126517_swamp-cooler-card-3.png",
+      "name": "aa9126517_swamp-cooler-card-3.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 250,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ac4820687_rebates-sierra-nevada.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ac4820687_rebates-sierra-nevada.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ac4820687_rebates-sierra-nevada.jpg",
+      "name": "ac4820687_rebates-sierra-nevada.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 251,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b47d9de3d_6d433d983_c8d11d908e89a4fc1c9f971a7cbd78292fefca3d.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b47d9de3d_6d433d983_c8d11d908e89a4fc1c9f971a7cbd78292fefca3d.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b47d9de3d_6d433d983_c8d11d908e89a4fc1c9f971a7cbd78292fefca3d.png",
+      "name": "b47d9de3d_6d433d983_c8d11d908e89a4fc1c9f971a7cbd78292fefca3d.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 252,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b4ad07b89_TheCityofSacramentoCalifornia.jpeg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b4ad07b89_TheCityofSacramentoCalifornia.jpeg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b4ad07b89_TheCityofSacramentoCalifornia.jpeg",
+      "name": "b4ad07b89_TheCityofSacramentoCalifornia.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 253,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b59aba6e1_spoors-air-conditioner-filter-maintenance-auburn-ca.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b59aba6e1_spoors-air-conditioner-filter-maintenance-auburn-ca.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b59aba6e1_spoors-air-conditioner-filter-maintenance-auburn-ca.png",
+      "name": "b59aba6e1_spoors-air-conditioner-filter-maintenance-auburn-ca.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 254,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b7c459692_f39e4f902_561_2041.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b7c459692_f39e4f902_561_2041.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b7c459692_f39e4f902_561_2041.svg",
+      "name": "b7c459692_f39e4f902_561_2041.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 255,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bcf8cec5a_spoors-heat-pump-repair-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bcf8cec5a_spoors-heat-pump-repair-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bcf8cec5a_spoors-heat-pump-repair-auburn-ca.webp",
+      "name": "bcf8cec5a_spoors-heat-pump-repair-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 256,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bd31bec86_e3c0007bf_561_2028.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bd31bec86_e3c0007bf_561_2028.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bd31bec86_e3c0007bf_561_2028.svg",
+      "name": "bd31bec86_e3c0007bf_561_2028.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 257,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bde2bcc26_9296d9c9a_331_190.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bde2bcc26_9296d9c9a_331_190.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bde2bcc26_9296d9c9a_331_190.svg",
+      "name": "bde2bcc26_9296d9c9a_331_190.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 258,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bdfaaecbe_Spoors-Logo-Opengraph.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bdfaaecbe_Spoors-Logo-Opengraph.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bdfaaecbe_Spoors-Logo-Opengraph.png",
+      "name": "bdfaaecbe_Spoors-Logo-Opengraph.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 259,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c46f05ffd_31d78fd98_331_198.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c46f05ffd_31d78fd98_331_198.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c46f05ffd_31d78fd98_331_198.svg",
+      "name": "c46f05ffd_31d78fd98_331_198.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 260,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c68e38fec_Green-Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c68e38fec_Green-Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c68e38fec_Green-Bolt.svg",
+      "name": "c68e38fec_Green-Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 261,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c7679cf06_6932fb5c0_561_2013.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c7679cf06_6932fb5c0_561_2013.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c7679cf06_6932fb5c0_561_2013.svg",
+      "name": "c7679cf06_6932fb5c0_561_2013.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 262,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ca254f5b4_Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ca254f5b4_Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ca254f5b4_Bolt.svg",
+      "name": "ca254f5b4_Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 263,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/cfba0dea7_generated_image.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/cfba0dea7_generated_image.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/cfba0dea7_generated_image.png",
+      "name": "cfba0dea7_generated_image.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 264,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d0c459a56_swampcooler-new.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d0c459a56_swampcooler-new.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d0c459a56_swampcooler-new.png",
+      "name": "d0c459a56_swampcooler-new.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "Swamp coolers"
+    },
+    {
+      "id": 265,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d1f3f231d_generated_image.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d1f3f231d_generated_image.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d1f3f231d_generated_image.png",
+      "name": "d1f3f231d_generated_image.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 266,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d37140e8f_Spoors-Mobile-Logo-2.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d37140e8f_Spoors-Mobile-Logo-2.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d37140e8f_Spoors-Mobile-Logo-2.png",
+      "name": "d37140e8f_Spoors-Mobile-Logo-2.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 267,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d411193d2_Green-Bolt.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d411193d2_Green-Bolt.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d411193d2_Green-Bolt.svg",
+      "name": "d411193d2_Green-Bolt.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 268,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d48d150a1_location.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d48d150a1_location.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d48d150a1_location.svg",
+      "name": "d48d150a1_location.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 269,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d671c5670_spoors-heat-pump-maintenance-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d671c5670_spoors-heat-pump-maintenance-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d671c5670_spoors-heat-pump-maintenance-auburn-ca.webp",
+      "name": "d671c5670_spoors-heat-pump-maintenance-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 270,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d6942bc0b_HeroSection12.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d6942bc0b_HeroSection12.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d6942bc0b_HeroSection12.png",
+      "name": "d6942bc0b_HeroSection12.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 271,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d81bcc4e9_spoors-hvac-system-repair-auburn-ca-v2.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d81bcc4e9_spoors-hvac-system-repair-auburn-ca-v2.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d81bcc4e9_spoors-hvac-system-repair-auburn-ca-v2.webp",
+      "name": "d81bcc4e9_spoors-hvac-system-repair-auburn-ca-v2.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 272,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/dad316c92_826b97ef0_561_2080.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/dad316c92_826b97ef0_561_2080.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/dad316c92_826b97ef0_561_2080.svg",
+      "name": "dad316c92_826b97ef0_561_2080.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 273,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/dddfec159_spoors-central-air-conditioning-units-auburn-ca.jpg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/dddfec159_spoors-central-air-conditioning-units-auburn-ca.jpg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/dddfec159_spoors-central-air-conditioning-units-auburn-ca.jpg",
+      "name": "dddfec159_spoors-central-air-conditioning-units-auburn-ca.jpg",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 274,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e1559adab_f1a986a87_3f16c6344ba414c34ae77c61330882586df0dee0.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e1559adab_f1a986a87_3f16c6344ba414c34ae77c61330882586df0dee0.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e1559adab_f1a986a87_3f16c6344ba414c34ae77c61330882586df0dee0.png",
+      "name": "e1559adab_f1a986a87_3f16c6344ba414c34ae77c61330882586df0dee0.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 275,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e45c419f3_f5c05d3d3_550_1962.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e45c419f3_f5c05d3d3_550_1962.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e45c419f3_f5c05d3d3_550_1962.svg",
+      "name": "e45c419f3_f5c05d3d3_550_1962.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 276,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e59a4877b_spoors-ductless-mini-split-repair-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e59a4877b_spoors-ductless-mini-split-repair-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e59a4877b_spoors-ductless-mini-split-repair-auburn-ca.webp",
+      "name": "e59a4877b_spoors-ductless-mini-split-repair-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 277,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e905763f3_b486829cb_550_1963.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e905763f3_b486829cb_550_1963.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e905763f3_b486829cb_550_1963.svg",
+      "name": "e905763f3_b486829cb_550_1963.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 278,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e9171a60a_9c16e2d72_5dc4b6bfc1331a4867917336ef843b5bc9652cbe.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e9171a60a_9c16e2d72_5dc4b6bfc1331a4867917336ef843b5bc9652cbe.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e9171a60a_9c16e2d72_5dc4b6bfc1331a4867917336ef843b5bc9652cbe.png",
+      "name": "e9171a60a_9c16e2d72_5dc4b6bfc1331a4867917336ef843b5bc9652cbe.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 279,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/eba7bbd1b_f7d8f450a_561_2054.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/eba7bbd1b_f7d8f450a_561_2054.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/eba7bbd1b_f7d8f450a_561_2054.svg",
+      "name": "eba7bbd1b_f7d8f450a_561_2054.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 280,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f10097160_29841ac76_561_2035.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f10097160_29841ac76_561_2035.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f10097160_29841ac76_561_2035.svg",
+      "name": "f10097160_29841ac76_561_2035.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 281,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f1c764be9_spoors-rooftop-ac-installation-auburn-ca.webp",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f1c764be9_spoors-rooftop-ac-installation-auburn-ca.webp",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f1c764be9_spoors-rooftop-ac-installation-auburn-ca.webp",
+      "name": "f1c764be9_spoors-rooftop-ac-installation-auburn-ca.webp",
+      "source": "remote",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 282,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f57624435_bryant-logo.png",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f57624435_bryant-logo.png",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f57624435_bryant-logo.png",
+      "name": "f57624435_bryant-logo.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 283,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f702d5b30_29d3e56c4_322_821.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f702d5b30_29d3e56c4_322_821.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f702d5b30_29d3e56c4_322_821.svg",
+      "name": "f702d5b30_29d3e56c4_322_821.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 284,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/fb5d21945_fa301caec_561_2015.svg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/fb5d21945_fa301caec_561_2015.svg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/fb5d21945_fa301caec_561_2015.svg",
+      "name": "fb5d21945_fa301caec_561_2015.svg",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 285,
+      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/fbf957148_spoors-heat-pump-service-auburn-ca.jpeg",
+      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/fbf957148_spoors-heat-pump-service-auburn-ca.jpeg",
+      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/fbf957148_spoors-heat-pump-service-auburn-ca.jpeg",
+      "name": "fbf957148_spoors-heat-pump-service-auburn-ca.jpeg",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 286,
+      "key": "remote:https://media.base44.com/videos/public/6a67dcda4fda68f69980f519/bb41fa3fb_Spoors-HVAC-Hero-Optimized.mp4",
+      "src": "https://media.base44.com/videos/public/6a67dcda4fda68f69980f519/bb41fa3fb_Spoors-HVAC-Hero-Optimized.mp4",
+      "path": "https://media.base44.com/videos/public/6a67dcda4fda68f69980f519/bb41fa3fb_Spoors-HVAC-Hero-Optimized.mp4",
+      "name": "bb41fa3fb_Spoors-HVAC-Hero-Optimized.mp4",
+      "source": "remote",
+      "kind": "video",
+      "category": "Video"
+    },
+    {
+      "id": 287,
+      "key": "remote:https://spoors.olivemedia.agency/wp-content/uploads/2026/06/logo-hero-1024x131.png",
+      "src": "https://spoors.olivemedia.agency/wp-content/uploads/2026/06/logo-hero-1024x131.png",
+      "path": "https://spoors.olivemedia.agency/wp-content/uploads/2026/06/logo-hero-1024x131.png",
+      "name": "logo-hero-1024x131.png",
+      "source": "remote",
+      "kind": "graphic",
+      "category": "Graphics & logos"
+    },
+    {
+      "id": 288,
+      "key": "remote:https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4",
+      "src": "https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4",
+      "path": "https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4",
+      "name": "hero.mp4",
+      "source": "remote",
+      "kind": "video",
+      "category": "Video"
+    },
+    {
+      "id": 289,
+      "key": "remote:https://static.wixstatic.com/media/12d367_4f26ccd17f8f4e3a8958306ea08c2332~mv2.png",
+      "src": "https://static.wixstatic.com/media/12d367_4f26ccd17f8f4e3a8958306ea08c2332~mv2.png",
+      "path": "https://static.wixstatic.com/media/12d367_4f26ccd17f8f4e3a8958306ea08c2332~mv2.png",
+      "name": "12d367_4f26ccd17f8f4e3a8958306ea08c2332~mv2.png",
+      "source": "remote",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 290,
+      "key": "local:/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-fan.webp",
+      "src": "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-fan.webp",
+      "path": "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-fan.webp",
+      "name": "spoors-auburn-ca-swamp-cooler-hero-fan.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Swamp coolers"
+    }
+  ]
+}
