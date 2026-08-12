@@ -5,7 +5,7 @@ import { Image } from "@/components/ui/image";
 import { services } from "@/lib/siteConfig";
 
 const SWAMP_COOLER_CARD_IMAGE =
-  "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ea8f7c01b_swamp-cooler-home-page-card-image-2.png";
+  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-home-card.webp";
 
 const cardImageFor = (s) =>
   s.slug === "swamp-coolers" ? SWAMP_COOLER_CARD_IMAGE : s.image;

@@ -165,7 +165,7 @@ export default function SpoorHVAC() {
             initial="hidden"
             animate="visible"
             variants={fadeInUp}
-            className="flex flex-col gap-6 lg:gap-8 w-full max-w-[710px] items-start text-left">
+            className="flex flex-col gap-7 lg:gap-9 w-full max-w-[710px] items-start text-left">
             
             <div className="flex flex-row items-center gap-[11px]">
               <img src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg" alt="" aria-hidden="true" className="h-5 w-5" />
@@ -173,12 +173,12 @@ export default function SpoorHVAC() {
                 Planned Maintenance Services
               </p>
             </div>
-            <h1 className="text-[clamp(38px,3.5vw,68px)] font-bold leading-[1.02] tracking-[-0.0197em] text-figma-primary">Join Our Comfort Club &amp; Make Maintenance <span className="text-figma-accent">Easy</span></h1>
-            <div className="flex flex-col gap-4 max-w-[640px] items-start">
-              <p className="text-figma-16 font-medium leading-figma-26 tracking-[-0.2px] text-white/70">
+            <h1 className="text-[clamp(40px,3.7vw,72px)] font-bold leading-[1.01] tracking-[-0.0197em] text-figma-primary">Join Our Comfort Club &amp; Make Maintenance <span className="text-figma-accent">Easy</span></h1>
+            <div className="flex flex-col gap-[18px] max-w-[640px] items-start">
+              <p className="text-[clamp(16px,1.05vw,18px)] font-medium leading-[1.55] tracking-[-0.2px] text-white/75">
                 Members enjoy exclusive savings, priority service, and total peace of mind:
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-7 gap-y-3">
                 {[
                   "15% Discount on Parts",
                   "Maximum System Efficiency",
@@ -192,8 +192,8 @@ export default function SpoorHVAC() {
                   "Peace of Mind",
                 ].map((benefit, i) => (
                   <div key={i} className="flex items-start gap-2">
-                    <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg" alt="" className="h-4 w-4 mt-0.5 shrink-0" />
-                    <span className="text-[14px] leading-[1.35] text-white" style={{ textShadow: "0 1px 3px rgba(0,0,0,0.6)" }}>{benefit}</span>
+                    <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg" alt="" className="h-[18px] w-[18px] mt-0.5 shrink-0" />
+                    <span className="text-[15px] leading-[1.4] text-white" style={{ textShadow: "0 1px 3px rgba(0,0,0,0.6)" }}>{benefit}</span>
                   </div>
                 ))}
               </div>

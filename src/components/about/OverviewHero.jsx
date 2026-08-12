@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowDownRight } from "lucide-react";
-import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 
 const BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg";
 
@@ -8,13 +7,12 @@ export default function OverviewHero() {
   return (
     <section className="relative min-h-[560px] overflow-hidden bg-[#0a1226]">
       <motion.img
-        src={spoorsImageLibrary.hvacTechnician}
-        alt=""
-        aria-hidden="true"
+        src="/assets/images/about/spoors-team-ribbon-cutting-auburn-ca.webp"
+        alt="Spoor's Heating & Air team gathered in front of a company service van in Auburn, California"
         initial={{ opacity: 0.76, scale: 1.025 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.95, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute inset-0 h-full w-full object-cover object-[62%_42%] will-change-transform lg:object-[72%_42%]"
+        className="absolute inset-0 h-full w-full object-cover object-[50%_56%] will-change-transform"
         loading="eager"
       />
       <motion.div

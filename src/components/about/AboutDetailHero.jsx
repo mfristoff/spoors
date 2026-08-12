@@ -8,8 +8,19 @@ import { heroFadeDown, heroFadeUp, heroStagger } from "@/lib/motionVariants";
 
 export default function AboutDetailHero({ page }) {
   return (
-    <section className="relative isolate min-h-[560px] overflow-hidden bg-[#050d38]" style={{ backgroundImage: `url(${cdnImage(page.image, 1920, 1280)})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <Image src={page.image} alt={`${page.title} at Spoor's Heating & Air`} fittingType="fill" quality={90} loading="eager" fetchPriority="high" decoding="async" className="absolute inset-0 -z-20 h-full w-full" />
+    <section className="relative isolate min-h-[560px] overflow-hidden bg-[#050d38]" style={{ backgroundImage: `url(${cdnImage(page.image, 1920, 1280, page.heroFocalPoint)})`, backgroundSize: "cover", backgroundPosition: page.heroBackgroundPosition || "center" }}>
+      <Image
+        src={page.image}
+        alt={`${page.title} at Spoor's Heating & Air`}
+        fittingType="fill"
+        focalPointX={page.heroFocalPoint?.x}
+        focalPointY={page.heroFocalPoint?.y}
+        quality={90}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 -z-20 h-full w-full"
+      />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/90 via-black/75 to-black/40" />
       {page.darkMobileOverlay && <div className="absolute inset-0 -z-10 bg-black/55 md:hidden" />}
       <div className="site-shell flex min-h-[560px] flex-col justify-between py-10 md:py-16">
@@ -17,7 +28,7 @@ export default function AboutDetailHero({ page }) {
           <motion.div variants={heroFadeDown} className="flex items-center gap-2 text-sm font-medium text-background/70">
             <Link to="/about-us/" className="hover:text-background">About</Link><span>/</span><span className="text-background">{page.title}</span>
           </motion.div>
-          <motion.div variants={heroStagger} className="mt-auto max-w-[920px]">
+          <motion.div variants={heroStagger} className="mt-[clamp(52px,7vw,92px)] max-w-[920px]">
             <motion.div variants={heroFadeDown} className="mb-7 flex items-center gap-2">
               <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg" alt="" className="h-5 w-5" />
               <span className="text-sm font-semibold uppercase tracking-[0.16em] text-red-300">{page.eyebrow}</span>

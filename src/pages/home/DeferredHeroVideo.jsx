@@ -16,11 +16,7 @@ function connectionShouldSkipVideo() {
 // Desktop keeps the original eager behavior. Mobile normally mounts after load,
 // but callers can opt into immediate mobile playback with no static fallback.
 export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobileEager = false, mobileObjectPosition }) {
-  const [viewport, setViewport] = useState(() => {
-    if (typeof window === "undefined") return null;
-    if (window.matchMedia("(min-width: 768px)").matches) return "desktop";
-    return mobileSrc && mobileEager ? "mobile" : null;
-  });
+  const [viewport, setViewport] = useState(null);
   const [mobilePlaying, setMobilePlaying] = useState(false);
   const videoRef = useRef(null);
 
@@ -90,37 +86,17 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobile
     const video = videoRef.current;
     if (!video) return undefined;
 
-    video.muted = true;
-    video.defaultMuted = true;
-    video.playsInline = true;
-
-    let retryTimer;
-
     const tryPlay = () => {
-      const attempt = video.play();
-      if (attempt?.catch) {
-        attempt.catch(() => {
-          retryTimer = window.setTimeout(() => {
-            video.muted = true;
-            video.play().catch(() => {});
-          }, 250);
-        });
-      }
+      video.play().catch(() => {
+        window.setTimeout(() => video.play().catch(() => {}), 200);
+      });
     };
 
-    if (video.readyState >= 2) {
-      tryPlay();
-    } else {
-      video.addEventListener("canplay", tryPlay, { once: true });
-      video.addEventListener("loadedmetadata", tryPlay, { once: true });
-    }
+    if (video.readyState >= 1) tryPlay();
+    else video.addEventListener("loadedmetadata", tryPlay, { once: true });
 
-    return () => {
-      window.clearTimeout(retryTimer);
-      video.removeEventListener("canplay", tryPlay);
-      video.removeEventListener("loadedmetadata", tryPlay);
-    };
-  }, [viewport, src, mobileSrc]);
+    return () => video.removeEventListener("loadedmetadata", tryPlay);
+  }, [viewport]);
 
   const activeSrc = viewport === "mobile" ? mobileSrc : src;
   if (!viewport || !activeSrc) return null;
@@ -130,7 +106,7 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobile
   return (
     <video
       ref={videoRef}
-      src={activeSrc}
+      src={`${activeSrc}#t=0.1`}
       poster={isMobile ? mobilePoster : undefined}
       autoPlay
       loop

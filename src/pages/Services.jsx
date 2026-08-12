@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useSeo } from "@/lib/useSeo";
-import { services } from "@/lib/siteConfig";
+import { services, images } from "@/lib/siteConfig";
 import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { Image } from "@/components/ui/image";
 import {
@@ -18,6 +18,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { cdnImage } from "@/lib/cdnImage";
 import SocialProofLogos from "@/components/ui/SocialProofLogos";
 
 // Background photo extracted from the uploaded hero design (Wix-optimizable host).
@@ -47,80 +48,82 @@ const SLUG_CATEGORY = {
 };
 
 const SERVICE_PANEL_IMAGES = {
+  // Every image on /services/ is unique within this page. The accordion art
+  // also mirrors the strongest imagery used on the matching detail pages.
   "air-conditioning": [
-    spoorsImageLibrary.acRepairTechnician,
+    spoorsImageLibrary.acDiagnosticTesting,
+    spoorsImageLibrary.acElectricalRepair,
     spoorsImageLibrary.acMaintenance,
-    spoorsImageLibrary.rooftopAcInstallation,
-    spoorsImageLibrary.acServiceAppointment,
-    spoorsImageLibrary.airFilterReplacement,
+    spoorsImageLibrary.acRefrigerantService,
+    spoorsImageLibrary.acRepairTechnician,
   ],
   heating: [
     spoorsImageLibrary.furnaceRepair,
     spoorsImageLibrary.heatPumpMaintenance,
+    spoorsImageLibrary.heatPumpRepair,
     spoorsImageLibrary.heatPumpService,
-    spoorsImageLibrary.heatingSystemRepair,
-    spoorsImageLibrary.hvacFilterService,
+    spoorsImageLibrary.heatPumpTechnician,
   ],
   "indoor-air-quality": [
-    spoorsImageLibrary.airFilterReplacement,
-    spoorsImageLibrary.hvacFilterService,
-    spoorsImageLibrary.centralAirConditioningUnits,
-    spoorsImageLibrary.airConditionerFilterMaintenance,
-    spoorsImageLibrary.ductlessAcCleaning,
+    "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",
+    images.introAir,
+    images.introTech,
+    "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-ducted-system.webp",
+    "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-humidifier-hvac-system.webp",
   ],
   "emergency-repairs": [
-    spoorsImageLibrary.acRepairTechnician,
-    spoorsImageLibrary.furnaceRepair,
-    spoorsImageLibrary.acDiagnosticTesting,
-    spoorsImageLibrary.hvacTechnician,
     spoorsImageLibrary.hvacSystemRepair,
+    spoorsImageLibrary.hvacTechnician,
+    spoorsImageLibrary.heatingSystemRepair,
+    spoorsImageLibrary.acUnitTroubleshooting,
+    spoorsImageLibrary.airConditionerRepair,
   ],
   "maintenance-tune-ups": [
-    spoorsImageLibrary.acMaintenance,
-    spoorsImageLibrary.heatPumpMaintenance,
-    spoorsImageLibrary.acDiagnosticTesting,
+    spoorsImageLibrary.acServiceAppointment,
     spoorsImageLibrary.airFilterReplacement,
-    spoorsImageLibrary.hvacFilterService,
+    spoorsImageLibrary.centralAirConditioningUnits,
+    spoorsImageLibrary.rooftopAcInstallation,
+    spoorsImageLibrary.residentialAcSystems,
   ],
   "ductless-mini-splits": [
-    spoorsImageLibrary.miniSplitInstallation,
-    spoorsImageLibrary.ductlessMiniSplitRepair,
-    spoorsImageLibrary.ductlessAcCleaning,
-    spoorsImageLibrary.miniSplitMaintenance,
-    spoorsImageLibrary.miniSplitInstallation,
+    "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-indoor-head-closeup.webp",
+    "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-rooftop-technician.webp",
+    "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-remote.webp",
+    "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-condenser.webp",
+    "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-wall-mount.webp",
   ],
   "swamp-coolers": [
-    spoorsImageLibrary.swampCoolerHero,
-    spoorsImageLibrary.swampCoolerRooftop,
-    spoorsImageLibrary.swampCoolerPatio,
-    spoorsImageLibrary.swampCoolerCloseupStucco,
-    spoorsImageLibrary.swampCoolerIndustrialBay,
+    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/966f2ca1f_Swamp-Cooler-Card--1.png",
+    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/466713786_newimageforkeepyourcoolerrunningright.png",
+    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa9126517_swamp-cooler-card-3.png",
+    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d0c459a56_swampcooler-new.png",
+    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7d0249ed4_swamp-cooler-card5.png",
   ],
   "water-heater-services": [
-    "/assets/images/water-heaters/water-heater-repair.webp",
-    "/assets/images/water-heaters/spoors-auburn-ca-water-heater-installation-hero.webp",
-    "/assets/images/water-heaters/tankless-water-heater.webp",
-    "/assets/images/water-heaters/spoors-auburn-ca-high-efficiency-water-heater-service-technician.webp",
-    "/assets/images/water-heaters/water-heater-service-closeup.webp",
+    "/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
+    "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp",
+    "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation.webp",
+    "/assets/images/water-heaters/spoors-auburn-ca-hybrid-heat-pump-water-heater-service-technician.webp",
+    "/assets/images/water-heaters/spoors-auburn-ca-water-heater-piping-and-gauge-service.webp",
     "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp",
   ],
   "planned-maintenance": [
-    spoorsImageLibrary.acMaintenance,
-    spoorsImageLibrary.heatPumpMaintenance,
-    spoorsImageLibrary.hvacFilterService,
-    spoorsImageLibrary.acDiagnosticTesting,
-    spoorsImageLibrary.acServiceAppointment,
+    images.heatingBreak,
+    images.heatingRepair,
+    images.heatingTuneup,
+    images.heatingInstall,
+    images.heatingEmergency,
   ],
 };
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
 };
 
 const fadeDown = {
-  hidden: { opacity: 0, y: -40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
 };
 
 function ServiceShowcaseCard({ service, index, openQuoteFor }) {
@@ -273,13 +276,14 @@ export default function Services() {
       <section className="relative overflow-hidden min-h-[560px] lg:min-h-[calc(100svh-var(--expanded-header-height,220px))]">
         {/* Background photo — fills on mobile, cropped to the lower hero region (y 220→1150) on desktop */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src={HERO_PHOTO}
+          <img
+            src={cdnImage(HERO_PHOTO, 2400, 1500, { x: 0.5, y: 0.6 })}
             alt="Spoor's Heating & Air technicians at work"
-            fittingType="fill"
-            focalPointX={0.5}
-            focalPointY={0.6}
-            className="h-full w-full"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+            className="h-full w-full object-cover"
+            style={{ objectPosition: "50% 60%" }}
           />
         </div>
         {/* Tint + dark radial gradient overlay (bottom-right vignette per source design) */}
@@ -297,7 +301,7 @@ export default function Services() {
           <motion.div
             initial="hidden"
             animate="visible"
-            variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
+            variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.08, delayChildren: 0.02 } } }}
             className="flex flex-col"
           >
             <motion.p

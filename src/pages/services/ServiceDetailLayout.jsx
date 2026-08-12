@@ -61,6 +61,7 @@ export default function ServiceDetailLayout({
   featureSection,
   breakImage,
   breakAlt = "Spoor's Heating & Air technician working on an HVAC system",
+  breakFocal,
   breakObjectPosition = "center center",
   breakHeightClass = "h-[260px] lg:h-[400px]",
   faqs,
@@ -191,7 +192,7 @@ export default function ServiceDetailLayout({
                   <div className="relative sm:w-[220px] xl:w-[260px] shrink-0 aspect-[4/3] sm:aspect-auto overflow-hidden">
                     <Image
                       src={service.image}
-                      alt={service.imageAlt || `${service.title} — Spoor's Heating & Air`}
+                      alt={`${service.title} — Spoor's Heating & Air`}
                       fittingType="fill"
                       focalPointX={service.focalPointX}
                       focalPointY={service.focalPointY}
@@ -302,7 +303,7 @@ export default function ServiceDetailLayout({
 
         <div className="absolute inset-0">
           <img
-            src={cdnImage(breakImage, 2048, 800)}
+            src={cdnImage(breakImage, 2048, 960, breakFocal)}
             alt={breakAlt}
             loading="lazy"
             decoding="async"

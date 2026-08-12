@@ -25,7 +25,7 @@ export default function AboutPage() {
       <AboutDetailHero page={page} />
       <AboutStory page={page} />
       <AboutPrinciples page={page} />
-      <AboutStatement statement={page.statement} eyebrow={page.eyebrow} bg={page.statementBg} highlight={page.statementHighlight} />
+      <AboutStatement statement={page.statement} eyebrow={page.statementEyebrow} highlight={page.statementHighlight} />
       {page.communityEvent && <AboutCommunityEvent event={page.communityEvent} />}
       <AboutRelated currentSlug={slug} />
     </div>

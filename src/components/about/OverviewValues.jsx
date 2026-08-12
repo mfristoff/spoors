@@ -248,7 +248,7 @@ export default function OverviewValues() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-[#f6f2ec] py-[clamp(78px,10vw,160px)] text-[#171717]"
+      className="relative overflow-hidden bg-[#faf8f5] py-[clamp(78px,10vw,160px)] text-[#171717]"
     >
       <div
         aria-hidden="true"
