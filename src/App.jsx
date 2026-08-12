@@ -66,6 +66,15 @@ function App() {
               <Route path="/testimonials" element={<Testimonial />} />
 
               <Route path="/services" element={<Services />} />
+              <Route path="/services/heating" element={<HeatingServices />} />
+              <Route path="/services/indoor-air-quality" element={<IndoorAirQualityServices />} />
+              <Route path="/services/emergency-repairs" element={<EmergencyServices />} />
+              <Route path="/services/maintenance-tune-ups" element={<MaintenanceServices />} />
+              <Route path="/services/ductless-mini-splits" element={<DuctlessMiniSplitServices />} />
+              <Route path="/services/swamp-coolers" element={<SwampCoolerServices />} />
+              <Route path="/services/water-heater-services" element={<WaterHeaterServices />} />
+              <Route path="/services/air-conditioning" element={<AirConditioningServices />} />
+              <Route path="/services/planned-maintenance" element={<Group30 />} />
               <Route path="/services/:slug" element={<ServicePage />} />
 
               <Route path="/service-areas/:slug" element={<ServiceAreaPage />} />
@@ -80,15 +89,6 @@ function App() {
 
               <Route path="*" element={<PageNotFound />} />
             </Route>
-            <Route path="/services/heating" element={<HeatingServices />} />
-            <Route path="/services/indoor-air-quality" element={<IndoorAirQualityServices />} />
-            <Route path="/services/emergency-repairs" element={<EmergencyServices />} />
-            <Route path="/services/maintenance-tune-ups" element={<MaintenanceServices />} />
-            <Route path="/services/ductless-mini-splits" element={<DuctlessMiniSplitServices />} />
-            <Route path="/services/swamp-coolers" element={<SwampCoolerServices />} />
-            <Route path="/services/water-heater-services" element={<WaterHeaterServices />} />
-            <Route path="/services/air-conditioning" element={<AirConditioningServices />} />
-            <Route path="/services/planned-maintenance" element={<Group30 />} />
             <Route path="/Blog" element={<Blog2 />} />
             <Route path="/resources/blog" element={<Blog2 />} />
             <Route path="/resources/blog/page/:pageNumber" element={<Blog2 />} />

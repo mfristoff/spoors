@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import NewHeader from "@/pages/home/new/NewHeader";
-import FooterCTANew from "@/pages/home/new/FooterCTANew";
-import NewFooter from "@/pages/home/new/NewFooter";
 import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
 import ServiceReviews from "@/components/ServiceReviews";
 import {
@@ -77,9 +74,7 @@ export default function ServiceDetailLayout({
   const [activeCard, setActiveCard] = useState(null);
 
   return (
-    <main className="w-full min-h-screen bg-white overflow-clip flex flex-col font-display">
-      <NewHeader />
-
+    <div className="w-full min-h-screen bg-white overflow-clip flex flex-col font-display">
       {/* ── HERO ── */}
       <section className="relative w-full h-[calc(100svh-112px)] min-h-[440px] lg:min-h-[600px] lg:h-[calc(100vh-220px)] lg:max-h-[860px] overflow-hidden flex flex-col bg-[#0a1228]">
         <div
@@ -95,17 +90,17 @@ export default function ServiceDetailLayout({
               alt={heroAlt}
               loading="eager"
               fetchPriority="high"
-              decoding="sync"
+              decoding="async"
               className="absolute inset-0 h-full w-full object-cover lg:hidden"
               style={{ objectPosition: heroMobileObjectPosition || heroObjectPosition }}
             />
           )}
           <img
-            src={cdnImage(heroImage, 3840, 2160, heroFocal)}
+            src={cdnImage(heroImage, 2560, 1600, heroFocal)}
             alt={heroAlt}
             loading="eager"
             fetchPriority="high"
-            decoding="sync"
+            decoding="async"
             className={`absolute inset-0 h-full w-full object-cover ${heroImageMobile ? "hidden lg:block" : ""}`}
             style={{ objectPosition: heroObjectPosition }}
           />
@@ -364,15 +359,12 @@ export default function ServiceDetailLayout({
         </div>
       </section>
 
-      <FooterCTANew />
-      <NewFooter />
-
       <ServiceQuoteModal
         open={!!activeCard}
         onClose={() => setActiveCard(null)}
         service={reviewsServiceLabel}
         formService={activeCard?.title}
       />
-    </main>
+    </div>
   );
 }

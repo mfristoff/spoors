@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
-import NewHeader from "@/pages/home/new/NewHeader";
-import FooterCTANew from "@/pages/home/new/FooterCTANew";
-import NewFooter from "@/pages/home/new/NewFooter";
 import { cdnImage } from "@/lib/cdnImage";
 
 export default function SpoorHVAC() {
@@ -143,8 +140,6 @@ export default function SpoorHVAC() {
 
   return (
     <div className="relative w-full min-h-screen bg-figma-primary font-display overflow-x-clip">
-      <NewHeader />
-
       {/* HERO SECTION */}
       <section className="relative w-full min-h-[580px] lg:min-h-[calc(100vh-154px)] flex items-center border-b border-[#050404]">
         {/* Background Image */}
@@ -436,8 +431,6 @@ export default function SpoorHVAC() {
         </div>
       </section>
 
-      <FooterCTANew />
-      <NewFooter />
       <ServiceQuoteModal
         open={clubModalOpen}
         onClose={() => setClubModalOpen(false)}

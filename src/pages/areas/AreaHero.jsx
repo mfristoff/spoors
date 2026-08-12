@@ -130,6 +130,7 @@ export default function AreaHero({ area, image, sideL, sideR, onQuote }) {
             }}
           >
             <img
+              key={sideL}
               src={cdnImage(sideL, 1068, 698)}
               alt={`HVAC technician servicing equipment in ${area.name}, California`}
               width={534}
@@ -158,12 +159,13 @@ export default function AreaHero({ area, image, sideL, sideR, onQuote }) {
             }}
           >
             <img
+              key={image}
               src={cdnImage(image, 1068, 860)}
               alt={area.imageAlt || `HVAC services in ${area.name}, California`}
               width={534}
               height={430}
               loading="eager"
-              fetchpriority="high"
+              fetchPriority="high"
               className="h-full w-full object-cover"
             />
           </div>
@@ -183,6 +185,7 @@ export default function AreaHero({ area, image, sideL, sideR, onQuote }) {
             }}
           >
             <img
+              key={sideR}
               src={cdnImage(sideR, 1068, 698)}
               alt={`HVAC equipment detail in ${area.name}, California`}
               width={534}
@@ -215,10 +218,11 @@ export default function AreaHero({ area, image, sideL, sideR, onQuote }) {
             }}
           >
             <img
+              key={`${image}-mobile`}
               src={cdnImage(image, 1092, 1270)}
               alt={area.imageAlt || `HVAC services in ${area.name}, California`}
               loading="eager"
-              fetchpriority="high"
+              fetchPriority="high"
               className="h-full w-full object-cover"
               style={{ borderRadius: "20px" }}
             />

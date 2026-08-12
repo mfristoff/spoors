@@ -20,6 +20,7 @@ import {
 import { cn } from "@/lib/utils";
 import { cdnImage } from "@/lib/cdnImage";
 import SocialProofLogos from "@/components/ui/SocialProofLogos";
+import { preloadRouteAssets } from "@/lib/routePreload";
 
 // Background photo extracted from the uploaded hero design (Wix-optimizable host).
 const HERO_PHOTO =
@@ -249,7 +250,13 @@ function ServiceShowcaseCard({ service, index, openQuoteFor }) {
           <p className="max-w-[420px] text-[clamp(18px,1.3vw,24px)] font-bold leading-tight text-white">
             {service.short}
           </p>
-          <Link to={`/services/${service.slug}/`} className="shrink-0 w-full rounded-[9px] bg-red-600 px-6 py-3.5 text-center text-[17px] font-semibold text-white hover:bg-red-700 sm:w-auto">
+          <Link
+            to={`/services/${service.slug}/`}
+            onMouseEnter={() => preloadRouteAssets(`/services/${service.slug}/`)}
+            onFocus={() => preloadRouteAssets(`/services/${service.slug}/`)}
+            onPointerDown={() => preloadRouteAssets(`/services/${service.slug}/`)}
+            className="shrink-0 w-full rounded-[9px] bg-red-600 px-6 py-3.5 text-center text-[17px] font-semibold text-white hover:bg-red-700 sm:w-auto"
+          >
             Learn More
           </Link>
         </div>
@@ -281,7 +288,7 @@ export default function Services() {
             alt="Spoor's Heating & Air technicians at work"
             loading="eager"
             fetchPriority="high"
-            decoding="sync"
+            decoding="async"
             className="h-full w-full object-cover"
             style={{ objectPosition: "50% 60%" }}
           />

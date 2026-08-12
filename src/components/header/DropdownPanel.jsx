@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { preloadRouteAssets } from "@/lib/routePreload";
 import {
   ChevronDown, Snowflake, Flame, Wind, AlertTriangle, Wrench,
   AirVent, Droplets, Thermometer, CalendarCheck, Target,
@@ -78,7 +79,14 @@ export default function DropdownPanel({ item }) {
         {c.external ? (
           <a href={c.path} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="block">{content}</a>
         ) : (
-          <Link to={c.path} onClick={() => setOpen(false)} className="block">{content}</Link>
+          <Link
+            to={c.path}
+            onMouseEnter={() => preloadRouteAssets(c.path)}
+            onFocus={() => preloadRouteAssets(c.path)}
+            onPointerDown={() => preloadRouteAssets(c.path)}
+            onClick={() => setOpen(false)}
+            className="block"
+          >{content}</Link>
         )}
       </motion.div>
     );
@@ -88,6 +96,9 @@ export default function DropdownPanel({ item }) {
     <div onMouseEnter={show} onMouseLeave={hide} onFocus={show} onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) hide(); }}>
       <Link
         to={item.path}
+        onMouseEnter={() => preloadRouteAssets(item.path)}
+        onFocus={() => preloadRouteAssets(item.path)}
+        onPointerDown={() => preloadRouteAssets(item.path)}
         className="inline-flex items-center gap-1.5 text-[16px] font-medium text-[#242424] hover:text-red-600"
         aria-haspopup="true"
         aria-expanded={open}

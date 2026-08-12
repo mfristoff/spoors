@@ -1,25 +1,22 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { Image } from "@/components/ui/image";
 import { cdnImage } from "@/lib/cdnImage";
 import ServiceGap from "@/components/ui/ServiceGap";
 import { heroFadeDown, heroFadeUp, heroStagger } from "@/lib/motionVariants";
 
 export default function AboutDetailHero({ page }) {
   return (
-    <section className="relative isolate min-h-[560px] overflow-hidden bg-[#050d38]" style={{ backgroundImage: `url(${cdnImage(page.image, 1920, 1280, page.heroFocalPoint)})`, backgroundSize: "cover", backgroundPosition: page.heroBackgroundPosition || "center" }}>
-      <Image
-        src={page.image}
+    <section className="relative isolate min-h-[560px] overflow-hidden bg-[#050d38]">
+      <img
+        key={page.image}
+        src={cdnImage(page.image, 2400, 1600, page.heroFocalPoint)}
         alt={`${page.title} at Spoor's Heating & Air`}
-        fittingType="fill"
-        focalPointX={page.heroFocalPoint?.x}
-        focalPointY={page.heroFocalPoint?.y}
-        quality={90}
         loading="eager"
         fetchPriority="high"
         decoding="async"
-        className="absolute inset-0 -z-20 h-full w-full"
+        className="absolute inset-0 -z-20 h-full w-full object-cover"
+        style={{ objectPosition: page.heroBackgroundPosition || "center" }}
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/90 via-black/75 to-black/40" />
       {page.darkMobileOverlay && <div className="absolute inset-0 -z-10 bg-black/55 md:hidden" />}

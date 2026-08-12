@@ -81,9 +81,8 @@ export default function ServiceHero({ image, eyebrow, headline }) {
           loading="eager"
           fetchPriority="high"
           decoding="async"
-          className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500"
+          className="absolute inset-0 h-full w-full object-cover"
           style={{ objectPosition: "50% 45%" }}
-          onLoad={(e) => e.currentTarget.classList.remove("opacity-0")}
         />
         <div
           className="absolute inset-0"

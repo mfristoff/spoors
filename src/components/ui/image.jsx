@@ -153,15 +153,16 @@ const Image = React.forwardRef(
     },
     ref
   ) => {
-    const [imgSrc, setImgSrc] = React.useState(src)
-
-    React.useEffect(() => {
-      setImgSrc(src)
-    }, [src])
+    // Track failures by the exact source instead of mirroring `src` into state.
+    // Mirroring caused a one-render stale frame whenever a routed page reused
+    // this component with a different hero image: the previous page's image
+    // stayed mounted until the effect copied the new prop into state.
+    const [failedSrc, setFailedSrc] = React.useState(null)
+    const imgSrc = failedSrc === src ? FALLBACK_IMAGE_URL : src
 
     const imageProps = {
       ...props,
-      onError: () => setImgSrc(FALLBACK_IMAGE_URL),
+      onError: () => setFailedSrc(src),
     }
 
     if (!src) {
@@ -179,7 +180,7 @@ const Image = React.forwardRef(
     if (!parsed) {
       const isErrorUrl = imgSrc === FALLBACK_IMAGE_URL
       return (
-        <img ref={ref} src={imgSrc} {...imageProps} data-error-image={isErrorUrl || undefined} />
+        <img key={imgSrc} ref={ref} src={imgSrc} {...imageProps} data-error-image={isErrorUrl || undefined} />
       )
     }
 
@@ -194,6 +195,7 @@ const Image = React.forwardRef(
 
     return (
       <ResponsiveImage
+        key={imgSrc}
         ref={ref}
         parsed={parsed}
         fittingType={fittingType}
