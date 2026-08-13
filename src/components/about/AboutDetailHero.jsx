@@ -16,7 +16,11 @@ export default function AboutDetailHero({ page }) {
         fetchPriority="high"
         decoding="async"
         className="absolute inset-0 -z-20 h-full w-full object-cover"
-        style={{ objectPosition: page.heroBackgroundPosition || "center" }}
+        style={{
+          objectPosition: page.heroBackgroundPosition || "center",
+          transform: page.heroImageScale ? `scale(${page.heroImageScale})` : undefined,
+          transformOrigin: "center center",
+        }}
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/90 via-black/75 to-black/40" />
       {page.darkMobileOverlay && <div className="absolute inset-0 -z-10 bg-black/55 md:hidden" />}
