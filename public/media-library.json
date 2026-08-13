@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T18:27:30.752Z",
+  "generatedAt": "2026-08-13T15:47:32.432Z",
   "count": 290,
   "note": "IDs are persistent. New media receives the next available number; existing IDs are not renumbered.",
   "items": [
@@ -1654,16 +1654,6 @@
       "category": "Ductless"
     },
     {
-      "id": 166,
-      "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b75ead64_spoorsteam-about-about-secondary-image.png",
-      "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b75ead64_spoorsteam-about-about-secondary-image.png",
-      "path": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b75ead64_spoorsteam-about-about-secondary-image.png",
-      "name": "1b75ead64_spoorsteam-about-about-secondary-image.png",
-      "source": "remote",
-      "kind": "image",
-      "category": "About / team"
-    },
-    {
       "id": 167,
       "key": "remote:https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b859fcef_swamp-cooler-card-3.png",
       "src": "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b859fcef_swamp-cooler-card-3.png",
@@ -2902,6 +2892,16 @@
       "source": "local",
       "kind": "image",
       "category": "Swamp coolers"
+    },
+    {
+      "id": 291,
+      "key": "local:/assets/images/about/spoors-auburn-ca-community-golf-event-hero.webp",
+      "src": "/assets/images/about/spoors-auburn-ca-community-golf-event-hero.webp",
+      "path": "/assets/images/about/spoors-auburn-ca-community-golf-event-hero.webp",
+      "name": "spoors-auburn-ca-community-golf-event-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "About / team"
     }
   ]
 }

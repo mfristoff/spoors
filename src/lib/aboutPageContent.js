@@ -78,7 +78,10 @@ export const aboutPageContent = {
     title: "Community Involvement",
     eyebrow: "Rooted in the foothills",
     hero: "Serving the Auburn area means investing in the neighbors and communities we call home.",
-    image: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1b75ead64_spoorsteam-about-about-secondary-image.png",
+    image: "/assets/images/about/spoors-auburn-ca-community-golf-event-hero.webp",
+    heroAlt: "Spoor's Heating & Air community golf event in Auburn, CA",
+    heroFocalPoint: { x: 0.5, y: 0.35 },
+    heroBackgroundPosition: "50% 35%",
     storyImage: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f1c764be9_spoors-rooftop-ac-installation-auburn-ca.webp",
     storyTitle: "Local Service Is a Long-Term Relationship.",
     body: [

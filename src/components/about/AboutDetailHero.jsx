@@ -11,7 +11,7 @@ export default function AboutDetailHero({ page }) {
       <img
         key={page.image}
         src={cdnImage(page.image, 2400, 1600, page.heroFocalPoint)}
-        alt={`${page.title} at Spoor's Heating & Air`}
+        alt={page.heroAlt || `${page.title} at Spoor's Heating & Air`}
         loading="eager"
         fetchPriority="high"
         decoding="async"
