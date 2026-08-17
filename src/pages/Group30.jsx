@@ -145,7 +145,7 @@ export default function SpoorHVAC() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            className="w-full h-full object-cover object-[70%_56%] lg:object-[74%_64%]"
+            className="w-full h-full object-cover object-[76%_62%] lg:object-[84%_68%]"
             src="/assets/images/planned-maintenance/spoors-planned-maintenance-hero.webp"
             alt="Technician servicing an outdoor air conditioning unit" />
 
