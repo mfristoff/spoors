@@ -1,12 +1,13 @@
-# Home Hero Mobile Crop Update — Superseded by Approved Mobile Asset
+# Home Hero Mobile Crop Update
 
-An intermediate build attempted to crop the shared desktop source with `mobileObjectPosition="88% 28%"`.
+This build tightens the mobile home hero crop to focus much more heavily on the technician.
 
-That is no longer the approved implementation.
+## Change made
 
-Current mobile behavior uses the dedicated pre-cropped asset:
-`/assets/video/spoors-home-hero-mobile.mp4`
+Updated `src/pages/home/Hero.jsx`:
 
-The component uses `mobileObjectPosition="center center"` because the framing is already baked into the approved 720 x 1280 MP4.
+- `mobileObjectPosition` changed from `72% 28%` to `88% 28%`
 
-See `RELEASE-BASELINE.md` and run `npm run verify:regressions` before delivery.
+This pushes the mobile video framing farther to the right so the shot shows the technician as the primary subject, with minimal fan visibility.
+
+All prior site updates remain included in this full Git-ready build.

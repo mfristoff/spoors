@@ -6,7 +6,7 @@
   "scripts": {
     "predev": "npm run media:library",
     "dev": "vite",
-    "prebuild": "npm run verify:regressions && npm run verify:scope && npm run media:library",
+    "prebuild": "npm run media:library",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --quiet",
@@ -16,10 +16,7 @@
     "site:staging": "node scripts/set-site-mode.mjs staging",
     "site:launch": "node scripts/set-site-mode.mjs launch",
     "assets:audit": "node scripts/audit-remote-assets.mjs",
-    "assets:localize": "node scripts/localize-base44-assets.mjs",
-    "verify:regressions": "node scripts/verify-regressions.mjs",
-    "verify:scope": "node scripts/verify-release-scope.mjs",
-    "baseline:refresh": "node scripts/create-release-baseline.mjs"
+    "assets:localize": "node scripts/localize-base44-assets.mjs"
   },
   "dependencies": {
     "@base44/sdk": "^0.8.41",

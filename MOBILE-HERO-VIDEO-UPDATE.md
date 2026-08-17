@@ -1,31 +1,29 @@
-# Approved Mobile Homepage Hero Video
+# Mobile Homepage Hero Video Update
 
-Current approved homepage behavior as of 2026-08-17.
+The homepage now uses separate local hero assets for desktop and mobile.
 
-## Desktop
+## Added assets
 
-Desktop keeps the existing Spoor's hero source:
-`https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4`
+- Desktop video: `/assets/video/spoors-home-hero-desktop.mp4`
+- Mobile video: `/assets/video/spoors-home-hero-mobile.mp4`
+- Mobile poster: `/assets/images/home/spoors-home-hero-mobile-poster.webp`
 
-## Mobile
+## Mobile delivery behavior
 
-Mobile uses the dedicated approved asset:
-`/assets/video/spoors-home-hero-mobile.mp4`
+- The 720 × 1280 mobile video is a portrait crop of the existing Spoor's hero footage.
+- The poster is extracted from the same mobile cut and remains the high-priority LCP asset.
+- The video waits until the page load event and an idle window before it mounts.
+- The poster stays visible until the video is actively playing, then fades out beneath it.
+- Video is skipped when Reduced Motion, Data Saver, 2G, or slow-2G is detected.
+- Both video files are now served from the deployed Cloudflare project rather than the WordPress server.
+- Cloudflare immutable cache headers were added for image and video assets.
 
-The mobile cut was derived from the user-supplied `AdobeStock_1644941081.mov` and preserves the approved vertical framing.
+## Mobile video specification
 
-Behavior:
 - H.264 MP4
 - 720 × 1280
 - 24 fps
-- 4 seconds
-- no audio
-- approximately 649 KB
-- no poster image
-- no static fallback image
-- immediate muted inline autoplay
-- loop enabled
-- Safari/iPhone autoplay retry retained
-- immutable Cloudflare cache rule under `/assets/video/*`
-
-This behavior is protected by `scripts/verify-regressions.mjs`. Do not substitute the desktop source or reintroduce a poster/fallback during unrelated updates.
+- 10.5 seconds
+- No audio track
+- Fast-start metadata
+- Approximately 1.2 MB
