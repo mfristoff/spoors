@@ -1,0 +1,23 @@
+{
+  "release": "spoors-git-ready-master-v10-mobile-hero-regression-guard",
+  "date": "2026-08-17",
+  "source_baseline": "spoors-git-ready-community-hero-zoomout-v9",
+  "mobile_hero": {
+    "path": "/assets/video/spoors-home-hero-mobile.mp4",
+    "sha256": "07ae85e9975fefaeda17eebffa641f8ddf3e08ff6c47e00a8c509a3d8d93773a",
+    "bytes": 649039,
+    "codec": "H.264",
+    "dimensions": "720x1280",
+    "fps": 24,
+    "duration_seconds": 4,
+    "audio": false,
+    "poster_or_static_fallback": false
+  },
+  "safety": {
+    "protected_behavior_guard": "PASS",
+    "release_scope_guard": "PASS",
+    "baseline_manifest": ".release-baseline.json",
+    "update_scope_file": "UPDATE-SCOPE.txt"
+  },
+  "local_build_note": "A full Vite build was not completed in the working container because npm dependency installation exceeded two minutes. Source-level release guards and archive integrity were validated. Cloudflare/Git build environments will install dependencies from package-lock.json."
+}

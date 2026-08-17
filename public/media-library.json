@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-13T15:47:32.432Z",
-  "count": 290,
+  "generatedAt": "2026-08-17T14:26:18.907Z",
+  "count": 291,
   "note": "IDs are persistent. New media receives the next available number; existing IDs are not renumbered.",
   "items": [
     {
@@ -2902,6 +2902,16 @@
       "source": "local",
       "kind": "image",
       "category": "About / team"
+    },
+    {
+      "id": 292,
+      "key": "local:/assets/video/spoors-home-hero-mobile.mp4",
+      "src": "/assets/video/spoors-home-hero-mobile.mp4",
+      "path": "/assets/video/spoors-home-hero-mobile.mp4",
+      "name": "spoors-home-hero-mobile.mp4",
+      "source": "local",
+      "kind": "video",
+      "category": "Video"
     }
   ]
 }

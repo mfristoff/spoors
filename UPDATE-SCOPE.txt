@@ -1,0 +1,6 @@
+# Leave this empty for a clean approved release.
+# During a future update, list ONLY the files the user asked to change.
+# Exact file example:
+# src/pages/About.jsx
+# Directory example:
+# public/assets/new-campaign/**

@@ -1,9 +1,13 @@
-# Home Hero Video Restore
+# Home Hero Video Restore — Superseded
 
-The two locally bundled home hero MP4 files in the prior build were condenser/fan footage. They have been removed from this package.
+This note describes an intermediate rollback and is retained only as history.
 
-The home hero now points back to the exact original desktop hero source used before the mobile-video experiment:
+It is NOT the current approved homepage behavior.
 
-`https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4`
+Current approved state:
+- Desktop keeps the existing Spoor's desktop hero source.
+- Mobile uses `/assets/video/spoors-home-hero-mobile.mp4`.
+- Mobile has no poster image or static fallback.
+- The mobile MP4 is protected by `scripts/verify-regressions.mjs` so routine updates cannot silently revert it.
 
-That same correct source is used on mobile, while the existing deferred mobile loading behavior remains in place. The mobile LCP fallback was also restored to the original pre-video image so no condenser/fan frame appears before playback.
+See `RELEASE-BASELINE.md` for the current release contract.
