@@ -211,7 +211,7 @@ export default function ServiceDetailLayout({
 
                   {/* text */}
                   <div className="flex flex-col gap-3 p-6 flex-1">
-                    <h3 className="text-[clamp(18px,1.3vw,22px)] font-bold leading-[1.15] tracking-[-0.015em] text-[#1a1a1a]">
+                    <h3 className="text-[22px] md:text-[clamp(18px,1.3vw,22px)] font-bold leading-[1.15] tracking-[-0.015em] text-[#1a1a1a]">
                       {service.title}
                     </h3>
                     <p className="text-[15px] font-[440] leading-[1.65] text-[#616161] flex-1">
