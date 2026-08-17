@@ -49,20 +49,13 @@ function ScheduleButton() {
   return (
     <Link
       to="/contact-us/"
-      className="inline-flex shrink-0 items-stretch overflow-hidden"
-      style={{ height: 60, borderRadius: 6 }}
+      className="group inline-flex h-[58px] shrink-0 items-stretch overflow-hidden rounded-[5px] bg-red-600 md:h-[60px] md:rounded-[6px]"
     >
-      <span
-        className="flex items-center justify-center text-white"
-        style={{ width: 184, background: "#FF2929", fontSize: 16, fontWeight: 600 }}
-      >
+      <span className="flex items-center whitespace-nowrap px-6 text-[18px] font-semibold tracking-[-0.2px] text-white md:w-[184px] md:justify-center md:px-0 md:text-[16px] md:tracking-normal">
         Schedule Online
       </span>
-      <span
-        className="grid place-items-center text-white"
-        style={{ width: 60, background: "#C81E1E" }}
-      >
-        <ArrowUpRight className="h-[20px] w-[20px]" />
+      <span className="flex w-[50px] items-center justify-center bg-red-800 text-white transition-colors group-hover:bg-red-900 md:w-[60px]">
+        <ArrowUpRight className="h-[18px] w-[18px] transition-transform group-hover:translate-x-0.5 md:h-[20px] md:w-[20px]" />
       </span>
     </Link>
   );
@@ -114,10 +107,7 @@ export default function ServiceHero({ image, eyebrow, headline }) {
         className="relative z-10"
         style={{ background: "#000000", borderTop: "1px solid rgba(255,255,255,0.16)" }}
       >
-        <div
-          className="site-shell flex items-center justify-between gap-6"
-          style={{ height: 136, paddingTop: 28, paddingBottom: 28 }}
-        >
+        <div className="site-shell flex flex-col items-start justify-center gap-5 py-6 md:h-[136px] md:flex-row md:items-center md:justify-between md:gap-6 md:py-7">
           <p className="max-w-[520px] text-left" style={{ fontSize: 16, lineHeight: "24px", color: "#B9B9B9" }}>
             {STRIP_COPY}
           </p>
