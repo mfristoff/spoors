@@ -1,0 +1,4 @@
+Spoor's clean deployment revision
+Created: 2026-08-17
+Purpose: Force a fresh Git commit/deployment from the clean standalone build.
+No release guardrails or scope-verification scripts are enabled.
