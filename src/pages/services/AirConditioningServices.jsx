@@ -13,7 +13,7 @@ const acContent = {
     "Since 1979, Spoor's has kept Auburn and the Sierra Foothills cool with honest AC repairs, tune-ups, and right-sized installations.",
   sectionLabel: "AC SERVICE & REPAIRS",
   sectionHeading: "Take definitive control of your indoor microclimate.",
-  breakImage: images.heatingRepair,
+  breakImage: images.heatingFurnace,
   breakAlt: "Spoor's Heating & Air technician performing a detailed HVAC system inspection",
   breakObjectPosition: "center 30%",
   reviews: reviewsFor("air-conditioning"),

@@ -137,23 +137,15 @@ export default function ServiceDetailLayout({
           <div className="site-shell w-full py-5 lg:py-6 flex flex-col items-start sm:flex-row sm:items-center justify-between gap-4">
             <p className="w-full text-[14px] font-[440] leading-[1.6] text-white/85 max-w-[640px] text-left">{intro}</p>
 
-            {/* Mobile: match the split CTA used on secondary About-page heroes. */}
+            {/* All breakpoints: use the split CTA styling introduced on mobile and mirrored from the secondary About-page heroes. */}
             <Link
               to={business.schedulingUrl}
-              className="group inline-flex h-[58px] shrink-0 items-stretch overflow-hidden rounded-[5px] bg-red-600 sm:hidden"
+              className="group inline-flex h-[58px] shrink-0 items-stretch overflow-hidden rounded-[5px] bg-red-600 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/35"
             >
               <span className="flex items-center whitespace-nowrap px-6 text-[18px] font-semibold tracking-[-0.2px] text-white">{scheduleLabel}</span>
               <span className="flex w-[50px] items-center justify-center bg-red-800 transition-colors group-hover:bg-red-900">
                 <ArrowUpRight className="h-[18px] w-[18px] text-white transition-transform group-hover:translate-x-0.5" />
               </span>
-            </Link>
-
-            {/* Tablet/desktop: preserve the existing service-page CTA. */}
-            <Link
-              to={business.schedulingUrl}
-              className="hidden h-[50px] shrink-0 items-center justify-center rounded-[9px] border border-red-700 bg-red-600 px-8 text-[15px] font-semibold text-white shadow-[0_10px_24px_rgba(0,0,0,0.24)] transition-all hover:-translate-y-0.5 hover:bg-red-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/35 sm:inline-flex"
-            >
-              {scheduleLabel}
             </Link>
           </div>
         </motion.div>

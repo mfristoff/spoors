@@ -145,13 +145,13 @@ export default function SpoorHVAC() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            className="w-full h-full object-cover object-[center_20%] lg:object-center"
-            src={cdnImage("https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/4fdf840dc_15501be56_c3661b5ec2d388862a914240e8e219d8d549dee6.png", 1920, 1280)}
-            alt="Family with HVAC technician" />
+            className="w-full h-full object-cover object-center"
+            src={cdnImage("https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3f4c7187_AdobeStock_450097271.jpeg", 1920, 1280)}
+            alt="Spoor's planned maintenance service hero background" />
 
-          <div className="absolute inset-0 bg-black lg:bg-gradient-to-r lg:from-black/80 lg:via-black/50 lg:to-black/20" />
-          {/* Bottom fade into the all-black benefit section below */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050404]" />
+          <div className="absolute inset-0 bg-black/72 lg:bg-gradient-to-r lg:from-black/90 lg:via-black/78 lg:to-black/58" />
+          {/* Keep the lower part of the hero solid black so it melts into the black section below. */}
+          <div className="absolute inset-x-0 bottom-0 h-[58%] bg-gradient-to-b from-transparent via-black/70 to-[#050404]" />
         </div>
 
         <div className="nav-row-aligned mx-auto w-full relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-8 lg:gap-12 pt-20 pb-8 lg:pt-6 lg:pb-6">

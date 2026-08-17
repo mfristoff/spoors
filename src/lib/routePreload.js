@@ -6,7 +6,7 @@ import { aboutPageContent } from "@/lib/aboutPageContent";
 const SERVICES_HERO =
   "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/08b2af924_hero-bg.png";
 const PLANNED_MAINTENANCE_HERO =
-  "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/4fdf840dc_15501be56_c3661b5ec2d388862a914240e8e219d8d549dee6.png";
+  "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3f4c7187_AdobeStock_450097271.jpeg";
 
 const normalizePath = (input = "") => {
   try {
