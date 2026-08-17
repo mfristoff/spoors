@@ -11,6 +11,7 @@ const IAQ_IMAGES = {
   pageBreak: "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-air-page-break-healthy-leaves-vent.webp",
   wholeHomeDehumidifier: "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-ducted-system.webp",
   wholeHomeHumidifier: "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-humidifier-hvac-system.webp",
+  airScrubber: "/assets/images/indoor-air-quality/spoors-auburn-ca-high-efficiency-air-scrubber-halo-led.webp",
 };
 
 const iaqContent = {
@@ -49,7 +50,7 @@ const iaqContent = {
     {
       title: "High-Efficiency Air Scrubbers",
       desc: "Air scrubbers go beyond standard filtration by actively reducing airborne contaminants that may pass through a filter alone. Installed within the HVAC system, they can help address dust, allergens, odors, and microscopic particles that affect comfort and air quality. We evaluate system compatibility, airflow, and the specific concerns inside the home before recommending an air scrubber solution.",
-      image: images.introTech,
+      image: IAQ_IMAGES.airScrubber,
     },
     {
       title: "Whole-Home Dehumidifiers",

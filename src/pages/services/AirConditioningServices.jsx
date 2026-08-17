@@ -8,9 +8,9 @@ const acContent = {
   heroImage: images.acHero,
   heroAlt: "Spoor's Heating & Air technician servicing an outdoor air conditioning unit in Auburn, CA",
   badge: "AC SERVICES",
-  headline: "Auburn's Trusted Air Conditioning Experts, Since 1979.",
+  headline: "Auburn's Trusted Air Conditioning Experts, Since 1925.",
   intro:
-    "Since 1979, Spoor's has kept Auburn and the Sierra Foothills cool with honest AC repairs, tune-ups, and right-sized installations.",
+    "Since 1925, Spoor's has kept Auburn and the Sierra Foothills cool with honest AC repairs, tune-ups, and right-sized installations.",
   sectionLabel: "AC SERVICE & REPAIRS",
   sectionHeading: "Take definitive control of your indoor microclimate.",
   breakImage: images.heatingFurnace,

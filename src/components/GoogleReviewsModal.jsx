@@ -192,7 +192,7 @@ export default function GoogleReviewsModal({ open, onOpenChange, reviews, onBook
             <div className="flex flex-col gap-4 text-[13px] text-[#3c4043]">
               <div>
                 <p className="text-[14px] font-medium text-[#202124] mb-1">Heating &amp; Air Conditioning / HVAC in Auburn, CA</p>
-                <p>A family-owned, 4th-generation HVAC company serving the Sierra Foothills since 1979. New installation, service, repair, and ongoing maintenance for residential and commercial customers.</p>
+                <p>A family-owned, 4th-generation HVAC company serving the Sierra Foothills since 1925. New installation, service, repair, and ongoing maintenance for residential and commercial customers.</p>
               </div>
               <div className="flex flex-col gap-2">
                 <div className="flex items-start gap-2"><span className="font-medium text-[#202124] w-20">Address</span><span>{BIZ.address}</span></div>

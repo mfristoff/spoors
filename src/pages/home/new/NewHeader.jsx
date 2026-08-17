@@ -71,7 +71,7 @@ export default function NewHeader() {
           {/* Logo */}
           <div className="flex h-[72px] w-full items-center justify-between border-b border-[#e0e0e0] px-5 lg:h-auto lg:max-w-[260px] lg:min-h-[154px] lg:flex-col lg:items-center lg:justify-center lg:border-b-0 lg:border-l lg:border-r lg:border-[#e0e0e0] lg:px-[40.5px] lg:py-[32.77px]">
             <Link to="/" onMouseEnter={() => preloadRouteAssets("/")} onFocus={() => preloadRouteAssets("/")} onPointerDown={() => preloadRouteAssets("/")}>
-              <img src={images.logo} alt={business.name} className="h-[52px] w-auto object-contain lg:h-[88px] lg:scale-[1.16]" decoding="async" />
+              <img src={images.logo} alt={business.name} className="h-[52px] w-auto object-contain lg:h-[88px] lg:scale-[1.20]" decoding="async" />
             </Link>
             {/* Mobile toggle — right side, vertically centered with the logo */}
             <button
@@ -129,7 +129,7 @@ export default function NewHeader() {
               href={business.phoneLink}
               className="inline-flex h-[69px] w-[244px] items-center justify-center whitespace-nowrap rounded-[9px] bg-[#FF2828] px-5 py-5 text-[15px] font-semibold text-white shadow-[0_10px_24px_rgba(0,0,0,0.25)] transition-transform hover:-translate-y-0.5"
             >
-              Call Now: {business.phone}
+              Call: {business.phone}
             </a>
           </div>
         </div>

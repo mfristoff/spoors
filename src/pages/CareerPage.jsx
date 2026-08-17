@@ -142,7 +142,7 @@ export default function CareerPage() {
                 </div>
                 <div className="flex h-6 items-center justify-center rounded-sm bg-figma-text-1 px-1.5 py-0">
                   <span className="text-figma-12 text-figma-primary font-semibold leading-figma-12 tracking-[-0.1px]">
-                    Est. 1980
+                    Est. 1925
                   </span>
                 </div>
               </motion.div>

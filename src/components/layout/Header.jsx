@@ -69,7 +69,7 @@ export default function Header() {
                   <img
                     src={images.logo}
                     alt={business.name}
-                    className="h-auto w-[172px] object-contain"
+                    className="h-auto w-[176px] object-contain"
                     decoding="async"
                   />
                 </Link>
@@ -120,7 +120,7 @@ export default function Header() {
                   className="inline-flex items-center justify-center rounded-md text-[15px] font-semibold text-white"
                   style={{ backgroundColor: "#ff3333", height: 64, width: 224 }}
                 >
-                  Call Now: {business.phone}
+                  Call: {business.phone}
                 </a>
               </div>
             </div>
