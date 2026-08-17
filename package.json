@@ -6,7 +6,7 @@
   "scripts": {
     "predev": "npm run media:library",
     "dev": "vite",
-    "prebuild": "npm run media:library && npm run verify:regressions && npm run verify:scope",
+    "prebuild": "npm run verify:regressions && npm run verify:scope && npm run media:library",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --quiet",

@@ -26,3 +26,9 @@ Workflow for every update:
 8. Once the update itself is the new approved release, run `npm run baseline:refresh` and clear `UPDATE-SCOPE.txt` before packaging the new master ZIP.
 
 If a guard fails, fix the unexpected change. Do not bypass the guard by broadening the scope or refreshing the baseline unless the changed behavior was actually requested.
+
+## Build-safe exclusions
+
+The scope guard intentionally ignores `public/media-library.json` because the prebuild process regenerates it. It also ignores Finder-style root duplicates only when the canonical sibling exists, such as `package 2.json` beside `package.json` or `src 3` beside `src`. Those files are inert legacy clutter and are not part of the deploy surface.
+
+The scope check now runs before `media:library`, so generated output cannot create a false regression failure. Runtime source, active assets, tracking, forms, routes, configuration, and canonical scripts remain protected by the baseline.
