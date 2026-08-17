@@ -145,13 +145,13 @@ export default function SpoorHVAC() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            className="w-full h-full object-cover object-[68%_24%] lg:object-[74%_30%]"
+            className="w-full h-full object-cover object-[70%_56%] lg:object-[74%_64%]"
             src="/assets/images/planned-maintenance/spoors-planned-maintenance-hero.webp"
             alt="Technician servicing an outdoor air conditioning unit" />
 
           <div className="absolute inset-0 bg-black/76 lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.97)_0%,rgba(0,0,0,0.92)_34%,rgba(0,0,0,0.66)_58%,rgba(0,0,0,0.34)_100%)]" />
           {/* Keep the lower part of the hero solid black so it melts into the black section below. */}
-          <div className="absolute inset-x-0 bottom-0 h-[58%] bg-gradient-to-b from-transparent via-black/70 to-[#050404]" />
+          <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-b from-transparent via-black/58 to-[#050404]" />
         </div>
 
         <div className="nav-row-aligned mx-auto w-full relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-8 lg:gap-12 pt-20 pb-8 lg:pt-6 lg:pb-6">
