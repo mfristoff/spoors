@@ -145,11 +145,11 @@ export default function SpoorHVAC() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            className="w-full h-full object-cover object-center"
-            src={cdnImage("https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3f4c7187_AdobeStock_450097271.jpeg", 1920, 1280)}
-            alt="Spoor's planned maintenance service hero background" />
+            className="w-full h-full object-cover object-[60%_center] lg:object-[62%_center]"
+            src="/assets/images/planned-maintenance/spoors-planned-maintenance-hero.webp"
+            alt="Technician servicing an outdoor air conditioning unit" />
 
-          <div className="absolute inset-0 bg-black/72 lg:bg-gradient-to-r lg:from-black/90 lg:via-black/78 lg:to-black/58" />
+          <div className="absolute inset-0 bg-black/78 lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.97)_0%,rgba(0,0,0,0.90)_36%,rgba(0,0,0,0.74)_58%,rgba(0,0,0,0.56)_100%)]" />
           {/* Keep the lower part of the hero solid black so it melts into the black section below. */}
           <div className="absolute inset-x-0 bottom-0 h-[58%] bg-gradient-to-b from-transparent via-black/70 to-[#050404]" />
         </div>
@@ -182,9 +182,9 @@ export default function SpoorHVAC() {
                   "Priority Service Status",
                   "Extended Equipment Life",
                   "Max Discount on Repairs & Service",
-                  "Automatic Renewal",
+                  "Automatic Renewal for Continued Coverage",
                   "$750 Off or 10% Off New System",
-                  "Peace of Mind",
+                  "Year-Round Comfort and Peace of Mind",
                 ].map((benefit, i) => (
                   <div key={i} className="flex items-start gap-2">
                     <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg" alt="" className="h-[18px] w-[18px] mt-0.5 shrink-0" />
