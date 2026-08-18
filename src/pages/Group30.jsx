@@ -193,9 +193,9 @@ export default function SpoorHVAC() {
             src="/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp"
             alt="HVAC refrigerant gauges used during planned maintenance diagnostics in Auburn, CA" />
 
-          <div className="absolute inset-0 bg-black/78 lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.97)_0%,rgba(0,0,0,0.91)_36%,rgba(0,0,0,0.70)_62%,rgba(0,0,0,0.48)_100%)]" />
+          <div className="absolute inset-0 bg-black/80 lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.93)_36%,rgba(0,0,0,0.74)_62%,rgba(0,0,0,0.53)_100%)]" />
           {/* Keep the lower part of the hero solid black so it melts into the black section below. */}
-          <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-b from-transparent via-black/58 to-[#050404]" />
+          <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-b from-transparent via-black/62 to-[#050404]" />
         </div>
 
         <div className="nav-row-aligned mx-auto w-full relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-8 lg:gap-12 pt-20 pb-8 lg:pt-6 lg:pb-6">
@@ -236,8 +236,8 @@ export default function SpoorHVAC() {
                   </div>
                 ))}
               </div>
-              <p className="max-w-[640px] border-t border-white/15 pt-3 text-[13px] font-medium leading-[1.45] tracking-[-0.18px] text-white/70 lg:max-w-none lg:whitespace-nowrap lg:text-[11px] lg:tracking-[-0.3px]">
-                Moving? Here's a selling perk: your Comfort Club membership can transfer to the buyer <span className="italic text-red-500">or</span> move with you to your new home. The choice is yours!
+              <p className="max-w-[640px] border-t border-white/15 pt-3 text-[14px] font-medium leading-[1.45] tracking-[-0.1px] text-white/75 lg:max-w-none lg:whitespace-nowrap lg:text-[13px] lg:tracking-[-0.15px]">
+                Moving? Your membership can transfer to the buyer <span className="mx-1 italic text-red-500">or</span> move with you to your new home. The choice is yours!
               </p>
             </div>
           </motion.div>
