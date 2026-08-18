@@ -193,10 +193,11 @@ export default function ServiceDetailLayout({
                     <Image
                       src={service.image}
                       alt={`${service.title} — Spoor's Heating & Air`}
-                      fittingType="fill"
+                      fittingType={service.imageFit || "fill"}
                       focalPointX={service.focalPointX}
                       focalPointY={service.focalPointY}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className={`w-full h-full ${service.imageFit === "contain" ? "object-contain" : "object-cover"} ${service.imageClass || ""} group-hover:scale-105 transition-transform duration-700`}
+                      style={service.imagePosition ? { objectPosition: service.imagePosition } : undefined}
                     />
 
                   </div>

@@ -51,6 +51,9 @@ const iaqContent = {
       title: "High-Efficiency Air Scrubbers",
       desc: "Air scrubbers go beyond standard filtration by actively reducing airborne contaminants that may pass through a filter alone. Installed within the HVAC system, they can help address dust, allergens, odors, and microscopic particles that affect comfort and air quality. We evaluate system compatibility, airflow, and the specific concerns inside the home before recommending an air scrubber solution.",
       image: IAQ_IMAGES.airScrubber,
+      imageFit: "contain",
+      imagePosition: "center center",
+      imageClass: "bg-white p-4",
     },
     {
       title: "Whole-Home Dehumidifiers",
