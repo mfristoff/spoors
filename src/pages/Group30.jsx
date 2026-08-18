@@ -213,7 +213,7 @@ export default function SpoorHVAC() {
               </p>
             </div>
             <h1 className="text-[clamp(40px,3.7vw,72px)] font-bold leading-[1.01] tracking-[-0.0197em] text-figma-primary">Join Our Comfort Club and <span className="text-figma-accent">Make Maintenance Easy</span></h1>
-            <div className="flex flex-col gap-[26px] max-w-[640px] items-start">
+            <div className="flex flex-col gap-[26px] max-w-[640px] items-start lg:-mt-[10px]">
               <p className="text-[clamp(16px,1.05vw,18px)] font-medium leading-[1.55] tracking-[-0.2px] text-white/75">
                 Members enjoy exclusive savings, priority service, and total peace of mind:
               </p>
@@ -247,7 +247,7 @@ export default function SpoorHVAC() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="travel-border flex flex-col items-center gap-6 p-5 md:p-7 bg-figma-primary rounded-[18px] w-full max-w-[400px] border border-[#cfd2d8] ring-1 ring-black/5 shadow-[0_24px_70px_rgba(0,0,0,0.30)]">
+            className="travel-border flex flex-col items-center gap-6 p-5 md:p-7 bg-figma-primary rounded-[18px] w-full max-w-[400px] border-[1.5px] border-[#aeb2b9] ring-1 ring-black/5 shadow-[0_24px_70px_rgba(0,0,0,0.30)]">
             
             <div className="flex flex-col items-center gap-2 w-full text-center">
               <h2 className="text-[clamp(20px,1.8vw,30px)] font-bold leading-[1.1] text-[#303030]">
@@ -301,11 +301,17 @@ export default function SpoorHVAC() {
         <div className="w-full border-t border-[#515151]" aria-hidden="true" />
         <div className="site-shell">
           <div className="flex items-end border-x border-b border-[#515151] px-6 pb-[clamp(24px,3vw,48px)] pt-[clamp(70px,8vw,130px)]">
-            <div className="max-w-[920px]">
+            <motion.div
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+              className="max-w-[920px]"
+            >
               <p className="mb-5 text-[13px] font-semibold uppercase tracking-[0.12em] text-red-400">PROACTIVE COMFORT CARE</p>
               <h2 className="text-[clamp(36px,4vw,68px)] font-bold leading-[1.02] tracking-[-0.025em] text-white">Why HVAC Maintenance Is Important</h2>
               <p className="mt-6 max-w-[800px] text-[17px] leading-[1.7] text-white/65">Regular care does more than prevent a surprise service call. It protects the equipment, the energy budget, the air inside your home, and the comfort your family depends on.</p>
-            </div>
+            </motion.div>
           </div>
           <div className="flex flex-col">
             {maintenanceImportance.map((item, idx) => (
