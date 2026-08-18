@@ -6,7 +6,7 @@ import { aboutPageContent } from "@/lib/aboutPageContent";
 const SERVICES_HERO =
   "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/08b2af924_hero-bg.png";
 const PLANNED_MAINTENANCE_HERO =
-  "/assets/images/planned-maintenance/spoors-planned-maintenance-hero.webp";
+  "/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp";
 
 const normalizePath = (input = "") => {
   try {
@@ -31,7 +31,7 @@ const HERO_BY_PATH = {
   "/about-us/community-involvement": aboutHero("community-involvement"),
   "/services": [cdnImage(SERVICES_HERO, 2400, 1500, { x: 0.5, y: 0.6 })],
   "/services/air-conditioning": [cdnImage(images.acHero, 2560, 1600)],
-  "/services/heating": [cdnImage(images.heatingHero, 2560, 1600)],
+  "/services/heating": ["/assets/images/heating/spoors-auburn-ca-heating-services-hero.webp"],
   "/services/indoor-air-quality": [
     "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-hero.webp",
     "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",

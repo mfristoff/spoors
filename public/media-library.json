@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T16:12:35.918Z",
-  "count": 291,
+  "generatedAt": "2026-08-18T17:12:39.131Z",
+  "count": 327,
   "note": "IDs are persistent. New media receives the next available number; existing IDs are not renumbered.",
   "items": [
     {
@@ -2912,6 +2912,366 @@
       "source": "local",
       "kind": "video",
       "category": "Video"
+    },
+    {
+      "id": 293,
+      "key": "local:/assets/images/heating/spoors-auburn-ca-emergency-heating-repair-technician.webp",
+      "src": "/assets/images/heating/spoors-auburn-ca-emergency-heating-repair-technician.webp",
+      "path": "/assets/images/heating/spoors-auburn-ca-emergency-heating-repair-technician.webp",
+      "name": "spoors-auburn-ca-emergency-heating-repair-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 294,
+      "key": "local:/assets/images/heating/spoors-auburn-ca-heating-indoor-air-quality-family-dog.webp",
+      "src": "/assets/images/heating/spoors-auburn-ca-heating-indoor-air-quality-family-dog.webp",
+      "path": "/assets/images/heating/spoors-auburn-ca-heating-indoor-air-quality-family-dog.webp",
+      "name": "spoors-auburn-ca-heating-indoor-air-quality-family-dog.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 295,
+      "key": "local:/assets/images/heating/spoors-auburn-ca-heating-services-hero.webp",
+      "src": "/assets/images/heating/spoors-auburn-ca-heating-services-hero.webp",
+      "path": "/assets/images/heating/spoors-auburn-ca-heating-services-hero.webp",
+      "name": "spoors-auburn-ca-heating-services-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 296,
+      "key": "local:/assets/images/heating/spoors-auburn-ca-heating-system-burner-flames-page-break.webp",
+      "src": "/assets/images/heating/spoors-auburn-ca-heating-system-burner-flames-page-break.webp",
+      "path": "/assets/images/heating/spoors-auburn-ca-heating-system-burner-flames-page-break.webp",
+      "name": "spoors-auburn-ca-heating-system-burner-flames-page-break.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 297,
+      "key": "local:/assets/images/heating/spoors-auburn-ca-hot-water-repair-technician.webp",
+      "src": "/assets/images/heating/spoors-auburn-ca-hot-water-repair-technician.webp",
+      "path": "/assets/images/heating/spoors-auburn-ca-hot-water-repair-technician.webp",
+      "name": "spoors-auburn-ca-hot-water-repair-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 298,
+      "key": "local:/assets/images/heating/spoors-auburn-ca-right-sized-home-heating-water-heater.webp",
+      "src": "/assets/images/heating/spoors-auburn-ca-right-sized-home-heating-water-heater.webp",
+      "path": "/assets/images/heating/spoors-auburn-ca-right-sized-home-heating-water-heater.webp",
+      "name": "spoors-auburn-ca-right-sized-home-heating-water-heater.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 299,
+      "key": "local:/assets/images/heating/spoors-auburn-ca-winter-heating-tune-up.webp",
+      "src": "/assets/images/heating/spoors-auburn-ca-winter-heating-tune-up.webp",
+      "path": "/assets/images/heating/spoors-auburn-ca-winter-heating-tune-up.webp",
+      "name": "spoors-auburn-ca-winter-heating-tune-up.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 300,
+      "key": "local:/assets/images/indoor-air-quality/spoors-auburn-ca-high-efficiency-air-scrubber-halo-led.webp",
+      "src": "/assets/images/indoor-air-quality/spoors-auburn-ca-high-efficiency-air-scrubber-halo-led.webp",
+      "path": "/assets/images/indoor-air-quality/spoors-auburn-ca-high-efficiency-air-scrubber-halo-led.webp",
+      "name": "spoors-auburn-ca-high-efficiency-air-scrubber-halo-led.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 301,
+      "key": "local:/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-family-comfort.webp",
+      "src": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-family-comfort.webp",
+      "path": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-family-comfort.webp",
+      "name": "spoors-auburn-ca-hvac-maintenance-family-comfort.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 302,
+      "key": "local:/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-inspection-checklist.webp",
+      "src": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-inspection-checklist.webp",
+      "path": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-inspection-checklist.webp",
+      "name": "spoors-auburn-ca-hvac-maintenance-inspection-checklist.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 303,
+      "key": "local:/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-tune-up-refrigerant-diagnostics.webp",
+      "src": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-tune-up-refrigerant-diagnostics.webp",
+      "path": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-tune-up-refrigerant-diagnostics.webp",
+      "name": "spoors-auburn-ca-hvac-tune-up-refrigerant-diagnostics.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 304,
+      "key": "local:/assets/images/maintenance-tune-ups/spoors-auburn-ca-preventive-hvac-maintenance-repair.webp",
+      "src": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-preventive-hvac-maintenance-repair.webp",
+      "path": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-preventive-hvac-maintenance-repair.webp",
+      "name": "spoors-auburn-ca-preventive-hvac-maintenance-repair.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 305,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-ac-refrigerant-diagnostic-gauges.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-ac-refrigerant-diagnostic-gauges.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-ac-refrigerant-diagnostic-gauges.webp",
+      "name": "spoors-auburn-ca-ac-refrigerant-diagnostic-gauges.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 306,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-ac-service-connection-technician.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-ac-service-connection-technician.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-ac-service-connection-technician.webp",
+      "name": "spoors-auburn-ca-ac-service-connection-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 307,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-air-conditioner-installation-technician.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-air-conditioner-installation-technician.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-air-conditioner-installation-technician.webp",
+      "name": "spoors-auburn-ca-air-conditioner-installation-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 308,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-ductless-mini-split-outdoor-unit.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-ductless-mini-split-outdoor-unit.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-ductless-mini-split-outdoor-unit.webp",
+      "name": "spoors-auburn-ca-ductless-mini-split-outdoor-unit.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Ductless"
+    },
+    {
+      "id": 309,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-family-home-comfort.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-family-home-comfort.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-family-home-comfort.webp",
+      "name": "spoors-auburn-ca-family-home-comfort.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 310,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-heat-pump-service-technician.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-heat-pump-service-technician.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-heat-pump-service-technician.webp",
+      "name": "spoors-auburn-ca-heat-pump-service-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 311,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-hvac-air-filter-replacement-technician.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-hvac-air-filter-replacement-technician.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-hvac-air-filter-replacement-technician.webp",
+      "name": "spoors-auburn-ca-hvac-air-filter-replacement-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 312,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-indoor-air-quality-home-comfort.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-indoor-air-quality-home-comfort.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-indoor-air-quality-home-comfort.webp",
+      "name": "spoors-auburn-ca-indoor-air-quality-home-comfort.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 313,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-residential-air-conditioner-condenser.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-residential-air-conditioner-condenser.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-residential-air-conditioner-condenser.webp",
+      "name": "spoors-auburn-ca-residential-air-conditioner-condenser.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 314,
+      "key": "local:/assets/images/media-library/spoors-auburn-ca-tank-water-heater-mechanical-room.webp",
+      "src": "/assets/images/media-library/spoors-auburn-ca-tank-water-heater-mechanical-room.webp",
+      "path": "/assets/images/media-library/spoors-auburn-ca-tank-water-heater-mechanical-room.webp",
+      "name": "spoors-auburn-ca-tank-water-heater-mechanical-room.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Water heaters"
+    },
+    {
+      "id": 315,
+      "key": "local:/assets/images/planned-maintenance/spoors-auburn-ca-hvac-efficiency-lower-utility-bills.webp",
+      "src": "/assets/images/planned-maintenance/spoors-auburn-ca-hvac-efficiency-lower-utility-bills.webp",
+      "path": "/assets/images/planned-maintenance/spoors-auburn-ca-hvac-efficiency-lower-utility-bills.webp",
+      "name": "spoors-auburn-ca-hvac-efficiency-lower-utility-bills.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 316,
+      "key": "local:/assets/images/planned-maintenance/spoors-auburn-ca-hvac-system-life-expectancy-comfort.webp",
+      "src": "/assets/images/planned-maintenance/spoors-auburn-ca-hvac-system-life-expectancy-comfort.webp",
+      "path": "/assets/images/planned-maintenance/spoors-auburn-ca-hvac-system-life-expectancy-comfort.webp",
+      "name": "spoors-auburn-ca-hvac-system-life-expectancy-comfort.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 317,
+      "key": "local:/assets/images/planned-maintenance/spoors-auburn-ca-improved-indoor-air-quality-family.webp",
+      "src": "/assets/images/planned-maintenance/spoors-auburn-ca-improved-indoor-air-quality-family.webp",
+      "path": "/assets/images/planned-maintenance/spoors-auburn-ca-improved-indoor-air-quality-family.webp",
+      "name": "spoors-auburn-ca-improved-indoor-air-quality-family.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 318,
+      "key": "local:/assets/images/planned-maintenance/spoors-auburn-ca-planned-hvac-maintenance-peace-of-mind.webp",
+      "src": "/assets/images/planned-maintenance/spoors-auburn-ca-planned-hvac-maintenance-peace-of-mind.webp",
+      "path": "/assets/images/planned-maintenance/spoors-auburn-ca-planned-hvac-maintenance-peace-of-mind.webp",
+      "name": "spoors-auburn-ca-planned-hvac-maintenance-peace-of-mind.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 319,
+      "key": "local:/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp",
+      "src": "/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp",
+      "path": "/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp",
+      "name": "spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 320,
+      "key": "local:/assets/images/planned-maintenance/spoors-planned-maintenance-hero.webp",
+      "src": "/assets/images/planned-maintenance/spoors-planned-maintenance-hero.webp",
+      "path": "/assets/images/planned-maintenance/spoors-planned-maintenance-hero.webp",
+      "name": "spoors-planned-maintenance-hero.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 321,
+      "key": "local:/assets/images/services-overview/spoors-auburn-ca-emergency-heating-repair-furnace.webp",
+      "src": "/assets/images/services-overview/spoors-auburn-ca-emergency-heating-repair-furnace.webp",
+      "path": "/assets/images/services-overview/spoors-auburn-ca-emergency-heating-repair-furnace.webp",
+      "name": "spoors-auburn-ca-emergency-heating-repair-furnace.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 322,
+      "key": "local:/assets/images/services-overview/spoors-auburn-ca-heating-installation-technician.webp",
+      "src": "/assets/images/services-overview/spoors-auburn-ca-heating-installation-technician.webp",
+      "path": "/assets/images/services-overview/spoors-auburn-ca-heating-installation-technician.webp",
+      "name": "spoors-auburn-ca-heating-installation-technician.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 323,
+      "key": "local:/assets/images/services-overview/spoors-auburn-ca-heating-maintenance-furnace-system.webp",
+      "src": "/assets/images/services-overview/spoors-auburn-ca-heating-maintenance-furnace-system.webp",
+      "path": "/assets/images/services-overview/spoors-auburn-ca-heating-maintenance-furnace-system.webp",
+      "name": "spoors-auburn-ca-heating-maintenance-furnace-system.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 324,
+      "key": "local:/assets/images/services-overview/spoors-auburn-ca-heating-repairs-burner-flames.webp",
+      "src": "/assets/images/services-overview/spoors-auburn-ca-heating-repairs-burner-flames.webp",
+      "path": "/assets/images/services-overview/spoors-auburn-ca-heating-repairs-burner-flames.webp",
+      "name": "spoors-auburn-ca-heating-repairs-burner-flames.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
+    },
+    {
+      "id": 325,
+      "key": "local:/assets/images/services-overview/spoors-auburn-ca-hvac-indoor-air-quality-system-service.webp",
+      "src": "/assets/images/services-overview/spoors-auburn-ca-hvac-indoor-air-quality-system-service.webp",
+      "path": "/assets/images/services-overview/spoors-auburn-ca-hvac-indoor-air-quality-system-service.webp",
+      "name": "spoors-auburn-ca-hvac-indoor-air-quality-system-service.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 326,
+      "key": "local:/assets/images/media-library/reference/spoors-reference-planned-maintenance-sticky-panel-layout.webp",
+      "src": "/assets/images/media-library/reference/spoors-reference-planned-maintenance-sticky-panel-layout.webp",
+      "path": "/assets/images/media-library/reference/spoors-reference-planned-maintenance-sticky-panel-layout.webp",
+      "name": "spoors-reference-planned-maintenance-sticky-panel-layout.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 327,
+      "key": "local:/assets/images/media-library/reference/spoors-reference-planned-maintenance-technician-cards-layout.webp",
+      "src": "/assets/images/media-library/reference/spoors-reference-planned-maintenance-technician-cards-layout.webp",
+      "path": "/assets/images/media-library/reference/spoors-reference-planned-maintenance-technician-cards-layout.webp",
+      "name": "spoors-reference-planned-maintenance-technician-cards-layout.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 328,
+      "key": "local:/assets/images/media-library/reference/spoors-reference-services-heating-accordion-layout.webp",
+      "src": "/assets/images/media-library/reference/spoors-reference-services-heating-accordion-layout.webp",
+      "path": "/assets/images/media-library/reference/spoors-reference-services-heating-accordion-layout.webp",
+      "name": "spoors-reference-services-heating-accordion-layout.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Heating"
     }
   ]
 }

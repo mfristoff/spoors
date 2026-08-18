@@ -33,10 +33,10 @@ export default function AboutUs() {
   return (
     <div className="w-full overflow-hidden bg-white">
       <OverviewHero />
-      <OverviewStory />
-      <OverviewCommitment />
       <OverviewValues />
       <OverviewWhyChoose />
+      <OverviewStory />
+      <OverviewCommitment />
       <OverviewTeam />
     </div>
   );

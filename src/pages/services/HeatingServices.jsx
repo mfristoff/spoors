@@ -5,18 +5,19 @@ import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { reviewsFor } from "@/lib/serviceReviews";
 
 const heatingContent = {
-  heroImage: images.heatingHero,
-  heroAlt: "Spoor's Heating & Air technician servicing a heat pump in Auburn, CA",
+  heroImage: "/assets/images/heating/spoors-auburn-ca-heating-services-hero.webp",
+  heroAlt: "Furnace and water heater equipment in an Auburn, CA mechanical room",
+  heroObjectPosition: "68% center",
   badge: "HEATING SERVICES",
   headline: "Auburn's Reliable Heating Experts, Keeping the Sierra Foothills Warm.",
   intro:
     "Nearly 40 years of expert heating repairs, maintenance, and installations for Sierra Foothills homes and businesses—24/7 emergency service available.",
   sectionLabel: "HEATING SERVICE & REPAIRS",
   sectionHeading: "Dependable heating that keeps your family warm all winter.",
-  breakImage: images.heatingBreak,
-  breakAlt: "Spoor's Heating & Air technician working on a heating system",
-  breakFocal: { x: 0.4, y: 0.7 },
-  breakObjectPosition: "40% 70%",
+  breakImage: "/assets/images/heating/spoors-auburn-ca-heating-system-burner-flames-page-break.webp",
+  breakAlt: "Gas furnace burner flames during heating system operation in Auburn, CA",
+  breakFocal: { x: 0.5, y: 0.5 },
+  breakObjectPosition: "center center",
   breakHeightClass: "h-[340px] lg:h-[520px]",
   reviews: reviewsFor("heating"),
   reviewsServiceLabel: "Heating",
@@ -30,17 +31,17 @@ const heatingContent = {
     {
       title: "Tune-Ups That Prevent Winter Breakdowns",
       desc: "Regular maintenance of a commercial or residential heating system does more than guarantee indoor warmth on a chilly Placer County day. Maintenance lets Spoor's Heating & Air Conditioning inspect and repair issues before they become a problem—some of which can affect your safety. We recommend scheduling heating and furnace maintenance service in the fall. Call us today to schedule an appointment and keep your system running efficiently all winter.",
-      image: spoorsImageLibrary.heatPumpRepair,
+      image: "/assets/images/heating/spoors-auburn-ca-winter-heating-tune-up.webp",
     },
     {
       title: "Right-Sized Heating for Your Home",
       desc: "If HVAC repair isn't enough to extend the life of your current heating system, call Spoor's Heating & Air Conditioning. For nearly 40 years we've helped Sierra Foothills homeowners choose and install a new furnace, heat pump, or other heat source—including electric & gas furnaces, heat pump heating systems, boilers, and mini-split heating. Our technicians give honest, professional opinions on what heat source best fits your lifestyle and install many major brands.",
-      image: spoorsImageLibrary.heatPumpTechnician,
+      image: "/assets/images/heating/spoors-auburn-ca-right-sized-home-heating-water-heater.webp",
     },
     {
       title: "Reliable Hot Water Restored",
       desc: "It's easy to take the electric water heater in your home or business for granted—until it stops delivering hot water. When that day comes, count on Spoor's Heating & Air Conditioning to identify the source of the issue and make necessary repairs. You likely need electric water heater repair if you receive lukewarm water from the hot fixture, the unit is more than 10 years old, the tank shows discoloration or rust, or water from your faucets is discolored.",
-      image: images.waterHeaterImage,
+      image: "/assets/images/heating/spoors-auburn-ca-hot-water-repair-technician.webp",
     },
     {
       title: "Zoned Heat, Room by Room",
@@ -50,12 +51,12 @@ const heatingContent = {
     {
       title: "Heat Restored, Day or Night",
       desc: "Whether there's an unusual whine coming from your heat pump or the water heater has sprung a leak, count on Spoor's Heating & Air Conditioning for 24-hour emergency repair service across Auburn, Meadow Vista, and Orangevale. We understand that having heat during a NorCal winter goes beyond comfort—it keeps you and your loved ones safe. Our technicians keep you up-to-date and suggest ways to prevent the situation in the future.",
-      image: images.introTruck,
+      image: "/assets/images/heating/spoors-auburn-ca-emergency-heating-repair-technician.webp",
     },
     {
       title: "Cleaner Air With Every Heating Cycle",
       desc: "Don't let an inefficient furnace or heating system degrade your air quality. Without professional repairs and prompt maintenance, your heating system could be responsible for low-quality air in your home or business. Call Spoor's Heating & Air Conditioning for all-encompassing indoor air quality services that help you breathe easily indoors and boost your HVAC system's functionality throughout Northern California.",
-      image: images.introAir,
+      image: "/assets/images/heating/spoors-auburn-ca-heating-indoor-air-quality-family-dog.webp",
     },
   ],
   faqs: [

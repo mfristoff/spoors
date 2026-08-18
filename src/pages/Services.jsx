@@ -59,11 +59,11 @@ const SERVICE_PANEL_IMAGES = {
     spoorsImageLibrary.acRepairTechnician,
   ],
   heating: [
-    spoorsImageLibrary.furnaceRepair,
-    spoorsImageLibrary.heatPumpMaintenance,
-    spoorsImageLibrary.heatPumpRepair,
-    spoorsImageLibrary.heatPumpService,
-    spoorsImageLibrary.heatPumpTechnician,
+    "/assets/images/services-overview/spoors-auburn-ca-heating-repairs-burner-flames.webp",
+    "/assets/images/services-overview/spoors-auburn-ca-heating-maintenance-furnace-system.webp",
+    "/assets/images/services-overview/spoors-auburn-ca-heating-installation-technician.webp",
+    "/assets/images/services-overview/spoors-auburn-ca-emergency-heating-repair-furnace.webp",
+    "/assets/images/services-overview/spoors-auburn-ca-hvac-indoor-air-quality-system-service.webp",
   ],
   "indoor-air-quality": [
     "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",

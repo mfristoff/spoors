@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
 import { cdnImage } from "@/lib/cdnImage";
 
@@ -23,7 +24,7 @@ export default function SpoorHVAC() {
   },
   {
     img: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2c7e23e54_spoors-hvac-technician-auburn-ca.png",
-    title: "No Overtime Charges",
+    title: "No Overtime Charges After Hours",
     desc: "Get dependable emergency fixes anytime, including nights and weekends, at no extra cost."
   },
   {
@@ -42,6 +43,49 @@ export default function SpoorHVAC() {
     desc: "Stay ahead of changing foothill seasons with automated, stress-free maintenance reminders."
   }];
 
+
+  const maintenanceImportance = [
+    {
+      title: "Extended Life Expectancy",
+      image: "/assets/images/planned-maintenance/spoors-auburn-ca-hvac-system-life-expectancy-comfort.webp",
+      alt: "Homeowner using a ductless HVAC remote in an Auburn, CA home",
+      copy: (
+        <>
+          As your HVAC system ages, performance naturally declines. Heating and cooling equipment often lasts around 15 years, but neglected systems can wear out much sooner. A consistent <Link to="/services/maintenance-tune-ups/" className="text-red-400 underline decoration-red-400/40 underline-offset-4 hover:text-red-300">HVAC maintenance plan</Link> helps reduce strain, catch developing problems early, and can extend useful system life by years.
+        </>
+      ),
+    },
+    {
+      title: "Lower Utility Bills",
+      image: "/assets/images/planned-maintenance/spoors-auburn-ca-hvac-efficiency-lower-utility-bills.webp",
+      alt: "Digital HVAC diagnostic gauges checking system efficiency in Auburn, CA",
+      copy: (
+        <>
+          In sunny Auburn, <Link to="/services/heating/" className="text-red-400 underline decoration-red-400/40 underline-offset-4 hover:text-red-300">heating</Link> and <Link to="/services/air-conditioning/" className="text-red-400 underline decoration-red-400/40 underline-offset-4 hover:text-red-300">air conditioning</Link> can account for a large share of annual utility costs. Routine maintenance helps equipment operate closer to peak efficiency so it does not work harder than necessary. That can reduce energy use and help control monthly costs.
+        </>
+      ),
+    },
+    {
+      title: "Improved Air Quality",
+      image: "/assets/images/planned-maintenance/spoors-auburn-ca-improved-indoor-air-quality-family.webp",
+      alt: "Family relaxing comfortably with clean conditioned air in an Auburn home",
+      copy: (
+        <>
+          Seasonal wildfire smoke and local pollution already put extra pressure on the air inside foothill homes. Dirty filters, vents, and HVAC components can add dust, mold, and other contaminants. Routine service supports cleaner airflow and better <Link to="/services/indoor-air-quality/" className="text-red-400 underline decoration-red-400/40 underline-offset-4 hover:text-red-300">indoor air quality</Link> throughout the home.
+        </>
+      ),
+    },
+    {
+      title: "Peace of Mind",
+      image: "/assets/images/planned-maintenance/spoors-auburn-ca-planned-hvac-maintenance-peace-of-mind.webp",
+      alt: "Parent and child enjoying dependable home comfort from a maintained HVAC system",
+      copy: (
+        <>
+          When the AC quits on a sweltering summer day or the heat goes out on a cold foothill night, comfort disappears fast. Planned HVAC maintenance helps reduce preventable breakdowns and keeps your heating and cooling equipment ready when you need it most. If something urgent still happens, our <Link to="/services/emergency-repairs/" className="text-red-400 underline decoration-red-400/40 underline-offset-4 hover:text-red-300">emergency repair team</Link> is ready to help.
+        </>
+      ),
+    },
+  ];
 
   const technicianCards = [
   {
@@ -145,11 +189,11 @@ export default function SpoorHVAC() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            className="w-full h-full object-cover object-[76%_62%] lg:object-[84%_68%]"
-            src="/assets/images/planned-maintenance/spoors-planned-maintenance-hero.webp"
-            alt="Technician servicing an outdoor air conditioning unit" />
+            className="w-full h-full object-cover object-[center_48%] lg:object-[center_52%]"
+            src="/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp"
+            alt="HVAC refrigerant gauges used during planned maintenance diagnostics in Auburn, CA" />
 
-          <div className="absolute inset-0 bg-black/76 lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.97)_0%,rgba(0,0,0,0.92)_34%,rgba(0,0,0,0.66)_58%,rgba(0,0,0,0.34)_100%)]" />
+          <div className="absolute inset-0 bg-black/78 lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.97)_0%,rgba(0,0,0,0.91)_36%,rgba(0,0,0,0.70)_62%,rgba(0,0,0,0.48)_100%)]" />
           {/* Keep the lower part of the hero solid black so it melts into the black section below. */}
           <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-b from-transparent via-black/58 to-[#050404]" />
         </div>
@@ -168,7 +212,7 @@ export default function SpoorHVAC() {
                 Planned Maintenance Services
               </p>
             </div>
-            <h1 className="text-[clamp(40px,3.7vw,72px)] font-bold leading-[1.01] tracking-[-0.0197em] text-figma-primary">Join Our Comfort Club &amp; Make Maintenance <span className="text-figma-accent">Easy</span></h1>
+            <h1 className="text-[clamp(40px,3.7vw,72px)] font-bold leading-[1.01] tracking-[-0.0197em] text-figma-primary">Join Our Comfort Club &amp; <span className="text-figma-accent">Make Maintenance Easy</span></h1>
             <div className="flex flex-col gap-[18px] max-w-[640px] items-start">
               <p className="text-[clamp(16px,1.05vw,18px)] font-medium leading-[1.55] tracking-[-0.2px] text-white/75">
                 Members enjoy exclusive savings, priority service, and total peace of mind:
@@ -178,7 +222,7 @@ export default function SpoorHVAC() {
                   "15% Discount on Parts",
                   "Maximum System Efficiency",
                   "Maintain Manufacturer's Warranty",
-                  "No Overtime Charges",
+                  "No Overtime Charges After Hours",
                   "Priority Service Status",
                   "Extended Equipment Life",
                   "Max Discount on Repairs & Service",
@@ -249,8 +293,43 @@ export default function SpoorHVAC() {
         </div>
       </section>
 
+      {/* WHY HVAC MAINTENANCE MATTERS */}
+      <section className="w-full bg-figma-color-17-5 text-figma-primary pt-20 lg:pt-[100px]">
+        <div className="w-full border-t border-[#515151]" aria-hidden="true" />
+        <div className="site-shell">
+          <div className="flex items-end border-x border-b border-[#515151] px-6 pb-[clamp(24px,3vw,48px)] pt-[clamp(70px,8vw,130px)]">
+            <div className="max-w-[920px]">
+              <p className="mb-5 text-[13px] font-semibold uppercase tracking-[0.12em] text-red-400">WHY MAINTENANCE MATTERS</p>
+              <h2 className="text-[clamp(36px,4vw,68px)] font-bold leading-[1.02] tracking-[-0.025em] text-white">Why HVAC Maintenance Is Important</h2>
+              <p className="mt-6 max-w-[800px] text-[17px] leading-[1.7] text-white/65">Regular care does more than prevent a surprise service call. It protects the equipment, the energy budget, the air inside your home, and the comfort your family depends on.</p>
+            </div>
+          </div>
+          <div className="flex flex-col">
+            {maintenanceImportance.map((item, idx) => (
+              <motion.article
+                key={item.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-70px" }}
+                transition={{ duration: 0.55, delay: idx * 0.04 }}
+                className="grid border-x border-b border-[#515151] lg:grid-cols-2"
+              >
+                <div className={`min-h-[280px] overflow-hidden border-b border-[#515151] lg:min-h-[390px] lg:border-b-0 ${idx % 2 ? "lg:order-2 lg:border-l" : "lg:border-r"}`}>
+                  <img src={item.image} alt={item.alt} className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.025]" loading="lazy" decoding="async" />
+                </div>
+                <div className={`flex flex-col justify-center px-7 py-10 lg:px-[clamp(40px,5vw,80px)] lg:py-14 ${idx % 2 ? "lg:order-1" : ""}`}>
+                  <span className="mb-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-red-400">0{idx + 1}</span>
+                  <h3 className="text-[clamp(28px,2.6vw,44px)] font-bold leading-[1.05] tracking-[-0.02em] text-white">{item.title}</h3>
+                  <p className="mt-5 max-w-[650px] text-[16px] leading-[1.72] text-white/68 md:text-[17px]">{item.copy}</p>
+                </div>
+              </motion.article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* OUR BENEFIT SECTION */}
-      <section className="w-full bg-figma-color-17-5 text-figma-primary pt-20 pb-20 lg:pt-[100px] lg:pb-[clamp(32px,6.6vw,127px)]">
+      <section className="w-full bg-figma-color-17-5 text-figma-primary pt-14 pb-20 lg:pt-[72px] lg:pb-[clamp(32px,6.6vw,127px)]">
         <div className="w-full border-t border-[#515151]" aria-hidden="true" />
         <div className="site-shell">
           <motion.div
@@ -317,14 +396,14 @@ export default function SpoorHVAC() {
       {/* TECHNICIAN SERVICES SECTION */}
       <section className="w-full bg-figma-surface py-20 lg:py-[clamp(28px,5.8vw,112px)]">
         <div className="site-shell">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-16 lg:gap-[clamp(24px,6.2vw,120px)]">
+          <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-16 lg:gap-[clamp(28px,4vw,64px)]">
             {/* Left Content */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="flex flex-col items-start gap-8 max-w-[828px]">
+              className="flex flex-col items-start gap-8 max-w-[828px] lg:sticky lg:self-start lg:top-[calc(var(--sticky-header-height,220px)+32px)]">
               
               <div className="flex flex-col gap-6 w-full">
                 <div className="flex flex-row items-center gap-[11px]">
@@ -359,7 +438,7 @@ export default function SpoorHVAC() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={staggerContainer}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               
               {technicianCards.map((card, idx) =>
               <motion.div

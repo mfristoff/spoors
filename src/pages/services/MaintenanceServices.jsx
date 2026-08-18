@@ -25,22 +25,22 @@ const maintenanceContent = {
     {
       title: "Know When to Schedule Service",
       desc: "Regular maintenance keeps your system running smoothly, and fixing problems early prevents larger, more expensive issues. Watch for sudden increases in utility bills, unusual heater noises, little to no airflow, reduced efficiency, frequent problems, strange smells, excess moisture or dust, and AC blowing warm air. If you notice any of these, contact our HVAC maintenance company for service before a small issue becomes an emergency.",
-      image: images.introAir,
+      image: "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-inspection-checklist.webp",
     },
     {
       title: "The Right Tune-Up Schedule for You",
       desc: "For most homes and businesses, we recommend a routine HVAC tune-up once a year. Older units benefit from maintenance twice a year. You can have heating and cooling serviced together, or separately—HVAC before summer, heating before winter. If you've recently installed a new unit, it's standard to have it serviced around the start of spring. Our team helps determine the proper schedule based on your unit.",
-      image: images.auburn,
+      image: "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-tune-up-refrigerant-diagnostics.webp",
     },
     {
       title: "Catch Problems Before They Break",
       desc: "Emergency HVAC repairs can be costly, especially when needed several times a year. Regular maintenance and tune-ups help identify and repair issues that could worsen over time and cause further damage to your unit. Catching a worn part or low refrigerant early prevents the mid-summer or mid-winter breakdown no one wants.",
-      image: images.introTech,
+      image: "/assets/images/maintenance-tune-ups/spoors-auburn-ca-preventive-hvac-maintenance-repair.webp",
     },
     {
       title: "Get More Years From Your System",
       desc: "Your HVAC system is a major investment. When properly maintained, it should last for years. Keeping your existing unit running efficiently through routine maintenance ensures you get the best return on investment possible—extending the life of your AC and furnace and delaying the cost of replacement.",
-      image: images.heatingFurnace,
+      image: "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-family-comfort.webp",
     },
     {
       title: "Lower Bills With Efficient Operation",
