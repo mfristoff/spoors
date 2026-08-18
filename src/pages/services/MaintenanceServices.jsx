@@ -1,7 +1,6 @@
 import React from "react";
 import ServiceDetailLayout from "./ServiceDetailLayout";
 import { images } from "@/lib/siteConfig";
-import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { reviewsFor } from "@/lib/serviceReviews";
 
 const maintenanceContent = {
@@ -13,10 +12,10 @@ const maintenanceContent = {
     "Preventive tune-ups that stop breakdowns and lower your energy bills.",
   sectionLabel: "HVAC MAINTENANCE & TUNE-UPS",
   sectionHeading: "Protect your comfort, lower your bills, extend your system's life.",
-  breakImage: spoorsImageLibrary.airFilterReplacement,
-  breakAlt: "Spoor's Heating & Air technician completing detailed HVAC filter maintenance",
-  breakFocal: { x: 0.5, y: 0.55 },
-  breakObjectPosition: "center 55%",
+  breakImage: "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-refrigerant-gauges-page-break.webp",
+  breakAlt: "HVAC refrigerant gauges used during a professional maintenance tune-up in Auburn, CA",
+  breakFocal: { x: 0.5, y: 0.5 },
+  breakObjectPosition: "center center",
   breakHeightClass: "h-[340px] lg:h-[500px]",
   reviews: reviewsFor("maintenance"),
   reviewsServiceLabel: "Maintenance & Tune-Ups",
@@ -50,7 +49,7 @@ const maintenanceContent = {
     {
       title: "Safe Heat, Verified Every Visit",
       desc: "One of the most important aspects of HVAC tune-ups is ensuring your home is safe. Your smoke alarms and carbon monoxide detectors protect your family from serious risks like fire or carbon monoxide poisoning—both of which can be deadly. Heating tune-ups verify safe venting and combustion so a furnace or gas appliance operates safely.",
-      image: images.aboutTeam,
+      image: "/assets/images/services-overview/spoors-auburn-ca-heating-maintenance-furnace-system.webp",
     },
     {
       title: "A Thorough Multi-Point Checklist",

@@ -61,6 +61,7 @@ export default function ServiceDetailLayout({
   breakFocal,
   breakObjectPosition = "center center",
   breakHeightClass = "h-[260px] lg:h-[400px]",
+  breakOverlayClass = "",
   faqs,
   reviews = [],
   reviewsServiceLabel = "HVAC Services",
@@ -312,6 +313,7 @@ export default function ServiceDetailLayout({
             style={{ objectPosition: breakObjectPosition }}
           />
         </div>
+        {breakOverlayClass ? <div className={`absolute inset-0 ${breakOverlayClass}`} /> : null}
 
       </section>
 

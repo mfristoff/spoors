@@ -5,7 +5,7 @@ import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { reviewsFor } from "@/lib/serviceReviews";
 
 const heatingContent = {
-  heroImage: "/assets/images/heating/spoors-auburn-ca-heating-services-hero.webp",
+  heroImage: "/assets/images/heating/spoors-auburn-ca-heating-services-hero-no-pvc.webp",
   heroAlt: "Furnace and water heater equipment in an Auburn, CA mechanical room",
   heroObjectPosition: "68% center",
   badge: "HEATING SERVICES",
@@ -19,6 +19,7 @@ const heatingContent = {
   breakFocal: { x: 0.5, y: 0.5 },
   breakObjectPosition: "center center",
   breakHeightClass: "h-[340px] lg:h-[520px]",
+  breakOverlayClass: "bg-black/45",
   reviews: reviewsFor("heating"),
   reviewsServiceLabel: "Heating",
   faqHeading: "Frequently Asked Questions About Heating",
@@ -36,7 +37,7 @@ const heatingContent = {
     {
       title: "Right-Sized Heating for Your Home",
       desc: "If HVAC repair isn't enough to extend the life of your current heating system, call Spoor's Heating & Air Conditioning. For nearly 40 years we've helped Sierra Foothills homeowners choose and install a new furnace, heat pump, or other heat source—including electric & gas furnaces, heat pump heating systems, boilers, and mini-split heating. Our technicians give honest, professional opinions on what heat source best fits your lifestyle and install many major brands.",
-      image: "/assets/images/heating/spoors-auburn-ca-right-sized-home-heating-water-heater.webp",
+      image: "/assets/images/heating/spoors-auburn-ca-right-sized-home-heating-replacement.webp",
     },
     {
       title: "Reliable Hot Water Restored",

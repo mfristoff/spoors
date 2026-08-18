@@ -21,11 +21,6 @@ const spoorsItems = [
 export default function OverviewWhyChoose() {
   return (
     <section className="relative overflow-hidden bg-white py-16 lg:py-24">
-      <div className="pointer-events-none absolute inset-0 z-0 hidden md:block" aria-hidden="true">
-        <div className="absolute left-1/2 top-[10%] h-[74%] w-[30%] -translate-x-[96%] rotate-[14deg] rounded-[104px] bg-[#f8f4f3] opacity-70" />
-        <div className="absolute left-1/2 top-[18%] h-[64%] w-[28%] translate-x-[56%] rotate-[-14deg] rounded-[104px] bg-[#fbf7f6] opacity-62" />
-      </div>
-
       <div className="site-shell relative z-10">
         <div className="mb-8 text-center md:mb-12">
           <div className="mb-5 flex items-center justify-center gap-2">

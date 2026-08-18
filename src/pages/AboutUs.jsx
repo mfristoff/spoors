@@ -4,7 +4,7 @@
  * ──────────────────────────────────────────────────────────────────
  * This is the ONLY main About page. It uses the Overview* design-system
  * components (OverviewHero, OverviewStory, OverviewCommitment,
- * OverviewWhyChoose, OverviewTeam).
+ * OverviewWhyChoose).
  *
  * DO NOT revert to legacy hub content. DO NOT swap in About* components
  * (AboutStatement, AboutStory, AboutPrinciples, etc.) — those belong
@@ -21,7 +21,6 @@ import OverviewStory from "@/components/about/OverviewStory";
 import OverviewCommitment from "@/components/about/OverviewCommitment";
 import OverviewValues from "@/components/about/OverviewValues";
 import OverviewWhyChoose from "@/components/about/OverviewWhyChoose";
-import OverviewTeam from "@/components/about/OverviewTeam";
 
 export default function AboutUs() {
   useSeo({
@@ -37,7 +36,6 @@ export default function AboutUs() {
       <OverviewWhyChoose />
       <OverviewStory />
       <OverviewCommitment />
-      <OverviewTeam />
     </div>
   );
 }
