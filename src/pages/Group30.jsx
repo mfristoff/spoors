@@ -214,7 +214,7 @@ export default function SpoorHVAC() {
             </div>
             <h1 className="text-[clamp(40px,3.7vw,72px)] font-bold leading-[1.01] tracking-[-0.0197em] text-figma-primary">Join Our Comfort Club and <span className="text-figma-accent">Make Maintenance Easy</span></h1>
             <div className="flex flex-col gap-[26px] max-w-[640px] items-start lg:-mt-[10px]">
-              <p className="text-[clamp(16px,1.05vw,18px)] font-medium leading-[1.55] tracking-[-0.2px] text-white/75">
+              <p className="text-[clamp(16px,1.05vw,18px)] font-medium leading-[1.55] tracking-[-0.2px] text-white/75 lg:-translate-y-[3px]">
                 Members enjoy exclusive savings, priority service, and total peace of mind:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-7 gap-y-3">
@@ -236,8 +236,8 @@ export default function SpoorHVAC() {
                   </div>
                 ))}
               </div>
-              <p className="max-w-[640px] border-t border-white/15 pt-3 text-[13px] font-medium leading-[1.45] tracking-[-0.18px] text-white/70 lg:max-w-none lg:whitespace-nowrap lg:text-[12px]">
-                Moving? Your Comfort Club membership can transfer to the buyer with the home or move with you to your new home. The choice is yours.
+              <p className="max-w-[640px] border-t border-white/15 pt-3 text-[13px] font-medium leading-[1.45] tracking-[-0.18px] text-white/70 lg:max-w-none lg:whitespace-nowrap lg:text-[11px] lg:tracking-[-0.3px]">
+                Moving? Here's a selling perk: your Comfort Club membership can transfer to the buyer <span className="italic text-red-500">or</span> move with you to your new home. The choice is yours!
               </p>
             </div>
           </motion.div>
