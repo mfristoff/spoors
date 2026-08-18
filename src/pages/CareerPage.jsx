@@ -67,6 +67,16 @@ const VALUE_PROPS = [
   },
 ];
 
+const WORK_BENEFITS = [
+  "Company vehicle, iPad, uniforms and gas card",
+  "Year-round employment",
+  "Medical and dental benefits after probation period",
+  "Paid vacation (based on length of employment)",
+  "Paid holidays after probation period",
+  "On-going training",
+  "Tool purchase program",
+];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
@@ -270,6 +280,75 @@ export default function CareerPage() {
               </motion.div>
             ))}
           </div>
+
+          {/* Employee Benefits */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+            variants={fadeUp}
+            className="mb-16 overflow-hidden rounded-[22px] border border-[#e1e1e1] bg-white shadow-[0_14px_40px_rgba(5,13,56,0.06)] lg:mb-[clamp(44px,6.5vw,124px)]"
+          >
+            <div className="grid lg:grid-cols-[0.82fr_1.18fr]">
+              <div className="relative overflow-hidden bg-figma-highlight-4 px-6 py-10 md:px-10 lg:px-12 lg:py-14">
+                <div className="pointer-events-none absolute -bottom-24 -right-20 h-72 w-72 rounded-full border border-white/10" />
+                <div className="pointer-events-none absolute -bottom-10 -right-8 h-44 w-44 rounded-full border border-white/10" />
+                <div className="relative z-10 flex h-full flex-col justify-between gap-10">
+                  <div>
+                    <div className="mb-5 flex items-center gap-3">
+                      <span className="grid h-9 w-9 place-items-center rounded-full bg-white/10">
+                        <img
+                          src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg"
+                          alt=""
+                          className="h-5 w-5"
+                        />
+                      </span>
+                      <span className="text-[12px] font-semibold uppercase tracking-[0.14em] text-white/70">
+                        Working at Spoor&apos;s
+                      </span>
+                    </div>
+                    <h2 className="max-w-[540px] text-[clamp(32px,3.2vw,56px)] font-bold leading-[1.04] tracking-[-0.025em] text-white">
+                      Built for a Career, Not Just a Job.
+                    </h2>
+                    <p className="mt-6 max-w-[520px] text-[17px] leading-[1.7] text-white/72">
+                      Steady work, real benefits, ongoing training, and the tools you need to do the job right.
+                    </p>
+                  </div>
+                  <p className="max-w-[500px] border-t border-white/15 pt-6 text-[15px] leading-[1.65] text-white/65">
+                    Compensation is based on skill level and performance.
+                  </p>
+                </div>
+              </div>
+
+              <div className="px-6 py-8 md:px-10 md:py-10 lg:px-12 lg:py-14">
+                <div className="grid gap-x-8 gap-y-0 md:grid-cols-2">
+                  {WORK_BENEFITS.map((benefit, idx) => (
+                    <motion.div
+                      key={benefit}
+                      initial={{ opacity: 0, y: 12 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: idx * 0.045 }}
+                      className={`flex min-h-[88px] items-center gap-4 border-b border-[#e8e8e8] py-5 ${
+                        idx === WORK_BENEFITS.length - 1 ? "md:col-span-2" : ""
+                      }`}
+                    >
+                      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[#fff0f0]">
+                        <img
+                          src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg"
+                          alt=""
+                          className="h-4 w-4"
+                        />
+                      </span>
+                      <span className="text-[17px] font-semibold leading-[1.4] tracking-[-0.01em] text-figma-text-2">
+                        {benefit}
+                      </span>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Open Positions */}
           <motion.div

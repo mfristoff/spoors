@@ -7,9 +7,10 @@ export const aboutPageContent = {
     title: "Our Mission",
     eyebrow: "Purpose in every visit",
     hero: "Professional HVAC care built around people, progress, and a team that feels like family.",
-    image: spoorsImageLibrary.sacramentoBridge,
-    heroFocalPoint: { x: 0.5, y: 0.28 },
-    heroBackgroundPosition: "50% 28%",
+    image: "/assets/images/about/spoors-auburn-ca-our-mission-bridge-hero.webp",
+    heroAlt: "Foresthill Bridge over the Auburn-area canyon near Spoor's service area",
+    heroFocalPoint: { x: 0.5, y: 0.44 },
+    heroBackgroundPosition: "50% 44%",
     storyImage: spoorsImageLibrary.acDiagnosticTesting,
     storyTitle: "Three priorities. One standard of care.",
     body: [

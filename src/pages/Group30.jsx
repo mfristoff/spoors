@@ -227,7 +227,7 @@ export default function SpoorHVAC() {
                   "Extended Equipment Life",
                   "Max Discount on Repairs & Service",
                   "Get Automatic Renewal",
-                  "$750 Off or 10% Off New System",
+                  "Get $1750 Off a New System",
                   "Stress-Free Peace of Mind",
                 ].map((benefit, i) => (
                   <div key={i} className="flex items-start gap-2">
@@ -236,6 +236,9 @@ export default function SpoorHVAC() {
                   </div>
                 ))}
               </div>
+              <p className="max-w-[640px] border-t border-white/15 pt-4 text-[14px] font-medium leading-[1.55] text-white/70">
+                Moving? Your Comfort Club membership can transfer to the buyer with the home or move with you to your new home. The choice is yours.
+              </p>
             </div>
           </motion.div>
 
