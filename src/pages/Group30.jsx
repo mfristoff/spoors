@@ -193,9 +193,9 @@ export default function SpoorHVAC() {
             src="/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp"
             alt="HVAC refrigerant gauges used during planned maintenance diagnostics in Auburn, CA" />
 
-          <div className="absolute inset-0 bg-black/80 lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.93)_36%,rgba(0,0,0,0.74)_62%,rgba(0,0,0,0.53)_100%)]" />
+          <div className="absolute inset-0 bg-black/78 lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.97)_0%,rgba(0,0,0,0.91)_36%,rgba(0,0,0,0.72)_62%,rgba(0,0,0,0.50)_100%)]" />
           {/* Keep the lower part of the hero solid black so it melts into the black section below. */}
-          <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-b from-transparent via-black/62 to-[#050404]" />
+          <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-b from-transparent via-black/58 to-[#050404]" />
         </div>
 
         <div className="nav-row-aligned mx-auto w-full relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-8 lg:gap-12 pt-20 pb-8 lg:pt-6 lg:pb-6">
