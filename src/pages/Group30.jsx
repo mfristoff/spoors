@@ -236,7 +236,7 @@ export default function SpoorHVAC() {
                   </div>
                 ))}
               </div>
-              <p className="max-w-[640px] border-t border-white/15 pt-4 text-[14px] font-medium leading-[1.55] text-white/70">
+              <p className="max-w-[640px] border-t border-white/15 pt-3 text-[13px] font-medium leading-[1.45] tracking-[-0.18px] text-white/70 lg:max-w-none lg:whitespace-nowrap lg:text-[12px]">
                 Moving? Your Comfort Club membership can transfer to the buyer with the home or move with you to your new home. The choice is yours.
               </p>
             </div>
