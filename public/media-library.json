@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-18T17:12:39.131Z",
-  "count": 327,
+  "generatedAt": "2026-08-18T21:15:09.159Z",
+  "count": 331,
   "note": "IDs are persistent. New media receives the next available number; existing IDs are not renumbered.",
   "items": [
     {
@@ -3272,6 +3272,46 @@
       "source": "local",
       "kind": "image",
       "category": "Heating"
+    },
+    {
+      "id": 329,
+      "key": "local:/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-refrigerant-gauges-page-break.webp",
+      "src": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-refrigerant-gauges-page-break.webp",
+      "path": "/assets/images/maintenance-tune-ups/spoors-auburn-ca-hvac-maintenance-refrigerant-gauges-page-break.webp",
+      "name": "spoors-auburn-ca-hvac-maintenance-refrigerant-gauges-page-break.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Air conditioning"
+    },
+    {
+      "id": 330,
+      "key": "local:/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-extended-system-life-condenser.webp",
+      "src": "/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-extended-system-life-condenser.webp",
+      "path": "/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-extended-system-life-condenser.webp",
+      "name": "spoors-auburn-ca-planned-maintenance-extended-system-life-condenser.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "General"
+    },
+    {
+      "id": 331,
+      "key": "local:/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-improved-air-quality-family.webp",
+      "src": "/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-improved-air-quality-family.webp",
+      "path": "/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-improved-air-quality-family.webp",
+      "name": "spoors-auburn-ca-planned-maintenance-improved-air-quality-family.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
+    },
+    {
+      "id": 332,
+      "key": "local:/assets/images/services-overview/spoors-auburn-ca-indoor-air-quality-living-room-comfort.webp",
+      "src": "/assets/images/services-overview/spoors-auburn-ca-indoor-air-quality-living-room-comfort.webp",
+      "path": "/assets/images/services-overview/spoors-auburn-ca-indoor-air-quality-living-room-comfort.webp",
+      "name": "spoors-auburn-ca-indoor-air-quality-living-room-comfort.webp",
+      "source": "local",
+      "kind": "image",
+      "category": "Indoor air quality"
     }
   ]
 }
