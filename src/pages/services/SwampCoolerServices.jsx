@@ -6,14 +6,14 @@ const B = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519";
 
 // Card images, in the exact order they appear in the service card section.
 const cardImages = [
-  `${B}/966f2ca1f_Swamp-Cooler-Card--1.png`,
-  `${B}/466713786_newimageforkeepyourcoolerrunningright.png`,
-  `${B}/aa9126517_swamp-cooler-card-3.png`,
-  `${B}/be4aabc2e_swampcooler-4.png`,
-  `${B}/7d0249ed4_swamp-cooler-card5.png`,
-  `${B}/30d791f5c_Swamp-Cooler-Card6.png`,
-  `${B}/306ec0dfa_Swamp-Cooler-Cards-7.png`,
-  `${B}/b241a9336_newimageforportableorwholehome.png`,
+  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-simple-reliable-upkeep.webp",
+  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-keep-running-right.webp",
+  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-repairs-restore-cool-air.webp",
+  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-mold-leaks-fan-fixes.webp",
+  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-efficient-evaporative-cooling.webp",
+  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-cooler-vs-ac-guidance.webp",
+  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-right-sized-cooling.webp",
+  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-portable-whole-home.webp",
 ];
 
 const swampCoolerContent = {
@@ -53,7 +53,7 @@ const swampCoolerContent = {
     {
       title: "Mold, Leaks, and Fan Fixes",
       desc: "Through meticulous, multi-point inspections we find and fix the most frequent issues. Mold grows in coolers left inactive with water in the reservoir—winterizing prevents it. Leaks from a crack or hole drain the reservoir, making the cooler ineffective and risking dry-run damage. Motorized fans that fail or weaken—often from a worn belt or blade—stop air from reaching the ductwork. We handle all three with prompt, dependable repair.",
-      image: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d0c459a56_swampcooler-new.png",
+      image: cardImages[3],
     },
     {
       title: "Efficient Evaporative Cooling",
