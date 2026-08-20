@@ -584,8 +584,8 @@ export const services = [
       { title: "Scheduled Seasonal Tune-Ups", description: "Automatic AC and heating tune-ups timed to each peak season." },
       { title: "Priority Service", description: "Priority scheduling and faster response for plan members." },
       { title: "Detailed Service History", description: "Complete records so nothing is missed from year to year." },
-      { title: "Early Problem Detection", description: "We catch small issues before they become costly breakdowns." },
       { title: "Enrollment & Plan Review", description: "We review your equipment and recommend the right level of care." },
+      { title: "Early Problem Detection", description: "We catch small issues before they become costly breakdowns." },
     ],
     image: images.heatingBreak,
     overview:
