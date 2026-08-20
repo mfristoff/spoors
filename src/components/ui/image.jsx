@@ -11,7 +11,7 @@ const FALLBACK_IMAGE_URL =
 const WIX_MEDIA_HOSTS = ["media.base44.com", "static.wixstatic.com"]
 // First-paint width before the container is measured.
 const DEFAULT_TRANSFORM_WIDTH = 1024
-const DEVICE_PIXEL_RATIOS = [1, 2, 3]
+const DEVICE_PIXEL_RATIOS = [1, 2]
 // Not a documented CDN limit — verified live that w_/h_ up to 10000 succeed
 // and requests start failing somewhere between 10000 and 15000. This is a
 // defensive ceiling with generous headroom (a 3x DPR request needs a
@@ -117,7 +117,7 @@ const ResponsiveImage = React.forwardRef(
             ref={imgRef}
             src={buildTransformUrl(parsed, options)}
             srcSet={buildSrcSet(parsed, options)}
-            loading="lazy"
+            loading={props.loading || "eager"}
             className={cn(
               "w-full h-full inset-0 absolute",
               fittingType === "fit" ? "object-contain" : "object-cover"
@@ -148,8 +148,8 @@ const Image = React.forwardRef(
       originHeight,
       focalPointX,
       focalPointY,
-      quality = 95,
-      loading = "lazy",
+      quality = 82,
+      loading = "eager",
       decoding = "async",
       ...props
     },

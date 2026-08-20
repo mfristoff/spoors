@@ -56,7 +56,7 @@ export default function ComfortManagement() {
           </Reveal>
 
           <Reveal delay={0.15} className="overflow-hidden rounded-xl">
-            <img src={IMG} alt="HVAC comfort management" loading="lazy" className="h-full w-full object-cover" />
+            <img src={IMG} alt="HVAC comfort management" loading="eager" className="h-full w-full object-cover" />
           </Reveal>
         </div>
 

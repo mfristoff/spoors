@@ -118,7 +118,7 @@ export default function RebatesPage() {
             {/* Card 1 */}
             <motion.div variants={fadeUpVariant} className="bg-figma-primary rounded-[12px] shadow-[inset_0_0_0_1px_#ededed] p-5 flex flex-col gap-6 h-full">
               <div className="relative w-full aspect-[504/316] rounded-[12px] overflow-clip shrink-0">
-                <img src={cdnImage(images.heatingInstall, 504, 316)} alt="Heat pump unit installed outdoors beside a home" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+                <img src={cdnImage(images.heatingInstall, 504, 316)} alt="Heat pump unit installed outdoors beside a home" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="eager" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-2.5 z-10">
                   <div className="flex items-center gap-2.5 px-2.5 py-2 bg-white rounded-[10px] shadow-[0_4px_14px_rgba(0,0,0,0.18)] w-fit">
@@ -138,7 +138,7 @@ export default function RebatesPage() {
             {/* Card 2 */}
             <motion.div variants={fadeUpVariant} className="bg-figma-primary rounded-[12px] shadow-[inset_0_0_0_1px_#ededed] p-5 flex flex-col gap-6 h-full">
               <div className="relative w-full aspect-[504/316] rounded-[12px] overflow-clip shrink-0">
-                <img src={cdnImage(images.introTech, 504, 316)} alt="HVAC technician working on air conditioner controls" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+                <img src={cdnImage(images.introTech, 504, 316)} alt="HVAC technician working on air conditioner controls" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="eager" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-2.5 z-10">
                   <div className="flex items-center gap-2.5 px-2.5 py-2 bg-white rounded-[10px] shadow-[0_4px_14px_rgba(0,0,0,0.18)] w-fit">
@@ -158,7 +158,7 @@ export default function RebatesPage() {
             {/* Card 3 */}
             <motion.div variants={fadeUpVariant} className="bg-figma-primary rounded-[12px] shadow-[inset_0_0_0_1px_#ededed] p-5 flex flex-col gap-6 h-full">
               <div className="relative w-full aspect-[504/316] rounded-[12px] overflow-clip shrink-0">
-                <img src={cdnImage(SIERRA_NEVADA, 504, 316)} alt="Sierra Nevada California landscape" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+                <img src={cdnImage(SIERRA_NEVADA, 504, 316)} alt="Sierra Nevada California landscape" className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="eager" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-2.5 z-10">
                   <div className="flex items-center gap-2.5 px-2.5 py-2 bg-white rounded-[10px] shadow-[0_4px_14px_rgba(0,0,0,0.18)] w-fit">
@@ -236,7 +236,7 @@ export default function RebatesPage() {
               src={cdnImage(NEIGHBORHOOD, 800, 800)}
               alt="Suburban California neighborhood"
               className="w-full h-full object-cover rounded-[20px] lg:rounded-[20px_0_0_20px]"
-              loading="lazy" />
+              loading="eager" />
             
           </motion.div>
 

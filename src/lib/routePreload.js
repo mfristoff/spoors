@@ -37,7 +37,7 @@ const HERO_BY_PATH = {
   ],
   "/services/emergency-repairs": ["/assets/images/update-1/spoors-auburn-ca-emergency-detail-hero.webp"],
   "/services/maintenance-tune-ups": [cdnImage(images.introTruck, 2560, 1600)],
-  "/services/ductless-mini-splits": ["/assets/images/update-4/spoors-auburn-ca-ductless-mini-split-hero-wall-unit.webp"],
+  "/services/ductless-mini-splits": ["/assets/images/update-5/spoors-auburn-ca-ductless-mini-split-full-bleed-hero.webp"],
   "/services/swamp-coolers": [
     "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-rooftop.webp",
   ],

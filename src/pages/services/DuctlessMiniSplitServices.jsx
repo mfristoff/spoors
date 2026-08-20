@@ -22,14 +22,14 @@ const LOCAL_DUCTLESS_IMAGES = {
   updateSleekComfort: "/assets/images/update-4/spoors-auburn-ca-ductless-sleek-wall-mount-family-comfort.webp",
   updateBestFit: "/assets/images/update-4/spoors-auburn-ca-ductless-best-fit-living-room-comfort.webp",
   updatePageBreak: "/assets/images/update-4/spoors-auburn-ca-ductless-wall-unit-page-break.webp",
+  fullBleedHero: "/assets/images/update-5/spoors-auburn-ca-ductless-mini-split-full-bleed-hero.webp",
 };
 
 const ductlessContent = {
-  heroImage: LOCAL_DUCTLESS_IMAGES.updateHero,
+  heroImage: LOCAL_DUCTLESS_IMAGES.fullBleedHero,
   heroAlt: "Wall-mounted ductless mini-split system in an Auburn-area home",
-  heroObjectPosition: "right center",
-  heroImagePlacement: "right",
-  heroImageWidthClass: "lg:w-[54%]",
+  heroObjectPosition: "center top",
+  heroImagePlacement: "full",
   badge: "DUCTLESS MINI-SPLITS",
   headline: "Zoned Comfort and Lower Energy Bills with Ductless Mini-Splits in Auburn.",
   intro:

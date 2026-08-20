@@ -237,7 +237,7 @@ export default function Blog() {
                   <img
                     src={a.image}
                     alt={a.title}
-                    loading="lazy"
+                    loading="eager"
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,0,0,0.92)_0%,rgba(0,0,0,0)_55%)]" />

@@ -1,4 +1,4 @@
-import { lazy, useState } from "react";
+import { useState } from "react";
 import { useSeo } from "@/lib/useSeo";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -9,16 +9,13 @@ import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { getSubServiceCta } from "@/lib/serviceQuoteCopy";
 import Hero from "@/pages/home/Hero";
 import NewHeader from "@/pages/home/new/NewHeader";
-import LazySection from "@/components/ui/LazySection";
 import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
 
-// Everything below the fold loads on approach, keeping the first paint's
-// JavaScript to just the header and hero.
-const AllServicesGrid = lazy(() => import("@/components/test/AllServicesGrid"));
-const TestimonialsNew = lazy(() => import("@/pages/home/new/TestimonialsNew"));
-const LargeQuote = lazy(() => import("@/pages/home/new/LargeQuote"));
-const FooterCTANew = lazy(() => import("@/pages/home/new/FooterCTANew"));
-const NewFooter = lazy(() => import("@/pages/home/new/NewFooter"));
+import AllServicesGrid from "@/components/test/AllServicesGrid";
+import TestimonialsNew from "@/pages/home/new/TestimonialsNew";
+import LargeQuote from "@/pages/home/new/LargeQuote";
+import FooterCTANew from "@/pages/home/new/FooterCTANew";
+import NewFooter from "@/pages/home/new/NewFooter";
 
 // --- Animation Variants ---
 import { cardEntrance, cardStagger, EASE_SMOOTH } from "@/lib/motionVariants";
@@ -152,13 +149,13 @@ export default function HomePage() {
             className="order-2 grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 md:mb-16">
             
             <motion.div variants={fadeInUp} className="w-full aspect-[544/364] relative">
-              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_187px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7a07ace_Spoor_s-Home-AC-Service-21.webp" alt="Tech working" fittingType="fill" quality={80} loading="lazy" />
+              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_187px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7a07ace_Spoor_s-Home-AC-Service-21.webp" alt="Tech working" fittingType="fill" quality={80} loading="eager" />
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full aspect-[544/364] relative">
-              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/80f8c024c_Spoor_s-Home-AC-Service-2.webp" alt="Tech inspecting" fittingType="fill" quality={80} loading="lazy" />
+              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/80f8c024c_Spoor_s-Home-AC-Service-2.webp" alt="Tech inspecting" fittingType="fill" quality={80} loading="eager" />
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full aspect-[544/364] relative">
-              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_187px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48c784c4b_Spoor_s-Home-AC-Service-4.webp" alt="Tech smiling" fittingType="fill" quality={80} loading="lazy" />
+              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_187px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48c784c4b_Spoor_s-Home-AC-Service-4.webp" alt="Tech smiling" fittingType="fill" quality={80} loading="eager" />
             </motion.div>
           </motion.div>
 
@@ -218,9 +215,7 @@ export default function HomePage() {
 
           {/* Mobile-only: Services section sits between the tech images and the value-prop cards */}
           <div className="order-3 md:order-none">
-            <LazySection minHeight={900}>
-              <AllServicesGrid />
-            </LazySection>
+            <AllServicesGrid />
           </div>
 
         </div>
@@ -238,7 +233,7 @@ export default function HomePage() {
 
             {/* Left Image Area */}
             <div className="w-full lg:max-w-[614px] min-h-[400px] lg:h-[709px] relative rounded-[13px] overflow-clip shrink-0">
-              <img className="absolute inset-0 h-full w-full object-cover" src={spoorsImageLibrary.hvacSystemRepair} alt="Spoor's HVAC technician repairing a residential comfort system in Auburn" loading="lazy" decoding="async" />
+              <img className="absolute inset-0 h-full w-full object-cover" src={spoorsImageLibrary.hvacSystemRepair} alt="Spoor's HVAC technician repairing a residential comfort system in Auburn" loading="eager" decoding="async" />
 
               {/* Floating Card 1 */}
               <div className="absolute bottom-[104px] left-5 h-[255px] w-[calc(100%-40px)] sm:w-[330px] bg-figma-primary rounded-[15px] p-5 flex flex-col justify-between gap-6 shadow-lg">
@@ -392,7 +387,7 @@ export default function HomePage() {
               <img
                 src={spoorsImageLibrary.heatPumpService}
                 alt="Spoor's technician servicing a residential heat pump in Auburn, California"
-                loading="lazy"
+                loading="eager"
                 decoding="async"
                 className="absolute inset-0 h-full w-full object-cover object-center" />
             </div>
@@ -441,21 +436,13 @@ export default function HomePage() {
 
       </section>
 
-      <LazySection minHeight={700}>
-        <TestimonialsNew />
-      </LazySection>
+      <TestimonialsNew />
 
-      <LazySection minHeight={500}>
-        <LargeQuote />
-      </LazySection>
+      <LargeQuote />
 
-      <LazySection minHeight={500}>
-        <FooterCTANew />
-      </LazySection>
+      <FooterCTANew />
 
-      <LazySection minHeight={900}>
-        <NewFooter />
-      </LazySection>
+      <NewFooter />
 
       <ServiceQuoteModal
         open={quote.open}

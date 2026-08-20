@@ -12,7 +12,7 @@ export default function AboutStatement({ statement, eyebrow, highlight }) {
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover"
-        loading="lazy"
+        loading="eager"
       />
       <div className="relative site-shell mx-auto max-w-[1120px]">
         <Reveal>

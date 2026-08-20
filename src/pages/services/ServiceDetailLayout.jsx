@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -29,39 +29,13 @@ const LIGHTNING = {
 };
 
 function LazyParallaxImage({ src, alt, className = "", position = "center center" }) {
-  const ref = useRef(null);
-  const [ready, setReady] = useState(false);
-
-  useEffect(() => {
-    const node = ref.current;
-    if (!node || ready) return undefined;
-    if (typeof IntersectionObserver === "undefined") {
-      setReady(true);
-      return undefined;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          setReady(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "700px 0px" }
-    );
-
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, [ready]);
-
   return (
     <div
-      ref={ref}
       role="img"
       aria-label={alt}
       className={`absolute inset-0 bg-cover bg-no-repeat bg-scroll md:bg-fixed ${className}`}
       style={{
-        backgroundImage: ready ? `url(${src})` : undefined,
+        backgroundImage: `url(${src})`,
         backgroundPosition: position,
       }}
     />
@@ -286,7 +260,7 @@ export default function ServiceDetailLayout({
                 <img
                   src={cdnImage(featureSection.image, 1400, 1600, featureSection.imageFocal)}
                   alt={featureSection.imageAlt}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   className="absolute inset-0 h-full w-full object-cover"
                   style={{ objectPosition: featureSection.imageObjectPosition || "center center" }}
@@ -358,7 +332,7 @@ export default function ServiceDetailLayout({
               <img
                 src={cdnImage(breakImage, 2048, 960, breakFocal)}
                 alt={breakAlt}
-                loading="lazy"
+                loading="eager"
                 decoding="async"
                 className={`h-full w-full object-cover ${breakImageClass}`}
                 style={{ objectPosition: breakObjectPosition }}

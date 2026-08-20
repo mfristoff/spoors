@@ -35,7 +35,7 @@ export default function SocialProofLogos({ className = "" }) {
           originHeight={logo.height}
           fittingType="fit"
           quality={82}
-          loading="lazy"
+          loading="eager"
           className={`object-contain ${
             LOGO_SIZE_CLASS[logo.alt] ?? "w-auto h-14 sm:h-16 lg:h-[112px]"
           } ${LOGO_MR_CLASS[logo.alt] ?? ""}`}

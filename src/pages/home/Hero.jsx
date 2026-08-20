@@ -43,7 +43,7 @@ function HistoryCard() {
           className="absolute inset-0 h-full w-full"
           fittingType="fill"
           quality={82}
-          loading="lazy" />
+          loading="eager" />
         
       </div>
     </div>);
@@ -181,7 +181,7 @@ export default function Hero({ onSchedule }) {
               fittingType="fit"
               quality={82}
               className={HERO_LOGO_CLASS[logo.alt] ?? "h-[72px] w-auto object-contain"}
-              loading="lazy" />
+              loading="eager" />
 
             )}
           </div>
@@ -205,7 +205,7 @@ export default function Hero({ onSchedule }) {
           fittingType="fit"
           quality={82}
           className={HERO_LOGO_CLASS[logo.alt] ?? "h-[56px] w-auto object-contain"}
-          loading="lazy" />
+          loading="eager" />
 
         )}
       </div>

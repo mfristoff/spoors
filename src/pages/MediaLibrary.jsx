@@ -33,7 +33,7 @@ function MediaCard({ item }) {
         {item.kind === 'video' ? (
           <video className="h-full w-full object-cover" src={item.src} controls muted preload="metadata" />
         ) : (
-          <img className="h-full w-full object-contain" src={item.src} alt="" loading="lazy" decoding="async" />
+          <img className="h-full w-full object-contain" src={item.src} alt="" loading="eager" decoding="async" />
         )}
         <button
           type="button"

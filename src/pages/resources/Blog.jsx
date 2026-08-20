@@ -88,7 +88,7 @@ export default function Blog() {
                         <img
                           src={a.image || images.introAir}
                           alt={a.title}
-                          loading="lazy"
+                          loading="eager"
                           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                         />
                       </div>

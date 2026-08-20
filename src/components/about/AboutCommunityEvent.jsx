@@ -28,7 +28,7 @@ export default function AboutCommunityEvent({ event }) {
                 src={event.image}
                 alt={`${event.title} — Spoor's Heating & Air community event`}
                 className="absolute inset-0 h-full w-full object-cover"
-                loading="lazy"
+                loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>

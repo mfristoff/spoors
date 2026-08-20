@@ -173,7 +173,7 @@ export default function ServicesAreaPage() {
                       <img
                         src={cdnImage(area.img, 321, 227)}
                         alt={area.city}
-                        loading="lazy"
+                        loading="eager"
                         className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:brightness-105 group-hover:saturate-110"
                       />
                       {/* Subtle cohesive overlay — unifies varied lighting across all area images */}
@@ -227,14 +227,14 @@ export default function ServicesAreaPage() {
               variants={fadeUp}
               src={QUOTE_IMG_1}
               alt="Citrus Heights, CA neighborhood at golden hour"
-              loading="lazy"
+              loading="eager"
               className="rounded-[19px] w-[80%] lg:max-w-[686px] aspect-[686/366] lg:h-[366px] absolute top-0 left-0 z-10 object-cover border-2 border-white/50 shadow-[inset_0_1px_1px_rgba(255,255,255,0.85),0_0_0_1px_rgba(255,255,255,0.18),0_0_24px_rgba(255,255,255,0.16)]"
             />
             <motion.img
               variants={fadeUp}
               src={QUOTE_IMG_2}
               alt="Historic G. Griffith building, Penryn, CA"
-              loading="lazy"
+              loading="eager"
               className="rounded-[19px] w-[60%] lg:max-w-[502px] aspect-[502/448] lg:h-[448px] absolute top-[40%] lg:top-[398px] left-[20%] lg:left-[184px] z-20 object-cover border-2 border-white/50 shadow-[inset_0_1px_1px_rgba(255,255,255,0.85),0_0_0_1px_rgba(255,255,255,0.18),0_0_24px_rgba(255,255,255,0.16)]"
             />
           </div>

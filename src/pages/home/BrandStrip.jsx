@@ -16,7 +16,7 @@ export default function BrandStrip() {
             src={LOGO_HERO}
             alt="Trusted HVAC brands and accreditations"
             className="h-auto w-full max-w-[760px] object-contain"
-            loading="lazy"
+            loading="eager"
           />
         </Reveal>
       </div>

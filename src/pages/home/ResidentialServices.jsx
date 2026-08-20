@@ -46,7 +46,7 @@ export default function ResidentialServices() {
                   <img
                     src={s.img}
                     alt={s.title}
-                    loading="lazy"
+                    loading="eager"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>

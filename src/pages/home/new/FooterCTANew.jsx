@@ -29,7 +29,7 @@ const barEntrance = {
 export default function FooterCTANew() {
   return (
     <section className="header-aligned-section relative w-full overflow-visible bg-[#0c1228] pb-[220px] pt-24 md:pb-[clamp(120px,18vw,260px)] md:pt-[clamp(25px,5.2vw,100px)]">
-      <img className="absolute inset-0 h-full w-full object-cover object-center" src={images.fanBg} alt="" aria-hidden="true" loading="lazy" decoding="async" />
+      <img className="absolute inset-0 h-full w-full object-cover object-center" src={images.fanBg} alt="" aria-hidden="true" loading="eager" decoding="async" />
       <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(12,18,40,0.72) 0%, rgba(12,18,40,0.88) 55%, #0c1228 100%)" }} />
 
       <motion.div

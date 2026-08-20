@@ -123,7 +123,7 @@ export default function CurrentRebatesCards() {
                 src={cdnImage(current.image, 600, 540)}
                 alt={current.title}
                 className="w-full h-full object-cover"
-                loading="lazy"
+                loading="eager"
               />
             </div>
           </div>

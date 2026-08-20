@@ -324,7 +324,7 @@ export default function SpoorHVAC() {
                 className="grid border-x border-b border-[#515151] lg:grid-cols-2"
               >
                 <div className={`min-h-[280px] overflow-hidden border-b border-[#515151] lg:min-h-[390px] lg:border-b-0 ${idx % 2 ? "lg:order-2 lg:border-l" : "lg:border-r"}`}>
-                  <img src={item.image} alt={item.alt} className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.025]" loading="lazy" decoding="async" />
+                  <img src={item.image} alt={item.alt} className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.025]" loading="eager" decoding="async" />
                 </div>
                 <div className={`flex flex-col justify-center px-7 py-10 lg:px-[clamp(40px,5vw,80px)] lg:py-14 ${idx % 2 ? "lg:order-1" : ""}`}>
                   <span className="mb-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-red-400">0{idx + 1}</span>
