@@ -10,14 +10,14 @@ const EASE = [0.22, 1, 0.36, 1];
 const LOCATIONS = [
   {
     label: "Meadow Vista Location",
-    lines: ["908 Evergreen Lane", "Meadow Vista, CA 95722", "(530) 878-4812"],
+    lines: ["908 Evergreen Lane", "Meadow Vista, CA 95722"],
     href: "https://www.google.com/maps/search/?api=1&query=908+Evergreen+Lane+Meadow+Vista+CA+95722",
     external: true,
     icon: MapPin,
   },
   {
     label: "Auburn Location",
-    lines: ["345 Sacramento St., #5", "Auburn, CA 95603", "(530) 823-1843"],
+    lines: ["345 Sacramento St., #5", "Auburn, CA 95603"],
     href: "https://www.google.com/maps/search/?api=1&query=345+Sacramento+St+Suite+5+Auburn+CA+95603",
     external: true,
     icon: MapPin,
@@ -166,15 +166,22 @@ export default function Contact() {
                   <p className="mt-5 min-h-[48px] text-[15px] font-bold uppercase leading-[1.35] tracking-[0.03em] text-ink-950">
                     {label}
                   </p>
-                  <div className="mt-3 flex min-h-[88px] flex-col justify-start gap-1.5 text-[14px] leading-[1.5] text-ink-700">
-                    {lines.map((line, index) => (
-                      <span
-                        key={`${label}-${index}`}
-                        className={`${index === lines.length - 1 && (label.includes("Location") || label === "Send a Fax" || label === "Email Us") ? "font-semibold text-red-600" : ""} ${label === "Email Us" && index === lines.length - 1 ? "break-all" : ""}`}
-                      >
-                        {line}
-                      </span>
-                    ))}
+                  <div className="mt-3 flex min-h-[64px] flex-col justify-start gap-1.5 text-[14px] leading-[1.5] text-ink-700">
+                    {lines.map((line, index) => {
+                      const isAccent = index === lines.length - 1 && (label === "Send a Fax" || label === "Email Us");
+                      const isEmailValue = label === "Email Us" && index === lines.length - 1;
+                      return (
+                        <span
+                          key={`${label}-${index}`}
+                          className={[
+                            isAccent ? "font-semibold text-red-600" : "",
+                            isEmailValue ? "text-[11px] leading-[1.35] tracking-[-0.01em]" : "",
+                          ].join(" ")}
+                        >
+                          {line}
+                        </span>
+                      );
+                    })}
                   </div>
                   <span className="mt-auto pt-5 text-[12px] font-semibold uppercase tracking-[0.12em] text-ink-400 transition-colors group-hover:text-red-600">
                     {label.includes("Location") ? "Open in Maps" : label === "Email Us" ? "Send Email" : label === "Send a Fax" ? "Fax Office" : "Call Office"}
