@@ -22,7 +22,7 @@ const swampCoolerContent = {
   heroObjectPosition: "70% center",
   heroMobileObjectPosition: "76% center",
   heroAlt: "Whole-home rooftop evaporative swamp cooler on an Auburn home at sunset",
-  heroDimRight: true,
+  heroDimRight: false,
   badge: "SWAMP COOLERS",
   headline: "Swamp Cooler Maintenance, Repair & Installation in Auburn.",
   intro:
@@ -31,6 +31,7 @@ const swampCoolerContent = {
   sectionHeading: "Efficient evaporative cooling, serviced the right way.",
   breakImage: "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-page-break-airflow.webp",
   breakAlt: "Side view of a swamp cooler with subtle airflow lines",
+  breakObjectPosition: "center top",
   reviews: reviewsFor("swamp-coolers"),
   reviewsServiceLabel: "Swamp Cooler Services",
   faqHeading: "Frequently Asked Questions About Swamp Coolers",
