@@ -27,7 +27,7 @@ const LOCAL_DUCTLESS_IMAGES = {
 const ductlessContent = {
   heroImage: LOCAL_DUCTLESS_IMAGES.updateHero,
   heroAlt: "Wall-mounted ductless mini-split system in an Auburn-area home",
-  heroObjectPosition: "center center",
+  heroObjectPosition: "82% 34%",
   heroImagePlacement: "right",
   badge: "DUCTLESS MINI-SPLITS",
   headline: "Zoned Comfort and Lower Energy Bills with Ductless Mini-Splits in Auburn.",
