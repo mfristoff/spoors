@@ -68,13 +68,14 @@ const VALUE_PROPS = [
 ];
 
 const WORK_BENEFITS = [
-  "Company vehicle, iPad, uniforms and gas card",
-  "Year-round employment",
-  "Medical and dental benefits after probation period",
-  "Paid vacation (based on length of employment)",
-  "Paid holidays after probation period",
-  "On-going training",
-  "Tool purchase program",
+  "Company Vehicle, iPad, Uniforms and Gas Card",
+  "Year-Round Employment",
+  "Medical and Dental Benefits After Probation Period",
+  "Paid Vacation (Based on Length of Employment)",
+  "Paid Holidays After Probation Period",
+  "Ongoing Training",
+  "Tool Purchase Program",
+  "Great Working Environment",
 ];
 
 const fadeUp = {
@@ -291,8 +292,8 @@ export default function CareerPage() {
           >
             <div className="grid lg:grid-cols-[0.82fr_1.18fr]">
               <div className="relative overflow-hidden bg-figma-highlight-4 px-6 py-10 md:px-10 lg:px-12 lg:py-14">
-                <div className="pointer-events-none absolute -bottom-24 -right-20 h-72 w-72 rounded-full border border-white/10" />
-                <div className="pointer-events-none absolute -bottom-10 -right-8 h-44 w-44 rounded-full border border-white/10" />
+                <div className="pointer-events-none absolute -bottom-24 -right-20 h-72 w-72 rounded-full border border-white/5" />
+                <div className="pointer-events-none absolute -bottom-10 -right-8 h-44 w-44 rounded-full border border-white/5" />
                 <div className="relative z-10 flex h-full flex-col justify-between gap-10">
                   <div>
                     <div className="mb-5 flex items-center gap-3">
@@ -310,12 +311,12 @@ export default function CareerPage() {
                     <h2 className="max-w-[540px] text-[clamp(32px,3.2vw,56px)] font-bold leading-[1.04] tracking-[-0.025em] text-white">
                       Built for a Career, Not Just a Job.
                     </h2>
-                    <p className="mt-6 max-w-[520px] text-[17px] leading-[1.7] text-white/72">
+                    <p className="mt-6 max-w-[520px] text-[17px] leading-[1.7] text-white/90">
                       Steady work, real benefits, ongoing training, and the tools you need to do the job right.
                     </p>
                   </div>
                   <p className="max-w-[500px] border-t border-white/15 pt-6 text-[15px] leading-[1.65] text-white/65">
-                    Compensation is based on skill level and performance.
+                    Work alongside a friendly team that has your back.
                   </p>
                 </div>
               </div>
@@ -329,9 +330,7 @@ export default function CareerPage() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: idx * 0.045 }}
-                      className={`flex min-h-[88px] items-center gap-4 border-b border-[#e8e8e8] py-5 ${
-                        idx === WORK_BENEFITS.length - 1 ? "md:col-span-2" : ""
-                      }`}
+                      className="flex min-h-[88px] items-center gap-4 border-b border-[#e8e8e8] py-5"
                     >
                       <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[#fff0f0]">
                         <img
@@ -381,9 +380,9 @@ export default function CareerPage() {
                   viewport={{ once: true }}
                   className="relative flex min-h-[220px] flex-col justify-between overflow-clip rounded-[14px] bg-figma-color-14 p-6 shadow-[inset_0_0_0_1px_#e0e0e0] lg:h-[340px]"
                 >
-                  <div className="pointer-events-none absolute -left-[98px] top-[21px] min-h-[494px] w-full max-w-[494px] opacity-[0.08]">
+                  <div className="pointer-events-none absolute -right-16 -top-16 h-[300px] w-[300px] opacity-[0.08]">
                     <img
-                      className="absolute left-[220px] top-[40px] h-[280px] w-[280px]"
+                      className="h-full w-full object-contain"
                       src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg"
                       alt=""
                     />

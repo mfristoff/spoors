@@ -179,8 +179,22 @@ const Image = React.forwardRef(
 
     if (!parsed) {
       const isErrorUrl = imgSrc === FALLBACK_IMAGE_URL
+      // Local / non-Wix images must get the same fit behavior as Wix-backed
+      // images. Without this, a local asset inside a fixed-size wrapper can be
+      // stretched to the wrapper's width/height instead of preserving its
+      // native aspect ratio.
       return (
-        <img key={imgSrc} ref={ref} src={imgSrc} {...imageProps} data-error-image={isErrorUrl || undefined} />
+        <img
+          key={imgSrc}
+          ref={ref}
+          src={imgSrc}
+          {...imageProps}
+          className={cn(
+            imageProps.className,
+            fittingType === "fit" ? "object-contain" : "object-cover"
+          )}
+          data-error-image={isErrorUrl || undefined}
+        />
       )
     }
 

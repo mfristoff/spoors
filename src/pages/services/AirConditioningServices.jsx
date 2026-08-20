@@ -4,6 +4,8 @@ import { images } from "@/lib/siteConfig";
 import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { reviewsFor } from "@/lib/serviceReviews";
 
+const U1 = "/assets/images/update-1";
+
 const acContent = {
   heroImage: images.acHero,
   heroAlt: "Spoor's Heating & Air technician servicing an outdoor air conditioning unit in Auburn, CA",
@@ -13,9 +15,9 @@ const acContent = {
     "Since 1925, Spoor's has kept Auburn and the Sierra Foothills cool with honest AC repairs, tune-ups, and right-sized installations.",
   sectionLabel: "AC SERVICE & REPAIRS",
   sectionHeading: "Take definitive control of your indoor microclimate.",
-  breakImage: images.heatingFurnace,
-  breakAlt: "Spoor's Heating & Air technician performing a detailed HVAC system inspection",
-  breakObjectPosition: "center 30%",
+  breakImage: `${U1}/spoors-auburn-ca-ac-detail-page-break.webp`,
+  breakAlt: "Two outdoor air conditioning units beside an Auburn-area home",
+  breakObjectPosition: "center center",
   reviews: reviewsFor("air-conditioning"),
   reviewsServiceLabel: "Air Conditioning",
   faqHeading: "Frequently Asked Questions About Air Conditioning",
@@ -28,7 +30,7 @@ const acContent = {
     {
       title: "Tune-Ups That Cut Your Cooling Bills",
       desc: "Regular air conditioner maintenance is the best way to extend the life of any unit. Spoor's Heating & Air Conditioning provides semi-annual tune-ups that reduce breakdowns, increase efficiency, and lower monthly utility bills for homeowners across Placer County. Our technicians follow a detailed multi-point checklist and keep you fully informed throughout the appointment. Join our Home Comfort Club for two tune-ups a year, repair and service discounts, and other member benefits.",
-      image: spoorsImageLibrary.airConditionerFilterMaintenance,
+      image: `${U1}/spoors-auburn-ca-ac-detail-tuneups.webp`,
     },
     {
       title: "Right-Sized AC Installation for Auburn Homes",
@@ -38,12 +40,12 @@ const acContent = {
     {
       title: "Cooling Restored, Day or Night",
       desc: "Air conditioner breakdowns rarely happen at an opportune time. Spoor's Heating & Air Conditioning doesn't believe you should have to wait until the next morning or workday for a home AC repair. Regardless of the hour, our technicians respond promptly across Auburn, Meadow Vista, and Orangevale, using the latest industry tools and techniques to resolve the issue. We'll always keep you informed and suggest ways to avoid the problem in the future.",
-      image: images.introTech,
+      image: `${U1}/spoors-auburn-ca-ac-detail-cooling-restored.webp`,
     },
     {
       title: "Cleaner Air With Every Cooling Cycle",
       desc: "Professional HVAC services from Spoor's Heating & Air Conditioning can make your indoor environment both comfortable and healthy. We offer a complete range of indoor air quality services that purify and remove harmful allergens and airborne contaminants from your home or business. Our team inspects your AC unit and helps you determine whether a system upgrade can optimize the air quality throughout your Northern California property.",
-      image: images.introAir,
+      image: `${U1}/spoors-auburn-ca-ac-detail-cleaner-air.webp`,
     },
   ],
   faqs: [

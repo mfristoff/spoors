@@ -3,17 +3,21 @@ import ServiceDetailLayout from "./ServiceDetailLayout";
 import { images } from "@/lib/siteConfig";
 import { reviewsFor } from "@/lib/serviceReviews";
 
+const U1 = "/assets/images/update-1";
+
 const emergencyContent = {
-  heroImage: images.introTech,
-  heroAlt: "Spoor's Heating & Air technician responding to a 24-hour emergency HVAC repair call in Auburn, CA",
+  heroImage: `${U1}/spoors-auburn-ca-emergency-detail-hero.webp`,
+  heroAlt: "HVAC technician diagnosing an outdoor air conditioner during an emergency service call",
   badge: "24/7 EMERGENCY REPAIR",
   headline: "24-Hour Emergency HVAC Repair in Auburn.",
   intro:
     "Heat or AC out? Our technicians answer 24/7 across Auburn.",
   sectionLabel: "EMERGENCY HVAC REPAIRS",
   sectionHeading: "Is it an HVAC emergency? Here's what to watch for.",
-  breakImage: images.heatingEmergency,
-  breakAlt: "Spoor's Heating & Air technician completing an urgent HVAC electrical repair",
+  breakImage: `${U1}/spoors-auburn-ca-emergency-detail-page-break.webp`,
+  breakAlt: "Close view of an outdoor HVAC fan for emergency repair service",
+  breakObjectPosition: "center center",
+  breakHeightClass: "h-[300px] lg:h-[460px]",
   reviews: reviewsFor("emergency"),
   reviewsServiceLabel: "Emergency Repairs",
   faqHeading: "Frequently Asked Questions About Emergency HVAC Repair",
@@ -31,32 +35,32 @@ const emergencyContent = {
     {
       title: "Restored Airflow, No Guesswork",
       desc: "A clogged air filter can block airflow from reaching the ductwork and vents, making it seem like there's no air movement. We offer air quality services to ensure correct MERV-rated filtration. But if the system is running and air still isn't flowing, call us—there could be a duct issue, dirty coils, a faulty fan, or low refrigerant. We arrive promptly, diagnose the cause, and fix it.",
-      image: images.introAir,
+      image: `${U1}/spoors-auburn-ca-emergency-detail-airflow.webp`,
     },
     {
       title: "Leaks Stopped Before They Spread",
       desc: "Small amounts of condensation are nothing to worry about, but puddles accumulating inside or outside the unit need a professional. Left alone, collected water can ruin the surrounding area, cause mold growth, and irreparably damage internal electrical components—sometimes requiring a full unit replacement. Water underneath the AC may also indicate a refrigerant leak, which is dangerous and requires immediate service.",
-      image: images.auburn,
+      image: `${U1}/spoors-auburn-ca-emergency-detail-leaks.webp`,
     },
     {
       title: "Frozen Coils Thawed and Fixed",
       desc: "If your AC isn't cooling as usual, isn't coming on, or turns off prematurely, it could be a frozen evaporator coil or lines. Coils and their connecting lines can freeze when the unit is overtaxed, clogged, or dirty—no matter the outside temperature. A frozen coil blocks refrigerant flow so the unit can't cool. Don't be stuck sweating on a hot summer night; call our AC repair company for fast service.",
-      image: images.heatingFurnace,
+      image: `${U1}/spoors-auburn-ca-emergency-detail-frozen.webp`,
     },
     {
       title: "Safe, Professional Repairs—Not DIY",
       desc: "The do-it-yourself approach is great for many situations, but letting someone without proper HVAC training repair a heating or cooling issue—or install a system—can result in complete system failure and cost a significant amount to correct. For safe, reliable emergency HVAC repair in Auburn, trust our trained and qualified technicians instead.",
-      image: images.aboutTeam,
+      image: `${U1}/spoors-auburn-ca-emergency-detail-safe-repair.webp`,
     },
     {
       title: "Prevent the Next Emergency",
       desc: "Regular HVAC maintenance lets our technicians catch potential issues before they develop into a full-blown emergency. It also keeps your system running at peak efficiency, saving energy and money each month. Joining our Home Comfort Club makes seasonal tune-ups automatic so you never forget to schedule them.",
-      image: images.hero,
+      image: `${U1}/spoors-auburn-ca-emergency-detail-prevent-next.webp`,
     },
     {
       title: "Honest Repair-vs-Replace Guidance",
       desc: "The more wear and tear placed on an HVAC system over time, the more emergency repairs it will need to stay operational. When our technicians feel your system is reaching the end of its service life, we'll offer honest suggestions and guidance on repair versus replacement—so you can avoid repeated breakdowns and restore dependable comfort.",
-      image: images.introTech,
+      image: `${U1}/spoors-auburn-ca-emergency-detail-repair-replace.webp`,
     },
   ],
   faqs: [

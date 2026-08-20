@@ -26,6 +26,8 @@ import { preloadRouteAssets } from "@/lib/routePreload";
 const HERO_PHOTO =
   "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/08b2af924_hero-bg.png";
 
+const U1 = "/assets/images/update-1";
+
 const BLUE_BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ba0b14249_Bolt-Blue.svg";
 const RED_BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/1f65ed898_Bolt.svg";
 const GREEN_BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/8d4428aab_Green-Bolt.svg";
@@ -56,7 +58,7 @@ const SERVICE_PANEL_IMAGES = {
     spoorsImageLibrary.acElectricalRepair,
     spoorsImageLibrary.acMaintenance,
     spoorsImageLibrary.acRefrigerantService,
-    spoorsImageLibrary.acRepairTechnician,
+    `${U1}/spoors-auburn-ca-services-ac-iaq.webp`,
   ],
   heating: [
     "/assets/images/services-overview/spoors-auburn-ca-hvac-indoor-air-quality-system-service.webp",
@@ -66,39 +68,39 @@ const SERVICE_PANEL_IMAGES = {
     "/assets/images/services-overview/spoors-auburn-ca-indoor-air-quality-living-room-comfort.webp",
   ],
   "indoor-air-quality": [
-    "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-ceiling-vent-plant.webp",
-    images.introAir,
-    images.introTech,
-    "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-dehumidifier-ducted-system.webp",
-    "/assets/images/indoor-air-quality/spoors-auburn-ca-whole-home-humidifier-hvac-system.webp",
+    `${U1}/spoors-auburn-ca-services-iaq-air-filtration.webp`,
+    `${U1}/spoors-auburn-ca-services-iaq-humidity-control.webp`,
+    `${U1}/spoors-auburn-ca-services-iaq-ventilation.webp`,
+    `${U1}/spoors-auburn-ca-services-iaq-uv-treatment.webp`,
+    `${U1}/spoors-auburn-ca-services-iaq-duct-cleaning.webp`,
   ],
   "emergency-repairs": [
-    spoorsImageLibrary.hvacSystemRepair,
-    spoorsImageLibrary.hvacTechnician,
-    spoorsImageLibrary.heatingSystemRepair,
-    spoorsImageLibrary.acUnitTroubleshooting,
-    spoorsImageLibrary.airConditionerRepair,
+    `${U1}/spoors-auburn-ca-services-emergency-urgent-ac.webp`,
+    `${U1}/spoors-auburn-ca-services-emergency-heating.webp`,
+    `${U1}/spoors-auburn-ca-services-emergency-rapid-diagnosis.webp`,
+    `${U1}/spoors-auburn-ca-services-emergency-after-hours.webp`,
+    `${U1}/spoors-auburn-ca-services-emergency-prevention.webp`,
   ],
   "maintenance-tune-ups": [
-    spoorsImageLibrary.acServiceAppointment,
-    spoorsImageLibrary.airFilterReplacement,
-    spoorsImageLibrary.centralAirConditioningUnits,
-    spoorsImageLibrary.rooftopAcInstallation,
-    spoorsImageLibrary.residentialAcSystems,
+    `${U1}/spoors-auburn-ca-services-maintenance-ac-tuneup.webp`,
+    `${U1}/spoors-auburn-ca-services-maintenance-heating-tuneup.webp`,
+    `${U1}/spoors-auburn-ca-services-maintenance-system-inspection.webp`,
+    `${U1}/spoors-auburn-ca-services-maintenance-filter-coil.webp`,
+    `${U1}/spoors-auburn-ca-services-maintenance-reports.webp`,
   ],
   "ductless-mini-splits": [
     "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-indoor-head-closeup.webp",
-    "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-rooftop-technician.webp",
+    `${U1}/spoors-auburn-ca-services-ductless-repair.webp`,
     "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-home-comfort-remote.webp",
-    "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-condenser.webp",
-    "/assets/images/ductless-mini-splits/spoors-auburn-ca-ductless-mini-split-outdoor-wall-mount.webp",
+    `${U1}/spoors-auburn-ca-services-ductless-maintenance.webp`,
+    `${U1}/spoors-auburn-ca-services-ductless-system-design.webp`,
   ],
   "swamp-coolers": [
-    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/966f2ca1f_Swamp-Cooler-Card--1.png",
-    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/466713786_newimageforkeepyourcoolerrunningright.png",
-    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa9126517_swamp-cooler-card-3.png",
-    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d0c459a56_swampcooler-new.png",
-    "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7d0249ed4_swamp-cooler-card5.png",
+    "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-simple-reliable-upkeep.webp",
+    "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-keep-running-right.webp",
+    "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-repairs-restore-cool-air.webp",
+    "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-mold-leaks-fan-fixes.webp",
+    "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-efficient-evaporative-cooling.webp",
   ],
   "water-heater-services": [
     "/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
@@ -110,10 +112,10 @@ const SERVICE_PANEL_IMAGES = {
   ],
   "planned-maintenance": [
     images.heatingBreak,
-    images.heatingRepair,
-    images.heatingTuneup,
-    images.heatingInstall,
-    images.heatingEmergency,
+    `${U1}/spoors-auburn-ca-services-planned-priority.webp`,
+    `${U1}/spoors-auburn-ca-services-planned-history.webp`,
+    `${U1}/spoors-auburn-ca-services-planned-early-detection.webp`,
+    `${U1}/spoors-auburn-ca-services-planned-enrollment.webp`,
   ],
 };
 

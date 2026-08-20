@@ -5,7 +5,7 @@ import { Image } from "@/components/ui/image";
 import { services } from "@/lib/siteConfig";
 
 const SWAMP_COOLER_CARD_IMAGE =
-  "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-home-card.webp";
+  "/assets/images/update-1/spoors-auburn-ca-home-swamp-cooler-card.webp";
 
 const cardImageFor = (s) =>
   s.slug === "swamp-coolers" ? SWAMP_COOLER_CARD_IMAGE : s.image;

@@ -203,7 +203,7 @@ export const services = [
       { title: "Heating Maintenance", description: "Fall tune-ups that keep your system safe, efficient, and ready for winter." },
       { title: "Heating Installation", description: "Clean installation of furnaces and heat pumps sized to your home, with honest repair-vs-replace guidance." },
       { title: "24-Hour Emergency Heating Repairs", description: "When your heat goes out on a cold night, our 24/7 emergency team is ready to help." },
-      { title: "HVAC Indoor Air Quality Services", description: "Filtration and ventilation solutions that complement your heating system for healthier indoor air." },
+      { title: "Heating Air Quality Support", description: "Filtration and ventilation solutions that complement your heating system for healthier indoor air." },
     ],
     image: images.heatingGrid,
     overview:

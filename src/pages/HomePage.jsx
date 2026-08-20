@@ -238,7 +238,7 @@ export default function HomePage() {
 
             {/* Left Image Area */}
             <div className="w-full lg:max-w-[614px] min-h-[400px] lg:h-[709px] relative rounded-[13px] overflow-clip shrink-0">
-              <Image className="absolute inset-0 w-full h-full" src={spoorsImageLibrary.hvacSystemRepair} alt="Spoor's HVAC technician repairing a residential comfort system in Auburn" fittingType="fill" />
+              <img className="absolute inset-0 h-full w-full object-cover" src={spoorsImageLibrary.hvacSystemRepair} alt="Spoor's HVAC technician repairing a residential comfort system in Auburn" loading="lazy" decoding="async" />
 
               {/* Floating Card 1 */}
               <div className="absolute bottom-[104px] left-5 h-[255px] w-[calc(100%-40px)] sm:w-[330px] bg-figma-primary rounded-[15px] p-5 flex flex-col justify-between gap-6 shadow-lg">
@@ -388,16 +388,13 @@ export default function HomePage() {
             </div>
 
             {/* Right Image Area */}
-            <div className="w-full lg:max-w-[766px] min-h-[400px] lg:h-[717px] relative rounded-[13px] overflow-clip shrink-0 order-1 lg:order-2">
-              <Image
+            <div className="w-full lg:max-w-[766px] min-h-[400px] lg:h-[717px] relative rounded-[13px] overflow-hidden shrink-0 order-1 lg:order-2 lg:-mr-6">
+              <img
                 src={spoorsImageLibrary.heatPumpService}
                 alt="Spoor's technician servicing a residential heat pump in Auburn, California"
-                fittingType="fill"
-                quality={82}
-                loading="eager"
+                loading="lazy"
                 decoding="async"
-                className="absolute inset-0 w-full h-full" />
-              
+                className="absolute inset-0 h-full w-full object-cover object-center" />
             </div>
           </div>
 

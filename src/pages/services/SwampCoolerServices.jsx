@@ -39,7 +39,7 @@ const swampCoolerContent = {
     {
       title: "Simple, Reliable Upkeep",
       desc: "Simple, efficient technology makes swamp coolers less cumbersome to service than air conditioners. AC units use a refrigeration cycle that needs refrigerants and components requiring regular cleaning and replacement. Swamp coolers use evaporative cooling with less complicated parts—mainly blowers, damp pads, and pumps. These components can become dirty over time, but regular maintenance prevents most significant repairs.",
-      image: cardImages[0],
+      image: cardImages[6],
     },
     {
       title: "Keep Your Cooler Running Right",
@@ -69,7 +69,7 @@ const swampCoolerContent = {
     {
       title: "Right-Sized Cooling for Your Space",
       desc: "Swamp cooler capacity is measured in cubic feet per minute (CFM)—higher CFM cools a larger space. Estimate minimum CFM as square footage × ceiling height ÷ 2. A two-car garage (676 sq ft, 8-ft ceilings) needs at least ~2,800 CFM. Models differ by CFM output, energy efficiency, and cost, and lifespan varies by manufacturer. If you can't decide between models, our technicians point out the ideal one for you.",
-      image: cardImages[6],
+      image: cardImages[0],
     },
     {
       title: "Portable Comfort or Whole-Home Coverage",
