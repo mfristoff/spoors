@@ -5,7 +5,7 @@ import { navigation, business, images } from "@/lib/siteConfig";
 import { Phone, Mail, X } from "lucide-react";
 import DropdownPanel from "@/components/header/DropdownPanel";
 import SwipeableTopBar from "@/components/header/SwipeableTopBar";
-import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
+import EmergencyHelpModal from "@/components/ui/EmergencyHelpModal";
 import { preloadRouteAssets, warmPrimaryRoutes } from "@/lib/routePreload";
 
 const menuItem = {
@@ -27,21 +27,8 @@ const mobileNavigation = [
 export default function NewHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [emergencyModalOpen, setEmergencyModalOpen] = useState(false);
-  const [emergencyModalPrimed, setEmergencyModalPrimed] = useState(false);
 
   useEffect(() => warmPrimaryRoutes(), []);
-
-  // Pre-mount the emergency scheduler after the initial page work settles so
-  // the desktop emergency CTA can open immediately on interaction.
-  useEffect(() => {
-    const prime = () => setEmergencyModalPrimed(true);
-    if (typeof window !== "undefined" && "requestIdleCallback" in window) {
-      const id = window.requestIdleCallback(prime, { timeout: 900 });
-      return () => window.cancelIdleCallback?.(id);
-    }
-    const id = window.setTimeout(prime, 450);
-    return () => window.clearTimeout(id);
-  }, []);
 
   useEffect(() => {
     const wrap = document.querySelector("[data-new-nav-wrap]");
@@ -145,13 +132,7 @@ export default function NewHeader() {
             </p>
             <button
               type="button"
-              onPointerEnter={() => setEmergencyModalPrimed(true)}
-              onFocus={() => setEmergencyModalPrimed(true)}
-              onPointerDown={() => setEmergencyModalPrimed(true)}
-              onClick={() => {
-                setEmergencyModalPrimed(true);
-                setEmergencyModalOpen(true);
-              }}
+              onClick={() => setEmergencyModalOpen(true)}
               className="inline-flex h-[69px] w-[244px] items-center justify-center whitespace-nowrap rounded-[9px] bg-[#FF2828] px-5 py-5 text-[15px] font-semibold text-white shadow-[0_10px_24px_rgba(0,0,0,0.25)] transition-all hover:-translate-y-0.5 hover:bg-[#ef2020]"
             >
               Get Emergency Help
@@ -231,18 +212,10 @@ export default function NewHeader() {
         </AnimatePresence>
       </div>
 
-      {(emergencyModalPrimed || emergencyModalOpen) && (
-        <ServiceQuoteModal
-          open={emergencyModalOpen}
-          keepMounted
-          onClose={() => setEmergencyModalOpen(false)}
-          service="Emergency Repairs"
-          formService="Emergency Repairs"
-          eyebrow="24/7 EMERGENCY SERVICE"
-          headline="Need Emergency HVAC Service?"
-          support={`Tell us what’s happening and how quickly you need help. Spoor’s will review your request and follow up fast. For immediate assistance, call ${business.phone}.`}
-        />
-      )}
+      <EmergencyHelpModal
+        open={emergencyModalOpen}
+        onClose={() => setEmergencyModalOpen(false)}
+      />
     </header>
   );
 }
