@@ -8,6 +8,7 @@ const U1 = "/assets/images/update-1";
 const emergencyContent = {
   heroImage: `${U1}/spoors-auburn-ca-emergency-detail-hero.webp`,
   heroAlt: "HVAC technician diagnosing an outdoor air conditioner during an emergency service call",
+  heroObjectPosition: "center 25%",
   badge: "24/7 EMERGENCY REPAIR",
   headline: "24-Hour Emergency HVAC Repair in Auburn.",
   intro:
@@ -25,7 +26,7 @@ const emergencyContent = {
     {
       title: "Burning or Gas Odors, Addressed Fast",
       desc: "A brief burning smell when a heater first turns on can be normal, but a lingering burning odor is cause for concern. Overheating, melting electrical components produce a burnt smell and can become a fire hazard—call Spoor's as soon as possible. If you have gas-powered appliances and smell rotting eggs, leave your home immediately and call the professionals; there may be a dangerous gas leak.",
-      image: images.acService,
+      image: `${U1}/spoors-auburn-ca-emergency-detail-gas-odor.webp`,
     },
     {
       title: "Strange Noises Diagnosed Quickly",

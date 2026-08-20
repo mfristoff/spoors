@@ -69,9 +69,9 @@ const SERVICE_PANEL_IMAGES = {
     "/assets/images/services-overview/spoors-auburn-ca-indoor-air-quality-living-room-comfort.webp",
   ],
   "indoor-air-quality": [
+    `${U1}/spoors-auburn-ca-services-iaq-ventilation.webp`,
     `${U3}/spoors-auburn-ca-services-air-filtration-systems.webp`,
     `${U1}/spoors-auburn-ca-services-iaq-humidity-control.webp`,
-    `${U1}/spoors-auburn-ca-services-iaq-ventilation.webp`,
     `${U1}/spoors-auburn-ca-services-iaq-uv-treatment.webp`,
     `${U1}/spoors-auburn-ca-services-iaq-duct-cleaning.webp`,
   ],
@@ -97,15 +97,15 @@ const SERVICE_PANEL_IMAGES = {
     `${U1}/spoors-auburn-ca-services-ductless-system-design.webp`,
   ],
   "swamp-coolers": [
-    "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-simple-reliable-upkeep.webp",
     "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-keep-running-right.webp",
+    "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-simple-reliable-upkeep.webp",
     "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-repairs-restore-cool-air.webp",
     `${U3}/spoors-auburn-ca-services-swamp-winterization.webp`,
     "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-card-efficient-evaporative-cooling.webp",
   ],
   "water-heater-services": [
-    "/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
     "/assets/images/water-heaters/spoors-auburn-ca-traditional-tank-water-heater-room.webp",
+    "/assets/images/water-heaters/spoors-auburn-ca-water-heater-repair-heating-element.webp",
     "/assets/images/water-heaters/spoors-auburn-ca-tankless-water-heater-installation.webp",
     "/assets/images/water-heaters/spoors-auburn-ca-hybrid-heat-pump-water-heater-service-technician.webp",
     "/assets/images/water-heaters/spoors-auburn-ca-water-heater-piping-and-gauge-service.webp",
@@ -114,9 +114,9 @@ const SERVICE_PANEL_IMAGES = {
   "planned-maintenance": [
     `${U3}/spoors-auburn-ca-services-planned-seasonal-tuneups.webp`,
     `${U1}/spoors-auburn-ca-services-planned-priority.webp`,
-    `${U3}/spoors-auburn-ca-services-planned-detailed-history.webp`,
-    `${U1}/spoors-auburn-ca-services-planned-early-detection.webp`,
     `${U3}/spoors-auburn-ca-services-planned-enrollment-review.webp`,
+    `${U1}/spoors-auburn-ca-services-planned-early-detection.webp`,
+    `${U3}/spoors-auburn-ca-services-planned-detailed-history.webp`,
   ],
 };
 

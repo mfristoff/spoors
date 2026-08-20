@@ -255,9 +255,9 @@ export const services = [
     headline: "Cleaner, healthier air for your whole home.",
     controlHeader: "Take definitive control of your indoor air.",
     subServices: [
+      { title: "Ventilation Solutions", description: "Fresh-air systems that reduce stale, stuffy rooms and improve circulation." },
       { title: "Air Filtration Systems", description: "Whole-home filtration that reduces dust, pollen, and allergens throughout your home." },
       { title: "Humidity Control", description: "Humidifiers and dehumidifiers that balance moisture for comfort and protection of your home." },
-      { title: "Ventilation Solutions", description: "Fresh-air systems that reduce stale, stuffy rooms and improve circulation." },
       { title: "UV Air Treatment", description: "UV light systems that neutralize airborne contaminants at the source." },
       { title: "Duct Cleaning & Maintenance", description: "Cleaner ducts and coils for better airflow and improved efficiency." },
     ],
@@ -474,8 +474,8 @@ export const services = [
     headline: "Reliable evaporative cooling for dry climates.",
     controlHeader: "Take control of efficient, fresh-air cooling.",
     subServices: [
-      { title: "Swamp Cooler Repair", description: "Pads, pump, float, and motor service to restore cool airflow." },
       { title: "Swamp Cooler Installation", description: "Honest assessment and installation where evaporative cooling makes sense." },
+      { title: "Swamp Cooler Repair", description: "Pads, pump, float, and motor service to restore cool airflow." },
       { title: "Seasonal Start-Up", description: "Spring start-up service to get your cooler ready for summer." },
       { title: "Winterization", description: "Fall shut-down and winterization to protect your unit through the cold months." },
       { title: "Cooler vs. AC Guidance", description: "Straight advice on whether a swamp cooler or AC is the better fit for your home." },
@@ -526,8 +526,8 @@ export const services = [
     headline: "Dependable hot water whenever you need it.",
     controlHeader: "Take control of your home's hot water.",
     subServices: [
-      { title: "Water Heater Repair", description: "Fast diagnosis and repair for no-hot-water, leaks, and noise issues." },
       { title: "Water Heater Installation", description: "Clean, code-compliant installation of tank, tankless, and qualifying hybrid units." },
+      { title: "Water Heater Repair", description: "Fast diagnosis and repair for no-hot-water, leaks, and noise issues." },
       { title: "Tankless Water Heaters", description: "On-demand hot water from a system sized around household flow and available utilities." },
       { title: "Hybrid & Heat Pump Water Heaters", description: "High-efficiency water heating that transfers heat from the surrounding air into a storage tank." },
       { title: "Maintenance & Flush", description: "Tank flushing and anode checks that can help protect equipment life." },
@@ -583,9 +583,9 @@ export const services = [
     subServices: [
       { title: "Scheduled Seasonal Tune-Ups", description: "Automatic AC and heating tune-ups timed to each peak season." },
       { title: "Priority Service", description: "Priority scheduling and faster response for plan members." },
-      { title: "Detailed Service History", description: "Complete records so nothing is missed from year to year." },
       { title: "Enrollment & Plan Review", description: "We review your equipment and recommend the right level of care." },
       { title: "Early Problem Detection", description: "We catch small issues before they become costly breakdowns." },
+      { title: "Detailed Service History", description: "Complete records so nothing is missed from year to year." },
     ],
     image: images.heatingBreak,
     overview:

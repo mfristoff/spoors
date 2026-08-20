@@ -54,7 +54,7 @@ const maintenanceContent = {
     {
       title: "A Thorough Multi-Point Checklist",
       desc: "Our maintenance sessions include a thorough checklist: visually inspecting the unit for damage; checking and tightening electrical connections; testing voltage and amp draw of the blower motor, compressor, and condenser fan motor; checking the thermostat location, mount, and setting; looking over ductwork for damage and leaky connections; and examining the discharge and suction pressure of the unit's refrigerant levels.",
-      image: images.hero,
+      image: "/assets/images/update-4/spoors-auburn-ca-maintenance-multi-point-system-check.webp",
     },
     {
       title: "Priority Care and Real Savings",

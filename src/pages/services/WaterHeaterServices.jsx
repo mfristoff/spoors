@@ -29,8 +29,7 @@ const waterHeaterContent = {
   sectionHeading: "Reliable hot water, sized for the way your home uses it.",
   sectionSubheading:
     "We compare the equipment, installation requirements, and long-term upkeep before recommending a system.",
-  breakImage: WATER_HEATER_IMAGES.break,
-  breakAlt: "Blue gas burner flames inside a residential water heater",
+  breakImage: null,
   reviews: reviewsFor("water-heater"),
   reviewsServiceLabel: "Water Heater Services",
   faqHeading: "Frequently Asked Questions About Water Heaters",

@@ -62,6 +62,8 @@ export default function ServiceDetailLayout({
   breakObjectPosition = "center center",
   breakHeightClass = "h-[260px] lg:h-[400px]",
   breakOverlayClass = "",
+  breakImageClass = "",
+  breakParallax = false,
   faqs,
   reviews = [],
   reviewsServiceLabel = "HVAC Services",
@@ -197,7 +199,7 @@ export default function ServiceDetailLayout({
                       fittingType={service.imageFit || "fill"}
                       focalPointX={service.focalPointX}
                       focalPointY={service.focalPointY}
-                      className={`w-full h-full ${service.imageFit === "contain" ? "object-contain" : "object-cover"} ${service.imageClass || ""} group-hover:scale-105 transition-transform duration-700`}
+                      className={`absolute inset-0 w-full h-full ${service.imageFit === "contain" ? "object-contain" : "object-cover"} ${service.imageClass || ""} group-hover:scale-105 transition-transform duration-700`}
                       style={service.imagePosition ? { objectPosition: service.imagePosition } : undefined}
                     />
 
@@ -301,21 +303,33 @@ export default function ServiceDetailLayout({
       )}
 
       {/* ── FULL WIDTH IMAGE BREAK ── */}
-      <section className={`w-full relative overflow-hidden ${breakHeightClass}`}>
-
-        <div className="absolute inset-0">
-          <img
-            src={cdnImage(breakImage, 2048, 960, breakFocal)}
-            alt={breakAlt}
-            loading="lazy"
-            decoding="async"
-            className="h-full w-full object-cover"
-            style={{ objectPosition: breakObjectPosition }}
-          />
-        </div>
-        {breakOverlayClass ? <div className={`absolute inset-0 ${breakOverlayClass}`} /> : null}
-
-      </section>
+      {breakImage ? (
+        <section className={`w-full relative overflow-hidden ${breakHeightClass}`}>
+          {breakParallax ? (
+            <div
+              role="img"
+              aria-label={breakAlt}
+              className={`absolute inset-0 bg-cover bg-no-repeat bg-scroll md:bg-fixed ${breakImageClass}`}
+              style={{
+                backgroundImage: `url(${cdnImage(breakImage, 2048, 1200, breakFocal)})`,
+                backgroundPosition: breakObjectPosition,
+              }}
+            />
+          ) : (
+            <div className="absolute inset-0">
+              <img
+                src={cdnImage(breakImage, 2048, 960, breakFocal)}
+                alt={breakAlt}
+                loading="lazy"
+                decoding="async"
+                className={`h-full w-full object-cover ${breakImageClass}`}
+                style={{ objectPosition: breakObjectPosition }}
+              />
+            </div>
+          )}
+          {breakOverlayClass ? <div className={`absolute inset-0 ${breakOverlayClass}`} /> : null}
+        </section>
+      ) : null}
 
       {/* ── REVIEWS ── */}
       <ServiceReviews reviews={reviews} heading={`What Local Homeowners Say About Spoor's ${reviewsServiceLabel}`} onBook={() => setActiveCard({ title: reviewsServiceLabel })} />
