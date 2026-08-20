@@ -1,9 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { Toaster } from "@/components/ui/toaster"
-import { QueryClientProvider } from '@tanstack/react-query'
-import { queryClientInstance } from '@/lib/query-client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { AuthProvider } from '@/lib/AuthContext';
 import ScrollToTop from './components/ScrollToTop';
 import SeoSchema from '@/components/SeoSchema';
 import SiteLayout from '@/components/layout/SiteLayout';
@@ -12,8 +9,6 @@ import RouteLoadingFallback from '@/components/RouteLoadingFallback';
 
 // Keep the homepage eager for the fastest first paint; split every other route.
 import HomePage from './pages/HomePage';
-import Group32 from './pages/Group32';
-import Group33 from './pages/Group33';
 const AboutUs = lazy(() => import('@/pages/AboutUs'));
 const AboutPage = lazy(() => import('@/pages/about/AboutPage'));
 const Services = lazy(() => import('@/pages/Services'));
@@ -46,13 +41,13 @@ const Register = lazy(() => import('./pages/Register'));
 const ForgotPassword = lazy(() => import('./pages/ForgotPassword'));
 const ResetPassword = lazy(() => import('./pages/ResetPassword'));
 const MediaLibrary = lazy(() => import('./pages/MediaLibrary'));
+const Group32 = lazy(() => import('./pages/Group32'));
+const Group33 = lazy(() => import('./pages/Group33'));
 
 function App() {
   return (
-    <AuthProvider>
-      <QueryClientProvider client={queryClientInstance}>
-        <Router>
-          <ScrollToTop />
+    <Router>
+      <ScrollToTop />
           <SeoSchema />
           <Suspense fallback={<RouteLoadingFallback />}>
           <Routes>
@@ -102,10 +97,8 @@ function App() {
             <Route path="/Group33" element={<Group33 />} />
           </Routes>
           </Suspense>
-        </Router>
-        <Toaster />
-      </QueryClientProvider>
-    </AuthProvider>
+      <Toaster />
+    </Router>
   )
 }
 

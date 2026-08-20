@@ -149,6 +149,8 @@ const Image = React.forwardRef(
       focalPointX,
       focalPointY,
       quality = 95,
+      loading = "lazy",
+      decoding = "async",
       ...props
     },
     ref
@@ -162,6 +164,8 @@ const Image = React.forwardRef(
 
     const imageProps = {
       ...props,
+      loading,
+      decoding,
       onError: () => setFailedSrc(src),
     }
 

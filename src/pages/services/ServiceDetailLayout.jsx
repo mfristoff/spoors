@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -28,6 +28,46 @@ const LIGHTNING = {
   faq: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/349410b5e_81e805bde_1512_363.svg",
 };
 
+function LazyParallaxImage({ src, alt, className = "", position = "center center" }) {
+  const ref = useRef(null);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node || ready) return undefined;
+    if (typeof IntersectionObserver === "undefined") {
+      setReady(true);
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setReady(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "700px 0px" }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [ready]);
+
+  return (
+    <div
+      ref={ref}
+      role="img"
+      aria-label={alt}
+      className={`absolute inset-0 bg-cover bg-no-repeat bg-scroll md:bg-fixed ${className}`}
+      style={{
+        backgroundImage: ready ? `url(${src})` : undefined,
+        backgroundPosition: position,
+      }}
+    />
+  );
+}
+
 function LightningPair({ variant = "gold" }) {
   const main = variant === "white" ? LIGHTNING.white : LIGHTNING.gold;
   const shadow = variant === "white" ? LIGHTNING.whiteShadow : LIGHTNING.goldShadow;
@@ -47,6 +87,7 @@ export default function ServiceDetailLayout({
   heroObjectPosition = "center center",
   heroMobileObjectPosition,
   heroImagePlacement = "full",
+  heroImageWidthClass = "lg:w-[62%]",
   heroDimRight = false,
   badge,
   headline,
@@ -83,7 +124,7 @@ export default function ServiceDetailLayout({
         <div
           className={
             heroImagePlacement === "right"
-              ? "absolute inset-y-0 right-0 w-full bg-[#0a1228] lg:w-[62%]"
+              ? `absolute inset-y-0 right-0 w-full bg-[#0a1228] ${heroImageWidthClass}`
               : "absolute inset-0 bg-[#0a1228]"
           }
         >
@@ -306,14 +347,11 @@ export default function ServiceDetailLayout({
       {breakImage ? (
         <section className={`w-full relative overflow-hidden ${breakHeightClass}`}>
           {breakParallax ? (
-            <div
-              role="img"
-              aria-label={breakAlt}
-              className={`absolute inset-0 bg-cover bg-no-repeat bg-scroll md:bg-fixed ${breakImageClass}`}
-              style={{
-                backgroundImage: `url(${cdnImage(breakImage, 2048, 1200, breakFocal)})`,
-                backgroundPosition: breakObjectPosition,
-              }}
+            <LazyParallaxImage
+              src={cdnImage(breakImage, 2048, 1200, breakFocal)}
+              alt={breakAlt}
+              className={breakImageClass}
+              position={breakObjectPosition}
             />
           ) : (
             <div className="absolute inset-0">
