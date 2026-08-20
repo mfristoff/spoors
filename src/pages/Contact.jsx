@@ -141,21 +141,38 @@ export default function Contact() {
               hidden: {},
               visible: { transition: { staggerChildren: reduceMotion ? 0 : 0.07 } },
             }}
-            className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5"
+            className="mt-6 grid items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-5"
           >
-            {LOCATIONS.map(({ label, address, phone, icon: Icon }) => (
+            {LOCATIONS.map(({ label, address, value, href, icon: Icon }) => (
               <motion.div
                 key={label}
                 variants={fadeUp}
                 transition={{ duration: 0.52, ease: EASE }}
-                className="rounded-xl border border-border-light bg-neutral-bg p-4"
+                className="h-full rounded-[22px] border border-[#E5E7EB] bg-white p-6 shadow-[0_10px_28px_rgba(5,13,56,0.045)]"
               >
-                <div className="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-soft-red">
-                  <Icon className="h-4 w-4 text-red-600" />
+                <div className="flex h-full flex-col">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#FFD8D8] bg-[#FFF4F4]">
+                    <Icon className="h-[18px] w-[18px] text-red-600" />
+                  </div>
+                  <p className="mt-5 min-h-[52px] text-[15px] font-bold uppercase tracking-[0.03em] text-ink-950">
+                    {label}
+                  </p>
+                  <p className="mt-3 min-h-[66px] whitespace-pre-line text-[15px] leading-[1.55] text-ink-700">
+                    {address}
+                  </p>
+                  <div className="mt-auto pt-4">
+                    {href ? (
+                      <a
+                        href={href}
+                        className="whitespace-pre-line text-[15px] font-semibold leading-[1.55] text-red-600 transition-colors hover:text-red-700"
+                      >
+                        {value}
+                      </a>
+                    ) : (
+                      <p className="whitespace-pre-line text-[15px] font-semibold leading-[1.55] text-ink-950">{value}</p>
+                    )}
+                  </div>
                 </div>
-                <p className="text-[13px] font-bold uppercase tracking-wide text-ink-900">{label}</p>
-                <p className="mt-1 whitespace-pre-line text-[13px] text-ink-700">{address}</p>
-                {phone && <p className="mt-0.5 text-[13px] font-semibold text-red-600">{phone}</p>}
               </motion.div>
             ))}
           </motion.div>

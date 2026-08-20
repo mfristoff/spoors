@@ -263,7 +263,7 @@ export default function QuoteForm({ service = "", formService = "", onClose }) {
                     type="button"
                     disabled={past}
                     onClick={() => setDate(d)}
-                    className="grid h-9 place-items-center rounded-full text-[14px] transition-colors"
+                    className="mx-auto inline-flex h-9 w-9 items-center justify-center rounded-full text-[14px] transition-colors"
                     style={
                     selected ?
                     { background: "#6B7280", color: "#fff", fontWeight: 600 } :

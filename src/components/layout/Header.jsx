@@ -3,15 +3,18 @@ import { Link, useLocation } from "react-router-dom";
 import { navigation, business, images } from "@/lib/siteConfig";
 import AnnouncementBars from "@/components/layout/AnnouncementBars";
 import MobileMenu from "@/components/layout/MobileMenu";
+import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
 import { ChevronDown, Phone, Mail, Menu } from "lucide-react";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [emergencyModalOpen, setEmergencyModalOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setMobileOpen(false);
+    setEmergencyModalOpen(false);
   }, [location.pathname]);
 
   // Collapse the announcement bar after scrolling down.
@@ -113,15 +116,19 @@ export default function Header() {
                 </nav>
               </div>
 
-              {/* Call CTA — dark maroon block with bright red button */}
-              <div className="flex items-center justify-center" style={{ backgroundColor: "#8b0000" }}>
-                <a
-                  href={business.phoneLink}
-                  className="inline-flex items-center justify-center rounded-md text-[15px] font-semibold text-white"
+              {/* Desktop emergency CTA */}
+              <div className="flex flex-col items-center justify-center px-5 text-center" style={{ backgroundColor: "#8b0000" }}>
+                <p className="mb-2 text-[12px] font-semibold uppercase tracking-[0.08em] text-white/78">
+                  24/7 Emergency Service
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setEmergencyModalOpen(true)}
+                  className="inline-flex items-center justify-center rounded-md text-[15px] font-semibold text-white transition-transform hover:-translate-y-0.5"
                   style={{ backgroundColor: "#ff3333", height: 64, width: 224 }}
                 >
-                  Call: {business.phone}
-                </a>
+                  Get Emergency Help
+                </button>
               </div>
             </div>
           </div>
@@ -165,6 +172,15 @@ export default function Header() {
       </div>
 
       <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} />
+      <ServiceQuoteModal
+        open={emergencyModalOpen}
+        onClose={() => setEmergencyModalOpen(false)}
+        service="Emergency Repairs"
+        formService="Emergency Repairs"
+        eyebrow="24/7 EMERGENCY SERVICE"
+        headline="Need Emergency HVAC Service?"
+        support={`Tell us what’s going on and how fast you need help. Spoor’s will review the request and follow up fast. If you need immediate help, you can still call ${business.phone}.`}
+      />
     </header>
   );
 }
