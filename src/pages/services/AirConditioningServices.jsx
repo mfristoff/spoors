@@ -5,6 +5,7 @@ import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { reviewsFor } from "@/lib/serviceReviews";
 
 const U1 = "/assets/images/update-1";
+const U3 = "/assets/images/update-3";
 
 const acContent = {
   heroImage: images.acHero,
@@ -17,7 +18,8 @@ const acContent = {
   sectionHeading: "Take definitive control of your indoor microclimate.",
   breakImage: `${U1}/spoors-auburn-ca-ac-detail-page-break.webp`,
   breakAlt: "Two outdoor air conditioning units beside an Auburn-area home",
-  breakObjectPosition: "center center",
+  breakObjectPosition: "center 22%",
+  breakHeightClass: "h-[320px] lg:h-[520px]",
   reviews: reviewsFor("air-conditioning"),
   reviewsServiceLabel: "Air Conditioning",
   faqHeading: "Frequently Asked Questions About Air Conditioning",
@@ -30,7 +32,7 @@ const acContent = {
     {
       title: "Tune-Ups That Cut Your Cooling Bills",
       desc: "Regular air conditioner maintenance is the best way to extend the life of any unit. Spoor's Heating & Air Conditioning provides semi-annual tune-ups that reduce breakdowns, increase efficiency, and lower monthly utility bills for homeowners across Placer County. Our technicians follow a detailed multi-point checklist and keep you fully informed throughout the appointment. Join our Home Comfort Club for two tune-ups a year, repair and service discounts, and other member benefits.",
-      image: `${U1}/spoors-auburn-ca-ac-detail-tuneups.webp`,
+      image: `${U3}/spoors-auburn-ca-ac-detail-tuneups-v2.webp`,
     },
     {
       title: "Right-Sized AC Installation for Auburn Homes",

@@ -14,8 +14,24 @@ import { cardEntrance, entranceViewport } from "@/lib/motionVariants";
 
 const ROW_SIZE = 3;
 
+const orderedServices = (() => {
+  const swampService = services.find((s) => s.slug === "swamp-coolers");
+  const waterHeaterService = services.find((s) => s.slug === "water-heater-services");
+  const plannedMaintenanceService = services.find((s) => s.slug === "planned-maintenance");
+
+  if (!swampService || !waterHeaterService || !plannedMaintenanceService) {
+    return services;
+  }
+
+  const baseServices = services.filter(
+    (s) => !["swamp-coolers", "water-heater-services", "planned-maintenance"].includes(s.slug)
+  );
+
+  return [...baseServices, waterHeaterService, plannedMaintenanceService, swampService];
+})();
+
 const rows = [];
-for (let i = 0; i < services.length; i += ROW_SIZE) rows.push(services.slice(i, i + ROW_SIZE));
+for (let i = 0; i < orderedServices.length; i += ROW_SIZE) rows.push(orderedServices.slice(i, i + ROW_SIZE));
 
 export default function AllServicesGrid() {
   return (
