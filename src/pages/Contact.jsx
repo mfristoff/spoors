@@ -10,32 +10,37 @@ const EASE = [0.22, 1, 0.36, 1];
 const LOCATIONS = [
   {
     label: "Meadow Vista Location",
-    address: "908 Evergreen Lane\nMeadow Vista, CA 95722",
-    phone: "(530) 878-4812",
+    lines: ["908 Evergreen Lane", "Meadow Vista, CA 95722", "(530) 878-4812"],
+    href: "https://www.google.com/maps/search/?api=1&query=908+Evergreen+Lane+Meadow+Vista+CA+95722",
+    external: true,
     icon: MapPin,
   },
   {
     label: "Auburn Location",
-    address: "345 Sacramento St., #5\nAuburn, CA 95603",
-    phone: "(530) 823-1843",
+    lines: ["345 Sacramento St., #5", "Auburn, CA 95603", "(530) 823-1843"],
+    href: "https://www.google.com/maps/search/?api=1&query=345+Sacramento+St+Suite+5+Auburn+CA+95603",
+    external: true,
     icon: MapPin,
   },
   {
     label: "Send a Fax",
-    address: "(530) 878-3862",
-    phone: null,
+    lines: ["Fax documents to our office", "(530) 878-3862"],
+    href: "fax:+15308783862",
+    external: false,
     icon: Printer,
   },
   {
     label: "Email Us",
-    address: business.email,
-    phone: null,
+    lines: ["Questions or scheduling", business.email],
+    href: business.emailLink,
+    external: false,
     icon: Mail,
   },
   {
     label: "Standard Hours",
-    address: "Mon – Fri:\n7:30am – 5:30pm",
-    phone: null,
+    lines: ["Mon – Fri:", "7:30am – 5:30pm"],
+    href: business.phoneLink,
+    external: false,
     icon: Clock,
   },
 ];
@@ -143,37 +148,39 @@ export default function Contact() {
             }}
             className="mt-6 grid items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-5"
           >
-            {LOCATIONS.map(({ label, address, value, href, icon: Icon }) => (
-              <motion.div
+            {LOCATIONS.map(({ label, lines, href, external, icon: Icon }) => (
+              <motion.a
                 key={label}
+                href={href}
+                target={external ? "_blank" : undefined}
+                rel={external ? "noopener noreferrer" : undefined}
                 variants={fadeUp}
                 transition={{ duration: 0.52, ease: EASE }}
-                className="h-full rounded-[22px] border border-[#E5E7EB] bg-white p-6 shadow-[0_10px_28px_rgba(5,13,56,0.045)]"
+                className="group block h-full min-h-[250px] rounded-[22px] border border-[#E5E7EB] bg-white p-6 shadow-[0_10px_28px_rgba(5,13,56,0.045)] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-[#D8DCE3] hover:shadow-[0_18px_42px_rgba(5,13,56,0.085)] focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
+                aria-label={`${label}: ${lines.join(", ")}`}
               >
                 <div className="flex h-full flex-col">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#FFD8D8] bg-[#FFF4F4]">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#FFD8D8] bg-[#FFF4F4] transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
                     <Icon className="h-[18px] w-[18px] text-red-600" />
                   </div>
-                  <p className="mt-5 min-h-[52px] text-[15px] font-bold uppercase tracking-[0.03em] text-ink-950">
+                  <p className="mt-5 min-h-[48px] text-[15px] font-bold uppercase leading-[1.35] tracking-[0.03em] text-ink-950">
                     {label}
                   </p>
-                  <p className="mt-3 min-h-[66px] whitespace-pre-line text-[15px] leading-[1.55] text-ink-700">
-                    {address}
-                  </p>
-                  <div className="mt-auto pt-4">
-                    {href ? (
-                      <a
-                        href={href}
-                        className="whitespace-pre-line text-[15px] font-semibold leading-[1.55] text-red-600 transition-colors hover:text-red-700"
+                  <div className="mt-3 flex min-h-[88px] flex-col justify-start gap-1.5 text-[14px] leading-[1.5] text-ink-700">
+                    {lines.map((line, index) => (
+                      <span
+                        key={`${label}-${index}`}
+                        className={`${index === lines.length - 1 && (label.includes("Location") || label === "Send a Fax" || label === "Email Us") ? "font-semibold text-red-600" : ""} ${label === "Email Us" && index === lines.length - 1 ? "break-all" : ""}`}
                       >
-                        {value}
-                      </a>
-                    ) : (
-                      <p className="whitespace-pre-line text-[15px] font-semibold leading-[1.55] text-ink-950">{value}</p>
-                    )}
+                        {line}
+                      </span>
+                    ))}
                   </div>
+                  <span className="mt-auto pt-5 text-[12px] font-semibold uppercase tracking-[0.12em] text-ink-400 transition-colors group-hover:text-red-600">
+                    {label.includes("Location") ? "Open in Maps" : label === "Email Us" ? "Send Email" : label === "Send a Fax" ? "Fax Office" : "Call Office"}
+                  </span>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </motion.div>
         </div>

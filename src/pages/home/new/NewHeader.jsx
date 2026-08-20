@@ -5,6 +5,7 @@ import { navigation, business, images } from "@/lib/siteConfig";
 import { Phone, Mail, X } from "lucide-react";
 import DropdownPanel from "@/components/header/DropdownPanel";
 import SwipeableTopBar from "@/components/header/SwipeableTopBar";
+import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
 import { preloadRouteAssets, warmPrimaryRoutes } from "@/lib/routePreload";
 
 const menuItem = {
@@ -25,6 +26,7 @@ const mobileNavigation = [
 
 export default function NewHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [emergencyModalOpen, setEmergencyModalOpen] = useState(false);
 
   useEffect(() => warmPrimaryRoutes(), []);
 
@@ -123,14 +125,18 @@ export default function NewHeader() {
             </nav>
           </div>
 
-          {/* CTA */}
-          <div className="hidden min-h-[154px] w-[310px] flex-col items-center justify-center bg-[#6e0000] px-6 lg:flex">
-            <a
-              href={business.phoneLink}
-              className="inline-flex h-[69px] w-[244px] items-center justify-center whitespace-nowrap rounded-[9px] bg-[#FF2828] px-5 py-5 text-[15px] font-semibold text-white shadow-[0_10px_24px_rgba(0,0,0,0.25)] transition-transform hover:-translate-y-0.5"
+          {/* Desktop emergency CTA — mobile keeps the direct-call action in the top bar/menu */}
+          <div className="hidden min-h-[154px] w-[310px] flex-col items-center justify-center bg-[#6e0000] px-6 text-center lg:flex">
+            <p className="mb-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-white/75">
+              24/7 Emergency Service
+            </p>
+            <button
+              type="button"
+              onClick={() => setEmergencyModalOpen(true)}
+              className="inline-flex h-[69px] w-[244px] items-center justify-center whitespace-nowrap rounded-[9px] bg-[#FF2828] px-5 py-5 text-[15px] font-semibold text-white shadow-[0_10px_24px_rgba(0,0,0,0.25)] transition-all hover:-translate-y-0.5 hover:bg-[#ef2020]"
             >
-              Call: {business.phone}
-            </a>
+              Get Emergency Help
+            </button>
           </div>
         </div>
 
@@ -205,6 +211,16 @@ export default function NewHeader() {
           )}
         </AnimatePresence>
       </div>
+
+      <ServiceQuoteModal
+        open={emergencyModalOpen}
+        onClose={() => setEmergencyModalOpen(false)}
+        service="Emergency Repairs"
+        formService="Emergency Repairs"
+        eyebrow="24/7 EMERGENCY SERVICE"
+        headline="Need Emergency HVAC Service?"
+        support={`Tell us what’s happening and how quickly you need help. Spoor’s will review your request and follow up fast. For immediate assistance, call ${business.phone}.`}
+      />
     </header>
   );
 }
