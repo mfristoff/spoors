@@ -46,7 +46,7 @@ function getCopy(service) {
   };
 }
 
-export default function ServiceQuoteModal({ open, onClose, service, eyebrow, headline, support, formService }) {
+export default function ServiceQuoteModal({ open, onClose, service, eyebrow, headline, support, formService, keepMounted = false }) {
   const base = getCopy(service || "");
   const modalRef = useRef(null);
   const lastActiveRef = useRef(null);
@@ -96,17 +96,23 @@ export default function ServiceQuoteModal({ open, onClose, service, eyebrow, hea
     };
   }, [open, onClose]);
 
-  if (!open) return null;
+  if (!open && !keepMounted) return null;
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.1, ease: "easeOut" }}
+      initial={false}
+      animate={{ opacity: open ? 1 : 0 }}
+      transition={{ duration: open ? 0.08 : 0.1, ease: "easeOut" }}
+      aria-hidden={!open}
       className="fixed inset-0 z-[1000] flex items-start justify-center md:items-center"
-      style={{ background: "rgba(5,13,56,0.72)", backdropFilter: "blur(2px)", WebkitBackdropFilter: "blur(2px)" }}
+      style={{
+        background: "rgba(5,13,56,0.72)",
+        pointerEvents: open ? "auto" : "none",
+        visibility: open ? "visible" : "hidden",
+        willChange: "opacity",
+      }}
       onMouseDown={(e) => {
-        if (e.target === e.currentTarget) onClose();
+        if (open && e.target === e.currentTarget) onClose();
       }}
     >
       <motion.div
@@ -115,9 +121,9 @@ export default function ServiceQuoteModal({ open, onClose, service, eyebrow, hea
         aria-modal="true"
         aria-label={`${copy.eyebrow} — ${copy.headline}`}
         tabIndex={-1}
-        initial={{ opacity: 0, scale: 0.994, y: 4 }}
-        animate={{ opacity: 1, scale: 1, y: 0 }}
-        transition={{ duration: 0.16, ease: [0.22, 1, 0.36, 1] }}
+        initial={false}
+        animate={open ? { opacity: 1, scale: 1, y: 0 } : { opacity: 0, scale: 0.988, y: 8 }}
+        transition={{ duration: open ? 0.14 : 0.1, ease: [0.22, 1, 0.36, 1] }}
         className="relative my-2 w-full overflow-hidden bg-[#F7F7F8] focus:outline-none md:my-4"
         style={{
           width: "min(1840px, calc(100vw - 16px))",
@@ -125,6 +131,7 @@ export default function ServiceQuoteModal({ open, onClose, service, eyebrow, hea
           border: "1px solid rgba(5,13,56,0.16)",
           borderRadius: "9px",
           boxShadow: "0 24px 80px rgba(5,13,56,0.22)",
+          willChange: "transform, opacity",
         }}
       >
         {/* Inner scroll layer keeps the scrollbar off the rounded corners */}
