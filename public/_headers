@@ -12,6 +12,15 @@
 /assets/images/*
   Cache-Control: public, max-age=31536000, immutable
 
+/assets/base44/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/base44/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/base44/*.mp4
+  Cache-Control: public, max-age=31536000, immutable
+
 /media-library*
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
 
