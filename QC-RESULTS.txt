@@ -1,0 +1,15 @@
+Spoor performance QC
+Date: 2026-09-23
+GitHub main inspected: d1fc513cd9a4ef2d629c4f91b8caaf24b3effa44
+
+PASS  Source syntax parse ............. 219 files / 0 errors
+PASS  Local import resolution ......... 0 broken imports
+PASS  Configured lint surface ......... 120 files scanned
+PASS  Stale non-React imports ......... 0 remaining after cleanup
+PASS  Image component default ......... lazy
+PASS  Home-page idle image warmup ..... enabled, concurrency 2
+PASS  Home-page non-hero eager imgs ... 0 remaining
+PASS  Cloudflare video worker-first ... removed
+PASS  Vite JS/CSS immutable cache ..... enabled
+
+Dependency-backed npm ESLint/Vite execution was not available in this isolated runtime because package-registry access is disabled and node_modules is not present. No claim is made that those commands were executed here.

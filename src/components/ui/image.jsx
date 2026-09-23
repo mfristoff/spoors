@@ -117,7 +117,7 @@ const ResponsiveImage = React.forwardRef(
             ref={imgRef}
             src={buildTransformUrl(parsed, options)}
             srcSet={buildSrcSet(parsed, options)}
-            loading={props.loading || "eager"}
+            loading={props.loading || "lazy"}
             className={cn(
               "w-full h-full inset-0 absolute",
               fittingType === "fit" ? "object-contain" : "object-cover"
@@ -149,7 +149,7 @@ const Image = React.forwardRef(
       focalPointX,
       focalPointY,
       quality = 82,
-      loading = "eager",
+      loading = "lazy",
       decoding = "async",
       ...props
     },

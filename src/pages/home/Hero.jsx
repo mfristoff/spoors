@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { images } from "@/lib/siteConfig";
 import { SOCIAL_PROOF_LOGOS } from "@/lib/socialProofLogos";
 import { Image } from "@/components/ui/image";
 import DeferredHeroVideo from "@/pages/home/DeferredHeroVideo";

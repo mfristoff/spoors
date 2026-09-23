@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSeo } from "@/lib/useSeo";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -111,6 +111,73 @@ const proofCardEntrance = {
 export default function HomePage() {
   const [quote, setQuote] = useState({ open: false });
 
+  // Keep the initial hero/video request lane clear, then warm lazy images in a
+  // small queue once the page is loaded. This avoids the blank-image pop-in
+  // that is especially visible during smooth screen recordings without
+  // competing with first paint.
+  useEffect(() => {
+    const connection =
+      navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+
+    if (
+      connection?.saveData ||
+      connection?.effectiveType === "slow-2g" ||
+      connection?.effectiveType === "2g"
+    ) {
+      return undefined;
+    }
+
+    let cancelled = false;
+    let idleHandle;
+    let fallbackTimer;
+
+    const warmLazyImages = async () => {
+      const queue = [...new Set(
+        Array.from(document.images)
+          .filter((image) => image.loading === "lazy" && !image.complete)
+          .map((image) => image.currentSrc || image.src)
+          .filter(Boolean)
+      )];
+
+      const worker = async () => {
+        while (!cancelled && queue.length) {
+          const src = queue.shift();
+          const preload = new window.Image();
+          preload.decoding = "async";
+          preload.fetchPriority = "low";
+          preload.src = src;
+          try {
+            await preload.decode();
+          } catch {
+            // A failed speculative decode must never affect the real image.
+          }
+        }
+      };
+
+      await Promise.all([worker(), worker()]);
+    };
+
+    const scheduleWarmup = () => {
+      if ("requestIdleCallback" in window) {
+        idleHandle = window.requestIdleCallback(warmLazyImages, { timeout: 1800 });
+      } else {
+        fallbackTimer = window.setTimeout(warmLazyImages, 450);
+      }
+    };
+
+    if (document.readyState === "complete") scheduleWarmup();
+    else window.addEventListener("load", scheduleWarmup, { once: true });
+
+    return () => {
+      cancelled = true;
+      window.removeEventListener("load", scheduleWarmup);
+      window.clearTimeout(fallbackTimer);
+      if (idleHandle && "cancelIdleCallback" in window) {
+        window.cancelIdleCallback(idleHandle);
+      }
+    };
+  }, []);
+
   useSeo({
     title: "Spoor's Heating & Air",
     description:
@@ -149,13 +216,13 @@ export default function HomePage() {
             className="order-2 grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 md:mb-16">
             
             <motion.div variants={fadeInUp} className="w-full aspect-[544/364] relative">
-              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_187px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7a07ace_Spoor_s-Home-AC-Service-21.webp" alt="Tech working" fittingType="fill" quality={80} loading="eager" />
+              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_187px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7a07ace_Spoor_s-Home-AC-Service-21.webp" alt="Tech working" fittingType="fill" quality={80} loading="lazy" />
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full aspect-[544/364] relative">
-              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/80f8c024c_Spoor_s-Home-AC-Service-2.webp" alt="Tech inspecting" fittingType="fill" quality={80} loading="eager" />
+              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/80f8c024c_Spoor_s-Home-AC-Service-2.webp" alt="Tech inspecting" fittingType="fill" quality={80} loading="lazy" />
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full aspect-[544/364] relative">
-              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_187px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48c784c4b_Spoor_s-Home-AC-Service-4.webp" alt="Tech smiling" fittingType="fill" quality={80} loading="eager" />
+              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_187px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48c784c4b_Spoor_s-Home-AC-Service-4.webp" alt="Tech smiling" fittingType="fill" quality={80} loading="lazy" />
             </motion.div>
           </motion.div>
 
@@ -233,7 +300,7 @@ export default function HomePage() {
 
             {/* Left Image Area */}
             <div className="w-full lg:max-w-[614px] min-h-[400px] lg:h-[709px] relative rounded-[13px] overflow-clip shrink-0">
-              <img className="absolute inset-0 h-full w-full object-cover" src={spoorsImageLibrary.hvacSystemRepair} alt="Spoor's HVAC technician repairing a residential comfort system in Auburn" loading="eager" decoding="async" />
+              <img className="absolute inset-0 h-full w-full object-cover" src={spoorsImageLibrary.hvacSystemRepair} alt="Spoor's HVAC technician repairing a residential comfort system in Auburn" loading="lazy" decoding="async" />
 
               {/* Floating Card 1 */}
               <div className="absolute bottom-[104px] left-5 h-[255px] w-[calc(100%-40px)] sm:w-[330px] bg-figma-primary rounded-[15px] p-5 flex flex-col justify-between gap-6 shadow-lg">
@@ -387,7 +454,7 @@ export default function HomePage() {
               <img
                 src={spoorsImageLibrary.heatPumpService}
                 alt="Spoor's technician servicing a residential heat pump in Auburn, California"
-                loading="eager"
+                loading="lazy"
                 decoding="async"
                 className="absolute inset-0 h-full w-full object-cover object-center" />
             </div>
@@ -403,7 +470,7 @@ export default function HomePage() {
           >
             <motion.div variants={proofCardEntrance} className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
-                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8bec328f4_Frame124.svg" alt="Reduced energy costs" loading="eager" decoding="async" />
+                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8bec328f4_Frame124.svg" alt="Reduced energy costs" loading="lazy" decoding="async" />
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">15% Lower Bills</span>
               </div>
               <div className="flex flex-col gap-2">
@@ -413,7 +480,7 @@ export default function HomePage() {
             </motion.div>
             <motion.div variants={proofCardEntrance} className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
-                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c88460282_Frame122.svg" alt="No hidden fees" loading="eager" decoding="async" />
+                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c88460282_Frame122.svg" alt="No hidden fees" loading="lazy" decoding="async" />
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">No Hidden Fees</span>
               </div>
               <div className="flex flex-col gap-2">
@@ -423,7 +490,7 @@ export default function HomePage() {
             </motion.div>
             <motion.div variants={proofCardEntrance} className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
-                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3246ca2c_Frame121.svg" alt="5-star reputation" loading="eager" decoding="async" />
+                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3246ca2c_Frame121.svg" alt="5-star reputation" loading="lazy" decoding="async" />
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">5-Star Reputation</span>
               </div>
               <div className="flex flex-col gap-2">

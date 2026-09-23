@@ -15,7 +15,6 @@ import DeferredHeroVideo from "@/pages/home/DeferredHeroVideo";
 import { Link } from "react-router-dom";
 import { cdnImage } from "@/lib/cdnImage";
 import { images } from "@/lib/siteConfig";
-import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 
 const REBATES_HERO_VIDEO = "https://media.base44.com/videos/public/6a67dcda4fda68f69980f519/bb41fa3fb_Spoors-HVAC-Hero-Optimized.mp4";
 const REBATES_HERO_POSTER = cdnImage(images.hero, 1920, 1080);

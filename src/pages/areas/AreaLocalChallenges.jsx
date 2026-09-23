@@ -1,6 +1,6 @@
 import Reveal from "@/components/ui/Reveal";
 import { Image } from "@/components/ui/image";
-import { Check, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { localChallenges } from "@/lib/areaContent";
 
 /**

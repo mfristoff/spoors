@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
-import { cdnImage } from "@/lib/cdnImage";
 
 export default function SpoorHVAC() {
   const [clubModalOpen, setClubModalOpen] = useState(false);

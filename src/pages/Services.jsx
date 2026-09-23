@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useSeo } from "@/lib/useSeo";
-import { services, images } from "@/lib/siteConfig";
+import { services } from "@/lib/siteConfig";
 import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { Image } from "@/components/ui/image";
 import {
