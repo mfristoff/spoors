@@ -1,5 +1,6 @@
-// Safari probes MP4s with byte-range requests before starting playback.
-// Static asset responses may ignore Range, so handle video delivery here.
+// Legacy range handler retained as the Worker module entry for Wrangler.
+// Static media is intentionally NOT routed through this Worker in wrangler.jsonc.
+// Cloudflare's static asset service handles image/video delivery directly.
 export default {
   async fetch(request, env) {
     const response = await env.ASSETS.fetch(request);
@@ -22,7 +23,6 @@ export default {
       return fullResponse();
     }
 
-    // Ignore unsupported/malformed ranges, including multipart requests.
     const match = /^bytes=(\d*)-(\d*)$/.exec(range);
     if (!match || (!match[1] && !match[2]) ||
         !Number.isSafeInteger(Number(match[1])) ||
@@ -31,11 +31,8 @@ export default {
       return fullResponse();
     }
 
-    // The asset binding can omit Content-Length even when the public response
-    // includes it. Derive the total from the actual bytes, not that header.
     const completeBody = await response.arrayBuffer();
     const size = completeBody.byteLength;
-
     const start = match[1] ? Number(match[1]) : Math.max(0, size - Number(match[2]));
     const requestedEnd = match[1] && match[2] ? Number(match[2]) : size - 1;
 
@@ -46,8 +43,6 @@ export default {
     }
 
     const end = Math.min(requestedEnd, size - 1);
-    // These bundled hero clips are small. An exact-size ArrayBuffer also lets
-    // Workers emit Content-Length, which Safari needs with Content-Range.
     const body = completeBody.slice(start, end + 1);
     headers.set('Content-Range', `bytes ${start}-${end}/${size}`);
     headers.set('Content-Length', String(body.byteLength));

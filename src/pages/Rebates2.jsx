@@ -53,7 +53,7 @@ export default function RebatesPage() {
             alt=""
             aria-hidden="true"
             decoding="async"
-            fetchpriority="high"
+            fetchPriority="high"
             className="absolute inset-0 h-full w-full object-cover object-center md:hidden"
           />
           <DeferredHeroVideo src={REBATES_HERO_VIDEO} />

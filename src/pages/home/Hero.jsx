@@ -37,7 +37,7 @@ function HistoryCard() {
       </div>
       <div className="relative w-[44%] shrink-0 sm:w-[140px]">
         <Image
-          src="/assets/images/spoors-company-card-600-v1.webp"
+          src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/864bc4072_unnamed.webp"
           alt="Spoor's Heating & Air team at a ribbon-cutting ceremony"
           className="absolute inset-0 h-full w-full"
           fittingType="fill"
