@@ -6,7 +6,6 @@
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
-    "run_worker_first": ["/assets/*.mp4", "/assets/*.webm", "/assets/*.mov"],
     "not_found_handling": "single-page-application"
   }
 }
