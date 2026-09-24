@@ -50,6 +50,7 @@ e4c9669ba82b691da5cb120ca25d7e10e8326d91fc152eeadd6dcc00dee5071d  ./V61-SERVICE-
 ea735c32e9f6c1a3dd7454453768506c5e4b3a15badf94fac1f6be092d56706a  ./V65-PERFORMANCE-PASS.md
 ed7b70b1f0813b3ad55392329cff414f1561e09ea22391cfecdb4489f90fd99b  ./V66-NO-POPIN-PERFORMANCE-AND-DUCTLESS-HERO.md
 9274e23ba0fde8520f168f363802b7eac635ecf65fbfba8f2961c5393320ef52  ./VERIFICATION-2026-09-23.md
+bf3e208ebe610fd21d55dd509376d8c313a6b802613018e5c1959d4e36184efb  ./VERIFICATION-CODE-SPLIT-2026-09-23.md
 4b813ab960d6b621c7a2cb3dd3212f0b1fb9b1b7d12f14b3ab68ba592d2d1232  ./WATER-HEATER-IMAGE-UPDATE.md
 f8ead6f475eaadde481ab15e0e16417e6aedfe071116bb9961139c12124e1c5e  ./base44/config.jsonc
 80d786cb57fa8e63f51186064f525e8313fa7a7186120454eb700a90c5b9d0d4  ./base44/connectors/googledrive.jsonc
@@ -238,7 +239,7 @@ e8b36d4fbf5dfbbcd16bfb674867e5e3085f26d647b674a77ca02ecd07800a5f  ./reference/sp
 7ecae2720f58661d4514109e727326f4ff0fa14d5d557dcf76357644b9e60bb5  ./scripts/localize-base44-assets.mjs
 4bfa0f0cc32acf00bd63654767dac99b6e5dff55c32f3ed3e4f92b3b5409e341  ./scripts/set-site-mode.mjs
 2407f59360f27dd23f8057173c91c1df12180236b8017c6140deef72c4c2db4b  ./scripts/verify-local-media.mjs
-9cf39f82d79da3d2889381fd2b779513ce833c50d16f813deddf2db4439582c5  ./src/App.jsx
+53ce7c5113f8d3bb7bb645b79fc237029071e6f2c46db9bfed1a757453139dff  ./src/App.jsx
 35647ef13677f2b23399843531e82cb49521bcd6cd09f00e23888b0d7973cf2e  ./src/api/base44Client.js
 25bf01724bc4c4de017bf24365ad379e622bfb0d6bd97978830380aff635e90b  ./src/components/AppErrorBoundary.jsx
 27191e5279ab7a6d30609f7954c64edf586ce11817ca50ca63ed03bd432629ce  ./src/components/AuthLayout.jsx
@@ -248,7 +249,7 @@ d904ffd183bab1c50c283c16cd554fc1c1333bf9bd2ff7193df88f12ccd402f1  ./src/componen
 f1121449bc7f8f31b2ed2d4a6e0211c8d300319efd58919efdd313dc7b586068  ./src/components/ProtectedRoute.jsx
 0e99da1c446a2a3a64c78fe611212bce1a6409cc37d1435deda5f553a0fc1940  ./src/components/RouteLoadingFallback.jsx
 56f6ecc5d3f0bd692e7d4bb6d89f73ddac4148150718388ef8cf996a985f6138  ./src/components/ScrollToTop.jsx
-e00cecdcf44a2c9d146a1f90afd49fc0fa5c8f6782ad29b525dde834e42e2f50  ./src/components/SeoSchema.jsx
+ad49e8c6010b0323cd69dac771413e4c69bcf28d2caf318a84c47f7ecec10067  ./src/components/SeoSchema.jsx
 2e31619c4faa160716fdfb8105e8574d180be009bee8cb32c5db3e7c52337a5f  ./src/components/ServiceReviews.jsx
 5cecb11fe2fb3a03a73e5845b5ee9d26c9255e80feda689b3dfc70822ba288f1  ./src/components/UserNotRegisteredError.jsx
 ef7b8b57aea8aedc4c8fe1ef2f3f37f80d8d7e9ec8f4c35d1e979f8325d06b97  ./src/components/about/AboutCommunityEvent.jsx
@@ -278,12 +279,12 @@ a05520cd02c815248e89e83b8a3a17d15570af21ec6447356440bc64b536a84b  ./src/componen
 36ebf4e27c8c4f6b182c78eff7fcfd3487fa4adc6b12f4dd44caff9530ecb7e8  ./src/components/layout/PreFooterCTABackup.jsx
 b958f054fb0776e611d8bd9c300f30144d2ef7ed99970b749e7615b49073fde0  ./src/components/layout/SiteLayout.jsx
 71c4f7a492f322041d04421aefefa86837bc1d7fd7eedb7cac55b7871d8b8599  ./src/components/rebates/CurrentRebatesCards.jsx
-1e9191cfa596f4f84677ef44afcf7fa222b1719283b60d96cef704faac0464a0  ./src/components/test/AllServicesGrid.jsx
+2511bcdbd133da5b9d7977563634d9990fd1b9083a58ef2b98adbf08e1a5c99a  ./src/components/test/AllServicesGrid.jsx
 7b06d03fd2551aab5a335f32005cf9c210d446df62b2a0819ffcc3aa099531a1  ./src/components/testimonial/QuoteFeature.jsx
 1fec1afbe7cd3fd7b472fb734c1f935b2e74174d77fcbd57e4c3d66121e40161  ./src/components/ui/Breadcrumbs.jsx
 9543fb0c1f23b2e828e19361804a3f17769f72600b24f6fbeff53ef5d98adf99  ./src/components/ui/CTASection.jsx
 21b0a450e8caf464d6a492e7c54c9e55334d112d0c3a9f4c4ea1d5e521250ce0  ./src/components/ui/Container.jsx
-24a475b5dd06d4297e9bc73398ec9d4b136cdc800b7c18b7efbfd6dbea64a97a  ./src/components/ui/EmergencyHelpModal.jsx
+f60a5da8bab274d4fa37b3834752c7fada0116b170831832eaae5ce45f32210f  ./src/components/ui/EmergencyHelpModal.jsx
 aecbf2fa3526b113959852773e10bf672a92267cc3ef6f46f01146bfdbe48671  ./src/components/ui/EstimateForm.jsx
 69d3f0bd64662071bea32db05c2b942af280cb3cb68ea90af517f36746adef1b  ./src/components/ui/FAQAccordion.jsx
 9b3274f3a91c32a1cfb426e6ae2542d9b7e2baf4181bc04c0a193e4e410c8dd8  ./src/components/ui/InteriorHero.jsx
@@ -292,7 +293,7 @@ a2869a2f36f0d0c552f069b469672ec7a270654bfb335e8b849f2a735a4b6735  ./src/componen
 68b49777e6701a398348bb4673bd32c12276c61d5cadad6427d00ea712e0fb54  ./src/components/ui/MobileSelectSheet.jsx
 db03425f599c2ed0d9229e1356ee5ecf1aed97cd221667794474550a512093c5  ./src/components/ui/QuoteForm.jsx
 4f7e6ccf661dcbf1cbd2bb4d2d63ae04c0fe3726ec1285f185e6251d60090b83  ./src/components/ui/Reveal.jsx
-2c8f0f7b9c837127f955c8be07e8ef25cdd618bb528800fc181ef052eaabd1c7  ./src/components/ui/ScheduleOnlineButton.jsx
+34d66bd828e3c0cb048b7a68f8ebfcc0b0fdbb80200617d17f1241e9d4860c3b  ./src/components/ui/ScheduleOnlineButton.jsx
 55ab4cbcb88fea51823fcd9f2d0dc97d9edc43339a1c4e75f20ca12789987def  ./src/components/ui/SectionHeading.jsx
 db21c2133d3ca67219e6c51a3db9a05679c21525cefbabf530a4693c00149925  ./src/components/ui/ServiceGap.jsx
 1dcae8e3d87afaf4e91dcad35dcb564bda3a6e5b0683bb459fd8e8b58b1663a0  ./src/components/ui/ServiceQuoteModal.jsx
@@ -362,9 +363,10 @@ d0c8c149528b705355dbc842096b6662df4610eba1f356285fee74211fc580d3  ./src/lib/app-
 f4de4e7587464263e13dcc8f162e64af81888b95802c6b7c6a489b655fdec024  ./src/lib/cdnImage.js
 f91e7826a97f4e89f463c08e8da7e8b0c0ee41cb30adbc4785a9b6da8948ab92  ./src/lib/chunkRecovery.js
 39dc2bd566044538975e4fce7c82f374e627c4826173dc03d989e683aa330a38  ./src/lib/formspree.js
+d5a47c113a733d396a96b0d7c18b2dbe822d7ebe3307d81c7e51f3e1842bb232  ./src/lib/homeConfig.js
 b2a392ec687f1a62c2b5755055bcacbf480a088abd5f9ed798f216c417decab1  ./src/lib/motionVariants.js
 0a080b6d9a1ed9f5f32150d9e3faa928f955d2b8d6206831e2b1658e84612c92  ./src/lib/query-client.js
-70430f289f7433edfa1bbb59a37f35054244911a61ff263012e6bbaa00d57212  ./src/lib/routePreload.js
+e1368ac59f9aa10c7bd3ff0cb2ed072793549901e5d7a3061230fdd5e458c092  ./src/lib/routePreload.js
 b560a694806c6d27e414625d570ba9d59430ab21d76bc47f067d22ad5a086d6f  ./src/lib/schemaData.js
 7938287196b86984b6a691a25a4f59aad1839c4654242793ee845435cdfa2e17  ./src/lib/serviceQuoteCopy.js
 a80b2c813648edbe769b8399563302c917e38c04b1f10685f8c8782f021ff43b  ./src/lib/serviceReviews.js
@@ -374,7 +376,7 @@ c7792e4663f51fdbe605ad7dd655c10b1fcd107ee958ad0b2d9bc2b766569e40  ./src/lib/smoo
 f118367ed1bee92353fd8d1c1aaa845d6330e01154c758509703f1f657259d11  ./src/lib/socialProofLogos.js
 324df72e0ba5cb416ba162a9b491ae20562cb494d33dd4481e35abfbfbdd6949  ./src/lib/spoorsImageLibrary.js
 fde828103640d56ada67e82ac4b04321f617b9f0dba0cb558ecf5fb388588912  ./src/lib/useScrollStory.js
-c68ffced931882807076504c3d6691a4649597b0d3bee2c586d4210c0f471d25  ./src/lib/useSeo.js
+3c533934c33b0788f5e72e676250d89bf9067e043bc497b7113c668f3e144503  ./src/lib/useSeo.js
 4f592359765d69c32c3617700fa111af9a6a9cac8f18cb1987c25503a343c203  ./src/lib/utils.js
 c43d002afc15bd7cd9e9c3f76b746b3496c501295faa1e3157c98fb592240712  ./src/main.jsx
 686d1d09f195ca66a9c2b28c2d352f3b663c340777fdd7aadf4f5e330add1a98  ./src/pages/AboutUs.jsx
@@ -387,7 +389,7 @@ eb38f134a39582a0c3ff8f5bc6436a226732bf041edcdbb4fd638194ed9a821e  ./src/pages/Bl
 98e40e3e3bfe5d9086a4b3db0a8ffec81485ff48f5b417ce5edcb06cc015f83a  ./src/pages/Group30.jsx
 c4fdce60446e90b9de85fcde2c66ea0832a72944221b8dd5d9310b6242c085b0  ./src/pages/Group32.jsx
 1cd4c58096a8b80ccebfc98ed17985e428fbf4f6cd10e8e9f75802e0b2513ebe  ./src/pages/Group33.jsx
-c706894fa80be237fa9fa92230e945a3335f27ee37ab88047b691be731a78f57  ./src/pages/HomePage.jsx
+102ec4529a4df09efb8fdd298c6627488dec9422a34170c2942dc3a5db6aca36  ./src/pages/HomePage.jsx
 f9b7777faf5255f4525aa8e8c1b65e4b06808112d0ff7271a4cf8a709a4f9433  ./src/pages/Login.jsx
 cce2de62862f4571d94dd9dcd91fb1d67552bab182f68a3c009537bae9754258  ./src/pages/MediaLibrary.jsx
 4bc986627bfd0865dce20589f12f0bbd6005be7ea7f414c3af9f247543ce3e25  ./src/pages/OAuthConsent.jsx
@@ -433,10 +435,10 @@ a3a9ca0e26ce97fdd7c8d4fa5f9803ce24718b8404727b61de51139bbd1ed805  ./src/pages/ho
 044d1b40d0dffcc7d2329334990b20a87dc9a01fca4437993cbac2cdd2a11f66  ./src/pages/home/TeamCTA.jsx
 ae4ff15c9733e1e2f217fa18017ceb93d15fefa239ab0992691046bad1501928  ./src/pages/home/Testimonials.jsx
 d515bbd08a50409d46303d271c04be09efd0f711bba96306ca2f6e1d0048acfe  ./src/pages/home/ValuesSection.jsx
-ee4c953174ec2e9754d88a3c0c9c004a5387bef4fbc46e1beb703c193f166d2a  ./src/pages/home/new/FooterCTANew.jsx
+ffb5222a05e99a2a52a82933fd5a5291b02f1c52bb86886088951a80b2e1af4e  ./src/pages/home/new/FooterCTANew.jsx
 8293ee28555b52775d86c0e4581113d05493e86ed723ef808369a9d87fe0972b  ./src/pages/home/new/LargeQuote.jsx
-2df49393c7df2632ad98f280a3cec1428fddfe8bf08a7447e5e10a4500b96909  ./src/pages/home/new/NewFooter.jsx
-9a6b1e23ff5d896e6b706f86284ced0ec8650700c178820a3b67be5385e0cec8  ./src/pages/home/new/NewHeader.jsx
+7b4f2c5badb423b13f7d558d6abff9a65b3d40c964474be4ca07d8805b68f449  ./src/pages/home/new/NewFooter.jsx
+589a0e6c03706669c511710ede61ea19923fe38b3a6176669bd522362701f31e  ./src/pages/home/new/NewHeader.jsx
 8ae6460d0082c83fee9fffad69f9abc89324ac014e68fb8075e3db5a05b2bdb6  ./src/pages/home/new/ResidentialServicesNew.jsx
 8fcdf4a3450fc15a9d7e3393010c0c95a6baab20d75f21bb87a9d3b42fc0936a  ./src/pages/home/new/TestimonialsNew.jsx
 f15d212428ca20409a52ae2610f7e289ebb786fab674a69e2f5f662a13e61199  ./src/pages/resources/Article.jsx
