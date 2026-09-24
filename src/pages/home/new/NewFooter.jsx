@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { business } from "@/lib/siteConfig";
+import { business } from "@/lib/homeConfig";
 
 export default function NewFooter() {
   return (

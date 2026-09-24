@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { useSeo } from "@/lib/useSeo";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Image } from "@/components/ui/image";
-import { images } from "@/lib/siteConfig";
+import { images } from "@/lib/homeConfig";
 import { spoorsImageLibrary } from "@/lib/spoorsImageLibrary";
 import { getSubServiceCta } from "@/lib/serviceQuoteCopy";
 import Hero from "@/pages/home/Hero";
 import NewHeader from "@/pages/home/new/NewHeader";
-import ServiceQuoteModal from "@/components/ui/ServiceQuoteModal";
 
 import AllServicesGrid from "@/components/test/AllServicesGrid";
 import TestimonialsNew from "@/pages/home/new/TestimonialsNew";
@@ -19,6 +18,8 @@ import NewFooter from "@/pages/home/new/NewFooter";
 
 // --- Animation Variants ---
 import { cardEntrance, cardStagger, EASE_SMOOTH } from "@/lib/motionVariants";
+
+const ServiceQuoteModal = lazy(() => import("@/components/ui/ServiceQuoteModal"));
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -511,14 +512,18 @@ export default function HomePage() {
 
       <NewFooter />
 
-      <ServiceQuoteModal
-        open={quote.open}
-        onClose={() => setQuote({ open: false })}
-        service={quote.service || "HVAC"}
-        eyebrow={quote.eyebrow || "FREE HVAC QUOTE"}
-        headline={quote.headline || "Let’s Restore Your Comfort"}
-        support={quote.support || "Tell us what's going on with your heating or cooling and choose a time that works for you. Spoor's will review your request and follow up with clear next steps."}
-      />
+      {quote.open ? (
+        <Suspense fallback={null}>
+          <ServiceQuoteModal
+            open
+            onClose={() => setQuote({ open: false })}
+            service={quote.service || "HVAC"}
+            eyebrow={quote.eyebrow || "FREE HVAC QUOTE"}
+            headline={quote.headline || "Let’s Restore Your Comfort"}
+            support={quote.support || "Tell us what's going on with your heating or cooling and choose a time that works for you. Spoor's will review your request and follow up with clear next steps."}
+          />
+        </Suspense>
+      ) : null}
     </div>);
 
 }

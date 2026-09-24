@@ -3,12 +3,12 @@ import { Toaster } from "@/components/ui/toaster"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import SeoSchema from '@/components/SeoSchema';
-import SiteLayout from '@/components/layout/SiteLayout';
 import RouteLoadingFallback from '@/components/RouteLoadingFallback';
 
 
 // Keep the homepage eager for the fastest first paint; split every other route.
 import HomePage from './pages/HomePage';
+const SiteLayout = lazy(() => import('@/components/layout/SiteLayout'));
 const AboutUs = lazy(() => import('@/pages/AboutUs'));
 const AboutPage = lazy(() => import('@/pages/about/AboutPage'));
 const Services = lazy(() => import('@/pages/Services'));

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Phone, X } from "lucide-react";
-import { business } from "@/lib/siteConfig";
+import { business } from "@/lib/homeConfig";
 import { submitFormspreeJson } from "@/lib/formspree";
 
 const FIELD =

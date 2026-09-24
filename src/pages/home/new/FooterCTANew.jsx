@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { images } from "@/lib/siteConfig";
+import { images } from "@/lib/homeConfig";
 import ScheduleOnlineButton from "@/components/ui/ScheduleOnlineButton";
 
 const ease = [0.22, 1, 0.36, 1];

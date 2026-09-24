@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Image } from "@/components/ui/image";
-import { services } from "@/lib/siteConfig";
+import { homeServiceCards as services } from "@/lib/homeConfig";
 
 const SWAMP_COOLER_CARD_IMAGE =
   "/assets/images/update-1/spoors-auburn-ca-home-swamp-cooler-card.webp";

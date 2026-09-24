@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { navigation, business, images } from "@/lib/siteConfig";
+import { navigation, business, images } from "@/lib/homeConfig";
 import { Phone, Mail, X } from "lucide-react";
 import DropdownPanel from "@/components/header/DropdownPanel";
 import SwipeableTopBar from "@/components/header/SwipeableTopBar";
-import EmergencyHelpModal from "@/components/ui/EmergencyHelpModal";
-import { preloadRouteAssets, warmPrimaryRoutes } from "@/lib/routePreload";
+import { preloadRouteAssets } from "@/lib/routePreload";
+
+const EmergencyHelpModal = lazy(() => import("@/components/ui/EmergencyHelpModal"));
 
 const menuItem = {
   hidden: { opacity: 0, x: 18 },
@@ -27,8 +28,6 @@ const mobileNavigation = [
 export default function NewHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [emergencyModalOpen, setEmergencyModalOpen] = useState(false);
-
-  useEffect(() => warmPrimaryRoutes(), []);
 
   useEffect(() => {
     const wrap = document.querySelector("[data-new-nav-wrap]");
@@ -212,10 +211,14 @@ export default function NewHeader() {
         </AnimatePresence>
       </div>
 
-      <EmergencyHelpModal
-        open={emergencyModalOpen}
-        onClose={() => setEmergencyModalOpen(false)}
-      />
+      {emergencyModalOpen ? (
+        <Suspense fallback={null}>
+          <EmergencyHelpModal
+            open
+            onClose={() => setEmergencyModalOpen(false)}
+          />
+        </Suspense>
+      ) : null}
     </header>
   );
 }

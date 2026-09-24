@@ -1,12 +1,3 @@
-import { cdnImage } from "@/lib/cdnImage";
-import { images, serviceAreas } from "@/lib/siteConfig";
-import { aboutPageContent } from "@/lib/aboutPageContent";
-
-const SERVICES_HERO =
-  "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/08b2af924_hero-bg.png";
-const PLANNED_MAINTENANCE_HERO =
-  "/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp";
-
 const normalizePath = (input = "") => {
   try {
     const pathname = new URL(input, window.location.origin).pathname;
@@ -17,46 +8,25 @@ const normalizePath = (input = "") => {
   }
 };
 
-const aboutHero = (slug) => {
-  const page = aboutPageContent[slug];
-  return page ? [cdnImage(page.image, 2400, 1600, page.heroFocalPoint)] : [];
-};
-
 const HERO_BY_PATH = {
   "/about-us": ["/assets/images/about/spoors-team-ribbon-cutting-auburn-ca.webp"],
-  "/about-us/our-mission": aboutHero("our-mission"),
-  "/about-us/our-commitment": aboutHero("our-commitment"),
-  "/about-us/customer-service": aboutHero("customer-service"),
-  "/about-us/community-involvement": aboutHero("community-involvement"),
-  "/services": [cdnImage(SERVICES_HERO, 2400, 1500, { x: 0.5, y: 0.6 })],
-  "/services/air-conditioning": [cdnImage(images.acHero, 2560, 1600)],
+  "/services": ["/assets/base44/08b2af924_hero-bg-310b81f67c.webp"],
+  "/services/air-conditioning": ["https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/b3ec9b18a_AdobeStock_65737788.jpeg"],
   "/services/heating": ["/assets/images/heating/spoors-auburn-ca-heating-services-hero-no-pvc.webp"],
   "/services/indoor-air-quality": [
     "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-hero.webp",
     "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",
   ],
   "/services/emergency-repairs": ["/assets/images/update-1/spoors-auburn-ca-emergency-detail-hero.webp"],
-  "/services/maintenance-tune-ups": [cdnImage(images.introTruck, 2560, 1600)],
+  "/services/maintenance-tune-ups": ["https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/4f14fb0f8_AdobeStock_197213379.jpeg"],
   "/services/ductless-mini-splits": ["/assets/images/update-5/spoors-auburn-ca-ductless-mini-split-full-bleed-hero.webp"],
-  "/services/swamp-coolers": [
-    "/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-rooftop.webp",
-  ],
+  "/services/swamp-coolers": ["/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-rooftop.webp"],
   "/services/water-heater-services": [
     "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-hero.webp",
     "/assets/images/water-heaters/spoors-auburn-ca-hot-water-system-service-mobile-hero.webp",
   ],
-  "/services/planned-maintenance": [cdnImage(PLANNED_MAINTENANCE_HERO, 1920, 1280)],
+  "/services/planned-maintenance": ["/assets/images/planned-maintenance/spoors-auburn-ca-planned-maintenance-hvac-diagnostics-hero.webp"],
 };
-
-serviceAreas.forEach((area) => {
-  const path = `/service-areas/${area.slug}`;
-  const center = area.image || images.acHero;
-  HERO_BY_PATH[path] = [
-    cdnImage(center, 1068, 860),
-    cdnImage(images.introTech, 1068, 698),
-    cdnImage(images.introAir, 1068, 698),
-  ];
-});
 
 const MODULE_BY_PATH = {
   "/about-us": () => import("@/pages/AboutUs"),
@@ -84,10 +54,6 @@ const MODULE_BY_PATH = {
   "/careers": () => import("@/pages/CareerPage"),
 };
 
-serviceAreas.forEach((area) => {
-  MODULE_BY_PATH[`/service-areas/${area.slug}`] = () => import("@/pages/areas/ServiceAreaPage");
-});
-
 const imageCache = new Map();
 const moduleCache = new Set();
 
@@ -100,10 +66,17 @@ function preloadImage(src) {
   imageCache.set(src, img);
 }
 
+function loaderFor(path) {
+  if (MODULE_BY_PATH[path]) return MODULE_BY_PATH[path];
+  if (/^\/service-areas\/[^/]+$/.test(path)) return () => import("@/pages/areas/ServiceAreaPage");
+  if (/^\/resources\/blog\/[^/]+$/.test(path)) return () => import("@/pages/resources/Article");
+  return null;
+}
+
 function preloadRouteModule(path) {
   if (typeof window === "undefined") return;
   const normalized = normalizePath(path);
-  const loadModule = MODULE_BY_PATH[normalized];
+  const loadModule = loaderFor(normalized);
   if (!loadModule || moduleCache.has(normalized)) return;
   moduleCache.add(normalized);
   loadModule().catch(() => moduleCache.delete(normalized));
@@ -114,71 +87,4 @@ export function preloadRouteAssets(path) {
   const normalized = normalizePath(path);
   preloadRouteModule(normalized);
   (HERO_BY_PATH[normalized] || []).forEach(preloadImage);
-}
-
-const WARM_PATHS = [
-  "/services",
-  "/services/air-conditioning",
-  "/services/heating",
-  "/services/emergency-repairs",
-  "/about-us",
-  "/services/indoor-air-quality",
-  "/services/maintenance-tune-ups",
-  "/services/ductless-mini-splits",
-  "/services/swamp-coolers",
-  "/services/water-heater-services",
-  "/services/planned-maintenance",
-];
-
-function canAggressivelyWarm(connection) {
-  if (!connection) return false;
-  if (connection.saveData) return false;
-  return connection.effectiveType === "4g";
-}
-
-export function warmPrimaryRoutes() {
-  if (typeof window === "undefined") return () => {};
-  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-  if (connection?.saveData || /(^|-)2g$/.test(connection?.effectiveType || "") || connection?.effectiveType === "3g") {
-    return () => {};
-  }
-
-  // Automatic warming is deliberately module-only. Hero images are preloaded
-  // on actual hover/focus/pointer intent, which preserves instant navigation
-  // without downloading megabytes of images the visitor may never view.
-  const paths = canAggressivelyWarm(connection) ? WARM_PATHS : ["/services", "/about-us"];
-  let cancelled = false;
-  let timer = null;
-  let idleHandle = null;
-  let index = 0;
-
-  const warmNext = () => {
-    if (cancelled || index >= paths.length) return;
-    const path = paths[index++];
-    if (normalizePath(window.location.pathname) !== path) preloadRouteModule(path);
-    timer = window.setTimeout(scheduleNext, 1200);
-  };
-
-  const scheduleNext = () => {
-    if (cancelled || index >= paths.length) return;
-    if ("requestIdleCallback" in window) {
-      idleHandle = window.requestIdleCallback(warmNext, { timeout: 2200 });
-    } else {
-      timer = window.setTimeout(warmNext, 900);
-    }
-  };
-
-  const start = () => {
-    timer = window.setTimeout(scheduleNext, 1200);
-  };
-
-  if (document.readyState === "complete") start();
-  else window.addEventListener("load", start, { once: true });
-
-  return () => {
-    cancelled = true;
-    if (timer) window.clearTimeout(timer);
-    if (idleHandle && "cancelIdleCallback" in window) window.cancelIdleCallback(idleHandle);
-    window.removeEventListener("load", start);
-  };
 }

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { business, images as siteImages } from "@/lib/siteConfig";
+import { business, images as siteImages } from "@/lib/homeConfig";
 import { shouldIndexCurrentHost } from "@/lib/siteIndexing";
 
 // Lightweight SEO: sets document title, meta description, canonical, and OG tags.

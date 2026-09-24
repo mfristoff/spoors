@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowDownRight } from "lucide-react";
-import { business } from "@/lib/siteConfig";
+import { business } from "@/lib/homeConfig";
 import { cn } from "@/lib/utils";
 
 export default function ScheduleOnlineButton({ className }) {
