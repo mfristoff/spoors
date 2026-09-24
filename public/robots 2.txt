@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PRELAUNCH: indexing is blocked by meta robots + X-Robots-Tag.
+# Crawling stays allowed so search engines can see and honor the noindex directive.

@@ -1,0 +1,24 @@
+SPOOR'S CLEAN CLOUDFLARE DEPLOY PACKAGE
+
+This package is intended to replace the entire contents of a fresh GitHub repository.
+Do not merge it into an older Base44 export or apply it as a patch.
+
+Repository root must directly contain:
+package.json
+package-lock.json
+vite.config.js
+wrangler.jsonc
+index.html
+src/
+public/
+base44/
+
+Cloudflare build command:
+npm run build
+
+Cloudflare deploy command:
+npx wrangler deploy
+
+The source tree has been normalized for case-sensitive Linux builds. The former
+Button.jsx/button.jsx filename collision has been removed. Local import paths were
+checked against the packaged files before delivery.

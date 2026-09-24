@@ -1,0 +1,23 @@
+{
+  "missing_imports": [],
+  "case_mismatches": [],
+  "missing_local_assets": [],
+  "header_alignment_edge": "max(115px, (100vw - 1440px) / 2) at desktop; 20px below 1024px",
+  "routes_audited": [
+    "home",
+    "about",
+    "services",
+    "secondary services",
+    "planned maintenance",
+    "service areas",
+    "resources",
+    "blog",
+    "articles",
+    "financing",
+    "rebates",
+    "testimonials",
+    "careers",
+    "contact",
+    "footer"
+  ]
+}

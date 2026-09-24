@@ -1,0 +1,3 @@
+Spoor's deployment revision v36
+Created: 2026-08-18
+Scope: About cleanup, Maintenance & Tune-Ups image updates, Planned Maintenance polish.
