@@ -18,7 +18,7 @@ export default function Group33() {
         <motion.img
           style={{ y }}
           className="absolute top-[-10%] left-0 w-full h-[120%] object-cover object-center"
-          src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0604463a4_40dc07d21_d8efb5307ef6538d08f32b1c8225c80319b053ae.png"
+          src="/assets/base44/0604463a4_40dc07d21_d8efb5307ef6538d08f32b1c8225c80319b053ae-564e0205a8.webp"
           alt="Parallax Section"
         />
       </div>
@@ -29,7 +29,7 @@ export default function Group33() {
         <img
           className="absolute inset-0 w-full h-full object-cover opacity-[0.6] z-[1] pointer-events-none"
           style={{ objectPosition: "center top" }}
-          src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4d521cb1d_fd5d3a4b4_134_704.svg"
+          src="/assets/base44/4d521cb1d_fd5d3a4b4_134_704-4ff6e12f24.svg"
           alt="Vector"
         />
 

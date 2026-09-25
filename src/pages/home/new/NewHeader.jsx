@@ -151,7 +151,7 @@ export default function NewHeader() {
             >
               {/* Top row: logo + close */}
               <div className="flex h-[72px] shrink-0 items-center justify-between border-b border-white/10 px-5">
-                <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d37140e8f_Spoors-Mobile-Logo-2.png" alt={business.name} className="h-[52px] w-auto object-contain" decoding="async" />
+                <img src="/assets/base44/d37140e8f_spoors-mobile-logo-2-28a23dc012.webp" alt={business.name} className="h-[52px] w-auto object-contain" decoding="async" />
                 <button
                   type="button"
                   aria-label="Close menu"

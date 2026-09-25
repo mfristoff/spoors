@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDownRight } from "lucide-react";
 
-const BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg";
+const BOLT = "/assets/base44/04dc9d564_bolt-f432cef86e.svg";
 
 export default function OverviewHero() {
   return (

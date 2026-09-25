@@ -34,22 +34,22 @@ export default function Group32() {
               We started with a simple goal
               <span className="inline-flex items-center justify-center gap-2.5 p-1 bg-[#ffeeee] rounded-[46px] shadow-[inset_0_0_0_0px_#ffe9e9] w-[78px] h-8 mx-3 align-middle relative -top-1">
                 <span className="shrink-0 grow-0 w-6 h-6 overflow-clip relative">
-                  <img className="w-[11px] h-3 absolute top-2 left-0.5 z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2601f245e_7c189b63a_220_96.svg" alt="" />
-                  <img className="w-[11px] h-3 opacity-[0.5] absolute top-1 left-3 z-[2]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a5bd5cd9_6a6ba95d9_220_97.svg" alt="" />
+                  <img className="w-[11px] h-3 absolute top-2 left-0.5 z-[1]" src="/assets/base44/2601f245e_7c189b63a_220_96-76b387c26d.svg" alt="" />
+                  <img className="w-[11px] h-3 opacity-[0.5] absolute top-1 left-3 z-[2]" src="/assets/base44/2a5bd5cd9_6a6ba95d9_220_97-431478fb90.svg" alt="" />
                 </span>
               </span>
               to raise the standard of what honest home maintenance feels like. Backed by technical expertise, transparent pricing, and a neighbor-first mindset.
               <span className="inline-flex items-center justify-center gap-2.5 p-1 bg-[#feedda] rounded-[46px] shadow-[inset_0_0_0_0px_#ffe4c5] w-[78px] h-8 mx-3 align-middle relative -top-1">
                 <span className="shrink-0 grow-0 w-6 h-6 overflow-clip relative">
-                  <img className="w-[11px] h-3 absolute top-2 left-0.5 z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2f9433937_11f1914a9_220_106.svg" alt="" />
-                  <img className="w-[11px] h-3 opacity-[0.5] absolute top-1 left-3 z-[2]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4597d52bb_534abce25_220_107.svg" alt="" />
+                  <img className="w-[11px] h-3 absolute top-2 left-0.5 z-[1]" src="/assets/base44/2f9433937_11f1914a9_220_106-c0dea6aaa8.svg" alt="" />
+                  <img className="w-[11px] h-3 opacity-[0.5] absolute top-1 left-3 z-[2]" src="/assets/base44/4597d52bb_534abce25_220_107-5f95da52ea.svg" alt="" />
                 </span>
               </span>
               Spoor’s has grown into the most trusted HVAC partner across Auburn, Meadow Vista, and beyond.
               <span className="inline-flex items-center justify-center gap-2.5 p-1 bg-figma-color-19-3 rounded-[46px] shadow-[inset_0_0_0_0px_#dcffdc] w-[78px] h-8 mx-3 align-middle relative -top-1">
                 <span className="shrink-0 grow-0 w-6 h-6 overflow-clip relative">
-                  <img className="w-[11px] h-3 absolute top-2 left-0.5 z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9785d3dab_1b7095c06_220_113.svg" alt="" />
-                  <img className="w-[11px] h-3 opacity-[0.5] absolute top-1 left-3 z-[2]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/50b492e02_2834674aa_220_114.svg" alt="" />
+                  <img className="w-[11px] h-3 absolute top-2 left-0.5 z-[1]" src="/assets/base44/9785d3dab_1b7095c06_220_113-c49cff88a5.svg" alt="" />
+                  <img className="w-[11px] h-3 opacity-[0.5] absolute top-1 left-3 z-[2]" src="/assets/base44/50b492e02_2834674aa_220_114-04a5642061.svg" alt="" />
                 </span>
               </span>
             </p>
@@ -91,12 +91,12 @@ export default function Group32() {
 
         {/* Right Image */}
         <div className="relative w-full lg:h-auto">
-          <img className="absolute inset-0 w-full h-full object-cover object-center z-[3]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e9171a60a_9c16e2d72_5dc4b6bfc1331a4867917336ef843b5bc9652cbe.png" alt="Worker" />
+          <img className="absolute inset-0 w-full h-full object-cover object-center z-[3]" src="/assets/base44/e9171a60a_9c16e2d72_5dc4b6bfc1331a4867917336ef843b5bc9652cbe-7029e75540.webp" alt="Worker" />
 
           {/* Decorative Off-screen Vectors */}
           <div className="hidden lg:block absolute top-[375px] left-[calc(100%+8px)] w-full max-w-[257px] min-h-[257px] overflow-clip z-[1]">
-            <img className="w-[159px] h-[168px] opacity-[0.5] absolute top-[11px] left-[69px] z-[2]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3951cfe17_5a0a743fb_157_47.svg" alt="" />
-            <img className="w-[159px] h-[168px] absolute top-[115px] left-[82px] z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/1882d27d7_41c0c70ef_157_46.svg" alt="" />
+            <img className="w-[159px] h-[168px] opacity-[0.5] absolute top-[11px] left-[69px] z-[2]" src="/assets/base44/3951cfe17_5a0a743fb_157_47-e4de335395.svg" alt="" />
+            <img className="w-[159px] h-[168px] absolute top-[115px] left-[82px] z-[1]" src="/assets/base44/1882d27d7_41c0c70ef_157_46-406427364b.svg" alt="" />
           </div>
         </div>
       </section>
@@ -110,8 +110,8 @@ export default function Group32() {
 
         {/* Decorative Off-screen Vectors */}
         <div className="hidden lg:block absolute top-[375px] left-[calc(100%+8px)] w-full max-w-[257px] min-h-[257px] overflow-clip z-[3] pointer-events-none">
-          <img className="w-[159px] h-[168px] opacity-[0.5] absolute top-[11px] left-[69px] z-[2]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/014a3fa65_cdb4d4b50_157_116.svg" alt="" />
-          <img className="w-[159px] h-[168px] absolute top-[115px] left-[82px] z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9245966ca_1df74ff8d_157_115.svg" alt="" />
+          <img className="w-[159px] h-[168px] opacity-[0.5] absolute top-[11px] left-[69px] z-[2]" src="/assets/base44/014a3fa65_cdb4d4b50_157_116-f964c3a69a.svg" alt="" />
+          <img className="w-[159px] h-[168px] absolute top-[115px] left-[82px] z-[1]" src="/assets/base44/9245966ca_1df74ff8d_157_115-4b2d886654.svg" alt="" />
         </div>
 
         {/* Main Content Grid */}
@@ -120,8 +120,8 @@ export default function Group32() {
           {/* Left Column: Section Header */}
           <div className="flex flex-row justify-start items-start gap-[11px] pt-2">
             <div className="shrink-0 grow-0 w-6 h-6 overflow-clip relative">
-              <img className="w-[13px] h-2.5 absolute top-px left-1.5 z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/17bba9e51_479ee2ba4_160_146.svg" alt="" />
-              <img className="w-[13px] h-2.5 opacity-[0.5] absolute top-[11px] left-2 z-[2]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5407872db_54102c5eb_160_147.svg" alt="" />
+              <img className="w-[13px] h-2.5 absolute top-px left-1.5 z-[1]" src="/assets/base44/17bba9e51_479ee2ba4_160_146-7c64714a4b.svg" alt="" />
+              <img className="w-[13px] h-2.5 opacity-[0.5] absolute top-[11px] left-2 z-[2]" src="/assets/base44/5407872db_54102c5eb_160_147-b88eaabe4e.svg" alt="" />
             </div>
             <p className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1 uppercase">OUR COMMITMENT</p>
           </div>
@@ -151,7 +151,7 @@ export default function Group32() {
               <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-primary">Explore More</span>
               <div className="flex flex-row justify-center items-center p-2 min-h-[50px] bg-figma-secondary rounded-[2px] w-[33px] transition-transform duration-300 group-hover:translate-x-[-2px]">
                 <div className="shrink-0 grow-0 w-[18px] min-h-[18px] overflow-clip relative">
-                  <img className="w-[13px] h-[13px] absolute top-[3px] left-[3px] z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5761f5b5b_bad30aa69_160_160.svg" alt="Arrow Right" />
+                  <img className="w-[13px] h-[13px] absolute top-[3px] left-[3px] z-[1]" src="/assets/base44/5761f5b5b_bad30aa69_160_160-4cf348f300.svg" alt="Arrow Right" />
                 </div>
               </div>
             </motion.button>
@@ -186,13 +186,13 @@ export default function Group32() {
             className="col-span-1 lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-16 lg:mt-[clamp(18px,3.6vw,70px)]"
           >
             <motion.div variants={fadeUpVariant} className="w-full aspect-[541/285] rounded-[14px] overflow-clip">
-              <img className="w-full h-full object-cover object-center" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2e322b52c_c1be60617_ffcef329a28372d3e0934b2b726b2b3c71c471ba.png" alt="HVAC Maintenance" />
+              <img className="w-full h-full object-cover object-center" src="/assets/base44/2e322b52c_c1be60617_ffcef329a28372d3e0934b2b726b2b3c71c471ba-1bbae21299.webp" alt="HVAC Maintenance" />
             </motion.div>
             <motion.div variants={fadeUpVariant} className="w-full aspect-[541/285] rounded-[14px] overflow-clip">
-              <img className="w-full h-full object-cover object-center" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b47d9de3d_6d433d983_c8d11d908e89a4fc1c9f971a7cbd78292fefca3d.png" alt="Team Collaboration" />
+              <img className="w-full h-full object-cover object-center" src="/assets/base44/b47d9de3d_6d433d983_c8d11d908e89a4fc1c9f971a7cbd78292fefca3d-ce8f009863.webp" alt="Team Collaboration" />
             </motion.div>
             <motion.div variants={fadeUpVariant} className="w-full aspect-[541/285] rounded-[14px] overflow-clip">
-              <img className="w-full h-full object-cover object-center" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8ecda9ce8_91584c04e_ed8b98a6ae07195024cb010ee69433d2eb4f6278.png" alt="Electrical Work" />
+              <img className="w-full h-full object-cover object-center" src="/assets/base44/8ecda9ce8_91584c04e_ed8b98a6ae07195024cb010ee69433d2eb4f6278-a0b87f54ab.webp" alt="Electrical Work" />
             </motion.div>
           </motion.div>
 

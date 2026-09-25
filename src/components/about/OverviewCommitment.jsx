@@ -33,8 +33,8 @@ export default function OverviewCommitment() {
 
       {/* Decorative Off-screen Vectors */}
       <div className="hidden lg:block absolute top-[375px] left-[calc(100%+8px)] w-full max-w-[257px] min-h-[257px] overflow-clip z-[3] pointer-events-none">
-        <img className="w-[159px] h-[168px] opacity-[0.5] absolute top-[11px] left-[69px] z-[2]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/014a3fa65_cdb4d4b50_157_116.svg" alt="" />
-        <img className="w-[159px] h-[168px] absolute top-[115px] left-[82px] z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9245966ca_1df74ff8d_157_115.svg" alt="" />
+        <img className="w-[159px] h-[168px] opacity-[0.5] absolute top-[11px] left-[69px] z-[2]" src="/assets/base44/014a3fa65_cdb4d4b50_157_116-f964c3a69a.svg" alt="" />
+        <img className="w-[159px] h-[168px] absolute top-[115px] left-[82px] z-[1]" src="/assets/base44/9245966ca_1df74ff8d_157_115-4b2d886654.svg" alt="" />
       </div>
 
       {/* Main Content Grid */}
@@ -43,8 +43,8 @@ export default function OverviewCommitment() {
         {/* Left Column: Section Header */}
         <div className="flex flex-row justify-start items-start gap-[11px] pt-2">
           <div className="shrink-0 grow-0 w-6 h-6 overflow-clip relative">
-            <img className="w-[13px] h-2.5 absolute top-px left-1.5 z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/17bba9e51_479ee2ba4_160_146.svg" alt="" />
-            <img className="w-[13px] h-2.5 opacity-[0.5] absolute top-[11px] left-2 z-[2]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5407872db_54102c5eb_160_147.svg" alt="" />
+            <img className="w-[13px] h-2.5 absolute top-px left-1.5 z-[1]" src="/assets/base44/17bba9e51_479ee2ba4_160_146-7c64714a4b.svg" alt="" />
+            <img className="w-[13px] h-2.5 opacity-[0.5] absolute top-[11px] left-2 z-[2]" src="/assets/base44/5407872db_54102c5eb_160_147-b88eaabe4e.svg" alt="" />
           </div>
           <p className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1 uppercase">OUR COMMITMENT</p>
         </div>
@@ -75,7 +75,7 @@ export default function OverviewCommitment() {
             <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-primary">Contact Us</span>
             <div className="flex flex-row justify-center items-center p-2 min-h-[50px] bg-figma-secondary rounded-[2px] w-[33px] transition-transform duration-300 group-hover:translate-x-[-2px]">
               <div className="shrink-0 grow-0 w-[18px] min-h-[18px] overflow-clip relative">
-                <img className="w-[13px] h-[13px] absolute top-[3px] left-[3px] z-[1]" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5761f5b5b_bad30aa69_160_160.svg" alt="Arrow Right" />
+                <img className="w-[13px] h-[13px] absolute top-[3px] left-[3px] z-[1]" src="/assets/base44/5761f5b5b_bad30aa69_160_160-4cf348f300.svg" alt="Arrow Right" />
               </div>
             </div>
           </MotionLink>

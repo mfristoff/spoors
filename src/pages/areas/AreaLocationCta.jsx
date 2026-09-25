@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
 
-const BOLT = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg";
-const BG = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a9965888b_BGfor22sectionaboveFAQthisishowitshouldlook22.png";
+const BOLT = "/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg";
+const BG = "/assets/base44/a9965888b_bgfor22sectionabovefaqthisishowitshouldlook22-864ed42dff.webp";
 
 /**
  * "About Us" band that sits directly above the location FAQ. White background

@@ -84,7 +84,7 @@ export const aboutPageContent = {
     heroFocalPoint: { x: 0.62, y: 0.5 },
     heroBackgroundPosition: "62% 50%",
     heroImageScale: 1,
-    storyImage: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f1c764be9_spoors-rooftop-ac-installation-auburn-ca.webp",
+    storyImage: "/assets/base44/f1c764be9_spoors-rooftop-ac-installation-auburn-ca-90ae1f2591.webp",
     storyTitle: "Local Service Is a Long-Term Relationship.",
     body: [
       "As a family-owned business with deep roots in Auburn and the surrounding foothill communities, Spoor’s is part of the fabric of the region. Our responsibility extends beyond the equipment we install and repair.",
@@ -107,7 +107,7 @@ export const aboutPageContent = {
       summary:
         "Each year, Spoor’s Heating & Air hosts a charity golf tournament that brings together neighbors, partners, and local families to support causes close to home. It’s one of the ways we give back to the community that has supported us for decades.",
       cta: "Notify Me About the Next Tournament",
-      image: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a855a062f_golf-community.png",
+      image: "/assets/base44/a855a062f_golf-community-ae6bd67fb7.webp",
     },
     seoDescription: "Learn how Spoor's Heating & Air supports Auburn and neighboring foothill communities through dependable service and local relationships.",
   },

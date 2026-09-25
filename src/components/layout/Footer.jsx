@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { business } from "@/lib/siteConfig";
 
-const WATERMARK_PNG = "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/3cf9e7da3_file1.png";
+const WATERMARK_PNG = "/assets/base44/3cf9e7da3_file1-f99738740f.webp";
 
 export default function Footer() {
   return (

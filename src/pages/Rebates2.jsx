@@ -16,15 +16,15 @@ import { Link } from "react-router-dom";
 import { cdnImage } from "@/lib/cdnImage";
 import { images } from "@/lib/siteConfig";
 
-const REBATES_HERO_VIDEO = "https://media.base44.com/videos/public/6a67dcda4fda68f69980f519/bb41fa3fb_Spoors-HVAC-Hero-Optimized.mp4";
+const REBATES_HERO_VIDEO = "/assets/base44/bb41fa3fb_spoors-hvac-hero-optimized-547539cc06.mp4";
 const REBATES_HERO_POSTER = cdnImage(images.hero, 1920, 1080);
 
-const SIERRA_NEVADA = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ac4820687_rebates-sierra-nevada.jpg";
-const NEIGHBORHOOD = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48e0dbf36_rebates-suburban-neighborhood.jpg";
+const SIERRA_NEVADA = "/assets/base44/ac4820687_rebates-sierra-nevada-c29edfe2cc.webp";
+const NEIGHBORHOOD = "/assets/base44/48e0dbf36_rebates-suburban-neighborhood-3fd49caba5.webp";
 
-const ICON_LEAF = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5f8f1780d_.png";
-const ICON_BOLT = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/3c668c872_.png";
-const ICON_EARTH = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/822e7128a_.png";
+const ICON_LEAF = "/assets/base44/5f8f1780d_-74fe1eb7f8.webp";
+const ICON_BOLT = "/assets/base44/3c668c872_-81a29d8f7d.webp";
+const ICON_EARTH = "/assets/base44/822e7128a_-67f3644b28.webp";
 
 export default function RebatesPage() {
   const fadeUpVariant = {
@@ -83,7 +83,7 @@ export default function RebatesPage() {
                     Schedule Online
                   </span>
                   <span className="flex items-center justify-center w-[50px] bg-figma-secondary">
-                    <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b5e5c4e7_52bfba80c_314_684.svg" alt="" className="w-[13px] h-[13px] group-hover:translate-x-1 transition-transform" />
+                    <img src="/assets/base44/8b5e5c4e7_52bfba80c_314_684-90e21d1695.svg" alt="" className="w-[13px] h-[13px] group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>
                 <a href="#why-invest" className="group inline-flex items-center gap-2 whitespace-nowrap text-figma-14 font-medium leading-figma-14 tracking-[-0.1px] text-figma-primary hover:underline underline-offset-4">
@@ -191,8 +191,8 @@ export default function RebatesPage() {
             <motion.div variants={fadeUpVariant} className="flex flex-col gap-6">
               <div className="flex items-center gap-[11px]">
                 <div className="w-6 h-6 relative">
-                  <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f702d5b30_29d3e56c4_322_821.svg" alt="Icon" className="absolute top-px left-1.5 w-[13px] h-2.5" />
-                  <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/708a1865c_4a94b4783_322_822.svg" alt="Icon shadow" className="absolute top-[11px] left-2 w-[13px] h-2.5 opacity-50" />
+                  <img src="/assets/base44/f702d5b30_29d3e56c4_322_821-a48e46074b.svg" alt="Icon" className="absolute top-px left-1.5 w-[13px] h-2.5" />
+                  <img src="/assets/base44/708a1865c_4a94b4783_322_822-57bc3c0bc5.svg" alt="Icon shadow" className="absolute top-[11px] left-2 w-[13px] h-2.5 opacity-50" />
                 </div>
                 <span className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1 uppercase">
                   HEEHRA PROGRAM INCENTIVES
@@ -253,8 +253,8 @@ export default function RebatesPage() {
           
           <motion.div variants={fadeUpVariant} className="flex items-center gap-[11px]">
             <div className="w-6 h-6 relative">
-              <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a964df9d3_be78b6140_331_171.svg" alt="Icon" className="absolute top-px left-1.5 w-[13px] h-2.5" />
-              <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/28c5af077_59fbd3766_331_172.svg" alt="Icon shadow" className="absolute top-[11px] left-2 w-[13px] h-2.5 opacity-50" />
+              <img src="/assets/base44/a964df9d3_be78b6140_331_171-c6dc45333a.svg" alt="Icon" className="absolute top-px left-1.5 w-[13px] h-2.5" />
+              <img src="/assets/base44/28c5af077_59fbd3766_331_172-2b2f7c3429.svg" alt="Icon shadow" className="absolute top-[11px] left-2 w-[13px] h-2.5 opacity-50" />
             </div>
             <span className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1 uppercase">
               Current Rebates
@@ -273,8 +273,8 @@ export default function RebatesPage() {
       <section className="header-aligned-section w-full bg-figma-primary py-20 lg:py-[clamp(33px,6.9vw,133px)] relative overflow-clip">
         {/* Decorative Gears Background */}
         <div className="absolute top-[375px] right-[-100px] lg:right-[calc(50%-960px)] w-full max-w-[257px] min-h-[257px] z-0 pointer-events-none">
-          <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/22c12150e_6d225b941_331_191.svg" alt="Gear shadow" className="absolute top-[11px] left-[69px] w-[159px] h-[168px] opacity-50" />
-          <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bde2bcc26_9296d9c9a_331_190.svg" alt="Gear" className="absolute top-[115px] left-[82px] w-[159px] h-[168px] opacity-40" />
+          <img src="/assets/base44/22c12150e_6d225b941_331_191-8d9b5dabb5.svg" alt="Gear shadow" className="absolute top-[11px] left-[69px] w-[159px] h-[168px] opacity-50" />
+          <img src="/assets/base44/bde2bcc26_9296d9c9a_331_190-3b9131924f.svg" alt="Gear" className="absolute top-[115px] left-[82px] w-[159px] h-[168px] opacity-40" />
         </div>
 
         <motion.div
@@ -287,8 +287,8 @@ export default function RebatesPage() {
           <motion.div variants={fadeUpVariant} className="flex flex-col items-center gap-6 max-w-[816px] text-center">
             <div className="flex items-center gap-[11px]">
               <div className="w-6 h-6 relative">
-                <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/25a559bb6_f7a9a460c_331_197.svg" alt="Icon" className="absolute top-px left-1.5 w-[13px] h-2.5" />
-                <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c46f05ffd_31d78fd98_331_198.svg" alt="Icon shadow" className="absolute top-[11px] left-2 w-[13px] h-2.5 opacity-50" />
+                <img src="/assets/base44/25a559bb6_f7a9a460c_331_197-540a5f2ede.svg" alt="Icon" className="absolute top-px left-1.5 w-[13px] h-2.5" />
+                <img src="/assets/base44/c46f05ffd_31d78fd98_331_198-77dd89f81b.svg" alt="Icon shadow" className="absolute top-[11px] left-2 w-[13px] h-2.5 opacity-50" />
               </div>
               <span className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1 uppercase">
                 FAQ
@@ -309,7 +309,7 @@ export default function RebatesPage() {
                     </span>
                     <div className="w-6 h-6 relative shrink-0">
                       {/* Using the 'x' icon for open state, assuming it's open by default in design or just showing the icon */}
-                      <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/95a86ec13_8f566051b_331_206.svg" alt="Toggle" className="absolute top-[5px] left-[5px] w-3.5 h-3.5" />
+                      <img src="/assets/base44/95a86ec13_8f566051b_331_206-b7badfe838.svg" alt="Toggle" className="absolute top-[5px] left-[5px] w-3.5 h-3.5" />
                     </div>
                   </div>
                 </AccordionTrigger>
@@ -327,7 +327,7 @@ export default function RebatesPage() {
                       Does Spoor’s provide emergency services outside of regular business hours?
                     </span>
                     <div className="w-6 h-6 relative shrink-0">
-                      <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/439e43921_e7c8f74fd_331_212.svg" alt="Toggle" className="absolute top-1 left-1 w-4 h-4" />
+                      <img src="/assets/base44/439e43921_e7c8f74fd_331_212-df0787740b.svg" alt="Toggle" className="absolute top-1 left-1 w-4 h-4" />
                     </div>
                   </div>
                 </AccordionTrigger>
@@ -345,7 +345,7 @@ export default function RebatesPage() {
                       How does the Home Comfort Club program work?
                     </span>
                     <div className="w-6 h-6 relative shrink-0">
-                      <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/353d41abd_49b880858_331_217.svg" alt="Toggle" className="absolute top-1 left-1 w-4 h-4" />
+                      <img src="/assets/base44/353d41abd_49b880858_331_217-d5c16c11bc.svg" alt="Toggle" className="absolute top-1 left-1 w-4 h-4" />
                     </div>
                   </div>
                 </AccordionTrigger>
@@ -363,7 +363,7 @@ export default function RebatesPage() {
                       Are price estimates provided transparently upfront?
                     </span>
                     <div className="w-6 h-6 relative shrink-0">
-                      <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a7f97d280_efa140fd5_331_222.svg" alt="Toggle" className="absolute top-1 left-1 w-4 h-4" />
+                      <img src="/assets/base44/a7f97d280_efa140fd5_331_222-836b44e7ec.svg" alt="Toggle" className="absolute top-1 left-1 w-4 h-4" />
                     </div>
                   </div>
                 </AccordionTrigger>

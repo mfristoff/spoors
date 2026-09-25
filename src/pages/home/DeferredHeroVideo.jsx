@@ -122,6 +122,43 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobile
     };
   }, [viewport, src, mobileSrc]);
 
+  // Release video decode/GPU work once the hero is off-screen.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || !("IntersectionObserver" in window)) return undefined;
+
+    let inView = true;
+
+    const syncPlayback = () => {
+      if (!inView || document.visibilityState !== "visible") {
+        video.pause();
+        return;
+      }
+
+      const attempt = video.play();
+      attempt?.catch?.(() => {});
+    };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        inView = Boolean(entry?.isIntersecting);
+        syncPlayback();
+      },
+      {
+        rootMargin: "160px 0px",
+        threshold: 0.01,
+      }
+    );
+
+    observer.observe(video);
+    document.addEventListener("visibilitychange", syncPlayback);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", syncPlayback);
+    };
+  }, [viewport, src, mobileSrc]);
+
   const activeSrc = viewport === "mobile" ? mobileSrc : src;
   if (!viewport || !activeSrc) return null;
 

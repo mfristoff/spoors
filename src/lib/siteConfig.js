@@ -37,31 +37,31 @@ export const business = {
 };
 
 export const images = {
-  logo: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/0b5814736_spoors-heating-air-logo.png",
+  logo: "/assets/base44/0b5814736_spoors-heating-air-logo-fe3e119520.webp",
   // NOTE: all photos are served from media.base44.com — that host supports the
   // /v1/ transform pipeline used by <Image> (resize to container + WebP), which
   // the legacy base44.app/api/.../files path does NOT. Same files, ~8x faster
   // TTFB and ~5x smaller payloads. Never point an image at base44.app/api.
-  hero: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fed95821e_AdobeStock_66338212.jpeg",
-  introTruck: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/4f14fb0f8_AdobeStock_197213379.jpeg",
-  introTech: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7dc8f7015_AdobeStock_482908998.jpeg",
-  introAir: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2.webp",
-  acService: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/8ecf7e092_AdobeStock_289084367.jpeg",
-  acHero: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/b3ec9b18a_AdobeStock_65737788.jpeg",
-  heatingFurnace: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/36a13156d_AdobeStock_150249395.jpeg",
-  auburn: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/99d8f9440_AdobeStock_117354486.jpeg",
-  aboutTeam: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/25c356f1d_AdobeStock_319218928.jpeg",
-  ductlessImage: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/439d96621_AdobeStock_499333613.jpeg",
+  hero: "/assets/base44/fed95821e_adobestock_66338212-ae391fcdef.webp",
+  introTruck: "/assets/base44/4f14fb0f8_adobestock_197213379-d06e2c1830.webp",
+  introTech: "/assets/base44/7dc8f7015_adobestock_482908998-adf76ca4aa.webp",
+  introAir: "/assets/base44/0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2-3e3f989e67.webp",
+  acService: "/assets/base44/8ecf7e092_adobestock_289084367-0599e7bf36.webp",
+  acHero: "/assets/base44/b3ec9b18a_adobestock_65737788-03fd4bbec5.webp",
+  heatingFurnace: "/assets/base44/36a13156d_adobestock_150249395-5fb8ac51ba.webp",
+  auburn: "/assets/base44/99d8f9440_adobestock_117354486-f4c49abffd.webp",
+  aboutTeam: "/assets/base44/25c356f1d_adobestock_319218928-fc972c1f74.webp",
+  ductlessImage: "/assets/base44/439d96621_adobestock_499333613-1fbb000ceb.webp",
   waterHeaterImage: "/assets/images/water-heaters/spoors-auburn-ca-water-heater-installation-hero.webp",
-  swampCoolerImage: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/9e0f4a6c8_swamp-cooler-image-2.png",
-  fanBg: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a62fa6031_CTASection.png",
-  heatingHero: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f62049928_heating-heat-pump-maintenance-hero.jpg",
-  heatingBreak: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/7c770fbd3_heating-system-maintenance.jpg",
-  heatingRepair: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/d1ca0657c_heating-leak-detector.jpg",
-  heatingTuneup: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c64cc766f_heating-heat-pump-control-panel.jpg",
-  heatingInstall: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2c1a06dc6_heating-furnace-installation.jpg",
-  heatingEmergency: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5529f3f61_heating-heat-pump-wiring.jpg",
-  heatingGrid: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2c1a06dc6_heating-furnace-installation.jpg",
+  swampCoolerImage: "/assets/base44/9e0f4a6c8_swamp-cooler-image-2-35435cafae.webp",
+  fanBg: "/assets/base44/a62fa6031_ctasection-1ddc3936e0.webp",
+  heatingHero: "/assets/base44/f62049928_heating-heat-pump-maintenance-hero-35e3c1aaff.webp",
+  heatingBreak: "/assets/base44/7c770fbd3_heating-system-maintenance-dbddac3f35.webp",
+  heatingRepair: "/assets/base44/d1ca0657c_heating-leak-detector-965fb19c46.webp",
+  heatingTuneup: "/assets/base44/c64cc766f_heating-heat-pump-control-panel-e6439a2647.webp",
+  heatingInstall: "/assets/base44/2c1a06dc6_heating-furnace-installation-84a7b08993.webp",
+  heatingEmergency: "/assets/base44/5529f3f61_heating-heat-pump-wiring-85e646db27.webp",
+  heatingGrid: "/assets/base44/2c1a06dc6_heating-furnace-installation-84a7b08993.webp",
 };
 
 export const navigation = [
@@ -533,7 +533,7 @@ export const services = [
       { title: "Maintenance & Flush", description: "Tank flushing and anode checks that can help protect equipment life." },
       { title: "Emergency Water Heater Service", description: "Prompt help when you lose hot water unexpectedly." },
     ],
-    image: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a08f34059_spoors-heating-system-repair-auburn-ca.jpeg",
+    image: "/assets/base44/a08f34059_spoors-heating-system-repair-auburn-ca-4d73af2fbe.webp",
     overview:
       "Spoor's repairs and replaces tank, tankless, hybrid, and heat pump water heaters. We compare installation needs, household demand, and maintenance before recommending equipment.",
     signs: [
@@ -631,21 +631,21 @@ export const services = [
 export const serviceAreas = [
   { slug: "alta", name: "Alta", intro: "Spoor's proudly serves the community of Alta with dependable HVAC service from our Auburn home base.", nearby: ["Colfax", "Weimar", "Meadow Vista"] },
   { slug: "applegate", name: "Applegate", intro: "Homeowners in Applegate rely on Spoor's for honest heating and cooling service backed by a century of local trust.", nearby: ["Auburn", "Meadow Vista", "Newcastle"] },
-  { slug: "auburn", name: "Auburn", intro: "As an Auburn-based, family-owned company since 1925, Spoor's is proud to keep our hometown neighbors comfortable all year.", nearby: ["Newcastle", "Meadow Vista", "Applegate", "Penryn"], image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/eb41d5106_auburn-ca-neighborhood-aerial.webp", imageAlt: "Aerial view of a residential neighborhood in Auburn, CA — homes served by Spoor's Heating & Air" },
-  { slug: "citrus-heights", name: "Citrus Heights", intro: "Spoor's brings dependable, family-owned HVAC service to Citrus Heights homeowners throughout the seasons.", nearby: ["Roseville", "Folsom", "Sacramento"], image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ace35d5a5_citrus-heights-ca-neighborhood-aerial.webp", imageAlt: "Aerial view of a residential neighborhood in Citrus Heights, CA — homes served by Spoor's Heating & Air" },
+  { slug: "auburn", name: "Auburn", intro: "As an Auburn-based, family-owned company since 1925, Spoor's is proud to keep our hometown neighbors comfortable all year.", nearby: ["Newcastle", "Meadow Vista", "Applegate", "Penryn"], image: "/assets/base44/eb41d5106_auburn-ca-neighborhood-aerial-a0fc1c4cc5.webp", imageAlt: "Aerial view of a residential neighborhood in Auburn, CA — homes served by Spoor's Heating & Air" },
+  { slug: "citrus-heights", name: "Citrus Heights", intro: "Spoor's brings dependable, family-owned HVAC service to Citrus Heights homeowners throughout the seasons.", nearby: ["Roseville", "Folsom", "Sacramento"], image: "/assets/base44/ace35d5a5_citrus-heights-ca-neighborhood-aerial-be1720a455.webp", imageAlt: "Aerial view of a residential neighborhood in Citrus Heights, CA — homes served by Spoor's Heating & Air" },
   { slug: "colfax", name: "Colfax", intro: "From foothill winters to hot summers, Spoor's serves Colfax homeowners with reliable heating and cooling.", nearby: ["Alta", "Weimar", "Meadow Vista"] },
-  { slug: "folsom", name: "Folsom", intro: "Spoor's provides trusted HVAC installation, repair, and maintenance to Folsom homeowners.", nearby: ["Roseville", "Granite Bay", "Orangevale"], image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2fe39efcd_folsom-ca-neighborhood-aerial.webp", imageAlt: "Aerial view of a residential neighborhood in Folsom, CA — homes served by Spoor's Heating & Air" },
-  { slug: "granite-bay", name: "Granite Bay", intro: "Granite Bay homeowners count on Spoor's for honest, professional heating and air conditioning service.", nearby: ["Roseville", "Folsom", "Rocklin"], image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/73c3b4414_granite-bay-ca-neighborhood-aerial.webp", imageAlt: "Aerial view of a residential neighborhood in Granite Bay, CA — homes served by Spoor's Heating & Air" },
-  { slug: "lincoln", name: "Lincoln", intro: "Spoor's brings nearly a century of family-owned HVAC experience to homes in Lincoln.", nearby: ["Rocklin", "Roseville", "Citrus Heights"], image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/b0bbf4ef8_lincoln-ca-neighborhood-aerial.webp", imageAlt: "Aerial view of a residential neighborhood in Lincoln, CA — homes served by Spoor's Heating & Air" },
-  { slug: "loomis", name: "Loomis", intro: "Dependable, local HVAC service for Loomis homeowners — from tune-ups to full system replacement.", nearby: ["Rocklin", "Penryn", "Newcastle"], image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c3baf3b45_loomis-ca-neighborhood-aerial.webp", imageAlt: "Aerial view of a residential neighborhood in Loomis, CA — homes served by Spoor's Heating & Air" },
+  { slug: "folsom", name: "Folsom", intro: "Spoor's provides trusted HVAC installation, repair, and maintenance to Folsom homeowners.", nearby: ["Roseville", "Granite Bay", "Orangevale"], image: "/assets/base44/2fe39efcd_folsom-ca-neighborhood-aerial-6e1896cbc3.webp", imageAlt: "Aerial view of a residential neighborhood in Folsom, CA — homes served by Spoor's Heating & Air" },
+  { slug: "granite-bay", name: "Granite Bay", intro: "Granite Bay homeowners count on Spoor's for honest, professional heating and air conditioning service.", nearby: ["Roseville", "Folsom", "Rocklin"], image: "/assets/base44/73c3b4414_granite-bay-ca-neighborhood-aerial-e330e9bcbb.webp", imageAlt: "Aerial view of a residential neighborhood in Granite Bay, CA — homes served by Spoor's Heating & Air" },
+  { slug: "lincoln", name: "Lincoln", intro: "Spoor's brings nearly a century of family-owned HVAC experience to homes in Lincoln.", nearby: ["Rocklin", "Roseville", "Citrus Heights"], image: "/assets/base44/b0bbf4ef8_lincoln-ca-neighborhood-aerial-f0f9edde5d.webp", imageAlt: "Aerial view of a residential neighborhood in Lincoln, CA — homes served by Spoor's Heating & Air" },
+  { slug: "loomis", name: "Loomis", intro: "Dependable, local HVAC service for Loomis homeowners — from tune-ups to full system replacement.", nearby: ["Rocklin", "Penryn", "Newcastle"], image: "/assets/base44/c3baf3b45_loomis-ca-neighborhood-aerial-927247c8f2.webp", imageAlt: "Aerial view of a residential neighborhood in Loomis, CA — homes served by Spoor's Heating & Air" },
   { slug: "meadow-vista", name: "Meadow Vista", intro: "Spoor's serves Meadow Vista with the same honest, family-owned care we've offered since 1925.", nearby: ["Auburn", "Colfax", "Applegate"] },
   { slug: "nevada-city", name: "Nevada City", intro: "From cold foothill winters to warm summers, Spoor's keeps Nevada City homes comfortable.", nearby: ["Grass Valley", "Colfax", "Alta"] },
   { slug: "newcastle", name: "Newcastle", intro: "Newcastle homeowners trust Spoor's for dependable HVAC service from a locally rooted, family-owned team.", nearby: ["Auburn", "Loomis", "Penryn"] },
   { slug: "orangevale", name: "Orangevale", intro: "Spoor's provides honest, reliable heating and cooling service to Orangevale homeowners.", nearby: ["Folsom", "Citrus Heights", "Roseville"] },
   { slug: "penryn", name: "Penryn", intro: "Penryn homeowners rely on Spoor's for trusted HVAC service from a century-old local business.", nearby: ["Loomis", "Newcastle", "Auburn"] },
-  { slug: "rocklin", name: "Rocklin", intro: "Spoor's serves Rocklin with dependable HVAC installation, repair, and maintenance from our Auburn base.", nearby: ["Roseville", "Lincoln", "Loomis"], image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/3592917f2_rocklin-ca-neighborhood-aerial.webp", imageAlt: "Aerial view of a residential neighborhood in Rocklin, CA — homes served by Spoor's Heating & Air" },
-  { slug: "roseville", name: "Roseville", intro: "Roseville homeowners count on Spoor's for honest, family-owned heating and air conditioning service.", nearby: ["Rocklin", "Granite Bay", "Citrus Heights"], image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/e6d23f11a_roseville-ca-neighborhood-aerial.webp", imageAlt: "Aerial view of a residential neighborhood in Roseville, CA — homes served by Spoor's Heating & Air" },
-  { slug: "sacramento", name: "Sacramento", intro: "Spoor's brings trusted, family-owned HVAC service to homes across the Sacramento area.", nearby: ["West Sacramento", "Citrus Heights", "Roseville"], image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/83d08d6ec_sacramento-ca-neighborhood-aerial.webp", imageAlt: "Aerial view of a residential neighborhood in Sacramento, CA — homes served by Spoor's Heating & Air" },
+  { slug: "rocklin", name: "Rocklin", intro: "Spoor's serves Rocklin with dependable HVAC installation, repair, and maintenance from our Auburn base.", nearby: ["Roseville", "Lincoln", "Loomis"], image: "/assets/base44/3592917f2_rocklin-ca-neighborhood-aerial-5ddb984eb9.webp", imageAlt: "Aerial view of a residential neighborhood in Rocklin, CA — homes served by Spoor's Heating & Air" },
+  { slug: "roseville", name: "Roseville", intro: "Roseville homeowners count on Spoor's for honest, family-owned heating and air conditioning service.", nearby: ["Rocklin", "Granite Bay", "Citrus Heights"], image: "/assets/base44/e6d23f11a_roseville-ca-neighborhood-aerial-a874e97098.webp", imageAlt: "Aerial view of a residential neighborhood in Roseville, CA — homes served by Spoor's Heating & Air" },
+  { slug: "sacramento", name: "Sacramento", intro: "Spoor's brings trusted, family-owned HVAC service to homes across the Sacramento area.", nearby: ["West Sacramento", "Citrus Heights", "Roseville"], image: "/assets/base44/83d08d6ec_sacramento-ca-neighborhood-aerial-c13645396e.webp", imageAlt: "Aerial view of a residential neighborhood in Sacramento, CA — homes served by Spoor's Heating & Air" },
   { slug: "weimar", name: "Weimar", intro: "Weimar homeowners trust Spoor's for reliable HVAC service backed by nearly a century of local experience.", nearby: ["Colfax", "Meadow Vista", "Auburn"] },
   { slug: "west-sacramento", name: "West Sacramento", intro: "Spoor's provides dependable heating and cooling service to West Sacramento homeowners.", nearby: ["Sacramento", "Davis", "Roseville"] },
 ];
@@ -717,7 +717,7 @@ const blogArticleRecords = [
     readTime: "4 mins read",
     excerpt:
       "Wildfire smoke carries fine ash and soot that settle inside your AC system. Here's how professional servicing protects your home after smoke exposure.",
-    image: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e895156ef_AdobeStock_541231422.jpeg",
+    image: "/assets/base44/e895156ef_adobestock_541231422-71bdd56993.webp",
     body: [
       "Wildfires are an unfortunate reality for many communities across Northern California, including areas like Sacramento, Auburn, and Meadow Vista. Even when fires are miles away, smoke particles infiltrate homes and damage HVAC equipment. If your home experienced wildfire smoke exposure, your air conditioning system and HVAC components need professional inspection and servicing to maintain performance and protect indoor air quality.",
       "Smoke carries fine ash, chemicals, and soot that settle inside your AC system, ductwork, and air filters. Without proper cleaning and maintenance, these contaminants circulate through your home long after the fires are gone. Professional HVAC servicing helps restore efficiency, improve air quality, and prevent costly breakdowns.",
@@ -765,7 +765,7 @@ const blogArticleRecords = [
     readTime: "5 mins read",
     excerpt:
       "Seasonal allergens and indoor air pollutants can make home feel miserable. Here's how your HVAC system can help allergy sufferers breathe easier.",
-    image: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2.webp",
+    image: "/assets/base44/0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2-3e3f989e67.webp",
     body: [
       "Seasonal allergies make even the most comfortable home feel unbearable. While many people focus on outdoor triggers like pollen counts and changing weather, the truth is that indoor air often contains just as many allergens. Dust mites, pet dander, mold spores, and outdoor pollutants can all become trapped inside your home and circulate through your HVAC system if proper precautions are not taken.",
       "For allergy sufferers, maintaining clean air indoors is not just about comfort — it is about health. With professional HVAC services and proper system care, you can notably improve indoor air quality and reduce the irritants that trigger your symptoms.",
@@ -813,7 +813,7 @@ const blogArticleRecords = [
     readTime: "5 mins read",
     excerpt:
       "Following a simple annual maintenance checklist can prevent costly breakdowns, lower energy bills, and extend the life of your HVAC system.",
-    image: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/777a02c57_AdobeStock_596579616.jpeg",
+    image: "/assets/base44/777a02c57_adobestock_596579616-69c514ec82.webp",
     body: [
       "Your air conditioning system and heating equipment work hard through long cooling seasons, high humidity, and sudden temperature swings. Routine maintenance is essential for reliable comfort. Whether you rely on a central air conditioner or a heat pump, following an annual maintenance checklist helps prevent breakdowns, improves efficiency, and reduces the need for unexpected repairs throughout the year.",
       {
@@ -865,7 +865,7 @@ const blogArticleRecords = [
     readTime: "6 mins read",
     excerpt:
       "Stuffy air, excessive dust, and visible mold are signs your indoor air quality needs attention. Here's what Auburn homeowners should watch for.",
-    image: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3f4c7187_AdobeStock_450097271.jpeg",
+    image: "/assets/base44/e3f4c7187_adobestock_450097271-138d8bf847.webp",
     body: [
       "Many Auburn, CA, homeowners don't realize their indoor air quality may be worse than the air outside. Poor indoor air quality can result in headaches, allergies, and respiratory irritation caused by excessive dust throughout the home. If your house feels stuffy, humid, or musty, your HVAC system may be contributing to the problem.",
       "Excessive condensation, stale air, mildew, dust, and mold growth are warning signs that your air quality is at risk and needs evaluation from an HVAC professional. With over 100 years of experience, Spoor's Heating & Air Conditioning walks you through the top warning signs of poor air quality, and how regular maintenance can help protect your home.",
@@ -918,7 +918,7 @@ const blogArticleRecords = [
     readTime: "7 mins read",
     excerpt:
       "Repeated repairs, rising energy bills, and an aging system are all signs it may be time to replace your HVAC equipment rather than keep fixing it.",
-    image: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fed95821e_AdobeStock_66338212.jpeg",
+    image: "/assets/base44/fed95821e_adobestock_66338212-ae391fcdef.webp",
     body: [
       "Knowing when to replace your HVAC system can help you avoid unexpected breakdowns and costly emergency repairs. While regular air conditioner maintenance can extend the life of your unit, every system eventually reaches a point where repairs become less practical than replacement. Paying attention to performance issues, rising costs, and the age of your equipment can help you make a proactive decision before comfort and efficiency decline.",
       {

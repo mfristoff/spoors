@@ -7,7 +7,7 @@ export default function AboutPrinciples({ page }) {
       <div className="site-shell">
         <div className="mb-10 max-w-[760px]">
           <div className="mb-5 flex items-center gap-2">
-            <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg" alt="" className="h-5 w-5" />
+            <img src="/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg" alt="" className="h-5 w-5" />
             <span className="text-sm font-semibold uppercase tracking-[0.14em] text-red-600">How we put it into practice</span>
           </div>
           <h2 className="text-[clamp(34px,4vw,56px)] font-bold leading-[1.08] tracking-[-0.025em] text-ink-900">Promises you can see in the work.</h2>

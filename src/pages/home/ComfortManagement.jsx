@@ -2,7 +2,7 @@ import Reveal from "@/components/ui/Reveal";
 import { Link } from "react-router-dom";
 import { Check, ArrowRight } from "lucide-react";
 
-const IMG = "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d877a2d9b_AdobeStock_419922957.jpeg";
+const IMG = "/assets/base44/d877a2d9b_adobestock_419922957-8ace8c855c.webp";
 
 const CAPABILITIES = [
   "Furnace & Heating Solution",

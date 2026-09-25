@@ -1,6 +1,6 @@
 import Reveal from "@/components/ui/Reveal";
 
-const LOGO_HERO = "https://spoors.olivemedia.agency/wp-content/uploads/2026/06/logo-hero-1024x131.png";
+const LOGO_HERO = "/assets/base44/logo-hero-1024x131-f2c5cbd74b.png";
 
 export default function BrandStrip() {
   return (

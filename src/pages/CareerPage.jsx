@@ -11,44 +11,44 @@ import ApplyModal from "@/components/careers/ApplyModal";
 import { cdnImage } from "@/lib/cdnImage";
 
 const FALLBACK_HERO_1 =
-  "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e1559adab_f1a986a87_3f16c6344ba414c34ae77c61330882586df0dee0.png";
+  "/assets/base44/e1559adab_f1a986a87_3f16c6344ba414c34ae77c61330882586df0dee0-53a335010e.webp";
 const FALLBACK_HERO_2 =
-  "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/6e4a33d4e_0796176ea_edd887672ff22175c0a633325a42b6b8adfbe1c7.png";
+  "/assets/base44/6e4a33d4e_0796176ea_edd887672ff22175c0a633325a42b6b8adfbe1c7-5be06be2e0.webp";
 const FALLBACK_CTA_BG =
-  "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2ebdbe8e3_5a69e1b1a_54beac8fa7344215202cbe7ed5062271693ebcb9.png";
+  "/assets/base44/2ebdbe8e3_5a69e1b1a_54beac8fa7344215202cbe7ed5062271693ebcb9-5591b39c80.webp";
 
 const JOBS = [
   {
     title: "Lead Heat Pump Installer / Technician",
     lines: [
-      "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c7679cf06_6932fb5c0_561_2013.svg",
-      "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/fb5d21945_fa301caec_561_2015.svg",
+      "/assets/base44/c7679cf06_6932fb5c0_561_2013-d8f3760aad.svg",
+      "/assets/base44/fb5d21945_fa301caec_561_2015-7b3de27a78.svg",
     ],
-    arrow: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/930db743a_c0c1229d8_561_2018.svg",
+    arrow: "/assets/base44/930db743a_c0c1229d8_561_2018-1a99ecaeed.svg",
   },
   {
     title: "Residential Comfort Advisor (Sales / Auditor)",
     lines: [
-      "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/bd31bec86_e3c0007bf_561_2028.svg",
-      "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/78a7f5966_6560c2b93_561_2030.svg",
+      "/assets/base44/bd31bec86_e3c0007bf_561_2028-e9e3b0f46a.svg",
+      "/assets/base44/78a7f5966_6560c2b93_561_2030-b2d423d072.svg",
     ],
-    arrow: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/f10097160_29841ac76_561_2035.svg",
+    arrow: "/assets/base44/f10097160_29841ac76_561_2035-244c3f3e16.svg",
   },
   {
     title: "Senior HVAC Service Technician",
     lines: [
-      "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/b7c459692_f39e4f902_561_2041.svg",
-      "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/42c9d273b_140d570a5_561_2043.svg",
+      "/assets/base44/b7c459692_f39e4f902_561_2041-4e9c9dc027.svg",
+      "/assets/base44/42c9d273b_140d570a5_561_2043-8dd62e42ff.svg",
     ],
-    arrow: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2cf88c7dd_9db80dd07_561_2048.svg",
+    arrow: "/assets/base44/2cf88c7dd_9db80dd07_561_2048-f0894e93b9.svg",
   },
   {
     title: "HVAC Maintenance Apprentice",
     lines: [
-      "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/eba7bbd1b_f7d8f450a_561_2054.svg",
-      "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/130d2d80c_caa3f2440_561_2056.svg",
+      "/assets/base44/eba7bbd1b_f7d8f450a_561_2054-c3e7695aa7.svg",
+      "/assets/base44/130d2d80c_caa3f2440_561_2056-b7c5429a0d.svg",
     ],
-    arrow: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/63cda30fb_e2260d072_561_2061.svg",
+    arrow: "/assets/base44/63cda30fb_e2260d072_561_2061-da301491d3.svg",
   },
 ];
 
@@ -138,12 +138,12 @@ export default function CareerPage() {
                   <div className="relative h-6 w-6">
                     <img
                       className="absolute left-1.5 top-px h-2.5 w-[13px]"
-                      src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e45c419f3_f5c05d3d3_550_1962.svg"
+                      src="/assets/base44/e45c419f3_f5c05d3d3_550_1962-e978e280a3.svg"
                       alt=""
                     />
                     <img
                       className="absolute left-2 top-[11px] h-2.5 w-[13px] opacity-50"
-                      src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/e905763f3_b486829cb_550_1963.svg"
+                      src="/assets/base44/e905763f3_b486829cb_550_1963-6d8243b1c6.svg"
                       alt=""
                     />
                   </div>
@@ -191,12 +191,12 @@ export default function CareerPage() {
               <div className="pointer-events-none absolute -left-[67px] top-[41px] min-h-[494px] w-full max-w-[494px] opacity-20">
                 <img
                   className="absolute left-[134px] top-[197px] h-[238px] w-[231px]"
-                  src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/aa142f6b9_1f3c91791_551_1977.svg"
+                  src="/assets/base44/aa142f6b9_1f3c91791_551_1977-64879560da.svg"
                   alt=""
                 />
                 <img
                   className="absolute left-[223px] top-[379px] h-[95px] w-[231px] opacity-50"
-                  src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/62eff44e7_886d91cb1_551_1978.svg"
+                  src="/assets/base44/62eff44e7_886d91cb1_551_1978-296d336c49.svg"
                   alt=""
                 />
               </div>
@@ -215,7 +215,7 @@ export default function CareerPage() {
                 <div className="relative h-4 w-4">
                   <img
                     className="absolute left-[3px] top-[3px] h-3 w-3"
-                    src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/81d2a95ff_63cc7ba14_551_1974.svg"
+                    src="/assets/base44/81d2a95ff_63cc7ba14_551_1974-7253bf3e19.svg"
                     alt=""
                   />
                 </div>
@@ -299,7 +299,7 @@ export default function CareerPage() {
                     <div className="mb-5 flex items-center gap-3">
                       <span className="grid h-9 w-9 place-items-center rounded-full bg-white/10">
                         <img
-                          src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg"
+                          src="/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg"
                           alt=""
                           className="h-5 w-5"
                         />
@@ -334,7 +334,7 @@ export default function CareerPage() {
                     >
                       <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[#fff0f0]">
                         <img
-                          src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg"
+                          src="/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg"
                           alt=""
                           className="h-4 w-4"
                         />
@@ -383,7 +383,7 @@ export default function CareerPage() {
                   <div className="pointer-events-none absolute -right-16 -top-16 h-[300px] w-[300px] opacity-[0.08]">
                     <img
                       className="h-full w-full object-contain"
-                      src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg"
+                      src="/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg"
                       alt=""
                     />
                   </div>
@@ -400,7 +400,7 @@ export default function CareerPage() {
                     <div className="relative h-4 w-4">
                       <img
                         className="absolute left-[3px] top-[3px] h-3 w-3"
-                        src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/dad316c92_826b97ef0_561_2080.svg"
+                        src="/assets/base44/dad316c92_826b97ef0_561_2080-6e94d3ffc3.svg"
                         alt=""
                       />
                     </div>

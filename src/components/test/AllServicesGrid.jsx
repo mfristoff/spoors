@@ -40,7 +40,7 @@ export default function AllServicesGrid() {
       {/* Header */}
       <div className="mx-auto max-w-3xl text-center">
         <img
-          src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg"
+          src="/assets/base44/bc3f76106_bolt-b3ebf56b83.svg"
           alt=""
           aria-hidden="true"
           className="mx-auto h-6 w-6" />

@@ -33,12 +33,12 @@ const moreAreas = [
   { slug: "roseville", city: "Roseville", img: `${AREA_IMG}/cbed1dd2d_area-roseville.jpg` },
   { slug: "sacramento", city: "Sacramento", img: `${AREA_IMG}/f53db833d_area-sacramento.jpg` },
   { slug: "weimar", city: "Weimar", img: `${AREA_IMG}/23a6467c2_area-weimar.jpg` },
-  { slug: "west-sacramento", city: "West Sacramento", img: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/586893ddb_west-sacramento.png" },
+  { slug: "west-sacramento", city: "West Sacramento", img: "/assets/base44/586893ddb_west-sacramento-853e359253.webp" },
 ];
 
 // Two complementary downtown photos for the quote section
-const QUOTE_IMG_1 = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ce59416d0_CitrusHeights.jpg";
-const QUOTE_IMG_2 = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c1da928d2_01_Penryn_CA_045_panoramio.jpg";
+const QUOTE_IMG_1 = "/assets/base44/ce59416d0_citrusheights-c1987b099b.webp";
+const QUOTE_IMG_2 = "/assets/base44/c1da928d2_01_penryn_ca_045_panoramio-6474b1d459.webp";
 
 const processSteps = [
   {
@@ -115,8 +115,8 @@ export default function ServicesAreaPage() {
           >
             <div className="flex flex-col md:flex-row items-center gap-[11px]">
               <div className="w-6 h-6 relative">
-                <img className="w-[13px] h-2.5 absolute top-px left-1.5" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/c2a24918d_90adfacc6_254_112.svg" alt="Icon" />
-                <img className="w-[13px] h-2.5 opacity-50 absolute top-[11px] left-2" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f7888b00a_3f22f04bb_254_113.svg" alt="Icon shadow" />
+                <img className="w-[13px] h-2.5 absolute top-px left-1.5" src="/assets/base44/c2a24918d_90adfacc6_254_112-aad7a5d408.svg" alt="Icon" />
+                <img className="w-[13px] h-2.5 opacity-50 absolute top-[11px] left-2" src="/assets/base44/f7888b00a_3f22f04bb_254_113-049802147b.svg" alt="Icon shadow" />
               </div>
               <p className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1 uppercase">
                 AUBURN &amp; MEADOW VISTA&rsquo;S<br className="md:hidden" /> TRUSTED HVAC TEAM
@@ -151,7 +151,7 @@ export default function ServicesAreaPage() {
                 </div>
                 <button type="submit" className="bg-figma-accent rounded-[5px] w-full sm:w-[217px] h-[58px] relative group hover:bg-red-600 transition-colors shrink-0">
                   <div className="flex items-center justify-center p-2 min-h-[50px] bg-figma-secondary rounded-[2px] w-[33px] absolute top-1 right-1 transition-transform group-hover:translate-x-[-4px]">
-                    <img className="w-3.5 h-3.5" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/f898fcfd0_fd4eb8170_277_608.svg" alt="Search" />
+                    <img className="w-3.5 h-3.5" src="/assets/base44/f898fcfd0_fd4eb8170_277_608-2b74d6f51e.svg" alt="Search" />
                   </div>
                   <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-primary absolute top-5 left-4">Search Areas</span>
                 </button>
@@ -275,7 +275,7 @@ export default function ServicesAreaPage() {
 
       {/* --- PROCESS SECTION (triple overlay) --- */}
       <section className="header-aligned-section relative w-full overflow-hidden bg-black py-20 lg:py-[clamp(22px,4.6vw,88px)] min-h-[820px] flex flex-col justify-between">
-        <img className="absolute inset-0 w-full h-full object-cover object-left scale-110 z-0" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/fc462779e_53daeb7c3_db34ea7aae804a5a67fcf8501c7ac48b93f3e078.png" alt="HVAC Unit Background" />
+        <img className="absolute inset-0 w-full h-full object-cover object-left scale-110 z-0" src="/assets/base44/fc462779e_53daeb7c3_db34ea7aae804a5a67fcf8501c7ac48b93f3e078-787b31ee76.webp" alt="HVAC Unit Background" />
 
         {/* Triple overlay — solid base + directional gradient (dark LEFT, clear right) + radial vignette */}
         <div className="absolute inset-0 z-[1] bg-black/30" />

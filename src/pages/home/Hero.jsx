@@ -1,12 +1,13 @@
+import { useCallback, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { SOCIAL_PROOF_LOGOS } from "@/lib/socialProofLogos";
 import { Image } from "@/components/ui/image";
 import DeferredHeroVideo from "@/pages/home/DeferredHeroVideo";
 
-const BOLT_ICON = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg";
+const BOLT_ICON = "/assets/base44/04dc9d564_bolt-f432cef86e.svg";
 
-const HERO_DESKTOP_VIDEO = "https://spoors.olivemedia.agency/wp-content/uploads/2026/07/hero.mp4";
+const HERO_DESKTOP_VIDEO = "/assets/base44/hero-4af5046ea3.mp4";
 const HERO_MOBILE_VIDEO = "/assets/video/spoors-home-hero-mobile.mp4";
 
 // Per-mark sizing for the hero logo strip. BBB is width-driven (matching the
@@ -23,7 +24,9 @@ const HERO_LOGO_CLASS = {
 const TRUST_STATEMENT =
   "Trusted by Local Homeowners & Businesses Throughout Our Close-Knit Community.";
 
-function HistoryCard() {
+const CRITICAL_HERO_MEDIA_COUNT = 1 + SOCIAL_PROOF_LOGOS.length;
+
+function HistoryCard({ mediaReady, onImageReady }) {
   return (
     <div className="flex h-[189px] w-full max-w-[426px] overflow-hidden rounded-lg bg-white shadow-2xl">
       <div className="flex min-w-0 flex-1 flex-col justify-center p-4 sm:p-6">
@@ -37,13 +40,14 @@ function HistoryCard() {
       </div>
       <div className="relative w-[44%] shrink-0 sm:w-[140px]">
         <Image
-          src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/864bc4072_unnamed.webp"
+          src="/assets/base44/864bc4072_unnamed-cdf6925097.webp"
           alt="Spoor's Heating & Air team at a ribbon-cutting ceremony"
-          className="absolute inset-0 h-full w-full"
+          className={`absolute inset-0 h-full w-full ${mediaReady ? "opacity-100" : "opacity-0"}`}
           fittingType="fill"
           quality={82}
           loading="eager"
-          fetchPriority="high" />
+          fetchPriority="high"
+          onLoad={() => onImageReady("history-photo")} />
         
       </div>
     </div>);
@@ -51,6 +55,44 @@ function HistoryCard() {
 }
 
 export default function Hero({ onSchedule }) {
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window === "undefined"
+      ? true
+      : window.matchMedia("(min-width: 768px)").matches
+  );
+  const [criticalMediaReady, setCriticalMediaReady] = useState(false);
+  const loadedCriticalMedia = useRef(new Set());
+
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 768px)");
+    const sync = () => setIsDesktop(media.matches);
+    sync();
+    media.addEventListener?.("change", sync);
+    return () => media.removeEventListener?.("change", sync);
+  }, []);
+
+  useEffect(() => {
+    setCriticalMediaReady(false);
+  }, [isDesktop]);
+
+  const markCriticalMediaReady = useCallback(
+    (assetKey) => {
+      const mode = isDesktop ? "desktop" : "mobile";
+      const prefix = `${mode}:`;
+      loadedCriticalMedia.current.add(`${prefix}${assetKey}`);
+
+      let loadedForViewport = 0;
+      for (const key of loadedCriticalMedia.current) {
+        if (key.startsWith(prefix)) loadedForViewport += 1;
+      }
+
+      if (loadedForViewport >= CRITICAL_HERO_MEDIA_COUNT) {
+        setCriticalMediaReady(true);
+      }
+    },
+    [isDesktop]
+  );
+
   return (
     <section
       className="relative overflow-hidden"
@@ -149,21 +191,32 @@ export default function Hero({ onSchedule }) {
           </Link>
         </motion.div>
 
-        {/* History card — in-flow on mobile */}
-        <div className="mt-10 md:hidden">
-          <HistoryCard />
-        </div>
+        {/* History card — in-flow on mobile. Only mount the active viewport set. */}
+        {!isDesktop ? (
+          <div className="mt-10">
+            <HistoryCard
+              mediaReady={criticalMediaReady}
+              onImageReady={markCriticalMediaReady}
+            />
+          </div>
+        ) : null}
       </div>
 
-      {/* History card — floating bottom-right on desktop, left edge aligned with header CTA block */}
-      <div className="pointer-events-none absolute z-10 hidden md:block" style={{ bottom: 187, right: 'var(--header-align-edge)' }}>
-        <div className="pointer-events-auto">
-          <HistoryCard />
+      {/* History card — floating bottom-right on desktop */}
+      {isDesktop ? (
+        <div className="pointer-events-none absolute z-10" style={{ bottom: 187, right: 'var(--header-align-edge)' }}>
+          <div className="pointer-events-auto">
+            <HistoryCard
+              mediaReady={criticalMediaReady}
+              onImageReady={markCriticalMediaReady}
+            />
+          </div>
         </div>
-      </div>
+      ) : null}
 
-      {/* Bottom strip: translucent bar with tagline (left) + white logo box pinned to screen right (max 555px) */}
-      <div className="absolute inset-x-0 bottom-0 z-10 hidden md:block" style={{ height: 120, background: 'rgba(0,0,0,0.12)', borderTop: '1px solid rgba(190,200,215,0.28)' }}>
+      {/* Bottom strip: translucent bar with tagline (left) + white logo box */}
+      {isDesktop ? (
+      <div className="absolute inset-x-0 bottom-0 z-10" style={{ height: 120, background: 'rgba(0,0,0,0.12)', borderTop: '1px solid rgba(190,200,215,0.28)' }}>
         {/* Tagline within site-shell */}
         <div className="relative flex h-full items-center site-shell">
           <p className="max-w-[420px] text-left text-[14px] font-medium leading-[1.55] tracking-[0.015em] text-white/90">{TRUST_STATEMENT}</p>
@@ -180,21 +233,26 @@ export default function Hero({ onSchedule }) {
               originHeight={logo.height}
               fittingType="fit"
               quality={82}
-              className={HERO_LOGO_CLASS[logo.alt] ?? "h-[72px] w-auto object-contain"}
-              loading="eager" />
+              className={`${HERO_LOGO_CLASS[logo.alt] ?? "h-[72px] w-auto object-contain"} ${criticalMediaReady ? "opacity-100" : "opacity-0"}`}
+              loading="eager"
+              fetchPriority="high"
+              onLoad={() => markCriticalMediaReady(logo.alt)} />
 
             )}
           </div>
         </div>
       </div>
+      ) : null}
 
       {/* Mobile bottom: trust statement, then a compact wrapping logo grid */}
-      <div className="relative z-10 px-5 pb-6 md:hidden">
+      {!isDesktop ? (
+      <>
+      <div className="relative z-10 px-5 pb-6">
         <p className="max-w-[300px] text-left text-[14px] font-medium leading-[1.5] tracking-[0.015em] text-white/90" style={{ textWrap: "balance" }}>
           {TRUST_STATEMENT}
         </p>
       </div>
-      <div className="relative z-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-4 bg-white px-5 py-5 md:hidden">
+      <div className="relative z-10 flex flex-wrap items-center justify-center gap-x-5 gap-y-4 bg-white px-5 py-5">
         {SOCIAL_PROOF_LOGOS.map((logo) =>
         <Image
           key={logo.alt}
@@ -204,11 +262,15 @@ export default function Hero({ onSchedule }) {
           originHeight={logo.height}
           fittingType="fit"
           quality={82}
-          className={HERO_LOGO_CLASS[logo.alt] ?? "h-[56px] w-auto object-contain"}
-          loading="eager" />
+          className={`${HERO_LOGO_CLASS[logo.alt] ?? "h-[56px] w-auto object-contain"} ${criticalMediaReady ? "opacity-100" : "opacity-0"}`}
+          loading="eager"
+          fetchPriority="high"
+          onLoad={() => markCriticalMediaReady(logo.alt)} />
 
         )}
       </div>
+      </>
+      ) : null}
     </section>);
 
 }

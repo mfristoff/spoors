@@ -36,7 +36,7 @@ function Card({ quote, author, source, tag }) {
   return (
     <div className="flex min-h-[400px] w-[85vw] shrink-0 flex-col justify-between rounded-[20px] bg-[#f7f7f7] p-8 shadow-[inset_0_0_0_1px_#e8e8e8] snap-center sm:w-[600px]">
       <div className="flex flex-col gap-8">
-        <img className="h-[50px] w-16 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/07bc810cd_8cc68bec7_127_467.svg" alt="" />
+        <img className="h-[50px] w-16 object-contain" src="/assets/base44/07bc810cd_8cc68bec7_127_467-9216e78928.svg" alt="" />
         <p className="text-[clamp(16px,1.56vw,30px)] font-medium leading-[1.6] text-[#252525]">{quote}</p>
       </div>
       <div className="mt-8 flex flex-col gap-4">
@@ -69,7 +69,7 @@ export default function TestimonialsNew() {
       <div className="mx-auto flex max-w-[1920px] flex-col gap-12">
         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="flex flex-col items-center">
           <img
-            src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/936c19043_Bolt.svg"
+            src="/assets/base44/936c19043_bolt-72d129170d.svg"
             alt=""
             aria-hidden="true"
             className="h-6 w-6"

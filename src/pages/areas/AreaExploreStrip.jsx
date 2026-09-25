@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Reveal from "@/components/ui/Reveal";
 
-const PIN = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5a354e235_explorespoorssectionlocationiconstouse.svg";
+const PIN = "/assets/base44/5a354e235_explorespoorssectionlocationiconstouse-e8ee39201a.svg";
 
 // Curated set of service areas shown on every location page (Figma selection,
 // spellings corrected: Colfax, Folsom, Granite Bay).

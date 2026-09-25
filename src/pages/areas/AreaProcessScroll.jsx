@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Reveal from "@/components/ui/Reveal";
 import { processSteps } from "@/lib/areaContent";
 
-const BOLT = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg";
+const BOLT = "/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg";
 
 /**
  * A predictable, precision process — same native-scroll/reveal system,

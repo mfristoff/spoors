@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Reveal from "@/components/ui/Reveal";
 
-const BOLT = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg";
-const HOME_QUOTE_BG = "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/309bfc2b7_TitleSection.png";
+const BOLT = "/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg";
+const HOME_QUOTE_BG = "/assets/base44/309bfc2b7_titlesection-1bfc13b3db.webp";
 
 export default function AboutStatement({ statement, eyebrow, highlight }) {
   return (

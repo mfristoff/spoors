@@ -35,7 +35,7 @@ export default function LargeQuote() {
     >
       {/* Background: diagonal lines pattern */}
       <Image
-        src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/309bfc2b7_TitleSection.png"
+        src="/assets/base44/309bfc2b7_titlesection-1bfc13b3db.webp"
         alt=""
         aria-hidden="true"
         fittingType="fill"

@@ -1,7 +1,7 @@
 import Reveal from "@/components/ui/Reveal";
 import { Link } from "react-router-dom";
 
-const TEAM_IMG = "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/25c356f1d_AdobeStock_319218928.jpeg";
+const TEAM_IMG = "/assets/base44/25c356f1d_adobestock_319218928-fc972c1f74.webp";
 
 export default function TeamCTA() {
   return (

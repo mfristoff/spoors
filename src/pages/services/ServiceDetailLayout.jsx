@@ -21,11 +21,11 @@ const fadeUp = {
 };
 
 const LIGHTNING = {
-  gold: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a644f8a64_b1461a2cf_1646_187.svg",
-  goldShadow: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/18f3ce20a_09b5f0c4c_1646_188.svg",
-  white: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/409b95b25_1710bb802_245_943.svg",
-  whiteShadow: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/2703648e9_e2a84a7e2_245_944.svg",
-  faq: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/349410b5e_81e805bde_1512_363.svg",
+  gold: "/assets/base44/a644f8a64_b1461a2cf_1646_187-bb7a7b36b2.svg",
+  goldShadow: "/assets/base44/18f3ce20a_09b5f0c4c_1646_188-d0c007c6a8.svg",
+  white: "/assets/base44/409b95b25_1710bb802_245_943-085b72cdff.svg",
+  whiteShadow: "/assets/base44/2703648e9_e2a84a7e2_245_944-b8612c1d90.svg",
+  faq: "/assets/base44/349410b5e_81e805bde_1512_363-16672e3a61.svg",
 };
 
 function LazyParallaxImage({ src, alt, className = "", position = "center center" }) {

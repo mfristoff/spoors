@@ -58,31 +58,31 @@ const residentialServices = [
 const homeServiceItems = [
   {
     title: "Furnace & Heating Repair",
-    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/ca254f5b4_Bolt.svg",
+    icon: "/assets/base44/ca254f5b4_bolt-a9405bafb3.svg",
     quoteTitle: "Heating Repairs",
     service: "Heating",
   },
   {
     title: "AC Repair & Emergency Service",
-    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/06fc054f4_Bolt-Blue.svg",
+    icon: "/assets/base44/06fc054f4_bolt-blue-b16080fa38.svg",
     quoteTitle: "Urgent AC Repairs",
     service: "Air Conditioning",
   },
   {
     title: "Planned Maintenance (Home Comfort Club)",
-    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/c68e38fec_Green-Bolt.svg",
+    icon: "/assets/base44/c68e38fec_green-bolt-5b2f05486d.svg",
     quoteTitle: "Enrollment & Plan Review",
     service: "Home Comfort Club",
   },
   {
     title: "Air Quality Testing",
-    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8b8b5f621_Bolt-Light-Green.svg",
+    icon: "/assets/base44/8b8b5f621_bolt-light-green-08f106476b.svg",
     quoteTitle: "HVAC Indoor Air Quality Services",
     service: "Indoor Air Quality",
   },
   {
     title: "Smart Thermostat Installation",
-    icon: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a112d3954_OJ-Bolt.svg",
+    icon: "/assets/base44/a112d3954_oj-bolt-cae3dcd4c3.svg",
     quoteTitle: "Smart Thermostat Installation",
     service: "Smart Thermostat Installation",
   },
@@ -112,10 +112,8 @@ const proofCardEntrance = {
 export default function HomePage() {
   const [quote, setQuote] = useState({ open: false });
 
-  // Keep the initial hero/video request lane clear, then warm lazy images in a
-  // small queue once the page is loaded. This avoids the blank-image pop-in
-  // that is especially visible during smooth screen recordings without
-  // competing with first paint.
+  // Warm only lazy images that are approaching the viewport. The old routine
+  // fetched and decoded every lazy image on the page immediately after load.
   useEffect(() => {
     const connection =
       navigator.connection || navigator.mozConnection || navigator.webkitConnection;
@@ -128,50 +126,60 @@ export default function HomePage() {
       return undefined;
     }
 
-    let cancelled = false;
+    if (!("IntersectionObserver" in window)) return undefined;
+
+    const preloads = new Set();
+    let observer;
     let idleHandle;
     let fallbackTimer;
 
-    const warmLazyImages = async () => {
-      const queue = [...new Set(
-        Array.from(document.images)
-          .filter((image) => image.loading === "lazy" && !image.complete)
-          .map((image) => image.currentSrc || image.src)
-          .filter(Boolean)
-      )];
+    const warmImage = (image) => {
+      if (image.complete || image.dataset.spoorsPrewarmed === "true") return;
 
-      const worker = async () => {
-        while (!cancelled && queue.length) {
-          const src = queue.shift();
-          const preload = new window.Image();
-          preload.decoding = "async";
-          preload.fetchPriority = "low";
-          preload.src = src;
-          try {
-            await preload.decode();
-          } catch {
-            // A failed speculative decode must never affect the real image.
+      const src = image.currentSrc || image.src;
+      if (!src) return;
+
+      image.dataset.spoorsPrewarmed = "true";
+      const preload = new window.Image();
+      preload.decoding = "async";
+      preload.fetchPriority = "low";
+      preloads.add(preload);
+
+      const release = () => preloads.delete(preload);
+      preload.addEventListener("load", release, { once: true });
+      preload.addEventListener("error", release, { once: true });
+      preload.src = src;
+    };
+
+    const beginObserving = () => {
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue;
+            warmImage(entry.target);
+            observer.unobserve(entry.target);
           }
+        },
+        {
+          rootMargin: "900px 0px",
+          threshold: 0,
         }
-      };
+      );
 
-      await Promise.all([worker(), worker()]);
+      Array.from(document.images)
+        .filter((image) => image.loading === "lazy" && !image.complete)
+        .forEach((image) => observer.observe(image));
     };
 
-    const scheduleWarmup = () => {
-      if ("requestIdleCallback" in window) {
-        idleHandle = window.requestIdleCallback(warmLazyImages, { timeout: 1800 });
-      } else {
-        fallbackTimer = window.setTimeout(warmLazyImages, 450);
-      }
-    };
-
-    if (document.readyState === "complete") scheduleWarmup();
-    else window.addEventListener("load", scheduleWarmup, { once: true });
+    if ("requestIdleCallback" in window) {
+      idleHandle = window.requestIdleCallback(beginObserving, { timeout: 1200 });
+    } else {
+      fallbackTimer = window.setTimeout(beginObserving, 250);
+    }
 
     return () => {
-      cancelled = true;
-      window.removeEventListener("load", scheduleWarmup);
+      observer?.disconnect();
+      preloads.clear();
       window.clearTimeout(fallbackTimer);
       if (idleHandle && "cancelIdleCallback" in window) {
         window.cancelIdleCallback(idleHandle);
@@ -217,19 +225,19 @@ export default function HomePage() {
             className="order-2 grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 md:mb-16">
             
             <motion.div variants={fadeInUp} className="w-full aspect-[544/364] relative">
-              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_187px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/7f7a07ace_Spoor_s-Home-AC-Service-21.webp" alt="Tech working" fittingType="fill" quality={80} loading="lazy" />
+              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_187px] bg-figma-border-2" src="/assets/base44/7f7a07ace_spoor_s-home-ac-service-21-252a59c5a6.webp" alt="Tech working" fittingType="fill" quality={80} loading="lazy" />
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full aspect-[544/364] relative">
-              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/80f8c024c_Spoor_s-Home-AC-Service-2.webp" alt="Tech inspecting" fittingType="fill" quality={80} loading="lazy" />
+              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_24px_24px] bg-figma-border-2" src="/assets/base44/80f8c024c_spoor_s-home-ac-service-2-6a9ed0f59e.webp" alt="Tech inspecting" fittingType="fill" quality={80} loading="lazy" />
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full aspect-[544/364] relative">
-              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_187px_24px] bg-figma-border-2" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48c784c4b_Spoor_s-Home-AC-Service-4.webp" alt="Tech smiling" fittingType="fill" quality={80} loading="lazy" />
+              <Image className="w-full h-full overflow-hidden rounded-[10px_10px_187px_24px] bg-figma-border-2" src="/assets/base44/48c784c4b_spoor_s-home-ac-service-4-c1292cf3cb.webp" alt="Tech smiling" fittingType="fill" quality={80} loading="lazy" />
             </motion.div>
           </motion.div>
 
           {/* Background Decorative Vector */}
           <div className="absolute top-[40%] left-0 w-full pointer-events-none z-[-1] opacity-40">
-            <img className="w-full h-auto" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6402f1d7b_f2252d069_202_340.svg" alt="Decorative Wave" />
+            <img className="w-full h-auto" src="/assets/base44/6402f1d7b_f2252d069_202_340-dae2941e5d.svg" alt="Decorative Wave" />
           </div>
 
           {/* Cards Grid */}
@@ -241,8 +249,8 @@ export default function HomePage() {
             <motion.div variants={cardEntrance} className="flex flex-col gap-7 p-7 md:gap-10 md:p-6 lg:pt-[clamp(16px,1.7vw,32px)] lg:pr-[18px] lg:pb-[16px] lg:pl-[18px] bg-[linear-gradient(180deg,_rgba(252,238,238,1.00)_0%,_rgba(255,255,255,1.00)_100%)] shadow-[0px_0px_0px_1px_rgba(255,41,41,0.12)] border-t-[4px] border-figma-accent rounded-[10px] h-full">
               <div className="flex items-center justify-center w-11 h-11 bg-figma-primary rounded-[5px] shadow-[inset_0_0_0_1px_#fbdada]">
                 <div className="w-6 h-6 relative">
-                  <img className="w-5 h-5 opacity-[0.5] absolute top-0.5 left-0.5" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c3ab51f2f_d287cd844_96_349.svg" alt="Icon" />
-                  <img className="w-1.5 h-1.5 absolute top-3 left-[9px]" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d27309bfb_bf1f28494_96_350.svg" alt="Icon detail" />
+                  <img className="w-5 h-5 opacity-[0.5] absolute top-0.5 left-0.5" src="/assets/base44/c3ab51f2f_d287cd844_96_349-c29c9138af.svg" alt="Icon" />
+                  <img className="w-1.5 h-1.5 absolute top-3 left-[9px]" src="/assets/base44/d27309bfb_bf1f28494_96_350-abc264c5f9.svg" alt="Icon detail" />
                 </div>
               </div>
               <div className="flex flex-col gap-4">
@@ -256,8 +264,8 @@ export default function HomePage() {
               <div className="flex items-center justify-center w-11 h-11 bg-figma-primary rounded-[5px] shadow-[inset_0_0_0_1px_#e1e5f9]">
                 <div className="w-6 h-6 relative">
                   <div className="bg-figma-color-9-3 w-2 h-2 absolute top-0.5 left-[7px] rounded-[50%]" />
-                  <img className="w-[15px] h-[9px] opacity-[0.5] absolute top-[13px] left-[3px]" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/f9ee93635_9007c29f8_96_369.svg" alt="Icon" />
-                  <img className="w-[7px] h-[7px] absolute top-[15px] left-3.5" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e53a099e5_44ea90d25_96_368.svg" alt="Icon detail" />
+                  <img className="w-[15px] h-[9px] opacity-[0.5] absolute top-[13px] left-[3px]" src="/assets/base44/f9ee93635_9007c29f8_96_369-a2ffab85d6.svg" alt="Icon" />
+                  <img className="w-[7px] h-[7px] absolute top-[15px] left-3.5" src="/assets/base44/e53a099e5_44ea90d25_96_368-159a43d09c.svg" alt="Icon detail" />
                 </div>
               </div>
               <div className="flex flex-col gap-4">
@@ -270,7 +278,7 @@ export default function HomePage() {
             <motion.div variants={cardEntrance} className="flex flex-col gap-7 p-7 md:gap-10 md:p-6 lg:pt-[clamp(16px,1.7vw,32px)] lg:pr-[18px] lg:pb-[16px] lg:pl-[18px] bg-[linear-gradient(180deg,_rgba(216,216,216,1.00)_0%,_rgba(255,255,255,1.00)_100%)] shadow-[0px_0px_0px_1px_rgba(0,0,0,0.14)] border-t-[4px] border-figma-highlight rounded-[10px] h-full">
               <div className="flex items-center justify-center w-11 h-11 bg-figma-primary rounded-[5px] shadow-[inset_0_0_0_1px_#bfbfbf]">
                 <div className="w-6 h-6 relative">
-                  <img className="w-[9px] h-[18px] absolute top-px left-[11px] z-10" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7b8fe5bca_544039b8f_96_386.svg" alt="Icon" />
+                  <img className="w-[9px] h-[18px] absolute top-px left-[11px] z-10" src="/assets/base44/7b8fe5bca_544039b8f_96_386-94f1f82267.svg" alt="Icon" />
                   <div className="bg-[#1c274c] w-5 min-h-[7px] opacity-[0.5] absolute top-[15px] left-0.5 rounded-[50%]" />
                 </div>
               </div>
@@ -308,7 +316,7 @@ export default function HomePage() {
                 <div className="flex justify-between items-center border-b-[1px] border-[#ececec] pb-[18px]">
                   <p className="text-figma-20 font-bold leading-figma-22 text-figma-text-7 max-w-[230px]">Whole-Home System Care</p>
                   <div className="p-2.5 bg-[#eef7ea] rounded-[9px]">
-                    <img className="w-10 h-10" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/0d247da0e_06910e57d_371_1408.svg" alt="Check" />
+                    <img className="w-10 h-10" src="/assets/base44/0d247da0e_06910e57d_371_1408-9d70df4426.svg" alt="Check" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-2">
@@ -325,7 +333,7 @@ export default function HomePage() {
               {/* Floating Card 2 */}
               <Link to="/contact-us/" className="group absolute bottom-5 left-5 flex min-h-[72px] w-[calc(100%-40px)] items-center justify-between gap-5 rounded-[14px] bg-figma-primary p-5 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl sm:w-[330px]">
                 <p className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-text-1-2">Contact a Local HVAC Expert</p>
-                <img className="w-[19px] h-[9px] group-hover:translate-x-1 transition-transform" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/18b58645b_c0de74b00_371_1437.svg" alt="Arrow Right" />
+                <img className="w-[19px] h-[9px] group-hover:translate-x-1 transition-transform" src="/assets/base44/18b58645b_c0de74b00_371_1437-61ac102026.svg" alt="Arrow Right" />
               </Link>
             </div>
 
@@ -388,7 +396,7 @@ export default function HomePage() {
             <div className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
                 <div className="p-2 bg-figma-surface rounded-[27px]">
-                  <img className="w-5 h-5 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/100440ef0_CalendarMark.png" alt="Calendar" />
+                  <img className="w-5 h-5 object-contain" src="/assets/base44/100440ef0_calendarmark-924b87470f.webp" alt="Calendar" />
                 </div>
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">30 Day Guarantee</span>
               </div>
@@ -400,7 +408,7 @@ export default function HomePage() {
             <div className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
                 <div className="p-2 bg-figma-surface rounded-[27px]">
-                  <img className="w-5 h-5 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/700edc8f1_Crown.png" alt="Star" />
+                  <img className="w-5 h-5 object-contain" src="/assets/base44/700edc8f1_crown-1d12662761.webp" alt="Star" />
                 </div>
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">#1 Rated</span>
               </div>
@@ -412,7 +420,7 @@ export default function HomePage() {
             <div className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
                 <div className="p-2 bg-figma-surface rounded-[27px]">
-                  <img className="w-5 h-5 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7e66262be_History2.png" alt="Clock" />
+                  <img className="w-5 h-5 object-contain" src="/assets/base44/7e66262be_history2-d6a1c449a3.webp" alt="Clock" />
                 </div>
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">24/7 Service</span>
               </div>
@@ -471,7 +479,7 @@ export default function HomePage() {
           >
             <motion.div variants={proofCardEntrance} className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
-                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/8bec328f4_Frame124.svg" alt="Reduced energy costs" loading="lazy" decoding="async" />
+                <img className="h-10 w-10 object-contain" src="/assets/base44/8bec328f4_frame124-33dfe275a4.svg" alt="Reduced energy costs" loading="lazy" decoding="async" />
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">15% Lower Bills</span>
               </div>
               <div className="flex flex-col gap-2">
@@ -481,7 +489,7 @@ export default function HomePage() {
             </motion.div>
             <motion.div variants={proofCardEntrance} className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
-                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/c88460282_Frame122.svg" alt="No hidden fees" loading="lazy" decoding="async" />
+                <img className="h-10 w-10 object-contain" src="/assets/base44/c88460282_frame122-f83be9a5cb.svg" alt="No hidden fees" loading="lazy" decoding="async" />
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">No Hidden Fees</span>
               </div>
               <div className="flex flex-col gap-2">
@@ -491,7 +499,7 @@ export default function HomePage() {
             </motion.div>
             <motion.div variants={proofCardEntrance} className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
-                <img className="h-10 w-10 object-contain" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/e3246ca2c_Frame121.svg" alt="5-star reputation" loading="lazy" decoding="async" />
+                <img className="h-10 w-10 object-contain" src="/assets/base44/e3246ca2c_frame121-21fa83f7db.svg" alt="5-star reputation" loading="lazy" decoding="async" />
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">5-Star Reputation</span>
               </div>
               <div className="flex flex-col gap-2">

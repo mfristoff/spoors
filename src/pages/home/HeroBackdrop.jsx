@@ -2,7 +2,7 @@
 // loads after page start. This is the original pre-mobile-video fallback, not a
 // frame from the condenser/fan footage.
 const BASE =
-  "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fed95821e_AdobeStock_66338212.jpeg";
+  "/assets/base44/fed95821e_adobestock_66338212-ae391fcdef.webp";
 const NAME = "fed95821e_AdobeStock_66338212.webp";
 
 const variant = (w, h, q) =>

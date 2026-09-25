@@ -136,7 +136,7 @@ export default function ServiceReviews({
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-6 mb-6 sm:mb-9">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
-              <img src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/936c19043_Bolt.svg" alt="" className="h-4 w-4" />
+              <img src="/assets/base44/936c19043_bolt-72d129170d.svg" alt="" className="h-4 w-4" />
               <span className="text-[13px] font-semibold tracking-[0.08em] text-[#3d3d3d] uppercase">Customer Reviews</span>
             </div>
             <h2 className="text-[clamp(30px,3vw,48px)] font-bold leading-[1.12] tracking-[-0.018em] text-[#1a1a1a] max-w-[760px]">

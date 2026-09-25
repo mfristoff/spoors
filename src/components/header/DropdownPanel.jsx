@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 
 // Location icon artwork by Arief Mochjiyat.
-const SERVICE_AREA_ICON = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d48d150a1_location.svg";
+const SERVICE_AREA_ICON = "/assets/base44/d48d150a1_location-e3eff6e5ac.svg";
 
 const ICON_MAP = {
   "/services/air-conditioning": Snowflake,

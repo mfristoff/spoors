@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowDownRight } from "lucide-react";
 
-const BOLT = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg";
+const BOLT = "/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg";
 
 // A standout customer quote surfaced in the "About Us" feature-band style:
 // white field with faint diagonal stripes, left-aligned bolt eyebrow, centered

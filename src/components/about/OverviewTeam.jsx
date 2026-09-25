@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { Image } from "@/components/ui/image";
 
-const BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/04dc9d564_Bolt.svg";
+const BOLT = "/assets/base44/04dc9d564_bolt-f432cef86e.svg";
 
 const team = [
-  { name: "Jeff Spoor", role: "Owner & Founder", img: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/cfba0dea7_generated_image.png" },
-  { name: "Nikki Wade", role: "Senior Operations Manager", img: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/61d86d7aa_generated_image.png" },
-  { name: "Randy", role: "Lead Service Technician", img: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/4928134bb_generated_image.png" },
-  { name: "Jack Spoor", role: "Operations & HR", img: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d1f3f231d_generated_image.png" },
+  { name: "Jeff Spoor", role: "Owner & Founder", img: "/assets/base44/cfba0dea7_generated_image-91d9c615ac.webp" },
+  { name: "Nikki Wade", role: "Senior Operations Manager", img: "/assets/base44/61d86d7aa_generated_image-c80e25a215.webp" },
+  { name: "Randy", role: "Lead Service Technician", img: "/assets/base44/4928134bb_generated_image-efa957d89d.webp" },
+  { name: "Jack Spoor", role: "Operations & HR", img: "/assets/base44/d1f3f231d_generated_image-23efd3a14d.webp" },
 ];
 
 export default function OverviewTeam() {

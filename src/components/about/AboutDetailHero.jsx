@@ -31,7 +31,7 @@ export default function AboutDetailHero({ page }) {
           </motion.div>
           <motion.div variants={heroStagger} className="mt-[clamp(52px,7vw,92px)] max-w-[920px]">
             <motion.div variants={heroFadeDown} className="mb-7 flex items-center gap-2">
-              <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg" alt="" className="h-5 w-5" />
+              <img src="/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg" alt="" className="h-5 w-5" />
               <span className="text-sm font-semibold uppercase tracking-[0.16em] text-red-300">{page.eyebrow}</span>
             </motion.div>
             <motion.h1 variants={heroFadeUp} className="font-heading text-[clamp(44px,6vw,80px)] font-bold leading-[0.98] tracking-[-0.03em] text-background"><ServiceGap text={page.title} /></motion.h1>

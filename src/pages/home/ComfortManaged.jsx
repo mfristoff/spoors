@@ -2,7 +2,7 @@ import Reveal from "@/components/ui/Reveal";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
-const IMG = "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6f3579a4f_AdobeStock_318148618.jpeg";
+const IMG = "/assets/base44/6f3579a4f_adobestock_318148618-c0a04f7c6a.webp";
 
 const STATS = [
   { stat: "15%", title: "Lower Energy Bills", body: "Average savings for our Home Comfort Club members." },

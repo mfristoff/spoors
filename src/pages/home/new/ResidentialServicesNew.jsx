@@ -63,8 +63,8 @@ function BlobIcon({ active }) {
     <img
       src={
         active
-          ? "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/bdcbc65ab_Opentabbullet-v2.png"
-          : "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/9bb8bc109_closedtabbullet-2.png"
+          ? "/assets/base44/bdcbc65ab_opentabbullet-v2-1b91dad570.webp"
+          : "/assets/base44/9bb8bc109_closedtabbullet-2-f626e07422.webp"
       }
       alt=""
       className="w-[14px] h-[18px] object-contain"

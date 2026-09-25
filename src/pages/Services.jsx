@@ -24,15 +24,15 @@ import { preloadRouteAssets } from "@/lib/routePreload";
 
 // Background photo extracted from the uploaded hero design (Wix-optimizable host).
 const HERO_PHOTO =
-  "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/08b2af924_hero-bg.png";
+  "/assets/base44/08b2af924_hero-bg-310b81f67c.webp";
 
 const U1 = "/assets/images/update-1";
 const U3 = "/assets/images/update-3";
 
-const BLUE_BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ba0b14249_Bolt-Blue.svg";
-const RED_BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/1f65ed898_Bolt.svg";
-const GREEN_BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/8d4428aab_Green-Bolt.svg";
-const NEUTRAL_BOLT = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/8384ef21e_Neutral-Bolt.svg";
+const BLUE_BOLT = "/assets/base44/ba0b14249_bolt-blue-ee7dcd0bb8.svg";
+const RED_BOLT = "/assets/base44/1f65ed898_bolt-8fa83bcced.svg";
+const GREEN_BOLT = "/assets/base44/8d4428aab_green-bolt-5a76de599a.svg";
+const NEUTRAL_BOLT = "/assets/base44/8384ef21e_neutral-bolt-fa98360e86.svg";
 
 // Service category → bolt color + rotation. Red is the reference orientation;
 // blue is rotated +47deg and green +63deg so all three bolts point the same way.

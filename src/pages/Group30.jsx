@@ -17,27 +17,27 @@ export default function SpoorHVAC() {
 
   const benefits = [
   {
-    img: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/225800095_2bd149670_25a79af4a509bf2a55797d9465b6b4be1d68e878.png",
+    img: "/assets/base44/225800095_2bd149670_25a79af4a509bf2a55797d9465b6b4be1d68e878-d1a7fb3a10.webp",
     title: "Maximum System Efficiency",
     desc: "Keep your heat pump operating at peak performance to drastically reduce monthly electricity usage."
   },
   {
-    img: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2c7e23e54_spoors-hvac-technician-auburn-ca.png",
+    img: "/assets/base44/2c7e23e54_spoors-hvac-technician-auburn-ca-b3ff1600db.webp",
     title: "No Overtime Charges After Hours",
     desc: "Get dependable emergency fixes anytime, including nights and weekends, at no extra cost."
   },
   {
-    img: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/4fdf840dc_15501be56_c3661b5ec2d388862a914240e8e219d8d549dee6.png",
+    img: "/assets/base44/4fdf840dc_15501be56_c3661b5ec2d388862a914240e8e219d8d549dee6-8a205cd4ab.webp",
     title: "Priority Service Status",
     desc: "Skip the queue entirely and get dispatched to the front of the line during peak seasonal heatwaves."
   },
   {
-    img: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/44aa664ae_a116f5e12_54beac8fa7344215202cbe7ed5062271693ebcb9.png",
+    img: "/assets/base44/44aa664ae_a116f5e12_54beac8fa7344215202cbe7ed5062271693ebcb9-6c24b5c901.webp",
     title: "Extended Equipment Life",
     desc: "Proactive structural tune-ups designed to maximize the operational lifespan of your machinery."
   },
   {
-    img: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/5e066e0c3_2026-07-30_17-42-43.png",
+    img: "/assets/base44/5e066e0c3_2026-07-30_17-42-43-7be00386af.webp",
     title: "Automatic Notifications for Effortless Service Visits",
     desc: "Stay ahead of changing foothill seasons with automated, stress-free maintenance reminders."
   }];
@@ -89,7 +89,7 @@ export default function SpoorHVAC() {
   const technicianCards = [
   {
     title: "General Services",
-    icon: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg",
+    icon: "/assets/base44/bc3f76106_bolt-b3ebf56b83.svg",
     items: [
     "Clean or replace 1” non-pleated filter",
     "Measure and record indoor and outdoor",
@@ -99,7 +99,7 @@ export default function SpoorHVAC() {
   },
   {
     title: "Gas Heat Services",
-    icon: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg",
+    icon: "/assets/base44/bc3f76106_bolt-b3ebf56b83.svg",
     items: [
     "Inspect burners and clean",
     "Clean flame sensor",
@@ -109,7 +109,7 @@ export default function SpoorHVAC() {
   },
   {
     title: "AC Services",
-    icon: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg",
+    icon: "/assets/base44/bc3f76106_bolt-b3ebf56b83.svg",
     items: [
     "Inspect and clean outdoor condenser coil",
     "Inspect contactor",
@@ -119,7 +119,7 @@ export default function SpoorHVAC() {
   },
   {
     title: "Air Source Heat Pump Service",
-    icon: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg",
+    icon: "/assets/base44/bc3f76106_bolt-b3ebf56b83.svg",
     items: [
     "Air conditioner services",
     "Test defrost cycle operation",
@@ -155,7 +155,7 @@ export default function SpoorHVAC() {
   const TestimonialCard = ({ t }) =>
   <div className="flex w-[85vw] shrink-0 flex-col justify-between rounded-[20px] bg-figma-color-14 p-8 shadow-[inset_0_0_0_1px_#e8e8e8] snap-center sm:w-[600px]">
       <div className="flex flex-col gap-8">
-        <img className="h-[50px] w-16 object-contain" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/ccd923d51_60a77b5a9_470_237.svg" alt="" />
+        <img className="h-[50px] w-16 object-contain" src="/assets/base44/ccd923d51_60a77b5a9_470_237-1ab33d234e.svg" alt="" />
         <p className="text-[clamp(18px,1.56vw,30px)] font-medium leading-[1.6] tracking-[-0.0133em] text-figma-text-2">
           {t.quote}
         </p>
@@ -206,7 +206,7 @@ export default function SpoorHVAC() {
             className="flex flex-col gap-7 lg:gap-9 w-full max-w-[710px] items-start text-left">
             
             <div className="flex flex-row items-center gap-[11px]">
-              <img src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg" alt="" aria-hidden="true" className="h-5 w-5" />
+              <img src="/assets/base44/bc3f76106_bolt-b3ebf56b83.svg" alt="" aria-hidden="true" className="h-5 w-5" />
               <p className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-primary uppercase">
                 Planned Maintenance Services
               </p>
@@ -230,7 +230,7 @@ export default function SpoorHVAC() {
                   "Stress-Free Peace of Mind",
                 ].map((benefit, i) => (
                   <div key={i} className="flex items-start gap-2">
-                    <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg" alt="" className="h-[18px] w-[18px] mt-0.5 shrink-0" />
+                    <img src="/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg" alt="" className="h-[18px] w-[18px] mt-0.5 shrink-0" />
                     <span className="text-[15px] leading-[1.4] text-white" style={{ textShadow: "0 1px 3px rgba(0,0,0,0.6)" }}>{benefit}</span>
                   </div>
                 ))}
@@ -287,7 +287,7 @@ export default function SpoorHVAC() {
                   Request Details
                 </span>
                 <div className="flex items-center justify-center min-h-[42px] bg-figma-secondary rounded-[2px] w-[30px] shrink-0">
-                  <img className="w-[12px] h-[12px]" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/5de0fcfa1_1f1360926_341_121.svg" alt="Arrow" />
+                  <img className="w-[12px] h-[12px]" src="/assets/base44/5de0fcfa1_1f1360926_341_121-3d48f51cb7.svg" alt="Arrow" />
                 </div>
               </button>
             </form>
@@ -393,7 +393,7 @@ export default function SpoorHVAC() {
                   Request Details
                 </span>
                 <div className="flex items-center justify-center min-h-[50px] bg-figma-secondary rounded-[2px] w-[33px] shrink-0">
-                  <img className="w-[13px] h-[13px]" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2d637d123_df497f77a_467_230.svg" alt="Arrow" />
+                  <img className="w-[13px] h-[13px]" src="/assets/base44/2d637d123_df497f77a_467_230-a5b80ec676.svg" alt="Arrow" />
                 </div>
               </button>
             </div>
@@ -416,8 +416,8 @@ export default function SpoorHVAC() {
               <div className="flex flex-col gap-6 w-full">
                 <div className="flex flex-row items-center gap-[11px]">
                   <div className="w-6 h-6 relative flex items-center justify-center">
-                    <img className="w-[13px] h-2.5 absolute top-px left-1.5" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/261990790_420fe99ad_472_286.svg" alt="Icon" />
-                    <img className="w-[13px] h-2.5 opacity-50 absolute top-[11px] left-2" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/a6f03d3cf_8dc950f65_472_287.svg" alt="Icon Shadow" />
+                    <img className="w-[13px] h-2.5 absolute top-px left-1.5" src="/assets/base44/261990790_420fe99ad_472_286-50ab601e64.svg" alt="Icon" />
+                    <img className="w-[13px] h-2.5 opacity-50 absolute top-[11px] left-2" src="/assets/base44/a6f03d3cf_8dc950f65_472_287-3d91ee71fd.svg" alt="Icon Shadow" />
                   </div>
                   <p className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1 uppercase">
                     TECHNICIAN SERVICES
@@ -435,7 +435,7 @@ export default function SpoorHVAC() {
                   Join Now
                 </span>
                 <div className="flex items-center justify-center min-h-[50px] bg-figma-secondary rounded-[2px] w-[33px] shrink-0">
-                  <img className="w-[13px] h-[13px]" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/335f5162e_6f821a54c_472_298.svg" alt="Arrow" />
+                  <img className="w-[13px] h-[13px]" src="/assets/base44/335f5162e_6f821a54c_472_298-db8e8db6e1.svg" alt="Arrow" />
                 </div>
               </button>
             </motion.div>
@@ -466,7 +466,7 @@ export default function SpoorHVAC() {
                     {card.items.map((item, i) =>
                   <div key={i} className="flex flex-row items-start gap-2">
                         <div className="w-[18px] min-h-[18px] relative flex items-center justify-center shrink-0 mt-1">
-                          <img className="w-[13px] h-3" src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/e3fe3ceb2_cf79b4572_472_318.svg" alt="Check" />
+                          <img className="w-[13px] h-3" src="/assets/base44/e3fe3ceb2_cf79b4572_472_318-02a03fee16.svg" alt="Check" />
                         </div>
                         <p className="text-figma-16 font-[440] leading-figma-26 text-figma-text-1">
                           {item}
@@ -490,7 +490,7 @@ export default function SpoorHVAC() {
       <section className="w-full bg-figma-primary pt-20 lg:pt-[clamp(25px,5.2vw,100px)] pb-16 overflow-clip">
         <div className="site-shell flex flex-col items-center gap-6 text-center">
           <img
-            src="https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/bc3f76106_Bolt.svg"
+            src="/assets/base44/bc3f76106_bolt-b3ebf56b83.svg"
             alt=""
             aria-hidden="true"
             className="h-6 w-6" />

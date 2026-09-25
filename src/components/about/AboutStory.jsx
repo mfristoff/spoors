@@ -9,7 +9,7 @@ export default function AboutStory({ page }) {
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
           <div className="mb-5 flex items-center gap-2">
-            <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg" alt="" className="h-5 w-5" />
+            <img src="/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg" alt="" className="h-5 w-5" />
             <span className="text-sm font-semibold uppercase tracking-[0.14em] text-red-600">OUR PRIORITY</span>
           </div>
           <h2 className="max-w-[720px] text-[clamp(34px,4vw,58px)] font-bold leading-[1.05] tracking-[-0.025em] text-ink-900">{page.storyTitle}</h2>

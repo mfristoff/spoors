@@ -3,7 +3,7 @@ import { useSize } from "@/hooks/use-size"
 import { cn } from "@/lib/utils"
 
 const FALLBACK_IMAGE_URL =
-  "https://static.wixstatic.com/media/12d367_4f26ccd17f8f4e3a8958306ea08c2332~mv2.png"
+  "/assets/base44/12d367_4f26ccd17f8f4e3a8958306ea08c2332-mv2-0d960087a9.webp"
 
 // Wix Media Platform hosts whose images support /v1/ transform URLs
 // (resize, focal-point crop, and format conversion via the OUTPUT FILENAME
@@ -192,6 +192,8 @@ const Image = React.forwardRef(
           key={imgSrc}
           ref={ref}
           src={imgSrc}
+          width={originWidth || undefined}
+          height={originHeight || undefined}
           {...imageProps}
           className={cn(
             imageProps.className,

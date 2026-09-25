@@ -13,8 +13,8 @@ const FADE_LEFT =
 const FADE_RIGHT =
   "linear-gradient(to left, transparent 0%, rgba(0,0,0,.25) 14%, #000 40%, #000 100%)";
 
-const BG = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d6942bc0b_HeroSection12.png";
-const BOLT = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/657f6b7b2_Bolt.svg";
+const BG = "/assets/base44/d6942bc0b_herosection12-1c3eb68835.webp";
+const BOLT = "/assets/base44/657f6b7b2_bolt-78e8df5f4f.svg";
 
 /**
  * Location-page hero (Figma 1:1, normal document flow). Centered local h1,

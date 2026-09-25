@@ -104,7 +104,7 @@ export default function Blog() {
           >
             <div className="flex flex-col gap-5">
               <div className="flex items-center gap-2 text-white">
-                <img src="https://media.base44.com/images/public/6a67dcda4fda68f69980f519/2a7194aa9_Bolt.svg" alt="" className="h-5 w-5" />
+                <img src="/assets/base44/2a7194aa9_bolt-60e3c92cd3.svg" alt="" className="h-5 w-5" />
                 <span className="text-[13px] font-semibold uppercase tracking-[0.12em]">Read Our Top Articles</span>
               </div>
               <h1 className="font-heading text-[clamp(32px,4vw,56px)] font-bold leading-[1.05] tracking-[-0.02em] text-white drop-shadow-lg">

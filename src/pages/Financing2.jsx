@@ -8,7 +8,7 @@ import HearthSimpleCard from "@/components/financing/HearthSimpleCard";
 
 export default function Financing2() {
   const [hovered, setHovered] = useState(null);
-  const FINANCING_DIAGRAM = "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/53d73aae5_Frame296.svg";
+  const FINANCING_DIAGRAM = "/assets/base44/53d73aae5_frame296-3219d9d1fe.svg";
 
   return (
     <div className="w-full mx-auto flex flex-col bg-figma-primary overflow-x-clip font-display">
@@ -30,7 +30,7 @@ export default function Financing2() {
               <Link to={business.schedulingUrl} className="bg-figma-accent rounded-[5px] w-full max-w-[217px] h-[58px] relative group overflow-clip block">
                 <div className="absolute inset-0 bg-red-700 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out" />
                 <div className="flex flex-row justify-center items-center p-2 min-h-[50px] bg-[#d10000] rounded-[2px] w-[33px] absolute top-1 right-1 z-10">
-                  <img className="w-[13px] h-[13px]" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/84e66863b_68bd996d5_295_408.svg" alt="Arrow" />
+                  <img className="w-[13px] h-[13px]" src="/assets/base44/84e66863b_68bd996d5_295_408-547808358a.svg" alt="Arrow" />
                 </div>
                 <span className="text-figma-18 font-semibold leading-figma-18 tracking-[-0.2px] text-figma-primary absolute top-5 left-4 z-10">
                   Schedule Online
@@ -124,7 +124,7 @@ export default function Financing2() {
       <section className="w-full relative overflow-clip bg-figma-primary py-16 lg:min-h-[1150px] lg:flex lg:flex-col lg:justify-center lg:py-[clamp(30px,6.2vw,120px)]">
         {/* Background: grayscale technicians fading to white */}
         <img
-          src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/bfeb5fd07_HeroSection8.png"
+          src="/assets/base44/bfeb5fd07_herosection8-ede8220887.webp"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 h-full w-full object-cover object-left"
@@ -152,7 +152,7 @@ export default function Financing2() {
               className="flex flex-col justify-between gap-8 p-6 bg-figma-color-11-2 rounded-[10px] shadow-[inset_0_0_0_1px_#ebebeb] min-h-[227px]"
             >
               <div className="w-8 h-8">
-                <img className="w-8 h-8" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fa10ac84d_Stopwatch.svg" alt="Fast Approvals" />
+                <img className="w-8 h-8" src="/assets/base44/fa10ac84d_stopwatch-e47a098bfc.svg" alt="Fast Approvals" />
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="text-figma-20 font-bold leading-figma-22 text-figma-text-2">Fast Approvals</h3>
@@ -171,7 +171,7 @@ export default function Financing2() {
               className="flex flex-col justify-between gap-8 p-6 bg-figma-color-11-2 rounded-[10px] shadow-[inset_0_0_0_1px_#ebebeb] min-h-[227px]"
             >
               <div className="w-8 h-8">
-                <img className="w-8 h-8" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/23c2dfdf1_ArchiveMinimalistic.svg" alt="Flexible Terms" />
+                <img className="w-8 h-8" src="/assets/base44/23c2dfdf1_archiveminimalistic-58e00a3a22.svg" alt="Flexible Terms" />
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="text-figma-20 font-bold leading-figma-22 text-figma-text-2">Flexible Terms</h3>
@@ -190,7 +190,7 @@ export default function Financing2() {
               className="flex flex-col justify-between gap-8 p-6 bg-figma-color-11-2 rounded-[10px] shadow-[inset_0_0_0_1px_#ebebeb] min-h-[198px] md:col-span-2"
             >
               <div className="w-8 h-8">
-                <img className="w-8 h-8" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/6df53003f_ShieldStar.svg" alt="No Penalties" />
+                <img className="w-8 h-8" src="/assets/base44/6df53003f_shieldstar-f0f91a66b9.svg" alt="No Penalties" />
               </div>
               <div className="flex flex-col gap-2">
                 <h3 className="text-figma-20 font-bold leading-figma-22 text-figma-text-2">No Penalties</h3>
@@ -235,7 +235,7 @@ export default function Financing2() {
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8">
-                  <img className="w-8 h-8" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/1ff490bdf_Plain2.svg" alt="Fast Funding" />
+                  <img className="w-8 h-8" src="/assets/base44/1ff490bdf_plain2-c798c766af.svg" alt="Fast Funding" />
                 </div>
                 <h3 className="text-[clamp(14px,1.35vw,26px)] font-bold leading-[1.1154] tracking-[-0.0115em] text-figma-text-7">Fast Funding</h3>
               </div>
@@ -245,11 +245,11 @@ export default function Financing2() {
             </div>
             <div className="flex flex-col gap-2 mt-8">
               <div className="flex items-center gap-3 p-2 bg-figma-primary rounded-[12px] shadow-[inset_0_0_0_1px_#eaeaea]">
-                <img className="w-6 h-6" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/091b7ecde_Bolt.svg" alt="Check" />
+                <img className="w-6 h-6" src="/assets/base44/091b7ecde_bolt-4146aebef8.svg" alt="Check" />
                 <span className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1">Funding within 1–3 days</span>
               </div>
               <div className="flex items-center gap-3 p-2 bg-figma-primary rounded-[12px] shadow-[inset_0_0_0_1px_#eaeaea]">
-                <img className="w-6 h-6" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d612b1f6a_Bolt.svg" alt="Check" />
+                <img className="w-6 h-6" src="/assets/base44/d612b1f6a_bolt-27549be92c.svg" alt="Check" />
                 <span className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1">Loan amounts up to $100,000</span>
               </div>
             </div>
@@ -266,7 +266,7 @@ export default function Financing2() {
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8">
-                  <img className="w-8 h-8" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7f4608f7d_GraphDown.svg" alt="Affordable Monthly Payment" />
+                  <img className="w-8 h-8" src="/assets/base44/7f4608f7d_graphdown-4ddc52cb91.svg" alt="Affordable Monthly Payment" />
                 </div>
                 <h3 className="text-[clamp(14px,1.35vw,26px)] font-bold leading-[1.1154] tracking-[-0.0115em] text-figma-text-7">Affordable Monthly Payment</h3>
               </div>
@@ -276,11 +276,11 @@ export default function Financing2() {
             </div>
             <div className="flex flex-col gap-2 mt-8">
               <div className="flex items-center gap-3 p-2 bg-figma-primary rounded-[12px] shadow-[inset_0_0_0_1px_#eaeaea]">
-                <img className="w-6 h-6" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a6b447721_Bolt.svg" alt="Check" />
+                <img className="w-6 h-6" src="/assets/base44/a6b447721_bolt-2c33022b60.svg" alt="Check" />
                 <span className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1">Affordable monthly payment options</span>
               </div>
               <div className="flex items-center gap-3 p-2 bg-figma-primary rounded-[12px] shadow-[inset_0_0_0_1px_#eaeaea]">
-                <img className="w-6 h-6" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/1ae957d15_Bolt.svg" alt="Check" />
+                <img className="w-6 h-6" src="/assets/base44/1ae957d15_bolt-2aacecfd41.svg" alt="Check" />
                 <span className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1">Tailored rates for qualified buyers</span>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function Financing2() {
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8">
-                  <img className="w-8 h-8" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d1f6d9c44_ShieldMinimalistic.svg" alt="0 Penalties, 0 Collateral" />
+                  <img className="w-8 h-8" src="/assets/base44/d1f6d9c44_shieldminimalistic-701b6a1a03.svg" alt="0 Penalties, 0 Collateral" />
                 </div>
                 <h3 className="text-[clamp(14px,1.35vw,26px)] font-bold leading-[1.1154] tracking-[-0.0115em] text-figma-text-7">0 Penalties, 0 Collateral</h3>
               </div>
@@ -307,11 +307,11 @@ export default function Financing2() {
             </div>
             <div className="flex flex-col gap-2 mt-8">
               <div className="flex items-center gap-3 p-2 bg-figma-primary rounded-[12px] shadow-[inset_0_0_0_1px_#eaeaea]">
-                <img className="w-6 h-6" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/091b7ecde_Bolt.svg" alt="Check" />
+                <img className="w-6 h-6" src="/assets/base44/091b7ecde_bolt-4146aebef8.svg" alt="Check" />
                 <span className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1">No prepayment penalties</span>
               </div>
               <div className="flex items-center gap-3 p-2 bg-figma-primary rounded-[12px] shadow-[inset_0_0_0_1px_#eaeaea]">
-                <img className="w-6 h-6" src="https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/d612b1f6a_Bolt.svg" alt="Check" />
+                <img className="w-6 h-6" src="/assets/base44/d612b1f6a_bolt-27549be92c.svg" alt="Check" />
                 <span className="text-figma-16 font-semibold leading-figma-16 tracking-[-0.2px] text-figma-text-1">No home equity required</span>
               </div>
             </div>

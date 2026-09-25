@@ -5,7 +5,7 @@ import QuoteFeature from "@/components/testimonial/QuoteFeature";
 import { cdnImage } from "@/lib/cdnImage";
 
 const HERO_IMAGE =
-  "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/48c784c4b_Spoor_s-Home-AC-Service-4.webp";
+  "/assets/base44/48c784c4b_spoor_s-home-ac-service-4-c1292cf3cb.webp";
 
 /**
  * Testimonials page — replaces the About > Testimonials page. Uses the shared

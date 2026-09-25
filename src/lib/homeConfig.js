@@ -20,9 +20,9 @@ export const business = {
 };
 
 export const images = {
-  logo: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/0b5814736_spoors-heating-air-logo.png",
-  hero: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/fed95821e_AdobeStock_66338212.jpeg",
-  fanBg: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/a62fa6031_CTASection.png",
+  logo: "/assets/base44/0b5814736_spoors-heating-air-logo-fe3e119520.webp",
+  hero: "/assets/base44/fed95821e_adobestock_66338212-ae391fcdef.webp",
+  fanBg: "/assets/base44/a62fa6031_ctasection-1ddc3936e0.webp",
 };
 
 export const navigation = [
@@ -71,13 +71,13 @@ export const navigation = [
 ];
 
 export const homeServiceCards = [
-  { slug: "air-conditioning", title: "Air Conditioning", short: "Fast, reliable AC repair, installation, and replacement to keep your home cool through every Auburn summer.", image: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/b3ec9b18a_AdobeStock_65737788.jpeg" },
-  { slug: "heating", title: "Heating", short: "Furnace and heat pump repair, installation, and seasonal tune-ups for dependable foothill winter heat.", image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/2c1a06dc6_heating-furnace-installation.jpg" },
-  { slug: "indoor-air-quality", title: "Indoor Air Quality", short: "Whole-home filtration, humidity control, and ventilation solutions for cleaner, healthier indoor air.", image: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2.webp" },
-  { slug: "emergency-repairs", title: "Emergency Repairs", short: "Around-the-clock emergency HVAC service answered day or night, weekends and holidays included.", image: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/7dc8f7015_AdobeStock_482908998.jpeg" },
-  { slug: "maintenance-tune-ups", title: "Maintenance & Tune-Ups", short: "Seasonal AC and heating tune-ups that protect your equipment, improve efficiency, and prevent breakdowns.", image: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/8ecf7e092_AdobeStock_289084367.jpeg" },
-  { slug: "ductless-mini-splits", title: "Ductless Mini-Splits", short: "Efficient, flexible zoned heating and cooling without the ductwork for single rooms or whole-home comfort.", image: "https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/439d96621_AdobeStock_499333613.jpeg" },
-  { slug: "water-heater-services", title: "Water Heater Services", short: "Water heater repair, replacement, and maintenance for traditional tank, tankless, hybrid, and heat pump systems.", image: "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/a08f34059_spoors-heating-system-repair-auburn-ca.jpeg" },
-  { slug: "planned-maintenance", title: "Planned Maintenance", short: "Membership-style maintenance that protects your equipment with scheduled tune-ups and priority service.", image: "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/7c770fbd3_heating-system-maintenance.jpg" },
+  { slug: "air-conditioning", title: "Air Conditioning", short: "Fast, reliable AC repair, installation, and replacement to keep your home cool through every Auburn summer.", image: "/assets/base44/b3ec9b18a_adobestock_65737788-03fd4bbec5.webp" },
+  { slug: "heating", title: "Heating", short: "Furnace and heat pump repair, installation, and seasonal tune-ups for dependable foothill winter heat.", image: "/assets/base44/2c1a06dc6_heating-furnace-installation-84a7b08993.webp" },
+  { slug: "indoor-air-quality", title: "Indoor Air Quality", short: "Whole-home filtration, humidity control, and ventilation solutions for cleaner, healthier indoor air.", image: "/assets/base44/0e5cfc67c_spoors-air-filter-replacement-auburn-ca-2-3e3f989e67.webp" },
+  { slug: "emergency-repairs", title: "Emergency Repairs", short: "Around-the-clock emergency HVAC service answered day or night, weekends and holidays included.", image: "/assets/base44/7dc8f7015_adobestock_482908998-adf76ca4aa.webp" },
+  { slug: "maintenance-tune-ups", title: "Maintenance & Tune-Ups", short: "Seasonal AC and heating tune-ups that protect your equipment, improve efficiency, and prevent breakdowns.", image: "/assets/base44/8ecf7e092_adobestock_289084367-0599e7bf36.webp" },
+  { slug: "ductless-mini-splits", title: "Ductless Mini-Splits", short: "Efficient, flexible zoned heating and cooling without the ductwork for single rooms or whole-home comfort.", image: "/assets/base44/439d96621_adobestock_499333613-1fbb000ceb.webp" },
+  { slug: "water-heater-services", title: "Water Heater Services", short: "Water heater repair, replacement, and maintenance for traditional tank, tankless, hybrid, and heat pump systems.", image: "/assets/base44/a08f34059_spoors-heating-system-repair-auburn-ca-4d73af2fbe.webp" },
+  { slug: "planned-maintenance", title: "Planned Maintenance", short: "Membership-style maintenance that protects your equipment with scheduled tune-ups and priority service.", image: "/assets/base44/7c770fbd3_heating-system-maintenance-dbddac3f35.webp" },
   { slug: "swamp-coolers", title: "Swamp Coolers", short: "Evaporative cooler installation, service, seasonal start-up, and winterization for dry-climate homes.", image: "/assets/images/update-1/spoors-auburn-ca-home-swamp-cooler-card.webp" },
 ];

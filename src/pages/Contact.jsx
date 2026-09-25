@@ -4,7 +4,7 @@ import { business } from "@/lib/siteConfig";
 import { MapPin, Printer, Mail, Clock } from "lucide-react";
 import QuoteForm from "@/components/ui/QuoteForm";
 
-const BOLT_ICON = "https://media.base44.com/images/public/6a638421a0f67c7e06d9df17/9e8ba233e_Bolt.svg";
+const BOLT_ICON = "/assets/base44/9e8ba233e_bolt-7e3df558d2.svg";
 const EASE = [0.22, 1, 0.36, 1];
 
 const LOCATIONS = [

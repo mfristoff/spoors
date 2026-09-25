@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cdnImage } from "@/lib/cdnImage";
 import { images } from "@/lib/siteConfig";
-const GREEN_BOLT = "https://media.base44.com/images/public/6a67dcda4fda68f69980f519/d411193d2_Green-Bolt.svg";
+const GREEN_BOLT = "/assets/base44/d411193d2_green-bolt-2c164e57d9.svg";
 
 const rebates = [
   {

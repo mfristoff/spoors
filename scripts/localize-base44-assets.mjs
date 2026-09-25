@@ -9,6 +9,16 @@ const TEXT_EXTENSIONS = new Set([".js", ".jsx", ".ts", ".tsx", ".css", ".html", 
 const ASSET_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg", ".mp4", ".mov", ".webm", ".woff", ".woff2", ".ttf", ".otf", ".pdf"]);
 const URL_PATTERN = /https?:\/\/[^\s"'<>`)\\]+/g;
 
+// Tiny above-the-fold UI artwork should not be localized as 2400px rasters.
+const CRITICAL_RASTER_OVERRIDES = new Map([
+  ["864bc4072_unnamed.webp", { width: 720, height: 720, quality: 80, cacheKey: "hero-history-v4" }],
+  ["5ef7df194_bbb-accredited-business-seeklogo.png", { width: 640, height: 320, quality: 82, cacheKey: "hero-bbb-v4" }],
+  ["7b4c5f613_Auburn-Chamber-of-Commerce-transparent-4096.png", { width: 420, height: 420, quality: 82, cacheKey: "hero-auburn-v4" }],
+  ["f5acfecda_fujitsu-elite-contractor-logo-transparent.png", { width: 420, height: 480, quality: 82, cacheKey: "hero-fujitsu-v4" }],
+  ["6ac8a4c49_bryant-logo-png_seeklogo-23007.png", { width: 420, height: 420, quality: 82, cacheKey: "hero-bryant-v4" }],
+  ["a0fdbb467_meadowvista.png", { width: 420, height: 420, quality: 82, cacheKey: "hero-meadow-v4" }],
+]);
+
 async function collectFiles(target) {
   const absolute = path.join(ROOT, target);
   const info = await stat(absolute);
@@ -47,21 +57,27 @@ function downloadPlan(url) {
     const base = url.split("/v1/")[0];
     const rawFilename = new URL(base).pathname.split("/").filter(Boolean).pop() || "remote-media";
     const stem = rawFilename.replace(/\.[a-z0-9]+$/i, "");
+    const critical = CRITICAL_RASTER_OVERRIDES.get(rawFilename);
+    const width = critical?.width ?? 2400;
+    const height = critical?.height ?? 2400;
+    const quality = critical?.quality ?? 82;
+    const fetchUrl = `${base}/v1/fit/w_${width},h_${height},q_${quality},usm_0.66_1.00_0.01,enc_webp,quality_auto/${stem}.webp`;
     return {
-      fetchUrl: `${base}/v1/fit/w_2400,h_2400,q_82,usm_0.66_1.00_0.01,enc_webp,quality_auto/${stem}.webp`,
+      fetchUrl,
       extension: ".webp",
+      cacheKey: critical ? `${url}|${critical.cacheKey}|${fetchUrl}` : url,
     };
   }
 
-  return { fetchUrl: url, extension };
+  return { fetchUrl: url, extension, cacheKey: url };
 }
 
-function localName(url, extension) {
+function localName(url, extension, cacheKey = url) {
   const parsed = new URL(url);
   const original = decodeURIComponent(path.basename(parsed.pathname));
   const originalExtension = path.extname(original).toLowerCase();
   const stem = path.basename(original, originalExtension).replace(/[^a-z0-9_-]+/gi, "-").toLowerCase() || "remote-media";
-  const hash = createHash("sha256").update(url).digest("hex").slice(0, 10);
+  const hash = createHash("sha256").update(cacheKey).digest("hex").slice(0, 10);
   return `${stem}-${hash}${extension || originalExtension}`;
 }
 
@@ -103,7 +119,7 @@ let completed = 0;
 
 for (const url of [...urls].sort()) {
   const plan = downloadPlan(url);
-  const filename = localName(url, plan.extension);
+  const filename = localName(url, plan.extension, plan.cacheKey);
   const finalPath = path.join(OUTPUT_DIR, filename);
   const tempPath = `${finalPath}.download`;
 

@@ -11,14 +11,14 @@ const normalizePath = (input = "") => {
 const HERO_BY_PATH = {
   "/about-us": ["/assets/images/about/spoors-team-ribbon-cutting-auburn-ca.webp"],
   "/services": ["/assets/base44/08b2af924_hero-bg-310b81f67c.webp"],
-  "/services/air-conditioning": ["https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/b3ec9b18a_AdobeStock_65737788.jpeg"],
+  "/services/air-conditioning": ["/assets/base44/b3ec9b18a_adobestock_65737788-03fd4bbec5.webp"],
   "/services/heating": ["/assets/images/heating/spoors-auburn-ca-heating-services-hero-no-pvc.webp"],
   "/services/indoor-air-quality": [
     "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-hero.webp",
     "/assets/images/indoor-air-quality/spoors-auburn-ca-clean-indoor-air-relaxing-home-mobile-hero.webp",
   ],
   "/services/emergency-repairs": ["/assets/images/update-1/spoors-auburn-ca-emergency-detail-hero.webp"],
-  "/services/maintenance-tune-ups": ["https://media.base44.com/images/public/6a60ee8a5d61b09b929d4345/4f14fb0f8_AdobeStock_197213379.jpeg"],
+  "/services/maintenance-tune-ups": ["/assets/base44/4f14fb0f8_adobestock_197213379-d06e2c1830.webp"],
   "/services/ductless-mini-splits": ["/assets/images/update-5/spoors-auburn-ca-ductless-mini-split-full-bleed-hero.webp"],
   "/services/swamp-coolers": ["/assets/images/swamp-coolers/spoors-auburn-ca-swamp-cooler-hero-rooftop.webp"],
   "/services/water-heater-services": [
