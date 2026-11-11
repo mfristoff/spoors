@@ -1,3 +1,4 @@
+import { OPTIMIZED_LOGO } from "./optimizedImages";
 // Lightweight configuration used by the homepage shell.
 // Keep this file intentionally small so the first route does not pull the
 // full service-area + blog content registry into the initial JavaScript bundle.
@@ -20,7 +21,7 @@ export const business = {
 };
 
 export const images = {
-  logo: "/assets/base44/0b5814736_spoors-heating-air-logo-fe3e119520.webp",
+  logo: OPTIMIZED_LOGO,
   hero: "/assets/base44/fed95821e_adobestock_66338212-ae391fcdef.webp",
   fanBg: "/assets/base44/a62fa6031_ctasection-1ddc3936e0.webp",
 };
