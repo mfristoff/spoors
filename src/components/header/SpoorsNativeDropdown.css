@@ -1,0 +1,22 @@
+/* Spoor desktop dropdowns. CSS hover and focus, no React state animation. */
+
+@media (min-width:1024px) {
+.spoors-native-nav {position:relative; display:block;}
+.spoors-native-trigger {display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:16px;font-weight:500;color:#242424;line-height:1.5;text-decoration:none;}
+.spoors-native-trigger:hover,.spoors-native-nav:hover>.spoors-native-trigger,.spoors-native-nav:focus-within>.spoors-native-trigger {color:#c51820;}
+.spoors-native-chevron {width:12px;height:12px;flex-shrink:0;transition:none;}
+.spoors-native-nav:hover .spoors-native-chevron,.spoors-native-nav:focus-within .spoors-native-chevron {transform:rotate(180deg);}
+.spoors-native-panel {display:none;position:absolute;top:calc(100% - 2px);left:0;width:var(--spoors-menu-width);max-width:calc(100vw - 24px);padding-top:11px;z-index:300;}
+.spoors-native-nav:hover>.spoors-native-panel,.spoors-native-nav:focus-within>.spoors-native-panel {display:block;}
+.spoors-native-nav[data-spoors-menu="/service-areas"]>.spoors-native-panel {left:-150px;right:auto;}
+.spoors-native-nav[data-spoors-menu="/resources/blog/"]>.spoors-native-panel {left:auto;right:0;}
+.spoors-native-surface {box-sizing:border-box;border:1px solid #d9dee6;border-radius:14px;padding:10px;background:#fff;box-shadow:0 16px 45px rgba(5,15,30,.18),0 3px 10px rgba(5,15,30,.06);}
+.spoors-native-grid {display:grid;grid-template-columns:repeat(var(--spoors-menu-cols),minmax(0,1fr));gap:3px;}
+.spoors-native-link {display:block;min-width:0;color:#283241;text-decoration:none;border-radius:8px;outline-offset:1px;}
+.spoors-native-link-inner {min-height:45px;padding:9px 11px;display:flex;align-items:center;justify-content:space-between;gap:8px;border-radius:8px;}
+.spoors-native-link-label {font-size:14px;line-height:1.35;font-weight:550;}
+.spoors-native-arrow {font-size:20px;line-height:1;color:#a9b0bc;flex-shrink:0;}
+.spoors-native-link:hover .spoors-native-link-inner,.spoors-native-link:focus-visible .spoors-native-link-inner {background:#f5f6f9;color:#b51219;}
+.spoors-native-link:hover .spoors-native-arrow,.spoors-native-link:focus-visible .spoors-native-arrow {color:#b51219;}
+.spoors-native-trigger:focus-visible,.spoors-native-link:focus-visible {outline:2px solid #b51219;outline-offset:3px;}
+}
