@@ -237,7 +237,7 @@ export default function HomePage() {
 
           {/* Background Decorative Vector */}
           <div className="absolute top-[40%] left-0 w-full pointer-events-none z-[-1] opacity-40">
-            <img className="w-full h-auto" src="/assets/base44/6402f1d7b_f2252d069_202_340-dae2941e5d.svg" alt="Decorative Wave" />
+            <img className="w-full h-auto" src="/assets/base44/6402f1d7b_f2252d069_202_340-dae2941e5d.svg" alt="Decorative Wave" loading="lazy" decoding="async" fetchPriority="low" />
           </div>
 
           {/* Cards Grid */}
@@ -396,7 +396,7 @@ export default function HomePage() {
             <div className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
                 <div className="p-2 bg-figma-surface rounded-[27px]">
-                  <img className="w-5 h-5 object-contain" src="/assets/base44/100440ef0_calendarmark-924b87470f.webp" alt="Calendar" />
+                  <img className="w-5 h-5 object-contain" src="/assets/base44/100440ef0_calendarmark-924b87470f.webp" alt="Calendar" loading="lazy" decoding="async" fetchPriority="low" />
                 </div>
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">30 Day Guarantee</span>
               </div>
@@ -408,7 +408,7 @@ export default function HomePage() {
             <div className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
                 <div className="p-2 bg-figma-surface rounded-[27px]">
-                  <img className="w-5 h-5 object-contain" src="/assets/base44/700edc8f1_crown-1d12662761.webp" alt="Star" />
+                  <img className="w-5 h-5 object-contain" src="/assets/base44/700edc8f1_crown-1d12662761.webp" alt="Star" loading="lazy" decoding="async" fetchPriority="low" />
                 </div>
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">#1 Rated</span>
               </div>
@@ -420,7 +420,7 @@ export default function HomePage() {
             <div className="flex min-h-[220px] flex-col justify-between gap-7 rounded-[11px] bg-figma-primary p-7 shadow-[inset_0_0_0_1px_#eaeaea] md:gap-8 md:p-6 md:min-h-[230px]">
               <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-[18px]">
                 <div className="p-2 bg-figma-surface rounded-[27px]">
-                  <img className="w-5 h-5 object-contain" src="/assets/base44/7e66262be_history2-d6a1c449a3.webp" alt="Clock" />
+                  <img className="w-5 h-5 object-contain" src="/assets/base44/7e66262be_history2-d6a1c449a3.webp" alt="Clock" loading="lazy" decoding="async" fetchPriority="low" />
                 </div>
                 <span className="text-[clamp(18px,1.67vw,32px)] font-bold leading-[1.0938] tracking-[-0.0187em] text-figma-accent">24/7 Service</span>
               </div>
