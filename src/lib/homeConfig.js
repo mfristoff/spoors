@@ -23,7 +23,7 @@ export const business = {
 export const images = {
   logo: OPTIMIZED_LOGO,
   hero: "/assets/base44/fed95821e_adobestock_66338212-ae391fcdef.webp",
-  fanBg: "/assets/base44/a62fa6031_ctasection-1ddc3936e0.webp",
+  fanBg: "/assets/optimized/spoors-cta-20261111.webp",
 };
 
 export const navigation = [
