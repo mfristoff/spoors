@@ -1,7 +1,5 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
-import { preloadRouteAssets } from "@/lib/routePreload";
 import {
   ChevronDown, Snowflake, Flame, Wind, AlertTriangle, Wrench,
   AirVent, Droplets, Thermometer, CalendarCheck, Target,
@@ -30,22 +28,14 @@ const ICON_MAP = {
   "/resources/blog/": BookOpen,
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 4 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.1, ease: "easeOut" } },
-};
-
-const stagger = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.008 } },
-};
-
 export default function DropdownPanel({ item }) {
   const [open, setOpen] = useState(false);
   const timeoutRef = useRef(null);
 
   const show = () => { clearTimeout(timeoutRef.current); setOpen(true); };
-  const hide = () => { timeoutRef.current = setTimeout(() => setOpen(false), 150); };
+  const hide = () => { clearTimeout(timeoutRef.current); timeoutRef.current = window.setTimeout(() => setOpen(false), 120); };
+
+  useEffect(() => () => window.clearTimeout(timeoutRef.current), []);
 
   const children = item.children || [];
   const cols = children.length >= 12 ? 3 : children.length >= 5 ? 2 : 1;
@@ -75,20 +65,17 @@ export default function DropdownPanel({ item }) {
       </span>
     );
     return (
-      <motion.div variants={itemVariants} key={c.path}>
+      <div key={c.path}>
         {c.external ? (
           <a href={c.path} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="block">{content}</a>
         ) : (
           <Link
             to={c.path}
-            onMouseEnter={() => preloadRouteAssets(c.path)}
-            onFocus={() => preloadRouteAssets(c.path)}
-            onPointerDown={() => preloadRouteAssets(c.path)}
             onClick={() => setOpen(false)}
             className="block"
           >{content}</Link>
         )}
-      </motion.div>
+      </div>
     );
   };
 
@@ -96,27 +83,17 @@ export default function DropdownPanel({ item }) {
     <div onMouseEnter={show} onMouseLeave={hide} onFocus={show} onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) hide(); }}>
       <Link
         to={item.path}
-        onMouseEnter={() => preloadRouteAssets(item.path)}
-        onFocus={() => preloadRouteAssets(item.path)}
-        onPointerDown={() => preloadRouteAssets(item.path)}
         className="inline-flex items-center gap-1.5 text-[16px] font-medium text-[#242424] hover:text-red-600"
         aria-haspopup="true"
         aria-expanded={open}
       >
         {item.label}
-        <motion.span animate={{ rotate: open ? 180 : 0 }} transition={{ duration: 0.2 }} className="inline-flex">
+        <span className={`inline-flex transition-transform duration-100 ${open ? "rotate-180" : ""}`}>
           <ChevronDown className="h-3 w-3" />
-        </motion.span>
+        </span>
       </Link>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0, y: -4 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -4 }}
-            transition={{ duration: 0.1, ease: "easeOut" }}
-            className="absolute left-0 top-full z-50 mt-2"
-          >
+      {open && (
+          <div className="absolute left-0 top-full z-50 mt-2">
             <div
               className={`rounded-2xl p-3 ${panelWidth}`}
               style={{
@@ -127,18 +104,14 @@ export default function DropdownPanel({ item }) {
                 boxShadow: "0 24px 70px rgba(10, 18, 38, 0.22), 0 4px 14px rgba(10, 18, 38, 0.08)",
               }}
             >
-              <motion.div
-                variants={stagger}
-                initial="hidden"
-                animate="show"
-                className={cols > 1 ? `grid gap-1 ${cols === 3 ? "grid-cols-3" : "grid-cols-2"}` : "flex flex-col gap-0.5"}
+              <div className={cols > 1 ? `grid gap-1 ${cols === 3 ? "grid-cols-3" : "grid-cols-2"}` : "flex flex-col gap-0.5"}
               >
                 {children.map(renderItem)}
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
+
     </div>
   );
 }
