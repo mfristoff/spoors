@@ -1,117 +1,91 @@
-import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  ChevronDown, Snowflake, Flame, Wind, AlertTriangle, Wrench,
-  AirVent, Droplets, Thermometer, CalendarCheck, Target,
-  Star, ShieldCheck, LifeBuoy, Briefcase, Users, BookOpen, ExternalLink,
-} from "lucide-react";
+import { ChevronDown } from "lucide-react";
+import "./SpoorsNativeDropdown.css";
 
-// Location icon artwork by Arief Mochjiyat.
-const SERVICE_AREA_ICON = "/assets/base44/d48d150a1_location-e3eff6e5ac.svg";
-
-const ICON_MAP = {
-  "/services/air-conditioning": Snowflake,
-  "/services/heating": Flame,
-  "/services/indoor-air-quality": Wind,
-  "/services/emergency-repairs": AlertTriangle,
-  "/services/maintenance-tune-ups": Wrench,
-  "/services/ductless-mini-splits": AirVent,
-  "/services/swamp-coolers": Droplets,
-  "/services/water-heater-services": Thermometer,
-  "/services/planned-maintenance": CalendarCheck,
-  "/about-us/our-mission/": Target,
-  "/testimonials": Star,
-  "/about-us/our-commitment/": ShieldCheck,
-  "/about-us/customer-service/": LifeBuoy,
-  "/careers": Briefcase,
-  "/about-us/community-involvement/": Users,
-  "/resources/blog/": BookOpen,
-};
-
+/**
+ * Desktop dropdowns are rendered once. CSS handles hover/focus instantly,
+ * without React state changes or Framer Motion on pointer movement.
+ * Mobile navigation remains in NewHeader.
+ */
 export default function DropdownPanel({ item }) {
-  const [open, setOpen] = useState(false);
-  const timeoutRef = useRef(null);
-
-  const show = () => { clearTimeout(timeoutRef.current); setOpen(true); };
-  const hide = () => { clearTimeout(timeoutRef.current); timeoutRef.current = window.setTimeout(() => setOpen(false), 120); };
-
-  useEffect(() => () => window.clearTimeout(timeoutRef.current), []);
-
   const children = item.children || [];
   const cols = children.length >= 12 ? 3 : children.length >= 5 ? 2 : 1;
-  const panelWidth = cols === 3 ? "w-[600px]" : cols === 2 ? "w-[520px]" : "w-64";
-  const isAreas = item.path === "/service-areas";
+  const width = cols === 3 ? "660px" : cols === 2 ? "510px" : "250px";
+  const id = "spoors-nav-" + item.label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
-  const getIcon = (c) => {
-    if (c.external) return ExternalLink;
-    return ICON_MAP[c.path] || null;
-  };
-
-  const renderItem = (c) => {
-    const Icon = getIcon(c);
-    const content = isAreas ? (
-      <span className="group/item flex items-center gap-3 rounded-xl border border-transparent p-2.5 transition-all duration-200 ease-out hover:-translate-y-px hover:border-ink-100/70 hover:bg-ink-50/80 hover:shadow-sm">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-[1.5px] border-white/70 bg-gradient-to-br from-white/70 to-white/30 transition-all duration-200 group-hover/item:border-white group-hover/item:from-white group-hover/item:to-white/70">
-          <img src={SERVICE_AREA_ICON} alt="" aria-hidden="true" className="h-[22px] w-[22px] shrink-0 object-contain opacity-80 transition-opacity duration-200 group-hover/item:opacity-100" />
-        </span>
-        <span className="text-sm font-medium leading-tight text-ink-700 transition-colors duration-200 group-hover/item:text-ink-900">{c.label}</span>
-      </span>
-    ) : (
-      <span className="group/item flex items-center gap-3 rounded-xl border border-transparent p-2.5 transition-all duration-200 ease-out hover:-translate-y-px hover:border-ink-100/70 hover:bg-ink-50/80 hover:shadow-sm">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-[1.5px] border-white/70 bg-gradient-to-br from-white/70 to-white/30 text-ink-600 transition-all duration-200 group-hover/item:border-white group-hover/item:from-white group-hover/item:to-white/70 group-hover/item:text-ink-700">
-          {Icon && <Icon className="h-[18px] w-[18px] fill-neutral-200 opacity-80 transition-opacity duration-200 group-hover/item:opacity-100" />}
-        </span>
-        <span className="text-sm font-medium leading-tight text-ink-700 transition-colors duration-200 group-hover/item:text-ink-900">{c.label}</span>
-      </span>
-    );
-    return (
-      <div key={c.path}>
-        {c.external ? (
-          <a href={c.path} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="block">{content}</a>
-        ) : (
-          <Link
-            to={c.path}
-            onClick={() => setOpen(false)}
-            className="block"
-          >{content}</Link>
-        )}
-      </div>
-    );
+  const updateExpanded = (event, expanded) => {
+    const trigger = event.currentTarget.querySelector("[data-spoors-trigger]");
+    if (trigger) trigger.setAttribute("aria-expanded", String(expanded));
   };
 
   return (
-    <div onMouseEnter={show} onMouseLeave={hide} onFocus={show} onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) hide(); }}>
+    <div
+      className="spoors-native-nav"
+      data-spoors-menu={item.path}
+      onMouseEnter={(event) => updateExpanded(event, true)}
+      onMouseLeave={(event) => updateExpanded(event, false)}
+      onFocusCapture={(event) => updateExpanded(event, true)}
+      onBlurCapture={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) {
+          updateExpanded(event, false);
+        }
+      }}
+    >
       <Link
         to={item.path}
-        className="inline-flex items-center gap-1.5 text-[16px] font-medium text-[#242424] hover:text-red-600"
+        className="spoors-native-trigger"
+        data-spoors-trigger="true"
         aria-haspopup="true"
-        aria-expanded={open}
+        aria-controls={id}
+        aria-expanded={false}
       >
         {item.label}
-        <span className={`inline-flex transition-transform duration-100 ${open ? "rotate-180" : ""}`}>
-          <ChevronDown className="h-3 w-3" />
-        </span>
+        <ChevronDown className="spoors-native-chevron" aria-hidden="true" />
       </Link>
-      {open && (
-          <div className="absolute left-0 top-full z-50 mt-2">
-            <div
-              className={`rounded-2xl p-3 ${panelWidth}`}
-              style={{
-                background: "#ffffff",
-                backdropFilter: "none",
-                WebkitBackdropFilter: "none",
-                border: "1px solid rgba(10, 18, 38, 0.16)",
-                boxShadow: "0 24px 70px rgba(10, 18, 38, 0.22), 0 4px 14px rgba(10, 18, 38, 0.08)",
-              }}
-            >
-              <div className={cols > 1 ? `grid gap-1 ${cols === 3 ? "grid-cols-3" : "grid-cols-2"}` : "flex flex-col gap-0.5"}
-              >
-                {children.map(renderItem)}
-              </div>
-            </div>
+      <div
+        id={id}
+        className="spoors-native-panel"
+        role="group"
+        aria-label={item.label + " submenu"}
+        style={{
+          "--spoors-menu-cols": String(cols),
+          "--spoors-menu-width": width,
+        }}
+      >
+        <div className="spoors-native-surface">
+          <div className="spoors-native-grid">
+            {children.map((child) => {
+              const inner = (
+                <span className="spoors-native-link-inner">
+                  <span className="spoors-native-link-label">{child.label}</span>
+                  <span className="spoors-native-arrow" aria-hidden="true">
+                    {child.external ? "↗" : "›"}
+                  </span>
+                </span>
+              );
+              return child.external ? (
+                <a
+                  key={child.path}
+                  href={child.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="spoors-native-link"
+                >
+                  {inner}
+                </a>
+              ) : (
+                <Link
+                  key={child.path}
+                  to={child.path}
+                  className="spoors-native-link"
+                >
+                  {inner}
+                </Link>
+              );
+            })}
           </div>
-        )}
-
+        </div>
+      </div>
     </div>
   );
 }
