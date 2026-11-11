@@ -15,13 +15,14 @@ function connectionShouldSkipVideo() {
 
 // Desktop keeps the original eager behavior. Mobile normally mounts after load,
 // but callers can opt into immediate mobile playback with no static fallback.
-export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobileEager = false, mobileObjectPosition }) {
+export default function DeferredHeroVideo({ src, mobileSrc, fallbackSrc, mobilePoster, mobileEager = false, mobileObjectPosition }) {
   const [viewport, setViewport] = useState(() => {
     if (typeof window === "undefined") return null;
     if (window.matchMedia("(min-width: 768px)").matches) return "desktop";
     return mobileSrc && mobileEager ? "mobile" : null;
   });
   const [mobilePlaying, setMobilePlaying] = useState(false);
+  const [failedOptimizedSrc, setFailedOptimizedSrc] = useState(null);
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -120,7 +121,7 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobile
       video.removeEventListener("canplay", tryPlay);
       video.removeEventListener("loadedmetadata", tryPlay);
     };
-  }, [viewport, src, mobileSrc]);
+  }, [viewport, src, mobileSrc, fallbackSrc, failedOptimizedSrc]);
 
   // Release video decode/GPU work once the hero is off-screen.
   useEffect(() => {
@@ -157,9 +158,11 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobile
       observer.disconnect();
       document.removeEventListener("visibilitychange", syncPlayback);
     };
-  }, [viewport, src, mobileSrc]);
+  }, [viewport, src, mobileSrc, fallbackSrc, failedOptimizedSrc]);
 
-  const activeSrc = viewport === "mobile" ? mobileSrc : src;
+  const activeSrc = viewport === "mobile"
+    ? mobileSrc
+    : failedOptimizedSrc === src && fallbackSrc ? fallbackSrc : src;
   if (!viewport || !activeSrc) return null;
 
   const isMobile = viewport === "mobile";
@@ -180,6 +183,11 @@ export default function DeferredHeroVideo({ src, mobileSrc, mobilePoster, mobile
       aria-hidden="true"
       tabIndex={-1}
       onPlaying={() => setMobilePlaying(true)}
+      onError={() => {
+        if (viewport === "desktop" && fallbackSrc && activeSrc !== fallbackSrc) {
+          setFailedOptimizedSrc(src);
+        }
+      }}
       style={isMobile && mobileObjectPosition ? { objectPosition: mobileObjectPosition } : undefined}
       className={`pointer-events-none absolute inset-0 h-full w-full object-cover transition-opacity duration-500 md:object-[center_20%] ${
         isMobile && !mobileEager && !mobilePlaying ? "opacity-0" : "opacity-100"
