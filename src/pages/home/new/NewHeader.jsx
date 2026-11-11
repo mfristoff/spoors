@@ -71,7 +71,7 @@ export default function NewHeader() {
         <div className="nav-row-aligned mx-auto flex flex-col items-stretch lg:flex-row">
           {/* Logo */}
           <div className="flex h-[72px] w-full items-center justify-between border-b border-[#e0e0e0] px-5 lg:h-auto lg:max-w-[260px] lg:min-h-[154px] lg:flex-col lg:items-center lg:justify-center lg:border-b-0 lg:border-l lg:border-r lg:border-[#e0e0e0] lg:px-[40.5px] lg:py-[32.77px]">
-            <Link to="/" onMouseEnter={() => preloadRouteAssets("/")} onFocus={() => preloadRouteAssets("/")} onPointerDown={() => preloadRouteAssets("/")}>
+            <Link to="/" onPointerDown={() => preloadRouteAssets("/")}>
               <img src={images.logo} alt={business.name} className="h-[52px] w-auto object-contain lg:h-[88px] lg:scale-[1.20]" decoding="async" />
             </Link>
             {/* Mobile toggle — right side, vertically centered with the logo */}
@@ -178,7 +178,7 @@ export default function NewHeader() {
                 <nav className="mt-8 flex flex-col">
                   {mobileNavigation.map((item) => (
                     <motion.div key={item.path} variants={menuItem} className="border-b border-white/10">
-                      <Link to={item.path} onPointerDown={() => preloadRouteAssets(item.path)} onFocus={() => preloadRouteAssets(item.path)} onClick={() => setMobileOpen(false)} className="block py-4 text-[clamp(22px,5.5vw,30px)] font-semibold text-white">
+                      <Link to={item.path} onPointerDown={() => preloadRouteAssets(item.path)} onClick={() => setMobileOpen(false)} className="block py-4 text-[clamp(22px,5.5vw,30px)] font-semibold text-white">
                         {item.label}
                       </Link>
                       {item.children && (
@@ -189,7 +189,7 @@ export default function NewHeader() {
                                 {c.label}
                               </a>
                             ) : (
-                              <Link key={c.path} to={c.path} onPointerDown={() => preloadRouteAssets(c.path)} onFocus={() => preloadRouteAssets(c.path)} onClick={() => setMobileOpen(false)} className="py-2 text-[17px] text-white/60 hover:text-white">
+                              <Link key={c.path} to={c.path} onPointerDown={() => preloadRouteAssets(c.path)} onClick={() => setMobileOpen(false)} className="py-2 text-[17px] text-white/60 hover:text-white">
                                 {c.label}
                               </Link>
                             )
@@ -227,8 +227,8 @@ function SimpleNavItem({ item }) {
   return (
     <Link
       to={item.path}
-      onMouseEnter={() => preloadRouteAssets(item.path)}
-      onFocus={() => preloadRouteAssets(item.path)}
+     
+     
       onPointerDown={() => preloadRouteAssets(item.path)}
       className="inline-flex items-center text-[16px] font-medium text-[#242424] hover:text-red-600"
     >
