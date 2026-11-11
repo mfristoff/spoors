@@ -9,6 +9,9 @@ export default function NewFooter() {
         src="/assets/base44/3d0100751_usethisinthefooter-79224201ea.webp"
         alt=""
         aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"
         className="pointer-events-none absolute bottom-0 left-0 h-[140px] w-full select-none object-contain object-bottom opacity-25 md:h-[clamp(300px,26vw,460px)] md:object-fill md:opacity-[0.15]"
       />
 
