@@ -7,7 +7,8 @@ import DeferredHeroVideo from "@/pages/home/DeferredHeroVideo";
 
 const BOLT_ICON = "/assets/base44/04dc9d564_bolt-f432cef86e.svg";
 
-const HERO_DESKTOP_VIDEO = "/assets/base44/hero-4af5046ea3.mp4";
+const HERO_DESKTOP_VIDEO = "/assets/optimized/spoors-hero-960-20261111.mp4";
+const HERO_DESKTOP_FALLBACK = "/assets/base44/hero-4af5046ea3.mp4";
 const HERO_MOBILE_VIDEO = "/assets/video/spoors-home-hero-mobile.mp4";
 
 // Per-mark sizing for the hero logo strip. BBB is width-driven (matching the
@@ -100,6 +101,7 @@ export default function Hero({ onSchedule }) {
       
       <DeferredHeroVideo
         src={HERO_DESKTOP_VIDEO}
+        fallbackSrc={HERO_DESKTOP_FALLBACK}
         mobileSrc={HERO_MOBILE_VIDEO}
         mobileEager
         mobileObjectPosition="center center"
