@@ -32,7 +32,7 @@ export const business = {
   },
   schedulingUrl: "/contact-us/",
   estimateUrl: "/contact-us/",
-  portalUrl: "https://portal.example.com",
+  portalUrl: import.meta.env.VITE_SPOORS_ST_PORTAL_URL || "/contact-us/",
   domain: "https://www.spoorsheatingandac.com",
 };
 
@@ -117,7 +117,7 @@ export const navigation = [
     path: "/resources/blog/",
     children: [
       { label: "Blog", path: "/resources/blog/" },
-      { label: "Client Portal", path: business.portalUrl, external: true },
+      { label: import.meta.env.VITE_SPOORS_ST_PORTAL_URL ? "Client Portal" : "Portal Access Help", path: business.portalUrl, external: Boolean(import.meta.env.VITE_SPOORS_ST_PORTAL_URL) },
     ],
   },
   { label: "Financing", path: "/financing/" },

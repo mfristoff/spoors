@@ -25,7 +25,7 @@ export default function NewFooter() {
                 <FLink to="/about-us">About Us</FLink>
                 <FLink to="/services/">Services</FLink>
                 <FLink to="/resources/blog/">Blog</FLink>
-                <FLink to={business.portalUrl} external>Client Portal</FLink>
+                {business.portalUrl ? <FLink to={business.portalUrl} external>Client Portal</FLink> : <FLink to="/contact-us/">Portal Access Help</FLink>}
               </ul>
               <ul className="flex flex-col gap-5">
                 <FLink to="/financing/">Financing</FLink>
