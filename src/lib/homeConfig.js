@@ -13,7 +13,7 @@ export const business = {
   serviceRegion: "California",
   domain: "https://www.spoorsheatingandac.com",
   schedulingUrl: "/contact-us/",
-  portalUrl: "https://portal.example.com",
+  portalUrl: import.meta.env.VITE_SPOORS_ST_PORTAL_URL || "",
   social: {
     facebook: "https://facebook.com/spoorsheatingandac",
     x: "https://twitter.com/SpoorsHeatingAC",
@@ -64,7 +64,7 @@ export const navigation = [
   ]},
   { label: "Resources", path: "/resources/blog/", children: [
     { label: "Blog", path: "/resources/blog/" },
-    { label: "Client Portal", path: business.portalUrl, external: true },
+    ...(business.portalUrl ? [{ label: "Client Portal", path: business.portalUrl, external: true }] : [{ label: "Portal Access Help", path: "/contact-us/" }]),
   ]},
   { label: "Financing", path: "/financing/" },
   { label: "Rebates", path: "/rebates/" },
