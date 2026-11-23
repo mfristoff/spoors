@@ -37,7 +37,7 @@ export default function ServiceTitanBookingCTA({ className = "", children = "Sch
     }
   };
   return (
-    <button type="button" className={`se-booking-show ${className}`} onClick={openBooking} data-servicetitan-status="configured">
+    <button type="button" className={className} onClick={openBooking} data-servicetitan-status="configured">
       {children}
     </button>
   );
