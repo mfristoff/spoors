@@ -8,8 +8,8 @@ export default function Breadcrumbs({ items }) {
     <nav aria-label="Breadcrumb" className="text-sm">
       <ol className="flex flex-wrap items-center gap-1.5 text-ink-500">
         <li>
-          <Link to="/" className="inline-flex items-center hover:text-red-600">
-            <Home className="h-3.5 w-3.5" />
+          <Link to="/" aria-label="Home" className="inline-flex items-center hover:text-red-600">
+            <Home aria-hidden="true" className="h-3.5 w-3.5" />
           </Link>
         </li>
         {items.map((item, i) => (
