@@ -6,6 +6,7 @@ import { Phone, Mail, X } from "lucide-react";
 import DropdownPanel from "@/components/header/DropdownPanel";
 import SwipeableTopBar from "@/components/header/SwipeableTopBar";
 import { preloadRouteAssets } from "@/lib/routePreload";
+import ServiceTitanBookingCTA from "@/components/servicetitan/ServiceTitanBookingCTA";
 
 const EmergencyHelpModal = lazy(() => import("@/components/ui/EmergencyHelpModal"));
 
@@ -136,6 +137,9 @@ export default function NewHeader() {
             >
               Get Emergency Help
             </button>
+            {/* Scheduling Pro opens an overlay when account IDs are configured.
+                Until then, provide a working contact-form fallback. */}
+            <ServiceTitanBookingCTA className="mt-2 inline-flex items-center justify-center text-[13px] font-semibold text-white/90 underline underline-offset-4 hover:text-white" />
           </div>
         </div>
 
@@ -204,6 +208,9 @@ export default function NewHeader() {
                   <a href={business.phoneLink} onClick={() => setMobileOpen(false)} className="inline-flex w-full items-center justify-center rounded-[9px] bg-red-600 px-6 py-5 text-[18px] font-semibold text-white transition-colors hover:bg-red-700">
                     Call {business.phone}
                   </a>
+                  <div onClick={() => setMobileOpen(false)} className="mt-3">
+                    <ServiceTitanBookingCTA className="inline-flex w-full items-center justify-center rounded-[9px] border border-white/30 px-6 py-4 text-[17px] font-semibold text-white transition-colors hover:bg-white/10" />
+                  </div>
                 </motion.div>
               </motion.div>
             </motion.div>
